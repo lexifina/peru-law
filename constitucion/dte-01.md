@@ -1,0 +1,2 @@
+# Disposición transitoria especial primera
+El Presidente y los Vicepresidentes de la República elegidos en las Elecciones Generales de 2000, concluirán su mandato el 28 de julio de 2001. Los congresistas elegidos en el mismo proceso electoral culminarán su representación el 26 de julio de 2001. No son de aplicación para ellos, por excepción, los plazos establecidos en los artículos 90 y 112 de la Constitución Política.
