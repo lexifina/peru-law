@@ -1,0 +1,2 @@
+Artículo 62-B. Impuesto predial de las personas con discapacidad severa
+De conformidad con lo establecido en el Decreto Legislativo 776, Ley de Tributación Municipal, las personas con discapacidad severa acceden a la deducción de cincuenta unidades impositivas tributarias (50 UIT) de la base imponible para el cálculo del impuesto predial cuando sean propietarias de un solo predio, a nombre propio o de la sociedad conyugal, que esté destinado a vivienda de las mismas, y cuyos ingresos brutos mensuales no excedan de una UIT.
