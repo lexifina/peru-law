@@ -1,8 +1,6 @@
 Segunda.- Modificaciones de normas procesales
 Los artículos de las normas que a continuación se señalan, quedan redactados según el tenor siguiente:
-1. "Artículo 11, Ley N° 23506.- Responsabilidad y sanciones al agresor
-1. Si al concluir los procesos de Hábeas Corpus y Amparo, se ha identificado al responsable de la agresión y aparezcan indicios de la comisión de un delito de persecución pública, se dispondrá se remita copia certificada de lo actuado al Ministerio Público para que proceda con arreglo a sus atribuciones.
-2. El haber procedido por orden superior no libera al ejecutor de los hechos de la responsabilidad penal a que hubiera lugar. Si el responsable de la vulneración fuera una de las personas comprendidas en el artículo 99 de la Constitución se dará cuenta inmediata al Congreso para los fines consiguientes".
+1. DEROGADO.
 2. "Artículo 4, Decreto Supremo N° 006-97-JUS (Texto Único Ordenado de la Ley de Protección Frente a la Violencia Familiar).- La Denuncia Policial
 1. La Policía Nacional, en todas sus delegaciones, recibirá las denuncias por violencia familiar y, sin perjuicio de lo dispuesto en el Código Procesal Penal, realizará las investigaciones que correspondan, bajo la conducción del Ministerio Público, y practicará las notificaciones a que hubiere lugar.
 2. Las denuncias podrán ser formuladas por la víctima o cualquier persona que conozca de estos hechos y podrán ser presentadas en forma verbal o escrita".
