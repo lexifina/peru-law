@@ -1,0 +1,3 @@
+Cuarta.- Normas Reglamentarias
+1. El Poder Ejecutivo, mediante Decreto Supremo, reglamentará los alcances del proceso por colaboración eficaz previsto en la Sección VI del Libro Quinto "Los procesos especiales" de este Código. Asimismo, hará lo propio respecto de las medidas de protección, prevista en el Título V de la Sección II "La Prueba" del Libro Segundo "La actividad procesal".
+2. Los órganos de Gobierno del Poder Judicial y del Ministerio Público, asimismo, dictarán las normas reglamentarias que prevé este Código en el plazo y mediando las coordinaciones que establecerán las normas complementarias y de implementación del Código Procesal Penal.
