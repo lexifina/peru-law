@@ -7,3 +7,4 @@ Asimismo, entra en vigencia el Código Procesal Penal para los delitos tipificad
 a) En el Distrito Judicial de Lima, el 15 de enero de 2011.
 b) En los Distritos Judiciales de Lima Norte, Lima Sur y Callao, el 1 de abril de 2011.
 5. DEROGADO.
+6. Los artículos 259 y 260 entran en vigencia en todo el país el 1 de julio de 2009.
