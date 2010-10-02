@@ -1,0 +1,9 @@
+CÓDIGO DE PROTECCIÓN Y DEFENSA DEL CONSUMIDOR LEY Nº 29571
+(Publicado el 02 de setiembre de 2010)
+EL PRESIDENTE DE LA REPÚBLICA
+POR CUANTO:
+El Congreso de la República
+Ha dado la Ley siguiente:
+EL CONGRESO DE LA REPÚBLICA;
+Ha dado la Ley siguiente:
+CÓDIGO DE PROTECCIÓN Y DEFENSA DEL CONSUMIDOR
