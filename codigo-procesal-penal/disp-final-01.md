@@ -6,6 +6,6 @@ Primera.- Vigencia del Código Procesal Penal
 Asimismo, entra en vigencia el Código Procesal Penal para los delitos tipificados en las secciones II, III y IV, del artículo 382 al artículo 401, del capítulo II, del título XVIII del libro II del Código Penal, de acuerdo a lo siguiente:
 a) En el Distrito Judicial de Lima, el 15 de enero de 2011.
 b) En los Distritos Judiciales de Lima Norte, Lima Sur y Callao, el 1 de abril de 2011.
-Asimismo, entra en vigencia el Código Procesal Penal para los delitos tipificados en las Secciones II, III y IV, artículos del 382 al 401, del Capítulo II, del Título XVIII, del Libro II del Código Penal, a los ciento veinte (120) días de publicada la presente Ley en el diario oficial El Peruano.
+c) En los demás distritos judiciales en los que el Código Procesal Penal aún no ha entrado en vigencia integralmente, el 1 de junio de 2011.
 5. DEROGADO.
 6. Los artículos 259 y 260 entran en vigencia en todo el país el 1 de julio de 2009.
