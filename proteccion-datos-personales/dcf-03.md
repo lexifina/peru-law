@@ -1,0 +1,2 @@
+Tercera. Adecuación de documentos de gestión y del Texto Único de Procedimientos Administrativos del Ministerio de Justicia
+Estando a la creación de la Autoridad Nacional de Protección de Datos Personales, en un plazo máximo de ciento veinte días hábiles, contado a partir del día siguiente de la publicación de la presente Ley, el Ministerio de Justicia elabora las modificaciones pertinentes en sus documentos de gestión y en su Texto Único de Procedimientos Administrativos.
