@@ -1,0 +1,5 @@
+Artículo 201-A.- Informes técnicos oficiales especializados de la Contraloría General de la República
+Los informes técnicos especializados elaborados fuera del proceso penal por la Contraloría General de la República en el cumplimiento de sus funciones tienen la calidad de pericia institucional extraprocesal cuando hayan servido de mérito para formular denuncia penal en el caso establecido por el literal b) del inciso 2 del artículo 326 del presente Código o cuando habiendo sido elaborados en forma simultánea con la investigación preparatoria sean ofrecidos como elemento probatorio e incorporados debidamente al proceso para su contradicción.
+La respectiva sustentación y el correspondiente examen o interrogatorio se efectúa con los servidores que designe la entidad estatal autora del informe técnico.
+Cualquier aclaración de los informes de control que se requiera para el cumplimiento de los fines del proceso deberá ser solicitada al respectivo ente emisor.
+El juez desarrolla la actividad y valoración probatoria de conformidad con el inciso 2 del artículo 155 y el inciso 1 del artículo 158 del presente Código.
