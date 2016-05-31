@@ -1,0 +1,2 @@
+Artículo 376°-A.- Abuso de autoridad condicionando ilegalmente la entrega de bienes y servicios
+El que, valiéndose de su condición de funcionario o servidor público, condiciona la distribución de bienes o la prestación de servicios correspondientes a programas públicos de apoyo o desarrollo social, con la finalidad de obtener ventaja política y/o electoral de cualquier tipo en favor propio o de terceros, será reprimido con pena privativa de libertad no menor de tres ni mayor de seis años e inhabilitación conforme a los incisos 1 y 2 del artículo 36° del Código Penal.

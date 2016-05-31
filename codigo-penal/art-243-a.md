@@ -1,0 +1,2 @@
+Funcionamiento ilegal de casinos de juego
+Artículo 243°-A.- Será reprimido con pena privativa de la libertad no menor de uno ni mayor de seis años y con trescientos sesenticinco días-multa, el que organiza o conduce Casinos de Juego sujetos a autorización sin haber cumplido los requisitos que exijan las leyes o reglamentos para su funcionamiento; sin perjuicio del decomiso de los efectos, dinero y bienes utilizados en la comisión del delito.

@@ -1,0 +1,3 @@
+Artículo 279°-C.- Tráfico de productos pirotécnicos
+El que, sin estar debidamente autorizado, fabrica, importa, exporta, deposita, transporta, comercializa o usa productos pirotécnicos de cualquier tipo, o los que vendan estos productos a menores de edad, serán reprimidos con pena privativa de libertad no menor de cuatro ni mayor de ocho años, trescientos sesenta y cinco días-multa e inhabilitación conforme al inciso 4 del artículo 36° del Código Penal.
+La pena será no menor de cinco ni mayor de diez años, si a causa de la fabricación, importación, depósito, transporte, comercialización y uso de productos pirotécnicos, se produjesen lesiones graves o muerte de personas.

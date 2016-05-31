@@ -1,0 +1,2 @@
+Artículo 50°-A.- Concurso real de faltas
+Cuando se realiza una pluralidad de acciones que deban considerarse como faltas independientes que perjudican a varias personas e infringen el mismo precepto penal o preceptos de igual o semejante naturaleza, será sancionado como autor del delito correspondiente y se le impone la pena privativa de libertad prevista para este, teniendo en cuenta el perjuicio total causado.

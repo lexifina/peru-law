@@ -1,0 +1,2 @@
+Artículo 186°-A.- Dispositivos para asistir a la decodificación de señales de satélite portadoras de programas
+El que fabrique, ensamble, modifique, importe, exporte, venda, alquile o distribuya por otro medio un dispositivo o sistema tangible o intangible, cuya función principal sea asistir en la decodificación de una señal de satélite codificada portadora de programas, sin la autorización del distribuidor legal de dicha señal, será reprimido con pena privativa de la libertad no menor de cuatro años ni mayor de ocho años y con noventa a ciento ochenta días multa.

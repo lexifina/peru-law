@@ -1,0 +1,3 @@
+Artículo 307°-A.- Delito de minería ilegal
+Será reprimido con pena privativa de libertad no menor de cuatro años ni mayor de ocho años y con cien a seiscientos días-multa, el que realice actividad de exploración, extracción, explotación u otros actos similares, de recursos minerales, metálicos o no metálicos, sin contar con la autorización de la entidad administrativa competente, que cause o pueda causar perjuicio, alteración o daño al ambiente o sus componentes, la calidad ambiental o la salud ambiental.
+Si el agente actuó por culpa, la pena será privativa de libertad no mayor de tres años o con prestación de servicios comunitarios de cuarenta a ochenta jornadas.

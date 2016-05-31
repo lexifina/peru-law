@@ -1,0 +1,2 @@
+Artículo 108°-A.- Homicidio Calificado por la Condición de la víctima
+El que mata a uno de los altos funcionarios comprendidos en el artículo 39° de la Constitución Política del Perú, a un miembro de la Policía Nacional, de las Fuerzas Armadas, a un Magistrado del Poder Judicial o del Ministerio Publico o a un Miembro del Tribunal Constitucional o a cualquier autoridad elegida por mandato popular, en el ejercicio de sus funciones o como consecuencia de ellas, será reprimido con pena privativa de libertad no menor de 25 años ni mayor de 35 años.

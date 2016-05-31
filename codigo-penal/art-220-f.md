@@ -1,0 +1,2 @@
+Artículo 220°-F.- Manuales, licencias u otra documentación, o empaques no auténticos relacionados a programas de ordenador
+El que elabore, comercialice, distribuya, almacene, transporte, transfiera o de otra manera disponga con fines comerciales u otro tipo de ventaja económica manuales, licencias u otro tipo de documentación, o empaques no auténticos para un programa de ordenador, será reprimido con pena privativa de libertad no menor de cuatro años ni mayor de seis años y de sesenta a ciento veinte días multa.

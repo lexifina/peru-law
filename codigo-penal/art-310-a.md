@@ -1,0 +1,2 @@
+Artículo 310°-A.- Tráfico ilegal de productos forestales maderables
+El que adquiere, acopia, almacena, transforma, transporta, oculta, custodia, comercializa, embarca, desembarca, importa, exporta o reexporta productos o especímenes forestales maderables, cuyo origen ilícito, conoce o puede presumir, será reprimido con pena privativa de libertad no menor de cuatro años ni mayor de siete años y con cien a seiscientos días-multa.

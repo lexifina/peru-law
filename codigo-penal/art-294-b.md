@@ -1,0 +1,2 @@
+Artículo 294°-B.- Comercialización de productos farmacéuticos, dispositivos médicos o productos sanitarios sin garantía de buen estado
+El que vende, importa o comercializa productos farmacéuticos, dispositivos médicos o productos sanitarios luego de producida su fecha de vencimiento, o el que para su comercialización los almacena, transporta o distribuye en esa condición, será reprimido con pena privativa de libertad no menor de cuatro ni mayor de ocho años y con ciento ochenta a trescientos sesenta y cinco días multa.

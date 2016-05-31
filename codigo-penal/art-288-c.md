@@ -1,0 +1,2 @@
+Artículo 288°-C.- Producción o comercialización de bebidas alcohólicas ilegales
+El que produce o comercializa bebidas alcohólicas informales, adulteradas o no aptas para el consumo humano, según las definiciones señaladas en la Ley para Erradicar la Elaboración y Comercialización de Bebidas Alcohólicas Informales, Adulteradas o no Aptas para el Consumo Humano, será reprimido con pena privativa de libertad no menor de cuatro ni mayor de ocho años.

@@ -1,0 +1,2 @@
+Artículo 279°-F.- Uso de armas en estado de ebriedad o drogadicción
+El que, en lugar público o poniendo en riesgo bienes jurídicos de terceros y teniendo licencia para portar arma de fuego, hace uso, maniobra o de cualquier forma manipula la misma en estado de ebriedad, con presencia de alcohol en la sangre en proporción mayor de 0.5 gramos-litro o bajo el efecto de estupefacientes, drogas tóxicas, sustancias psicotrópicas o sintéticas será sancionado con pena privativa de libertad no menor de un año ni mayor de tres años e inhabilitación conforme al artículo 36°, inciso 6.

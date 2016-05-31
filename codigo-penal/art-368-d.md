@@ -1,0 +1,4 @@
+Artículo 368°-D.- Posesión indebida de teléfonos celulares o, armas, municiones o materiales explosivos, inflamables, asfixiantes o tóxicos en establecimientos penitenciarios
+La persona privada de libertad en un centro de detención o reclusión, que posea o porte un arma de fuego o arma blanca, municiones o materiales explosivos, inflamables, asfixiantes o tóxicos, será reprimida con pena privativa de libertad no menor de ocho ni mayor de quince años.
+Si el agente posee, porta, usa o trafica con un teléfono celular o fijo o cualquiera de sus accesorios que no esté expresamente autorizado, la pena privativa de libertad será no menor de tres ni mayor de ocho años.
+Si se demuestra que del uso de estos aparatos se cometió o intentó cometer un ilícito penal, la pena será no menor de diez ni mayor de quince años.

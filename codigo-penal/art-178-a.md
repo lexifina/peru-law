@@ -1,0 +1,4 @@
+Tratamiento terapéutico
+Artículo 178°-A.- El condenado a pena privativa de libertad efectiva por los delitos comprendidos en este Capítulo, previo examen médico o psicológico que determine su aplicación será sometido a un tratamiento terapéutico a fin de facilitar su readaptación social.
+En los casos de suspensión de la ejecución de la pena y reserva del fallo condenatorio, el juez dispondrá la realización de un examen médico y psicológico al condenado, para los efectos a que se refiere el párrafo anterior. El sometimiento al tratamiento terapéutico será considerado como regla de conducta.
+Los beneficios penitenciarios de semilibertad, liberación condicional y redención de la pena por el trabajo y la educación, y el derecho de gracia del indulto y de la conmutación de la pena, no pueden ser concedidos sin el correspondiente informe médico y psicológico que se pronuncie sobre la evolución del tratamiento terapéutico.

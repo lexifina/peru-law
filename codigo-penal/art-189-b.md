@@ -1,0 +1,2 @@
+Hurto de uso de ganado
+Artículo 189°-B.- El que sustrae ganado ajeno, con el fin de hacer uso momentáneo y lo devuelve, directa o indirectamente en un plazo no superior a setentidós horas, será reprimido con pena privativa de libertad no mayor de un año o de prestación de servicios a la comunidad no mayor de cincuenta jornadas. Si la devolución del animal se produce luego de transcurrido dicho plazo, será aplicable el artículo anterior.

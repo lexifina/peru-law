@@ -1,0 +1,3 @@
+Artículo 296°-C.- Penalización de la resiembra
+El propietario, posesionario o tercero, que haciendo uso de cualquier técnica de cultivo, resiembre parcial o totalmente con arbusto de coca, semillas y/o almácigos, aquellos predios de coca erradicados por el Estado, será reprimidos con pena privativa de libertad no menor de 3 ni mayor de 8 años.
+Serán decomisados a favor del Estado, los predios que total o parcialmente estuvieran cultivados ilegalmente con plantas de coca, semillas y/o almácigos en áreas del territorio nacional, cualquiera sea la técnica utilizada para su cultivo, y no procedieran sus propietarios o posesionarios a sustituirlos o erradicarlos.

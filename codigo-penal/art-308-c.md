@@ -1,0 +1,2 @@
+Artículo 308°-C.- Depredación de flora y fauna silvestre
+El que caza, captura, colecta, extrae o posee productos, raíces o especímenes de especies de flora y/o fauna silvestre, sin contar con la concesión, permiso, licencia o autorización u otra modalidad de aprovechamiento o extracción, otorgada por la autoridad competente, será reprimido con pena privativa de libertad no menor de tres años ni mayor de cinco años y con cincuenta a cuatrocientos días-multa.

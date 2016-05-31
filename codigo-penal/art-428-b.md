@@ -1,0 +1,3 @@
+Artículo 428°-B.- Falsedad en el reporte de los volúmenes de pesca capturados
+El que, estando incluido dentro del régimen de Límites Máximos de Captura por Embarcación establecido por Ley, inserta o hace insertar en cualquier documento donde se consigne la información referente a los volúmenes de captura, información falsa o distinta respecto al volumen realmente capturado, será reprimido con pena privativa de libertad no menor de tres ni mayor de seis años y con ciento ochenta a trescientos sesenta y cinco días-multa.
+Con igual pena será reprimido quien altera o ayuda a la alteración de los instrumentos de pesaje con los que se calcula los volúmenes de pesca capturados, si dicha alteración tiene la finalidad de consignar un volumen distinto al realmente capturado.

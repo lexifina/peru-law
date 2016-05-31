@@ -1,0 +1,4 @@
+Artículo 315°-A.- Delito de grave perturbación de la tranquilidad pública
+El que perturbe gravemente la paz pública usando cualquier medio razonable capaz de producir alarma, será sancionado con pena privativa de libertad no menor de tres ni mayor de seis años.
+Se considera perturbación grave a todo acto por el cual se difunda o ponga en conocimiento de la autoridad pública, medios de comunicación social o de cualquier otro por el cual pueda difundirse masivamente la noticia, la inminente realización de un hecho o situación falsa o inexistente, relacionado con un daño o potencial daño a la vida e integridad de las personas o de bienes públicos o privados.
+Si el agente actúa en calidad de integrante de una organización criminal que, para lograr sus fines, cualesquiera que sean, utiliza como medio la amenaza de la comisión del delito de terrorismo, será sancionado con pena privativa de libertad no menor de seis ni mayor de diez años.

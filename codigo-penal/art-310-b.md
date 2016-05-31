@@ -1,0 +1,3 @@
+Artículo 310°-B.- Obstrucción de procedimiento
+El que obstruye, impide o traba una investigación, verificación, supervisión o auditoría, en relación con la extracción, transporte, transformación, venta, exportación, reexportación o importación de especímenes de flora y/o de fauna silvestre, será reprimido con pena privativa de libertad no menor de cuatro años ni mayor de siete años.
+La pena será privativa de libertad no menor de cinco años ni mayor de ocho años para el que emplea intimidación o violencia contra un funcionario público o contra la persona que le presta asistencia, en el ejercicio de sus funciones.

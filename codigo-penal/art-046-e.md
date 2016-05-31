@@ -1,0 +1,3 @@
+Artículo 46°-E.- Circunstancia agravante cualificada por abuso de parentesco
+La pena es aumentada hasta en un tercio por encima del máximo legal fijado para el delito cuando el agente se haya aprovechado de su calidad de ascendiente o descendiente, natural o adoptivo, padrastro o madrastra, cónyuge o conviviente de la víctima. En este caso, la pena privativa de libertad no puede exceder los treinta y cinco años, salvo que el delito se encuentre reprimido con pena privativa de libertad indeterminada, en cuyo caso se aplica esta última.
+La agravante prevista en el primer párrafo es inaplicable cuando esté establecida como tal en la ley penal.

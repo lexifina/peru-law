@@ -1,0 +1,5 @@
+Artículo 181°-A.- Explotación sexual comercial infantil y adolescente en ámbito del turismo
+El que promueve, publicita, favorece o facilita la explotación sexual comercial en el ámbito del turismo, a través de cualquier medio escrito, folleto, impreso, visual, audible, electrónico, magnético o a través de Internet, con el objeto de ofrecer relaciones sexuales de carácter comercial de personas de catorce (14) y menos de dieciocho (18) años de edad será reprimido con pena privativa de libertad no menor de cuatro (4) ni mayor de ocho (8) años.
+Si la víctima es menor de catorce años, el agente, será reprimido con pena privativa de la libertad no menor de seis (6) ni mayor de ocho (8) años.
+El agente también será sancionado con inhabilitación conforme al artículo 36° incisos 1, 2, 4 y 5.
+Será no menor de ocho (8) ni mayor de diez (10) años de pena privativa de la libertad cuando ha sido cometido por autoridad pública, sus ascendientes, maestro o persona que ha tenido a su cuidado por cualquier título a la víctima.

@@ -1,0 +1,3 @@
+Artículo 368°-C.- Sabotaje de los equipos de seguridad y de comunicación en establecimientos penitenciarios
+El que dentro de un centro de detención o reclusión vulnera, impide, dificulta, inhabilita o de cualquier otra forma imposibilite el funcionamiento de los equipos de seguridad y/o de comunicación en los establecimientos penitenciarios, será reprimido con pena privativa de libertad no menor de cinco ni mayor de ocho años.
+Si el agente se vale de un menor de edad o de su condición de autoridad, abogado defensor, servidor o funcionario público para cometer o permitir que se cometa el hecho punible descrito, la pena privativa será no menor de ocho ni mayor de diez años e inhabilitación, conforme al artículo 36°, incisos 1 y 2, del presente Código.

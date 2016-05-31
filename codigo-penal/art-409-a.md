@@ -1,0 +1,3 @@
+Artículo 409°-A.- Obstrucción de la justicia
+El que mediante el uso de fuerza física, amenaza, ofrecimiento o concesión de un beneficio indebido, impide u obstaculiza se preste un testimonio o la aportación de pruebas o induce a que se preste un falso testimonio o pruebas falsas, será sancionado con pena privativa de libertad no menor de tres ni mayor de cinco años.
+Si el hecho se comete respecto en la investigación preliminar o proceso penal por delito previsto en los artículos 152° al 153°-A, 200°, 296° al 298° o en la Ley N° 27765 (Ley Penal contra el Lavado de Activos), la pena privativa de libertad será no menor de cinco ni mayor de ocho años y de ciento ochenta a trescientos sesenta y cinco días multa.

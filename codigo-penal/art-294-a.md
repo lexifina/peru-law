@@ -1,0 +1,3 @@
+Artículo 294°-A.- Falsificación, contaminación o adulteración de productos farmacéuticos, dispositivos médicos o productos sanitarios
+El que falsifica, contamina o adultera productos farmacéuticos, dispositivos médicos o productos sanitarios, o altera su fecha de vencimiento, será reprimido con pena privativa de libertad no menor de cuatro ni mayor de diez años y con ciento ochenta a trescientos sesenta y cinco días multa.
+El que, a sabiendas, importa, comercializa, almacena, transporta o distribuye en las condiciones antes mencionadas productos farmacéuticos, dispositivos médicos o productos sanitarios, será reprimido con la misma pena.
