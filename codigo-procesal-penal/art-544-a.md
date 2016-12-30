@@ -1,0 +1,3 @@
+Artículo 544-A.- Ejecución de la condena en el Estado peruano
+1. Ejecutado el traslado de un nacional, la Fiscalía de la Nación remite el cuaderno de traslado al juez competente, a quien corresponde adecuar a la normatividad penal nacional el tipo penal previsto en la sentencia impuesta por la autoridad extranjera. Es competente el juez penal del lugar donde el nacional se encuentre cumpliendo condena.
+2. Adecuada la sentencia extranjera, el juez remite copia de la resolución de adecuación al Registro Central de Condenas del Poder Judicial y al Registro Penitenciario del Instituto Nacional Penitenciario, para su inscripción y cumplimiento conforme a la normatividad nacional.
