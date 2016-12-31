@@ -1,0 +1,6 @@
+Artículo 107-A.- Formas de conclusión anticipada del procedimiento de oficio promovido por denuncia de parte
+En cualquier estado e instancia del procedimiento de oficio promovido por denuncia de parte, el órgano resolutivo puede declarar su conclusión anticipada en los siguientes supuestos:
+1. Cuando el denunciante formule desistimiento del procedimiento o de la pretensión antes de la notificación de la resolución que agota la vía administrativa.
+2. Cuando las partes lleguen a un acuerdo mediante conciliación, mediación, transacción o cualquier otro acuerdo que, de forma indubitable, deje constancia que se ha solucionado la controversia materia de denuncia antes de la notificación de la resolución que pone fin a la misma.
+Cualquiera de las partes podrá acreditar ante el órgano resolutivo la solución de la controversia, para que la autoridad declare la conclusión anticipada del procedimiento. El procedimiento continuará respecto de aquellos denunciados o pretensiones no comprendidos en dicha conclusión anticipada.
+La autoridad podrá continuar de oficio el procedimiento si del análisis de los hechos denunciados considera que podría estarse afectando intereses de terceros o la acción suscitada por la iniciación del procedimiento entrañase interés general.
