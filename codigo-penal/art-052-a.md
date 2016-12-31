@@ -1,0 +1,2 @@
+Artículo 52-A.- Conversión de la pena privativa de libertad en ejecución
+El Juez competente puede convertir la pena privativa de libertad en ejecución de condena, por una pena limitativa de derechos, a razón de siete (7) días de privación de libertad por una jornada de prestación de servicios a la comunidad o por una jornada de limitación de días libres, según corresponda y siempre que se cumplan los supuestos de procedencia y requisitos establecidos en la ley de la materia.
