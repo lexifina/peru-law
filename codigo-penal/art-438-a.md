@@ -1,0 +1,2 @@
+Artículo 438-A.- Falsedad genérica agravada
+El que otorgue, expida u oferte certificados, diplomas u otras constancias que atribuyan grado académico, título profesional, título de segunda especialidad profesional, nivel de especialización u otra capacidad análoga, sin que el beneficiario haya llevado efectivamente los estudios correspondientes, será reprimido con pena privativa de libertad no menor de tres ni mayor de cinco años y sesenta a ciento cincuenta días-multa.

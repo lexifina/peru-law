@@ -1,0 +1,2 @@
+Artículo 398-B.- Inhabilitación
+En los supuestos del artículo 398-A, cuando el agente corrompa a un miembro de la Policía Nacional en el ejercicio sus funciones, siempre que éstas correspondan al tránsito o seguridad vial, se le impondrá además inhabilitación consistente en la cancelación o incapacidad definitiva, según sea el caso, para obtener autorización para conducir, de conformidad con el inciso 7 del artículo 36.

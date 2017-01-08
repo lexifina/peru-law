@@ -1,0 +1,3 @@
+Artículo 398-A.- Cohecho activo en el ámbito de la función policial
+El que, bajo cualquier modalidad, ofrece, da o promete a un miembro de la Policía Nacional donativo o cualquier ventaja o beneficio para que realice u omita actos en violación de sus obligaciones derivadas de la función policial, será reprimido con pena privativa de libertad no menor de cuatro ni mayor de ocho años.
+El que, bajo cualquier modalidad, ofrece, da o promete a un miembro de la Policía Nacional donativo o cualquier ventaja o beneficio para que realice u omita actos propios de la función policial, sin faltar a las obligaciones que se derivan de ella, será reprimido con pena privativa de libertad no menor de tres ni mayor de seis años.
