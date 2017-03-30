@@ -1,0 +1,7 @@
+Artículo 476-A.- Eficacia de las diligencias de corroboración y su incorporación en otros procesos
+1. Si la información proporcionada por el colaborador arroja indicios suficientes de participación delictiva de las personas sindicadas por éste o de otras personas, será materia -de ser el caso- de la correspondiente investigación y decisión por el Ministerio Público a efectos de determinar la persecución y ulterior sanción de los responsables.
+2. El Fiscal decide si lo actuado en la carpeta fiscal de colaboración eficaz será incorporado en todo o en parte al proceso o procesos correspondientes, debiendo cautelar la identidad del declarante
+3. El Fiscal, de conformidad con el artículo 65 decidirá si aporta el testimonio del colaborador a juicio. Si existiere riesgo para su vida, se reservará su identidad. El Juez valorará su declaración de conformidad con lo previsto en el numeral 2 del artículo 158.
+4. Si el Juez aprueba el Acuerdo y los procesos donde el colaborador es imputado se encuentran en investigación preparatoria, el Fiscal podrá no acusar al colaborador.
+5. Si el Juez aprueba el Acuerdo y los procesos donde el colaborador es acusado se encuentran en juzgamiento, el Fiscal podrá retirar la acusación y en su caso, el Juez Penal Unipersonal o Colegiado estarán a lo resuelto en la sentencia por colaboración eficaz.
+6. La sentencia de colaboración eficaz será oponible en cualquier estado del proceso, ante los órganos jurisdiccionales que son parte del Acuerdo de Beneficios y Colaboración Eficaz.
