@@ -1,0 +1,3 @@
+Artículo 481-A.- Utilidad de la información en otros procesos
+1. Los elementos de convicción recabados en las diligencias de corroboración podrán ser empleados para requerir medidas limitativas de derechos o medidas coercitivas en los procesos derivados o conexos al proceso especial de colaboración eficaz.
+2. La declaración del colaborador también podrá ser empleada para dichos efectos, en cuyo caso se deberá cautelar su identidad, salvaguardando que la información utilizada no permita su identificación. En estos casos, deberá acompañarse de otros elementos de convicción, rigiendo el numeral 2 del artículo 158.

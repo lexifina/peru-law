@@ -1,0 +1,5 @@
+Artículo 473-A.- Participación del agraviado
+1. El agraviado, deberá ser citado al final de la fase de corroboración. Si asiste se le deberá informar que uno de los aspectos que abarca el procedimiento en curso es el hecho delictivo en su perjuicio y, acto seguido, se le preguntará acerca del monto de la reparación civil que considere adecuada a sus intereses. Asimismo, se le indicará si desea intervenir en el procedimiento y, en su momento, firmar el acta del Acuerdo de Beneficios y Colaboración.
+2. El agraviado como sujeto procesal no participa de las diligencias de corroboración.
+3. La intervención del agraviado está circunscrita al ámbito de la reparación civil y tendrá legitimación para ofrecer pruebas necesarias para su debida estimación si fuere el caso.
+4. La inasistencia del agraviado a las citaciones y su discrepancia del monto de la reparación civil fijada en el Acuerdo no impedirá la continuación del trámite ni la suscripción del Acuerdo. En este caso, el agraviado tiene expedito su derecho para hacerlo valer en la vía civil, en cuyo caso impugnará el Acta sólo en el extremo del monto de la reparación civil.
