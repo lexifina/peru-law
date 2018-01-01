@@ -1,0 +1,2 @@
+Artículo 401-C. Multa aplicable a las personas jurídicas
+Cuando las personas jurídicas señaladas en el artículo 2 de la Ley que regula la responsabilidad administrativa autónoma de las personas jurídicas por el delito de cohecho activo transnacional resulten responsables por el delito previsto en el artículo 397-A, el juez impone la medida de multa, conforme al literal a del artículo 5 de la citada norma, sin perjuicio de las demás medidas administrativas allí previstas que resulten aplicables.
