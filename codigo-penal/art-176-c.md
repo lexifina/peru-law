@@ -1,0 +1,3 @@
+Artículo 176-C.- Chantaje sexual
+El que amenaza o intimida a una persona, por cualquier medio, incluyendo el uso de tecnologías de la información o comunicación, para obtener de ella una conducta o acto de connotación sexual, será reprimido con pena privativa de la libertad no menor de dos ni mayor de cuatro años e inhabilitación, según corresponda, conforme a los incisos 5, 9, 10 y 11 del artículo 36.
+La pena privativa de libertad será no menor de tres ni mayor de cinco años e inhabilitación, según corresponda, conforme a los incisos 5, 9, 10 y 11 del artículo 36, si para la ejecución del delito el agente amenaza a la víctima con la difusión de imágenes, materiales audiovisuales o audios con contenido sexual en los que esta aparece o participa.
