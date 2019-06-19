@@ -1,3 +1,2 @@
-Artículo 182°-A.- Publicación en los medios de comunicación sobre delitos de libertad sexual a menores
-Los gerentes o responsables de las publicaciones o ediciones a transmitirse a través de los medios de comunicación masivos que publiciten la prostitución infantil, el turismo sexual infantil o la trata de menores de dieciocho años de edad serán reprimidos con pena privativa de la libertad no menor de dos ni mayor de seis años.
-El agente también será sancionado con inhabilitación conforme al inciso 4 del artículo 36° y con trescientos sesenta días multa.
+Artículo 182-A. Publicación en los medios de comunicación sobre delitos de libertad sexual contra niñas, niños y adolescentes
+El gerente o responsable u otro con poder de decisión sobre las publicaciones o ediciones que autorice o disponga que se difunda pornografía infantil o se publiciten actos que conlleven a la trata o la explotación sexual de niñas, niños y adolescentes será reprimido con pena privativa de libertad no menor de cuatro ni mayor de seis años, así como la pena de inhabilitación conforme al artículo 36, incisos 1, 2, 3, 4, 6, 8, 9, 10 y 11.
