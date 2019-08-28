@@ -1,0 +1,6 @@
+Artículo 359-C.- Fuentes de financiamiento legalmente prohibidas
+Son fuentes de financiamiento legalmente prohibidas aquellas que provengan de:
+1. Cualquier entidad de derecho público o empresa de propiedad del Estado o con participación de este, distintas del financiamiento público directo o indirecto a las organizaciones políticas.
+2. Los aportes anónimos dinerarios superiores a dos (2) unidades impositivas tributarias.
+3. Personas naturales condenadas con sentencia consentida o ejecutoriada, o con mandato de prisión preventiva vigente por delitos contra la administración pública, tráfico ilícito de drogas, minería ilegal, tala ilegal, trata de personas, lavado de activos o terrorismo, según información obtenida a través del procedimiento de la ley sobre la Ventanilla Única de Antecedentes para Uso Electoral, en lo que resulte aplicable. La prohibición se extiende hasta diez (10) años después de cumplida la condena.
+4. Los que provengan de personas jurídicas nacionales o extranjeras sancionadas penal o administrativamente en el país o en el extranjero por la comisión de un delito, o que se les haya sancionado conforme a lo señalado en la Ley 30424, Ley que regula la responsabilidad administrativa de las personas jurídicas, o se les haya aplicado las consecuencias accesorias previstas en el presente código.
