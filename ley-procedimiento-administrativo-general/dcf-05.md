@@ -1,0 +1,1 @@
+Quinta.- Las competencias otorgadas a la Presidencia del Consejo de Ministros por medio del artículo 48 de la Ley Nº 27444, Ley del Procedimiento Administrativo General, son también aplicables al Sistema Único de Trámites (SUT) para la simplificación de procedimientos y servicios prestados en exclusividad, creado por Decreto Legislativo Nº 1203.

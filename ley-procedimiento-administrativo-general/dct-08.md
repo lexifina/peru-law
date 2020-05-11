@@ -1,0 +1,1 @@
+Octava.- En un plazo de ciento veinte (120) días, contado desde la vigencia del presente Decreto Legislativo, las entidades deberán adecuar los costos de sus procedimientos administrativos y servicios prestados en exclusividad, de acuerdo a lo previsto en el numeral 53.6 del artículo 53 del presente Texto Único Ordenado de la Ley Nº 27444.

@@ -1,0 +1,3 @@
+Quinta.- Difusión de la presente Ley
+Las entidades, bajo responsabilidad de su titular, deberán realizar acciones de difusión, información y capacitación del contenido y alcances de la presente Ley a favor de su personal y del público usuario. Dichas acciones podrán ejecutarse a través de Internet, impresos, charlas, afiches u otros medios que aseguren la adecuada difusión de la misma. El costo de las acciones de información, difusión y capacitación no deberá ser trasladado al público usuario.
+Las entidades en un plazo no mayor a los 6 (seis) meses de publicada la presente Ley, deberán informar a la Presidencia del Consejo de Ministros sobre las acciones realizadas para el cumplimiento de lo dispuesto en el párrafo anterior.

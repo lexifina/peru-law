@@ -1,0 +1,2 @@
+Octava.- Adecuación del Texto Único Ordenado de la Ley Nº 27444, Ley del Procedimiento Administrativo General
+El Ministerio de Justicia y Derechos Humanos, en un plazo no mayor a 60 (sesenta) días hábiles de publicado el presente Decreto Legislativo, incorpora las modificaciones contenidas en la presente norma al Texto Único Ordenado de la Ley del Procedimiento Administrativo General, aprobado por Decreto Supremo N° 006-2017-JUS.

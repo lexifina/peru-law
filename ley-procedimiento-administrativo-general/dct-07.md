@@ -1,0 +1,1 @@
+Sétima.- En un plazo de ciento veinte (120) días, contado desde la vigencia del presente Decreto Legislativo, las entidades deben justificar ante la Presidencia del Consejo de Ministros los procedimientos que requieren la aplicación de silencio negativo, previsto en el artículo 38 del presente Texto Único Ordenado de la Ley Nº 27444.

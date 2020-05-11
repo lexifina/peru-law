@@ -1,0 +1,2 @@
+Primera.- Derogación genérica
+Esta Ley es de orden público y deroga todas las disposiciones legales o administrativas, de igual o inferior rango, que se le opongan o contradigan, regulando procedimientos administrativos de índole general, aquellos cuya especialidad no resulte justificada por la materia que rijan, así como por absorción aquellas disposiciones que presentan idéntico contenido que algún precepto de esta Ley.

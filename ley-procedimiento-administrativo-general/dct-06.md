@@ -1,0 +1,1 @@
+Sexta.- Las entidades tendrán un plazo de sesenta (60) días, contado desde la vigencia del presente Decreto Legislativo, para adecuar sus procedimientos especiales según lo previsto en el numeral 2 del artículo II del Título Preliminar del presente Texto Único Ordenado de la Ley Nº 27444.
