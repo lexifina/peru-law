@@ -1,0 +1,1 @@
+Décimo Primera.- En un plazo de sesenta (60) días hábiles, contados desde la vigencia del presente Decreto Legislativo, se aprobará el Texto Único Ordenado de la Ley Nº 27444, por Decreto Supremo refrendado por el Ministerio de Justicia y Derechos Humanos.

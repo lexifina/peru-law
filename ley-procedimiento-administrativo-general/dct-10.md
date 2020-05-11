@@ -1,0 +1,1 @@
+Décima.- Para la aplicación de la caducidad prevista en el artículo 259 del presente Texto Único Ordenado de la Ley Nº 27444, Ley del Procedimiento Administrativo General, se establece un plazo de un (1) año, contado desde la vigencia del Decreto Legislativo Nº 1272, para aquellos procedimientos sancionadores que a la fecha se encuentran en trámite.

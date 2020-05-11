@@ -1,0 +1,2 @@
+Novena.- Fundamentación del silencio administrativo negativo
+La obligación de fundamentar en una disposición sustantiva la calificación del silencio administrativo negativo en un procedimiento administrativo prevista en el numeral 34.1 de la Ley Nº 27444, Ley del Procedimiento Administrativo General, resulta aplicable para las regulaciones que se aprueben a partir de la entrada en vigencia del presente Decreto Legislativo.
