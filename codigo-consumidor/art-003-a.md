@@ -1,0 +1,2 @@
+Artículo 3-A.- Prohibición de acaparar o especular en situación de emergencia
+Es prohibida toda acción de acaparamiento o especulación de bienes o servicios declarados esenciales en situación de conmoción, calamidad pública o emergencia en el tiempo y zona geográfica que así haya sido declarada por el Poder Ejecutivo mediante decreto supremo, siendo delitos económicos penalizados en los artículos 233 y 234 del Código Penal, aprobado por Decreto Legislativo 635.
