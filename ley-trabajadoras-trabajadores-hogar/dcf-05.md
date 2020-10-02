@@ -1,0 +1,2 @@
+QUINTA. Seguimiento e informe anual
+El Ministerio de Trabajo y Promoción del Empleo publica anualmente e informa en sesión conjunta a la Comisión de Trabajo y Seguridad Social y a la Comisión de Mujer y Familia, en la segunda quincena de marzo de cada año, la información detallada respecto al cumplimiento de la presente ley. Dicho informe debe contener la necesidad de regulación complementaria o modificatoria en caso de ser necesaria.
