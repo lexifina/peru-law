@@ -1,0 +1,2 @@
+Primera.- Reglamentación
+El presente Decreto Legislativo es reglamentado por el Poder Ejecutivo, a través de la Presidencia del Consejo de Ministros y el Ministerio de Trabajo y Promoción del Empleo, en coordinación con la Autoridad Nacional del Servicio Civil, de acuerdo al ámbito de sus competencias, en un plazo no mayor de treinta (30) días calendario, contados a partir del día siguiente de su publicación.
