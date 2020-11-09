@@ -1,0 +1,1 @@
+Segunda.- La presente Ley será reglamentada mediante decreto supremo refrendado por el Ministro de Trabajo y Promoción del Empleo, en el plazo máximo de noventa (90) días calendario a partir de su publicación.

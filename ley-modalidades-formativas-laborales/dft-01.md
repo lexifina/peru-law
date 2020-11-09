@@ -1,0 +1,1 @@
+Primera.- Deróganse el Título I, De la Capacitación para el Trabajo, del Texto Único Ordenado del Decreto Legislativo Nº 728, Ley de Formación y Promoción Laboral, Decreto Supremo Nº 002-97-TR, y las demás normas que se opongan a lo dispuesto en la presente Ley.
