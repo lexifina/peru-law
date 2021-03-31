@@ -1,2 +1,2 @@
-Artículo 182-A. Publicación en los medios de comunicación sobre delitos de libertad sexual contra niñas, niños y adolescentes
+Artículo 129-N. Publicación en los medios de comunicación sobre delitos contra la libertad sexual contra niñas, niños y adolescentes
 El gerente o responsable u otro con poder de decisión sobre las publicaciones o ediciones que autorice o disponga que se difunda pornografía infantil o se publiciten actos que conlleven a la trata o la explotación sexual de niñas, niños y adolescentes será reprimido con pena privativa de libertad no menor de cuatro ni mayor de seis años, así como la pena de inhabilitación conforme al artículo 36, incisos 1, 2, 3, 4, 6, 8, 9, 10 y 11.

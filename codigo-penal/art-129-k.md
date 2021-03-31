@@ -1,4 +1,4 @@
-Artículo 153-I. Beneficio de la explotación sexual de niñas, niños y adolescentes
+Artículo 129-K. Beneficio de la explotación sexual de niñas, niños y adolescentes
 El que, sin participar de los actos de explotación sexual de niña, niño o adolescente, recibe un beneficio económico o de otra índole derivado de dichos actos será reprimido con pena privativa de libertad no menor de diez ni mayor de quince años.
 El consentimiento brindado por el adolescente carece de efectos jurídicos.
 La pena privativa de libertad será no menor de quince ni mayor de veinte años si el agente:

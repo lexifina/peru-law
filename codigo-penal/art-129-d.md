@@ -1,4 +1,4 @@
-Artículo 153-D. Promoción o favorecimiento de la explotación sexual
+Artículo 129-D. Promoción o favorecimiento de la explotación sexual
 El que promueve, favorece o facilita la explotación sexual de otra persona, será reprimido con pena privativa de libertad no menor de diez ni mayor de quince años.
 La pena privativa de libertad será no menor de quince ni mayor de veinte años, cuando:
 1. El agente se aproveche de su calidad de curador o tenga a la víctima bajo su cuidado o vigilancia por cualquier motivo, o tenga con ella un vínculo de superioridad, autoridad, poder o cualquier otra circunstancia que la impulse a depositar su confianza en él.

@@ -1,4 +1,4 @@
-Artículo 153-J. Gestión de la explotación sexual de niñas, niños y adolescentes
+Artículo 129-L. Gestión de la explotación sexual de niñas, niños y adolescentes
 El que dirige o gestiona la explotación sexual de niña, niño o adolescente con el objeto de tener acceso carnal será reprimido con pena privativa de libertad no menor de quince ni mayor de veinte años.
 El consentimiento brindado por el adolescente carece de efectos jurídicos.
 La pena privativa de libertad será no menor de veinte ni mayor de treinta años si el agente:

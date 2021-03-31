@@ -1,4 +1,4 @@
-Artículo 153-G. Gestión de la explotación sexual
+Artículo 129-G. Gestión de la explotación sexual
 El que dirige o gestiona la explotación sexual de otra persona con el objeto de tener acceso carnal será reprimido con pena privativa de libertad no menor de diez ni mayor de quince años.
 La pena privativa de libertad será no menor de quince ni mayor de veinte años, cuando:
 1. El agente tenga a la víctima bajo su cuidado o vigilancia por cualquier motivo, o tenga con ella un vínculo de superioridad, autoridad, poder o cualquier otra circunstancia que la impulse a depositar su confianza en él.

@@ -1,4 +1,4 @@
-Artículo 153-B. Explotación sexual
+Artículo 129-C. Explotación sexual
 El que, mediante violencia, amenaza u otro medio, obliga a una persona a ejercer actos de connotación sexual con la finalidad de obtener un aprovechamiento económico o de otra índole, será reprimido con pena privativa de libertad no menor de diez ni mayor de quince años.
 Si el agente comete el delito mediante engaño, manipulación u otro condicionamiento, se aplicará la misma pena del primer párrafo.
 La pena privativa de libertad será no menor de quince ni mayor de veinte años, cuando:
