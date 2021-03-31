@@ -1,4 +1,4 @@
-Artículo 183-A. Pornografía infantil
+Artículo 129-M. Pornografía infantil
 El que posee, promueve, fabrica, distribuye, exhibe, ofrece, comercializa, publicita, publica, importa o exporta por cualquier medio objetos, libros, escritos, imágenes, videos o audios, o realiza espectáculos en vivo de carácter sexual, en los cuales participen menores de dieciocho años de edad, será sancionado con pena privativa de libertad no menor de seis ni mayor de diez años y con ciento veinte a trescientos sesenta y cinco días multa.
 La pena privativa de libertad será no menor de diez ni mayor de quince años y de cincuenta a trescientos sesenta y cinco días multa cuando:
 1. La víctima tenga menos de catorce años de edad.

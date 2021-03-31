@@ -1,4 +1,4 @@
-Artículo 153-C.- Esclavitud y otras formas de explotación
+Artículo 129-Ñ. Esclavitud y otras formas de explotación
 El que obliga a una persona a trabajar en condiciones de esclavitud o servidumbre, o la reduce o mantiene en dichas condiciones, con excepción de los supuestos del delito de explotación sexual, será reprimido con pena privativa de libertad no menor de diez ni mayor de quince años.
 Si el agente comete el delito mediante engaño, manipulación u otro condicionamiento, se aplicará la misma pena del primer párrafo.
 El consentimiento brindado por el niño, niña o adolescente carece de efectos jurídicos.

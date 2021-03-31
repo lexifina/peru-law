@@ -1,4 +1,4 @@
-Artículo 153-F. Beneficio por explotación sexual
+Artículo 129-F. Beneficio por explotación sexual
 El que, sin participar de los actos de explotación sexual de una persona, recibe un beneficio económico o de otra índole derivado de dichos actos, será reprimido con pena privativa de libertad no menor de seis ni mayor de ocho años.
 La pena privativa de libertad será no menor de ocho ni mayor de catorce años cuando:
 1. El agente sea ascendiente o descendiente por consanguinidad, adopción o por afinidad, pariente colateral hasta el cuarto grado de consanguinidad o adopción, o segundo grado de afinidad; cónyuge, excónyuge, conviviente, exconviviente o tenga hijos en común con la víctima; o habite en el mismo domicilio de la víctima, siempre que no medien relaciones contractuales o laborales.

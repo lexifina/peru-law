@@ -1,4 +1,4 @@
-Artículo 168-B. Trabajo forzoso
+Artículo 129-O. Trabajo forzoso
 El que somete u obliga a otra persona, a través de cualquier medio o contra su voluntad, a realizar un trabajo o prestar un servicio, sea retribuido o no, será reprimido con pena privativa de libertad no menor de seis ni mayor de doce años y multa de cien a doscientos días-multa.
 La pena será privativa de libertad no menor de doce años ni mayor de quince años y multa de doscientos a trescientos días-multa si concurre alguna de las siguientes circunstancias:
 1. El agente tiene a la víctima bajo su cuidado o vigilancia por cualquier motivo, o mantiene con ella un vínculo de superioridad, autoridad, poder u otro que la impulse a depositar su confianza en él.
