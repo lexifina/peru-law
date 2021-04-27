@@ -1,0 +1,2 @@
+Quinta.- Deróganse las Leyes N°s. 2851, 4239, 4916, 5119, 9809, 16629 y 24514; los Decretos Leyes N°s. 14248 y 25921; Capítulo II y Tercera Disposición Transitoria del Decreto Legislativo N° 688, y las demás disposiciones que se opongan a la presente Ley.
+Las Bonificaciones de treinta y veinticinco por ciento a que se refiere el Capítulo II y la Tercera Disposición Transitoria del Decreto Legislativo N° 688, respectivamente, se continuará abonando a los trabajadores que ya habían alcanzado derecho a ellas.

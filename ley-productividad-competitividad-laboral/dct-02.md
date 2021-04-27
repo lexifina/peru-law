@@ -1,0 +1,1 @@
+Segunda.- Interprétase por vía auténtica, que la prestación de servicios de los parientes consanguíneos hasta el segundo grado, para el titular o propietario persona natural, conduzca o no el negocio personalmente, no genera relación laboral; salvo pacto en contrario. Tampoco genera relación laboral, la prestación de servicios del cónyuge.
