@@ -1,0 +1,1 @@
+Sexta.- Derógase asimismo, la Ley N° 8514, los Decretos Leyes N°s. 14218, 18138, 21116, Artículo 4, y demás disposiciones que se opongan a la presente Ley. Déjase igualmente sin efecto el Decreto Supremo N° 014-91-TR. La Resolución Ministerial N° 197-88-TR del 20 de mayo de 1988 continúa vigente en lo que no se oponga a la presente Ley.

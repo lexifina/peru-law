@@ -1,0 +1,1 @@
+Cuarta.- Las solicitudes de cese colectivo que a la fecha de vigencia del Decreto Legislativo N° 855 se encontraban en trámite cualquiera sea su estado, continuarán sustanciándose hasta su conclusión en última instancia, de conformidad con las normas con las que se iniciaron.

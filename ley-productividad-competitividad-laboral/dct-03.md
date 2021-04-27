@@ -1,0 +1,1 @@
+Tercera.- En aplicación de la Octava Disposición Final y Transitoria de la Constitución y a efectos de lo dispuesto en el Artículo 62 de la misma, debe entenderse que la Ley Laboral sustituye a la anterior, salvo que haya sido incorporada al contrato de trabajo por pacto expreso.
