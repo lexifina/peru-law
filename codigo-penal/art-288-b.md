@@ -1,1 +1,2 @@
-Artículo 288°-B.- Uso de productos tóxicos o peligrosos El que fabrica, importa, distribuye o comercializa productos o materiales tóxicos o peligrosos para la salud destinados al uso de menores de edad y otros consumidores, será reprimido con pena privativa de la libertad no menor de cuatro años ni mayor de ocho años.
+Artículo 288-B.- Uso de Productos tóxicos o peligrosos
+El que fabrica, importa, distribuye o comercializa productos, pinturas con presencia y concentración de plomo y otros materiales de revestimiento o materiales tóxicos o peligrosos para la salud destinados al uso de menores de edad y otros consumidores, será reprimido con pena privativa de la libertad no menor de cuatro años ni mayor de ocho años.
