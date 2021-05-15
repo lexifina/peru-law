@@ -1,0 +1,3 @@
+Artículo 262-H.- Sanciones y disposiciones de la CONASEV
+En caso de que la Sociedad incumpla cualquiera de las obligaciones de protección de accionistas minoritarios considerados en la presente Ley o en las disposiciones que emita la CONASEV, ésta aplicará, con criterios de razonabilidad y proporcionalidad, las sanciones administrativas de amonestación y multas no menores de una (1) ni mayores de veinticinco (25) Unidades Impositivas Tributarias.
+La CONASEV aprobará, mediante resolución de directorio, las normas complementarias sobre aplicación de sanciones a infracciones de la presente Ley o disposiciones relativas a la protección de los derechos de los accionistas minoritarios.

@@ -1,0 +1,2 @@
+Artículo 152-A.- Cargo de director
+La persona que sea elegida como director de la sociedad acepta el cargo de director de manera expresa por escrito y legaliza su firma ante notario público o ante juez, de ser el caso. Este documento es anexado a la constitución de la sociedad, o en cuanto acto jurídico se requiera, para su inscripción en la Superintendencia Nacional de los Registros Públicos. Esta disposición rige para directores titulares, alternos, suplentes y reemplazantes según el caso, establecidos en los artículos 156 y 157, respectivamente.

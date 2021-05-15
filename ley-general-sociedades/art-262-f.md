@@ -1,0 +1,5 @@
+Artículo 262-F. Procedimiento de reclamación
+El solicitante al que se le hubiere denegado la entrega de sus acciones o dividendos, de modo expreso o ficto, podrá reclamar este hecho ante la Superintendencia del Mercado de Valores (SMV).
+El reclamo se presentará ante la Sociedad, en un plazo de quince días hábiles contados a partir de la notificación de la denegación de la Sociedad o de la denegatoria ficta. El expediente será elevado a la Superintendencia del Mercado de Valores (SMV), con los documentos necesarios para resolver que obren en poder de la Sociedad, en el término de tres días hábiles. La SMV deberá resolver el reclamo dentro de los noventa días hábiles contados desde que fueron recibidos los documentos remitidos por la Sociedad, sin más trámite que el análisis de los mismos. Dentro de este plazo, la SMV podrá solicitar cualquier documento adicional al interesado y a la Sociedad.
+Los criterios utilizados por la Superintendencia del Mercado de Valores (SMV) al resolver la solicitud deberán ser observados por las sociedades anónimas abiertas en sucesivas peticiones de casos similares.
+
