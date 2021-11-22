@@ -1,0 +1,4 @@
+Primera-A.- De la modificación del artículo 25 del Texto Único Ordenado del Decreto Legislativo núm. 728, Ley de Productividad y Competitividad Laboral
+Adiciónase el literal i) al artículo 25 del Texto Único Ordenado del Decreto Legislativo núm. 728, aprobado por el Decreto Supremo núm. 003-97-TR, Ley de Productividad y Competitividad Laboral, en los términos siguientes:
+Artículo 25.-Falta grave es la infracción por el trabajador de los deberes esenciales que emanan del contrato, de tal índole, que haga irrazonable la subsistencia de la relación. Son faltas graves: (…)
+i) El hostigamiento sexual cometido por los representantes del empleador o quien ejerza autoridad sobre el trabajador, así como el cometido por un trabajador cualquiera sea la ubicación de la víctima del hostigamiento en la estructura jerárquica del centro de trabajo.

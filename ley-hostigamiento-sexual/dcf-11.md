@@ -1,0 +1,3 @@
+Décimo Primera.- Efectos de la Falsa Queja
+El empleador, por el mérito de sentencia firme que declare infundada la queja o demanda de hostigamiento, puede resolver justificadamente el contrato de trabajo con el trabajador privado. Para el caso de los trabajadores sujetos al régimen laboral público, se procederá al cese definitivo.
+En el caso de las instituciones educativas, policiales y militares, el director o la autoridad policial o militar competente, podrá disponer la separación definitiva del alumno o el pase a la situación de disponibilidad o de retiro por medida disciplinaria, según sea el caso.
