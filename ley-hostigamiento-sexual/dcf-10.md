@@ -1,0 +1,2 @@
+Décima.- La falsa queja
+Cuando la queja o demanda de hostigamiento sexual es declarada infundada por resolución firme y queda acreditada la mala fe del demandante, la persona a quien se le imputan los hechos en la queja o demanda tiene expedito su derecho a interponer judicialmente las acciones pertinentes. En este caso, el supuesto hostigado denunciante queda obligado a pagar la indemnización que fije el juez respectivo.
