@@ -1,0 +1,1 @@
+Primera.- Por Decreto Supremo refrendado por el Ministro de Trabajo y Promoción Social se podrán dictar las normas complementarias y reglamentarias para la mejor aplicación del presente Decreto Legislativo.

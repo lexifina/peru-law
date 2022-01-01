@@ -1,0 +1,1 @@
+Segunda.- Deróganse las Leyes 3010, 7515, 8881, 9049, los artículos 9, 10, 11, 13, 15 y 17 del Decreto Ley 10908, la Ley 13683, los Decretos Leyes 18445, 21106 y 21187, la Ley 23222 y demás normas complementarias, reglamentarias y conexas, así como las disposiciones que se opongan al presente Decreto Legislativo.
