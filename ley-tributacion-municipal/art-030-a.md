@@ -1,0 +1,1 @@
+Artículo 30-A.- La administración del impuesto corresponde a las Municipalidades Provinciales, en cuya jurisdicción tenga su domicilio el propietario del vehículo. El rendimiento del impuesto constituye renta de la Municipalidad Provincial.

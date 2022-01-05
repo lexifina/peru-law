@@ -1,0 +1,2 @@
+Artículo 69-A.- Las Ordenanzas que aprueben el monto de las tasas por arbitrios, explicando los costos efectivos que demanda el servicio según el número de contribuyentes de la localidad beneficiada, así como los criterios que justifiquen incrementos, de ser el caso, deberán ser publicadas a más tardar el 31 de diciembre del ejercicio fiscal anterior al de su aplicación.
+La difusión de las Ordenanzas antes mencionadas se realizarán conforme a lo dispuesto por la Ley Orgánica de Municipalidades.
