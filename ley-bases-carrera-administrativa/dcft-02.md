@@ -1,0 +1,1 @@
+Segunda.­ Los servidores públicos en actual servicio serán incorporados a la Carrera Administrativa, en los términos de la presente Ley, en un proceso gradual que tome en cuenta los títulos adquiridos, los estudios realizados, la experiencia reconocida, la evaluación de la actividad laboral, el cargo que desempeña y el tiempo de servicios al Estado.

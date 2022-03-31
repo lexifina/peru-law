@@ -1,0 +1,2 @@
+Tercera.­ La adecuación de las remuneraciones actuales de los servidores de carrera a lo dispuesto en la presente Ley se producirá gradualmente de acuerdo a la disponibilidad presupuestal.
+Los nuevos haberes básicos se constituirán adicionando progresivamente a la remuneración básica, la remuneración transitoria pensionable, y todos los conceptos remunerativos en actual aplicación, cualquiera que sea su denominación, excepto las establecidas por la presente Ley.

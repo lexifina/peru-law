@@ -1,0 +1,3 @@
+Primera. Los funcionarios y servidores públicos comprendidos en regímenes propios de Carrera, regulados por Leyes específicas, continuarán sujetos a su régimen privativo, no obstante lo cual deben aplicárseles las normas de la presente Ley en lo que no se opongan a tal régimen.
+Dichos funcionarios y servidores no podrán tener otro tipo de remuneraciones, bonificaciones y beneficios diferentes a los establecidos en la presente Ley. Por Decreto Supremo y con el voto aprobatorio del Consejo de Ministros se regulará anualmente las remuneraciones correspondientes a cada Carrera específica.
+El personal obrero al servicio del Estado se rige por las normas pertinentes.
