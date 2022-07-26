@@ -1,0 +1,1 @@
+Tercera.- El Ministerio de Trabajo y Promoción del Empleo, queda encargado de elaborar el Reglamento de la Ley de Relaciones Colectivas de Trabajo, que consolide las normas reglamentarias sobre la materia.
