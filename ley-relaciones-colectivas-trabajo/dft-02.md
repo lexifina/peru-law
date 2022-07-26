@@ -1,0 +1,1 @@
+Segunda.- De conformidad con el artículo I del título preliminar del Código Civil, al regularse mediante el presente Texto Único Ordenado íntegramente las materias sobre Libertad Sindical, Negociación Colectiva y Huelga, quedan derogadas todas las disposiciones que se opongan o sean incompatibles con la presente norma.
