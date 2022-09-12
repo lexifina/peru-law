@@ -1,0 +1,2 @@
+SÉPTIMA. Fortalecimiento de competencias digitales para el teletrabajo
+La Presidencia del Consejo de Ministros, a través de la Secretaría de Gobierno y Transformación Digital, en coordinación con el Ministerio de Trabajo y Promoción del Empleo y la Autoridad Nacional del Servicio Civil, según corresponda, articula acciones con las organizaciones del sector privado, sector público, academia y sociedad civil para el fortalecimiento de competencias digitales para el teletrabajo como parte del ejercicio de la ciudadanía digital.

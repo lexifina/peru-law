@@ -1,0 +1,2 @@
+PRIMERA. Adecuación
+Las entidades de la administración pública, las instituciones y empresas privadas que, a la entrada de la vigencia de la presente ley, cuenten con teletrabajadores, así como con servidores y trabajadores bajo la modalidad de trabajo remoto, dispuesta por el Decreto de Urgencia 026-2020 y el Decreto Supremo 010-2020-TR, según corresponda, se adecúan a las disposiciones establecidas en esta en un plazo máximo de 60 días calendario contados a partir del siguiente día de publicado el reglamento.

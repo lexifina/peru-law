@@ -1,0 +1,3 @@
+CUARTA. Reglamentación
+El Poder Ejecutivo emite el reglamento de la Ley del Teletrabajo a propuesta del Ministerio de Trabajo y Promoción del Empleo, en coordinación con la Autoridad Nacional del Servicio Civil y con la Presidencia del Consejo de Ministros, a través de la Secretaría de Gobierno y Transformación Digital, en un plazo máximo de 90 días calendario contados a partir de su entrada en vigor.
+Asimismo, el Poder Ejecutivo adecúa el reglamento de la Ley 28806, Ley General de Inspección del Trabajo, a propuesta del Ministerio de Trabajo y Promoción del Empleo, a las disposiciones de la presente ley en un plazo máximo de 90 días calendario contados a partir de su entrada en vigor.

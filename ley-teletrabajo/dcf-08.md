@@ -1,0 +1,3 @@
+OCTAVA. Implementación de plataformas digitales
+La Secretaría de Gobierno y Transformación Digital de la Presidencia del Consejo de Ministros, en coordinación con la Autoridad Nacional del Servicio Civil, promueven la creación de plataformas digitales necesarias para la implementación de la modalidad de teletrabajo en la administración pública.
+Estas plataformas digitales tienen como propósito gestionar las tareas de cumplimiento de jornada laboral, registro de entregables, avisos y comunicaciones con el teletrabajador, entre otros. Asimismo, la gestión de usuarios, capacitación, supervisión, y aprobación de los procedimientos para su uso, la seguridad, confidencialidad, integridad y disponibilidad de la información.

@@ -1,0 +1,2 @@
+SEXTA. Canal digital de orientación sobre teletrabajo para el ciudadano
+La Presidencia del Consejo de Ministros, a través de la Secretaría de Gobierno y Transformación Digital, en coordinación con el Ministerio de Trabajo y Promoción del Empleo y la Autoridad Nacional del Servicio Civil, según corresponda, implementan y mantienen un canal digital de orientación sobre teletrabajo en la plataforma GOB.PE.
