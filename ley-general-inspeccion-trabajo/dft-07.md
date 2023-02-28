@@ -1,0 +1,1 @@
+Sétima.- El Ministerio de Trabajo y Promoción del Empleo es competente para regular y/o coordinar en materia de migración laboral, específicamente en materia de trabajo, empleo y seguridad social. Está facultado para celebrar convenios con instituciones o entidades públicas y privadas extranjeras en materia de migración laboral.

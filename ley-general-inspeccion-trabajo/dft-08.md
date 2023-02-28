@@ -1,0 +1,1 @@
+Octava.- El Ministerio de Trabajo y Promoción del Empleo y los Gobiernos Regionales están facultados a celebrar convenios en materia de ejecución coactiva, entre ellos, o con otras instituciones públicas.

@@ -1,0 +1,1 @@
+Primera.- A partir de la fecha de entrada en vigor de la presente Ley, los candidatos para el ingreso en la Inspección del Trabajo como Inspectores Auxiliares deberán contar con título profesional y someterse a los procesos selectivos de ingreso previstos en esta Ley.

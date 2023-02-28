@@ -1,0 +1,1 @@
+Décima Cuarta.- El incumplimiento de las funciones por parte de los inspectores del trabajo, previstos en la presente Ley, será merituado y sancionado de conformidad con las normas de carácter administrativo, sin perjuicio de la acción penal a la que hubiere lugar.
