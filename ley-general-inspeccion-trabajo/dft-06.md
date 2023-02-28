@@ -1,0 +1,1 @@
+Sexta.- El resultado de las inspecciones del trabajo tiene naturaleza pública, la Superintendencia Nacional de Fiscalización Laboral - SUNAFILestá facultada para difundir las mismas. Mediante norma aprobada por resolución de superintendencia seestablecerá los medios de difusión, los supuestos de excepción, los órganos competentes, entre otras.

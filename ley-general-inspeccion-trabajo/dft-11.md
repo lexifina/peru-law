@@ -1,0 +1,1 @@
+Undécima.- Con las excepciones previstas, se aplicarán supletoriamente las disposiciones contenidas en la Ley Nº 27444, Ley del Procedimiento Administrativo General, en cuanto no contradigan o se opongan a la presente Ley, en cuyo caso prevalecerán sus propias disposiciones.

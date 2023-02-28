@@ -1,0 +1,3 @@
+Artículo 39-A.- Sanción de cierre temporal del área de una unidad económica o una unidad económica
+La sanción de cierre temporal comprende el área de la unidad económica o la unidad económica en la que se produjo la infracción en materia de seguridad y salud en el trabajo y tiene una duración que no supera los treinta (30) días calendarios. Esta sanción no libera al sujeto inspeccionado del pago de las remuneraciones y beneficios sociales que corresponden a sus trabajadores durante los días de aplicación de la sanción, ni de computar dichos días como efectivamente laborados para todos los efectos legales que correspondan.
+Durante el cierre temporal por sanción, el empleador no se encuentra facultado a otorgar vacaciones a los trabajadores.
