@@ -1,0 +1,2 @@
+Facultad del MEF para modificar la tasa de aporte obligatorio
+Décima.- Por Decreto Supremo refrendado por el Ministro de Economía y Finanzas, con opinión Técnica de la Superintendencia, se podrá modificar la tasa del aporte obligatorio a que se refiere el inciso a) del Artículo 30 de la presente Ley. Cualquier modificación en ese sentido únicamente resultara de aplicación hasta el 31 de diciembre de 1998.

@@ -1,0 +1,3 @@
+Información a los afiliados por CIC inactivas
+Vigésimo Tercera.- La Superintendencia dictará la reglamentación a efectos de que las AFP realicen las acciones de transparencia e información que correspondan y en los medios que se determinen, respecto de aquellos afiliados que tengan cuentas individuales de capitalización que no hayan registrado variaciones en su estado por efecto de nuevos aportes en los últimos seis (6) meses anteriores a la fecha de entrada en vigencia de la presente Ley.
+Asimismo, las AFP deberán actualizar las bases de datos de los registros de los afiliados que tengan cuentas inactivas en el SPP, sobre la base de las instrucciones que le imparta la Superintendencia.

@@ -1,0 +1,5 @@
+De los directores independientes de la AFP
+Artículo 21-C.- Las AFP deberán contar por lo menos con dos directores independientes, entendiendo por ello a aquellos directores que no cuenten con vinculación con la administradora, sus accionistas principales o el grupo económico predominante en la AFP.
+Los directores independientes de las AFP se sujetarán a los patrones de responsabilidad, prudencia y debida diligencia que su cargo les exija así como a los compromisos de información a los afiliados de su administradora bajo los medios más idóneos, según los procedimientos de revelación que determine la Superintendencia, los que en ningún caso, podrán contravenir disposiciones de reserva, secreto comercial o confidencialidad de la información por la participación de las AFP.
+Complementariamente, los directores independientes deberán emitir un informe bajo periodicidad anual al COPAC con propuestas de mejoras al SPP, para su evaluación por dicha entidad.
+La Superintendencia establecerá las disposiciones de carácter general sobre la materia así como acerca de los procesos de designación correspondientes.

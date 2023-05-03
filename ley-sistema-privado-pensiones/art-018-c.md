@@ -1,0 +1,4 @@
+Patrimonios Separados y Contabilidades Separadas
+Artículo 18-C.- Los Fondos administrados por una AFP constituyen un patrimonio independiente y distinto del patrimonio de la AFP y su contabilidad es llevada por separado.
+La AFP no tiene derecho de propiedad sobre los bienes que componen o que se generan por efecto de los Fondos, siendo responsable únicamente de la administración de los mismos y por el otorgamiento de aquellos beneficios autorizados por la presente Ley y en las condiciones que establezca la Superintendencia.
+A efectos del cumplimiento de lo dispuesto en el presente artículo, la AFP deberá llevar contabilidad separada de las operaciones que les son propias como empresa y de las del patrimonio de cada uno de los Tipos de Fondo que administra, de acuerdo a los planes contables que, para tal efecto, apruebe la Superintendencia.

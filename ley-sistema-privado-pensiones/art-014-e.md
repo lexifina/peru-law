@@ -1,0 +1,2 @@
+De la supervisión y control de las entidades centralizadoras
+Artículo 14-E.- La entidad centralizadora se encuentra bajo el ámbito de supervisión y control de la Superintendencia, salvo que la entidad sea la SUNAT. Complementariamente, las acciones de supervisión y control referidas a procesos de licitación que asuman un eventual ingreso de nuevas AFP, así como las acciones que ello conlleve no deberán suponer, en ningún caso, práctica limitante o discriminatoria para acceder a las facilidades que provea la entidad centralizadora de procesos.

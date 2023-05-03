@@ -1,0 +1,1 @@
+Novena.- La Reserva de Fluctuación que se hubiese generado a la fecha de vigencia del Decreto Legislativo N° 874 se reintegrará al Fondo de Pensiones, en número de cuotas que se adquirirán al valor cuota de la fecha de entrada en vigencia del referido Decreto Legislativo.

@@ -1,0 +1,2 @@
+La transferencia de cartera de afiliados
+Artículo 7-F.- En caso la AFP adjudicataria de la licitación transfiera la cartera de afiliados como producto de un proceso de reorganización societaria o bajo cualquier otro título, la entidad adquirente deberá respetar los términos ofrecidos en la licitación, los que deberán hacerse extensivos a todos los afiliados que queden comprendidos bajo su administración.

@@ -1,0 +1,5 @@
+Fondo Educativo del Sistema Privado de Pensiones (FESIP)
+Décimo Sexta.- Créase el Fondo Educativo del Sistema Privado de Pensiones (FESIP), el cual estará a cargo del Consejo de Participación Ciudadana en Seguridad Social, como un instrumento orientado al financiamiento de proyectos educativos previsionales, a fin de promover mayores niveles de cultura previsional.
+La obtención de recursos del FESIP provendrá de donaciones de las AFP y Empresas de Seguros, así como de las multas que cobre la entidad centralizadora a que se refiere el cuarto párrafo del artículo 14-A, por las infracciones que determine. Las características de organización, composición, funcionamiento, mecanismos de aportación y gestión del fondo, serán establecidas en los reglamentos correspondientes.
+Las acciones de financiamiento educativo del FESIP, podrán complementar a las que les corresponda a las AFP en su condición de administradoras de fondos de pensiones.
+La implementación de este Fondo no demandará uso y recursos adicionales del Tesoro Público.

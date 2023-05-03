@@ -1,0 +1,2 @@
+Designación de la Empresa de Seguros
+Tercera.- La facultad de los afiliados a las AFP de designar a la Empresa de Seguros a que hace referencia el Artículo 52 de la presente Ley, sólo puede ser ejercida a partir de los 60 meses de entrada en vigencia del Decreto Ley N° 25897. Durante dicho período, las AFP seleccionarán a las Empresas de Seguros que administran los riesgos de sus afiliados, debiendo para ello utilizar los mecanismos de concurso establecidos por la Superintendencia.

@@ -1,0 +1,3 @@
+Aplicación del Decreto Legislativo N° 887
+Undécima.- Precísese que las referencias contenidas en los Artículos 4 y 40 de la presente Ley, al Régimen de Prestaciones de Salud normado por Decreto Ley N° 22482, se entenderán efectuadas al Seguro Social de Salud a que se refiere el Decreto Legislativo N° 887, a partir de la fecha de su entrada en vigencia.
+En esa misma oportunidad, la referencia incluida en el indicado Artículo 40 a los asegurados obligatorios del Régimen de Prestaciones de Salud se entenderá realizada a los afiliados regulares del Seguro Social de Salud a que se refiere el Decreto Legislativo N° 887.
