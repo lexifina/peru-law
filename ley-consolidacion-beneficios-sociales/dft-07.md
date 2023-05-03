@@ -1,0 +1,1 @@
+SÉTIMA.- Deróganse los artículos 3 y 5 de la Ley 4916, las Leyes 11725, 13002, 23643 y 24504, así como todas aquellas que se opongan a la presente Ley. Déjase sin efecto la Resolución Suprema 036-90-TR de 27 de noviembre de 1990 y el Decreto Supremo 078-90-TR de 19 de diciembre de 1990.

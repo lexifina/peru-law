@@ -1,0 +1,1 @@
+QUINTA.- En caso de los trabajadores obreros ingresados antes del 12 de enero de 1962, la bonificación por tiempo de servicios será computable para la compensación por tiempo de servicios sólo por los años cumplidos a partir del 23 de junio de 1983.

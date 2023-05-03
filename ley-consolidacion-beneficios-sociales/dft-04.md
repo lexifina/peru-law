@@ -1,0 +1,1 @@
+CUARTA.- La bonificación por tiempo de servicios que se ha venido calculando sobre distintos conceptos remuneratorios que los previstos en esta Ley, continuará calculándose en la misma forma, sin que constituya precedente para los nuevos casos en que deba otorgarse este beneficio, salvo convenio expreso o decisión unilateral del empleador en contrario.
