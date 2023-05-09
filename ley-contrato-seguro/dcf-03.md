@@ -1,0 +1,8 @@
+Tercera.
+Sustitúyense los artículos 326 y 328 de la Ley 26702, Ley General del Sistema Financiero y del Sistema de Seguros y Orgánica de la Superintendencia de Banca y Seguros, por los siguientes textos:
+“Artículo 326.- Condiciones y Contenido de las Pólizas
+Las pólizas y tarifas de seguros responden al régimen de libre competencia, con sujeción a las reglas de la presente Ley y lo dispuesto por la Ley del Contrato de Seguro.
+La Superintendencia aprobará expresamente, con anterioridad a su utilización, las condiciones mínimas y/o cláusulas de los contratos de seguro, conforme a lo establecido en el artículo 27 de la Ley del Contrato de Seguro. Asimismo, la Superintendencia ordenará la inclusión de cláusulas o condiciones en las pólizas que promuevan el fortalecimiento de las bases técnicas y económicas del seguro y la protección de los asegurados.
+Artículo 328.- Condiciones y tarifas de seguros a conocimiento de la Superintendencia
+Salvo los casos en que la Superintendencia fije condiciones mínimas y/o cláusulas, los modelos de pólizas, las tarifas y las condiciones resultantes de lo dispuesto en los artículos 9, 326 y 327 no requieren aprobación previa de la Superintendencia, pero deben hacerse de su conocimiento antes de su utilización y aplicación. Dicho organismo está facultado para prohibir la utilización de pólizas redactadas en condiciones que no satisfagan lo señalado en los mencionados artículos.
+Lo dispuesto se aplica de acuerdo a la facultad de la Superintendencia de identificar las cláusulas abusivas y aprobar previamente las condiciones mínimas, y/o cláusulas, conforme a los artículos 27 y 40 de la Ley del Contrato de Seguro y otras normas legales que así lo permitan.”

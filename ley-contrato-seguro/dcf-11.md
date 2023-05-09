@@ -1,0 +1,2 @@
+Decimoprimera.
+Los títulos de los artículos de la presente Ley, son meramente enunciativos y no deben ser tomados en cuenta para su interpretación. Decimosegunda. Los microseguros, por sus características especiales, se sujetan a la regulación sobre la materia emitida por la Superintendencia de Banca, Seguros y Administradoras Privadas de Fondos de Pensiones, en lo que sea aplicable, sin perjuicio de los principios que recoge la presente Ley.
