@@ -1,0 +1,2 @@
+Sétima.
+La participación de los intermediarios y auxiliares de seguros, en la contratación de seguros y en la evaluación y liquidación de siniestros, se rige por la Ley 26702 y sus normas reglamentarias, así como por las disposiciones de la presente Ley en tanto le sean aplicables. La Superintendencia dictará las disposiciones necesarias para una adecuada difusión de información respecto a la actuación de dichos intermediarios y auxiliares en el mercado de seguros.

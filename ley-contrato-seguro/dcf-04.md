@@ -1,0 +1,3 @@
+Cuarta.
+Sin perjuicio de las competencias que corresponden al Indecopi en virtud de la Ley 29571, la Superintendencia, de acuerdo al primer párrafo del artículo 345 de la Ley 26702, promoverá la protección de los intereses de los asegurados no consumidores o usuarios en el sistema de seguros a través de mecanismos legales de defensa del asegurado. Dichos mecanismos contemplarán la conformación de órganos colegiados que se pronuncien de manera vinculante en la solución de controversias entre los asegurados y las empresas que operan bajo la competencia de la Superintendencia en materia de seguros.
+La Superintendencia reglamentará lo establecido en esta disposición, en el plazo de ciento ochenta (180) días de la vigencia de la presente Ley.
