@@ -1,0 +1,1 @@
+Artículo 9-A.- El Ministerio de la Producción establece la clasificación de los recursos hidrobiológicos, según su grado de explotación, en el reglamento de la presente ley. Asimismo, define las medidas de ordenamiento pesquero respectivas para la recuperación de aquellos recursos que se encuentren en condición de sobreexplotación.
