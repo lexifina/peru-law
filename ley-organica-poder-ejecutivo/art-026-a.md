@@ -1,0 +1,2 @@
+Artículo 26-A. Procedimiento para la designación de viceministros
+26-A.1 Para el nombramiento de viceministros se sigue el mismo procedimiento establecido para el caso de los ministros, regulado en el artículo 15-A. 26-A.2 No pueden ser nombrados viceministros en la Presidencia del Consejo de Ministros, en el Ministerio de Defensa o en el Ministerio del Interior, quienes, conforme a la normativa vigente, se encuentren con acusación fiscal o estén siendo juzgados ante el Poder Judicial por delitos de terrorismo o tráfico ilícito de drogas.
