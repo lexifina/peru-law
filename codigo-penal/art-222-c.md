@@ -1,0 +1,2 @@
+Artículo 222-C.- Comercialización de Equipos Terminales Móviles con IMEI lógico o físico alterado, reemplazado, duplicado
+El que tenga bajo su disposición, en exhibición para su distribución, o para la venta o comercialización, equipos terminales móviles, número de línea, o de serie electrónico, o de serie mecánico, o de IMEI lógico o físico, alterado, reemplazado, duplicado o de cualquier modo modificados, será reprimido con pena privativa de libertad no menor de dos ni mayor de cuatro años, e inhabilitación conforme al numeral 4 del artículo 36 del Código Penal.
