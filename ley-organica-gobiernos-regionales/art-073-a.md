@@ -1,0 +1,4 @@
+Artículo 73-A.- Fondo Intergubernamental para la Descentralización (FIDE)
+El Fondo Intergubernamental para la Descentralización (FIDE), administrado por el Consejo Nacional de Descentralización, obtiene sus recursos del 30% de los fondos captados por el proceso de privatización, concesiones y otras modalidades contractuales vinculadas a la administración de activos de alcance nacional propiedad del Estado. Asimismo, podrá recibir fondos provenientes de cooperación no reembolsable y operaciones de endeudamiento que para tal fin concrete el Gobierno Nacional. Los recursos de este fondo fomentarán el desarrollo regional, la integración de las regiones y la realización de proyectos que involucren a varios niveles de gobierno.
+El FIDE es un fondo sostenible y concursable destinado exclusivamente al financiamiento y cofinanciamiento de proyectos.
+Los criterios para el concurso se establecen en una normativa elaborada por el Consejo Nacional de Descentralización.
