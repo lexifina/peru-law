@@ -1,0 +1,5 @@
+Décimo Cuarta.-
+Saneamiento legal de bienes
+Declárase de necesidad y utilidad pública el saneamiento legal de los bienes muebles e inmuebles de los Consejos Transitorios de Administración Regional que serán transferidos a los Gobiernos Regionales. En consecuencia, autorízase a éstos y a los Comités de Transferencia de sus activos y pasivos a proceder al saneamiento legal de los bienes muebles e inmuebles de su propiedad y que están siendo transferidos a los Gobiernos Regionales.
+Los actos y derechos registrales, necesarios para cumplir con el saneamiento legal de los bienes muebles e inmuebles a que se refiere la presente disposición, que se inscriban en las Zonas Registrales de la Superintendencia Nacional de los Registros Públicos, estarán exonerados de cualquier pago por derecho de inscripción u otros correspondientes, incluyendo el pago de derechos municipales, desde la entrada en vigencia de la presente Ley hasta el 31 de diciembre de 2003.
+En un plazo de 30 días a partir de entrar en vigencia la presente Ley, el Poder Ejecutivo dictará las normas reglamentarias necesarias para la aplicación de la presente disposición.
