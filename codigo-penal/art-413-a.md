@@ -1,0 +1,2 @@
+Artículo 413-A: Afectación al sistema de vigilancia electrónica personal
+El que, estando legalmente procesado o condenado bajo la aplicación de vigilancia electrónica personal, daña, destruye, inutiliza el dispositivo electrónico que porta, o bloquea o altera su funcionamiento, para dificultar su ubicación, sustraerse de la persecución penal o a la ejecución de una pena o de otra medida ordenada por la justicia, será reprimido con pena privativa de la libertad no menor de dos ni mayor de cuatro años.
