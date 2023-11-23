@@ -1,0 +1,4 @@
+Artículo 208-A. Formas atenuadas
+En cualquiera de los delitos contra el patrimonio, a excepción de los previstos en los artículos 189 tercer párrafo, 200 noveno párrafo, y 204 numeral 10 del primer párrafo, siempre y cuando el agente no sea reincidente o habitual:
+1. Si el valor del bien no sobrepasa el cinco por ciento de una unidad impositiva tributaria (UIT), o la violencia o amenaza infringida por el agente resultan mínimas o insignificantes, o para la ejecución del delito se emplea armas simuladas o inservibles, se disminuye a la pena concreta, por única vez, un sexto de la pena mínima establecida para el delito.
+2. Si el autor o partícipe hubiere reparado espontáneamente el daño ocasionado o haya devuelto el bien, en igual estado de conservación, al agraviado, se disminuye a la pena concreta, por única vez, un séptimo de la pena mínima establecida para el delito.
