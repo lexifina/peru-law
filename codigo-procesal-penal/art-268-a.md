@@ -1,0 +1,2 @@
+Artículo 268-A.- Vigilancia electrónica personal de carácter preventivo
+En los delitos cuya pena sea no mayor de siete (7) años, el juez aplica preferentemente la vigilancia electrónica personal como medida coercitiva más gravosa. En estos supuestos procede la prisión preventiva por revocación de la medida o al requerir por segunda vez una medida coercitiva personal, luego de haberse aplicado previamente la vigilancia electrónica personal como medida de coerción.
