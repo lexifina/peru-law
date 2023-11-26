@@ -1,0 +1,4 @@
+Artículo 164-A.- Postulación del proceso de alimentos
+La demanda de alimentos se presenta por escrito a través de la Mesa de Partes física o de manera virtual empleando la Mesa de Partes Electrónica. Alternativamente, la demanda puede ser presentada por medio de formularios físicos o electrónicos.
+La parte demandante debe procurar especificar si la parte demandada es un trabajador dependiente o independiente, mencionando el nombre del lugar donde la parte demandada trabaja o ejerce sus labores. La no consignación de esta información no determina, en ningún caso, la inadmisibilidad o la improcedencia de la demanda.
+Adicionalmente, en la demanda del proceso de alimentos se precisa facultativamente el correo electrónico y el número de teléfono celular tanto de la parte demandante como de la parte demandada.

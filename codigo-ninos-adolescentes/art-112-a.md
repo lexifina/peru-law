@@ -1,0 +1,3 @@
+Artículo 112-A.- Autorización especial de viaje de menores
+Cuando uno de los padres se encuentre inscrito en el Registro de Deudores Alimentarios Morosos (REDAM) creado por la Ley 28970, o haya sido condenado con sentencia firme por delito doloso cometido en agravio de sus hijos o en perjuicio de los mismos, sin que se le haya inhabilitado para el ejercicio de la patria potestad, el responsable presentará ante el juzgado correspondiente esta situación a fin de que el juez decida en el plazo máximo de dos días la salida del niño o adolescente sin abrir incidente a prueba ni solicitar la opinión del fiscal, salvo casos excepcionales.
+El supuesto anterior no será aplicable cuando el deudor alimentario moroso haya cancelado la deuda total de la asistencia alimentaria
