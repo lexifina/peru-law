@@ -1,0 +1,1 @@
+Vigésima Sexta.- Los mayores beneficios que corresponden a los Magistrados, de conformidad con el artículo 186 inciso 5), parágrafo c), se harán efectivos progresivamente según las disponibilidades del Presupuesto General de la República, dentro de los cinco años siguientes a la publicación de esta Ley.

@@ -1,0 +1,5 @@
+Trigésima Primera.- Constitúyase una Comisión Multisectorial encargada de revisar las normas que rigen la justicia de paz en el Perú; así como de determinar sus necesidades en infraestructura, la consecuencia de crear una instancia específica para la revisión de sus fallos, y el número de juzgados de paz letrados y no letrados que deben existir en cada distrito judicial, de acuerdo a las necesidades propias de cada uno de ellos. La Comisión Multisectorial deberá proponer al Ministro de Justicia en el plazo improrrogable de 60 días hábiles contados a partir de la fecha de su instalación, los proyectos de normas legales, de ser el caso, así como sus propuestas y recomendaciones con relación a los aspectos señalados en párrafo anterior.
+La Comisión estará integrada por las siguientes personas:
+1) Un representante del Ministerio de Justicia, quien la presidirá;
+2) Un representante del Poder Judicial;
+3) Un representante del Ministerio Público; y, 4) Un representante de las Facultades de Derecho de las Universidades del país, nacionales y privadas, designadas por la Asamblea Nacional de Rectores.

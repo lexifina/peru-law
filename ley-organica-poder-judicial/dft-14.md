@@ -1,0 +1,1 @@
+Décimo Cuarta.- Los actuales Secretarios de Juzgados que no sean letrados y que a la fecha de vigencia de la presente Ley, se encuentran laborando, continúan en sus cargos y gozan de los mismos derechos y beneficios, mientras mantengan la idoneidad requerida.

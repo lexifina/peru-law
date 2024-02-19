@@ -1,0 +1,1 @@
+Vigésima Cuarta.- Lo establecido en los incisos 5) del artículo 184 y 1) del 185, de esta Ley, es aplicable en materia civil, agraria y laboral, teniendo vigencia para los procesos que se inicien con posterioridad a la fecha de su publicación.

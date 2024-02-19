@@ -1,0 +1,5 @@
+Artículo 155-D.- Obligatoriedad de casilla electrónica
+Los abogados de las partes procesales, sean o no de oficio, los procuradores públicos y los fiscales deben consignar una casilla electrónica, la cual es asignada por el Poder Judicial sin excepción alguna.
+El Poder Judicial a través de su Consejo Ejecutivo es el responsable de emitir las disposiciones necesarias para implementar y habilitar la asignación de casillas electrónicas del Poder Judicial, así como las reglas del diligenciamiento de las notificaciones electrónicas.
+La obligatoriedad de consignar casilla electrónica rige para los recursos de casación que se formulen a partir de la vigencia de la presente Ley y, mientras no se disponga dicha obligatoriedad, subsiste la notificación por cédula conforme a las disposiciones del Código Procesal Civil aplicables.
+No son de aplicación las disposiciones de la presente Ley a aquellas personas que litiguen sin defensa cautiva por disposición expresa de la ley, salvo que así lo soliciten.

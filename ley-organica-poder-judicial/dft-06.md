@@ -1,0 +1,1 @@
+Sexta.- Incorpórase al Distrito Judicial de Ucayali, creado por Ley Nº 25147, la zona de Selva de la Provincia de Pachitea que forma la cuenca del río del mismo nombre, en la Región Andrés Avelino Cáceres.

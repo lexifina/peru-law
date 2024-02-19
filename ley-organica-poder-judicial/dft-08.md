@@ -1,0 +1,1 @@
+Octava.- Los procesos disciplinarios iniciados hasta antes de la vigencia de esta Ley, siguen tramitándose conforme a las normas procesales con las que se iniciaron, siempre que sean más favorables al Magistrado, funcionario o trabajador. En todo caso prescribe al año de vigencia de la mencionada ley.
