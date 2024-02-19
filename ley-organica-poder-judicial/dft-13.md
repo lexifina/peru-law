@@ -1,0 +1,3 @@
+Décimo Tercera.- Se reconoce exclusivamente a los Magistrados no ratificados en los años 1980 a 1982, el derecho a participar en los concursos para ocupar cargos judiciales, cumpliendo con los requisitos que las leyes establecen.
+En caso de producirse su reingreso no es de abono para su tiempo de servicios, el transcurrido desde su no ratificación.
+Los Consejos de la Magistratura tienen a la vista, de hallarse disponibles, los antecedentes en los que se fundamentó la no ratificación, disponiendo además la publicación en el Diario Oficial “El Peruano“, o el de mayor circulación local, para los fines que los interesados tengan por conveniente. Esta disposición rige desde el día siguiente de publicada la presente Ley.

@@ -1,0 +1,1 @@
+Vigésima Segunda.- Las incompatibilidades señaladas en el artículo 198 de la presente Ley, rigen a partir de su publicación, sin afectar a los Magistrados que se hallan en ejercicio hasta dicha fecha.

@@ -1,0 +1,1 @@
+Trigésima Tercera.- Quedan derogadas el Decreto Ley Nº 14605, el Decreto Legislativo Nº 612 y todas las normas legales que se opongan al Decreto Legislativo Nº 767 - Ley Orgánica del Poder Judicial - y al Decreto Ley Nº 25869.

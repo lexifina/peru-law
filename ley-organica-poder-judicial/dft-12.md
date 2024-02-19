@@ -1,0 +1,1 @@
+Décimo Segunda.- El Consejo Ejecutivo del Poder Judicial, en el mismo término antes señalado para sus sesiones preparatorias, establece el monto de las cuantías que determina la competencia de los órganos jurisdiccionales en los casos que corresponda de acuerdo a ley. Asimismo actualiza en igual plazo el Cuadro de Términos de la Distancia.

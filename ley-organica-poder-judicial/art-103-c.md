@@ -1,0 +1,10 @@
+Artículo 103-C.- Jueces de control de la Autoridad Nacional de Control del Poder Judicial
+103-C.1 Créase la especialidad de control disciplinario judicial. Sus magistrados son denominados jueces de control y se incorporan mediante concurso público de méritos conducido por la Junta Nacional de Justicia para prestar servicios en la Autoridad Nacional de Control del Poder Judicial. 103-C.2 La Autoridad Nacional de Control del Poder Judicial solo puede estar integrada por jueces de control en el órgano central y en las oficinas descentralizadas, según la distribución que apruebe la jefatura nacional, contando, además, con funcionarios de apoyo para el ejercicio de sus funciones, las cuales deben garantizar la pluralidad de instancia a través de órganos uninominales. 103-C.3 Para ser elegido juez de control es requisito haber aprobado el programa de especialización a cargo de la Academia de la Magistratura.
+103-C.4 Para el caso del juez de control que integre la Autoridad Nacional de Control del Poder Judicial, se debe tener en cuenta lo siguiente:
+a) Trabaja a dedicación exclusiva, con excepción de la docencia universitaria fuera del horario de trabajo.
+b) Es designado por concurso público de méritos con los mismos requisitos, beneficios y derechos de los jueces en la categoría equivalente a la jurisdicción a su cargo; para avocarse a una especialidad distinta, requiere una nueva postulación.
+c) Su perfil y procedimiento de selección son definidos por la Junta Nacional de Justicia.
+d) Presenta obligatoriamente su declaración jurada de bienes y rentas al inicio, durante y a la finalización del ejercicio del cargo.
+e) Recibe los incentivos previstos en la Ley de la Carrera Judicial y un puntaje adicional en sus calificaciones curriculares, entre otros incentivos, por el desempeño adecuado de su función.
+f) Participa activamente en los programas, cursos, talleres o técnicas de especialización correspondientes.
+103-C.5 El juez de control puede ser designado a cualquier sede judicial o cambiado por razones estratégicas o por necesidad del servicio.

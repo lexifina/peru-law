@@ -1,0 +1,1 @@
+Sétima.- La Derrama Judicial, creada por la Ley Nº 24032, queda constituida por las aportaciones de sus beneficiarios, los frutos de sus bienes y capitales y el 10% de lo que se recaude según el artículo 120, no pudiendo afectarse para ella fondos del Erario Nacional.
