@@ -1,0 +1,1 @@
+Primera.- Los establecimientos a que se refiere el artículo 37, los establecimientos dedicados a las actividades comprendidas en los artículos 95 y 96 de la presente Ley, así como las agencias funerarias, velatorios y demás servicios funerarios relacionados con estos, no requieren de autorización sanitaria para su habilitación o funcionamiento.

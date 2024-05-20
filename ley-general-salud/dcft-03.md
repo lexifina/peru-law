@@ -1,0 +1,1 @@
+Tercera.- En los casos de muerte súbita o accidental, y en tanto no se complete el canje de la Libreta Electoral por el Documento Nacional de Identidad al que se refieren las Leyes Nºs. 26497 y 26745, se presume la voluntad positiva del fallecido de donar sus órganos o tejidos para fines de trasplante o injerto, sin que se admita prueba en contrario.

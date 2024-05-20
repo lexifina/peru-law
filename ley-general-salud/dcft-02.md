@@ -1,0 +1,1 @@
+Segunda.- La Autoridad de Salud de nivel nacional determina la tarifa por concepto de registro sanitario, la misma que no podrá exceder del 10% de la Unidad Impositiva Tributaria. Los ingresos provenientes por dicho concepto serán utilizados exclusivamente para las acciones de inspección y control de calidad.

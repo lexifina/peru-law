@@ -1,0 +1,1 @@
+Sexta.- La presente Ley entrará en vigencia a los ciento ochenta (180) días calendario de su publicación, con excepción de los Capítulos III y V del Título Segundo, que rigen desde el día siguiente a la publicación de esta Ley.
