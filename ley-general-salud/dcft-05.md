@@ -1,0 +1,1 @@
+Quinta.- El Ministerio de Salud, en el término máximo de treinta (30) días, contados a partir de la vigencia de la presente ley, presentará, para su aprobación, los reglamentos que se requieran para la ejecución de lo dispuesto por esta ley.
