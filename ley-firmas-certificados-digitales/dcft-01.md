@@ -1,0 +1,1 @@
+Primera.- Mientras se cree el Registro señalado en el Artículo 15, la validez de los actos celebrados por Entidades de Certificación y Entidades de Registro o Verificación, en el ámbito de la presente ley, está condicionada a la inscripción respectiva dentro de los 45 (cuarenta y cinco) días siguientes a la creación el referido Registro.
