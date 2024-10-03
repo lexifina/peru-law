@@ -1,0 +1,3 @@
+Artículo 368-F. Vulneración del inmueble, zona o área declarada intangible alrededor del perímetro de los establecimientos penitenciarios.
+El que indebidamente, edifica, construye, fabrica o establece vivienda, morada, habitación u otro tipo de asentamiento en un bien, zona o área declarada intangible alrededor del perímetro de los establecimientos penitenciarios, será reprimido con pena privativa de libertad no menor de cuatro ni mayor de ocho años.
+La pena privativa de libertad será no menor de cinco ni menor de nueve años cuando el agente coloque o instale ilegalmente antenas transmisoras de internet, telefonía móvil o satelital en la zona, área o bien antes referida.
