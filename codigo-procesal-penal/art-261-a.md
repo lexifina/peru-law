@@ -1,0 +1,2 @@
+Artículo 261-A. Impedimento de la detención preliminar judicial
+El fiscal se encuentra impedido de solicitar detención preliminar judicial contra el personal de la Policía Nacional del Perú en situación de actividad en cuadros que, en el ejercicio de su finalidad constitucional, hace uso de sus armas o medios de defensa en forma reglamentaria y, como consecuencia de ello, acontece alguna lesión o muerte.
