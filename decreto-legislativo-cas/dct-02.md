@@ -1,0 +1,1 @@
+Segunda.- El período de carencia regulado en el artículo 10 de la Ley Nº 26790, Ley de Modernización de la Seguridad Social en Salud, no es exigible a los contratos administrativos de servicios vigentes a la entrada en vigencia de la presente norma.

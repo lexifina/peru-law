@@ -1,0 +1,2 @@
+Artículo 6-B.- Ocupación temporal del puesto de trabajo del trabajador CAS designado
+Mientras dure la designación del trabajador CAS indeterminado para asumir un cargo de confianza o un puesto de dirección, su posición de origen es cubierta mediante un contrato CAS temporal, cuya duración es hasta el término de dicha designación. El incumplimiento de esta disposición genera responsabilidad en el responsable de la oficina de recursos humanos de la entidad.

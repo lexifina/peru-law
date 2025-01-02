@@ -1,0 +1,1 @@
+Primera.- Las entidades a que se refiere la presente norma que tengan celebrados contratos sujetos a sus alcances deberán proceder a los registros pertinentes en ESSALUD, en un plazo no mayor de 30 días calendario contados a partir de su entrada en vigencia.

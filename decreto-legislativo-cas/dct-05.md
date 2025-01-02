@@ -1,0 +1,1 @@
+Quinta.- Mediante decreto supremo refrendado por el Presidente del Consejo de Ministros, se aprobará el Reglamento del presente Decreto Legislativo, dentro de un plazo de sesenta (60) días calendario de su publicación.
