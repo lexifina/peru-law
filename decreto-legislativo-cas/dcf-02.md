@@ -1,0 +1,1 @@
+Segunda.- Las prohibiciones de contratación de servicios no personales reguladas en las normas de presupuesto son aplicables a la contratación administrativa de servicios a que se refiere la presente norma.

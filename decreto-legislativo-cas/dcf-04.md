@@ -1,0 +1,1 @@
+Cuarta.- Las entidades comprendidas en la presente norma quedan prohibidas en lo sucesivo de suscribir o prorrogar contratos de servicios no personales o de cualquier modalidad contractual para la prestación de servicios no autónomos. Las partes están facultadas para sustituirlos antes de su vencimiento, por contratos celebrados con arreglo a la presente norma.
