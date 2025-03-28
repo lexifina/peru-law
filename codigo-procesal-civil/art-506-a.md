@@ -1,0 +1,2 @@
+Artículo 506-A.- Emplazamiento excepcional
+Respecto de la propiedad que tenga más de veinte copropietarios con derechos y acciones debidamente inscritos, el demandante puede acogerse a la figura dispuesta en el literal a) del artículo 24 del Texto Único Ordenado de la Ley Orgánica del Poder Judicial, Decreto Supremo 017-93-JUS. La exoneración de tasas judiciales es para un número mayor de veinte demandados en los procesos de prescripción adquisitiva.
