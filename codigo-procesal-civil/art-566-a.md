@@ -1,0 +1,3 @@
+Artículo 566-A.- Apercibimiento y remisión al Fiscal
+Si el obligado, luego de haber sido notificado para la ejecución de sentencia con calidad de firme, no cumple con el pago de los alimentos, el juez, de oficio y bajo responsabilidad, previa liquidación correspondiente, el requerimiento del cumplimiento del pago y el consentimiento expreso del representante procesal del menor alimentista, remitirá copias certificadas de las piezas procesales pertinentes al fiscal provincial penal de turno, a fin de que proceda con arreglo a sus atribuciones de conformidad con el literal d) del numeral 1 del artículo 446 del Nuevo Código Procesal Penal.
+Dicho acto, sustituye el trámite de interposición de denuncia penal.
