@@ -1,0 +1,2 @@
+CUARTA. Evaluación de los instrumentos de ordenamiento territorial
+La Presidencia del Consejo de Ministros, cada dos años contados desde enero de 2025, evaluará los resultados de la implementación de los diferentes instrumentos de ordenamiento territorial, incluidos los que correspondan a los sistemas listados en el artículo 19 de la presente ley, en coordinación con las entidades responsables de cada uno a fin de determinar su continuidad, mejora e integración en el marco de la articulación y planificación integrada del ordenamiento territorial.

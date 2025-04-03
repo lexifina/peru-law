@@ -1,0 +1,2 @@
+SEGUNDA. Informe de resultados de la Implementación de la Política Nacional de Ordenamiento Territorial
+La PCM informa, en el mes de marzo de cada año, a la Comisión de Descentralización, Regionalización, Gobiernos Locales y Modernización de la Gestión del Estado del Congreso de la República sobre los avances y los resultados de la implementación de la presente ley, así como de la Política Nacional de Ordenamiento Territorial, en los tres niveles de gobierno.

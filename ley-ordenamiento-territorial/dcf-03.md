@@ -1,0 +1,2 @@
+TERCERA. Vinculación con el Sistema Nacional de Planeamiento Estratégico (Sinaplan)
+Las entidades públicas de los tres niveles de gobierno, bajo el ámbito de aplicación de la presente ley, deben considerar la definición, aspectos y principios del ordenamiento territorial en el diseño, gestión y evaluación de las políticas nacionales, los planes y los instrumentos que forman parte del Sistema Nacional de Planeamiento Estratégico (Sinaplan).
