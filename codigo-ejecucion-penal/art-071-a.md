@@ -1,0 +1,3 @@
+Artículo 63-A. Tratamiento penitenciario bajo el sistema de individualización científica
+63-A.1 El tratamiento penitenciario de carácter individualizado, científico e integral, comprende acciones y actividades terapéutico-asistenciales. Está diseñado para abordar situaciones problemáticas vinculadas a aspectos históricos, socioeconómicos, culturales, biológicos y psicológicos, que han influido en la personalidad o conducta delictiva de la persona privada de libertad de 16 a 21 años.
+63-A.2 El tratamiento penitenciario busca mejorar capacidades, desarrollar aptitudes y habilidades, enriquecer conocimientos y compensar carencias para una efectiva reincorporación social.
