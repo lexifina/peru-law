@@ -1,0 +1,3 @@
+SEGUNDA. Aprobación de instrumentos de planificación urbana
+Las municipalidades provinciales formulan sus instrumentos de planificación urbana en concordancia con lo dispuesto en el Reglamento de Acondicionamiento Territorial y Planificación Urbana del Desarrollo Urbano Sostenible, aprobado por el Decreto Supremo 012-2022-VIVIENDA, pudiendo contar con la asistencia técnica del Ministerio de Vivienda, Construcción y Saneamiento.
+Dentro del plazo de noventa días calendario contados a partir de la entrada en vigor de la presente ley, las municipalidades provinciales aprueban los instrumentos de planificación urbana que se encuentren con procesos de consulta pública culminados.

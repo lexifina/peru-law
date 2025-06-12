@@ -1,0 +1,2 @@
+TERCERA. Identificación excepcional de las áreas para el desarrollo de proyectos de VIS
+Excepcionalmente, las municipalidades provinciales que cuenten con zonificación o instrumentos de planificación urbana no actualizados o que no identifiquen las zonas especiales de interés social reguladas en el artículo 48 de la Ley 31313, Ley de Desarrollo Urbano Sostenible, pueden identificar, mediante ordenanza provincial las áreas para el desarrollo de proyectos de VIS, con el sustento respecto al soporte urbanístico suficiente.
