@@ -1,0 +1,2 @@
+DÉCIMA SEXTA. Creación del Fondo de Desarrollo Empresarial del Sector Turismo (FEDETUR)
+Se crea en el MINCETUR el Fondo de Desarrollo Empresarial del Sector Turismo (FEDETUR), destinado a otorgar garantías o administrar instrumentos financieros con el fin de apoyar a las micro, pequeñas y medianas empresas que prestan servicios turísticos en el país, bajo los criterios y las condiciones establecidos en el reglamento operativo que apruebe el MINCETUR para estos efectos.

@@ -1,0 +1,2 @@
+NOVENA. Otorgamiento de la clasificación, categorización o calificación a prestadores de servicios turísticos
+El otorgamiento de la clasificación, categorización o calificación a prestadores de servicios turísticos en los certificados, constancias o cualquier otro documento como producto de la atención de un acto administrativo es de uso exclusivo de los gobiernos regionales a través de sus órganos competentes en materia de turismo.

@@ -1,0 +1,2 @@
+VIGÉSIMA SEXTA. Se dejan sin efecto decretos supremos
+Se deja sin efecto el Decreto Supremo 007-2016-MINCETUR, Decreto Supremo que aprueba el Reglamento de la Ley 30344, Ley que crea la Ventanilla Única de Turismo (VUT), y el Decreto Supremo 042-2016-PCM, Decreto Supremo que crea la Comisión Multisectorial de naturaleza permanente para coadyuvar con la implementación y puesta en funcionamiento de la Ventanilla Única de Turismo – VUT, y demás normas de desarrollo.

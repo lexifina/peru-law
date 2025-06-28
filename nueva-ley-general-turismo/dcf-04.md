@@ -1,0 +1,2 @@
+CUARTA. Fortalecimiento de la potestad sancionadora en materia ambiental del sector turismo
+Se faculta al MINCETUR, como ente rector del sector turismo, para aprobar la graduación y tipificación de infracciones y escalas de sanciones vinculadas con los proyectos y actividades turísticas, mediante decreto supremo y con la opinión previa favorable del Ministerio del Ambiente, la cual es de aplicación por los gobiernos regionales en cuanto tengan las competencias transferidas.

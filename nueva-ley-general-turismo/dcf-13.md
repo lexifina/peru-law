@@ -1,0 +1,3 @@
+DÉCIMA TERCERA. Nueva denominación del Plan COPESCO Nacional y su adecuación en el Reglamento de Organización y Funciones del Ministerio de Comercio Exterior y Turismo
+El Plan COPESCO Nacional, órgano desconcentrado del Ministerio de Comercio Exterior y Turismo, se denomina, desde la entrada en vigor de la presente ley, Unidad Ejecutora de Inversión en Comercio Exterior y Turismo (UICET).
+El MINCETUR, en un plazo de ciento veinte días calendario contados a partir de la publicación de la presente ley en el diario oficial El Peruano, modifica su Reglamento de Organización y Funciones, aprobado mediante el Decreto Supremo 005-2002-MINCETUR, a efectos de adecuar la denominación del Plan COPESCO Nacional a Unidad Ejecutora de Inversión en Comercio Exterior y Turismo.

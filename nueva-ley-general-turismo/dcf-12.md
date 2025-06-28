@@ -1,0 +1,2 @@
+DÉCIMA SEGUNDA. Autorización para suscribir convenios de administración de recursos
+Se autoriza al MINCETUR y a sus unidades ejecutoras, así como a sus órganos adscritos, a suscribir convenios de administración de recursos y, cuando corresponda, sus respectivas adendas con organismos internacionales, bajo las disposiciones de la Ley 30356, Ley que fortalece la transparencia y el control en los convenios de administración de recursos con organizaciones internacionales, y su reglamento.

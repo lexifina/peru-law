@@ -1,0 +1,4 @@
+DÉCIMA NOVENA. Comisión de alto nivel para promocionar la comida peruana
+Se crea una comisión de alto nivel para la promoción de la cocina peruana, con el objetivo de diseñar políticas y programas específicos para fortalecer la identidad de la gastronomía nacional, promover el emprendimiento en el sector de restaurantes y fomentar la capacitación de capital humano especializado.
+Esta comisión también debe desarrollar un directorio nacional e internacional de restaurantes, destacando su aporte al producto bruto interno (PBI) regional y nacional, y su rol en la exportación de productos alimenticios peruanos.
+Esta comisión está integrada por representantes del MINCETUR, PROMPERU, Ministerio de Cultura y Ministerio de Relaciones Exteriores, así como por representantes de la sociedad civil relacionados a la gastronomía y reconocidos chefs peruanos.

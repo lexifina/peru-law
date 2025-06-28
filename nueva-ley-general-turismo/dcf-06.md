@@ -1,0 +1,2 @@
+SEXTA. Medidas para promover la simplificación administrativa en el sector turismo
+El MINCETUR promueve e implementa acciones concretas para promover la simplificación y gestión de procedimientos administrativos en el sector turismo, en concordancia con el Texto Único Ordenado de la Ley 27444, Ley del Procedimiento Administrativo General, aprobado mediante el Decreto Supremo 004-2019-JUS, así como con el marco legal vigente.

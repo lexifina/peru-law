@@ -1,0 +1,3 @@
+VIGÉSIMA OCTAVA. Participación obligatoria de operadores turísticos locales
+Con el fin de promover el desarrollo inclusivo y sostenible del sector turístico, se establece la participación obligatoria de los operadores turísticos locales en ferias, campañas de promoción y demás actividades oficiales de difusión turística organizadas o auspiciadas por entidades públicas del sector.
+La participación de los operadores locales no podrá ser inferior al treinta por ciento (30 %) del total de participantes en cada evento o iniciativa promocional, debiendo priorizarse a aquellos debidamente registrados y con presencia activa en las zonas geográficas directamente vinculadas al destino o producto.

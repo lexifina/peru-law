@@ -1,0 +1,2 @@
+OCTAVA. Promoción de proyectos de inversión pública y privada de sistemas de transporte por cable en el ámbito del turismo
+El MINCETUR lidera y promueve las inversiones públicas y privadas a través de la identificación, formulación, evaluación y promoción de proyectos turísticos que incluyan dentro de sus componentes el sistema de transporte por cable en el ámbito de un destino turístico. También difunde los esquemas de financiamiento mixtos que consideren inversión pública o privada u otro mecanismo de promoción de la inversión privada.

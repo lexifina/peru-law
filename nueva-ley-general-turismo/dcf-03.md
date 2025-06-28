@@ -1,0 +1,2 @@
+TERCERA. Régimen excepcional para los desembarcaderos pesqueros artesanales
+Excepcionalmente, los desembarcaderos pesqueros artesanales que, a la fecha de la promulgación de la presente ley, estén operando y que requieran brindar servicios complementarios de embarque y desembarque de pasajeros para transporte turístico acuático deben adecuarse conforme a las disposiciones establecidas por el Ministerio de la Producción, según las condiciones de infraestructura que establezca el Ministerio de Comercio Exterior y Turismo (MINCETUR).
