@@ -1,0 +1,8 @@
+Séptima.
+Grupo de Trabajo
+Constitúyese el Grupo de Trabajo encargado de realizar el cierre presupuestal, patrimonial, administrativo, de personal y financiero de la Asamblea Nacional de Rectores (ANR) y su Consejo Nacional para la Autorización de Funcionamiento de Universidades (CONAFU), en el que participarán:
+a) Un representante del Ministerio de Educación, que la presidirá.
+b) Un representante de la Asamblea Nacional de Rectores.
+c) Un representante de la Superintendencia Nacional de Bienes Estatales.
+El Grupo de Trabajo antes señalado, se instalará en un plazo no mayor de 10 (diez) días mediante resolución ministerial del Sector Educación. Instalado el Grupo de Trabajo, tendrá un plazo no mayor de 90 (noventa) días para realizar el cierre presupuestal, patrimonial, administrativo, de personal y financiero, luego de lo cual se extinguirán la Asamblea Nacional de Rectores y su Consejo Nacional para la Autorización de Funcionamiento de Universidades. Los trabajadores sujetos al régimen del Decreto Legislativo 276, serán incorporados al Ministerio de Educación, bajo el mismo régimen. La SUNEDU asume la administración y pago de las pensiones de los pensionistas de la Asamblea Nacional de Rectores pertenecientes al régimen pensionario regulado por el Decreto Ley 20530, para cuyo efecto, en un plazo no mayor a 60 días, deberá procederse a la transferencia del fondo previsional respectivo, del acervo documentario y los legajos de los referidos pensionistas.
+Facúltase al Ministerio de Educación para que mediante resolución ministerial amplíe, de ser necesario, el plazo señalado para el cierre antes referido, así como para establecer las disposiciones que estime pertinentes para el cumplimiento de lo dispuesto en la presente disposición.
