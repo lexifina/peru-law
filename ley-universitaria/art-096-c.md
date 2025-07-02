@@ -1,0 +1,2 @@
+Artículo 96-C. Subsidio por luto y sepelio
+El docente ordinario tiene derecho a subsidio por luto y sepelio al fallecer su cónyuge o conviviente reconocido judicialmente, padres o hijos. Si fallece el docente ordinario, su cónyuge, hijos, padres o hermanos, en esa prelación y en forma excluyente, tienen derecho al subsidio. El Poder Ejecutivo, a propuesta del Ministerio de Educación, establece el monto único por este subsidio.

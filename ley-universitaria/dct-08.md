@@ -1,0 +1,3 @@
+Octava.
+Transferencia presupuestal
+Una vez concluido el cierre presupuestal a que se refiere la Disposición Complementaria Transitoria precedente, dispónese la transferencia de los recursos presupuestales del pliego Asamblea Nacional de Rectores a la SUNEDU, la que será aprobada mediante decreto supremo refrendado por el Ministro de Economía y Finanzas y el Ministro de Educación, a propuesta de este último. Adicionalmente, el Ministerio de Educación podrá transferir en el presente año fiscal los recursos presupuestales necesarios para su funcionamiento, la que será aprobada mediante decreto supremo refrendado por el Ministro de Economía y Finanzas y el Ministro de Educación, a propuesta de este último.

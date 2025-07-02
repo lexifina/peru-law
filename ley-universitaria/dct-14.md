@@ -1,0 +1,3 @@
+Décima Cuarta.
+Bachillerato automático
+Los estudiantes que hayan aprobado los estudios de pregrado en las escuelas profesionales, tanto de universidades públicas como privadas, durante los años académicos 2020, 2021, 2022 y 2023, incluido el ciclo académico 2023-2, accederán a su solicitud y en forma automática a la obtención del grado académico de Bachiller, exonerándoseles de los demás requisitos establecidos en el numeral 45.1 del artículo 45 de la presente ley. Esta norma es de carácter excepcional y su vigencia está establecida en el primer párrafo de la presente disposición complementaria transitoria.

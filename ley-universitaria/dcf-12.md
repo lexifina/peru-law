@@ -1,0 +1,8 @@
+Décimo Segunda.
+Reorganización de la universidad pública con licencia institucional denegada
+El Ministerio de Educación conforma una Comisión Reorganizadora en las universidades públicas con licencia institucional denegada, en los siguientes casos:
+a) Cuando una universidad pública con licencia institucional denegada no implementa las disposiciones y acciones para el cumplimiento del Plan de Emergencia aprobado por el Ministerio de Educación, orientado a alcanzar las condiciones básicas de calidad durante el plazo máximo de cese de actividades.
+b) Cuando la universidad pública con licencia institucional denegada, no obtiene la licencia institucional en una segunda oportunidad.
+La Comisión Reorganizadora asume la conducción y dirección de la universidad pública por un periodo máximo dos (2) años, contados a partir de su conformación, cesando en sus funciones todas las autoridades universitarias, quienes retornan a sus plazas de docentes ordinarios, en la categoría y régimen de dedicación correspondiente. La designación de los miembros de la Comisión Reorganizadora se realiza mediante Resolución del Titular del Ministerio de Educación. El presidente de la Comisión Reorganizadora ejerce la titularidad del pliego presupuestario, durante la vigencia de su designación.
+Obtenido el licenciamiento institucional, la Comisión Reorganizadora conforma el Comité Electoral señalado en el artículo 72 de la presente Ley, que tendrá a su cargo organizar, conducir y controlar el proceso electoral para la elección de las autoridades universitarias.
+Las normas complementarias necesarias para la implementación de lo dispuesto en la presente disposición se aprueban mediante Resolución del Titular del Ministerio de Educación.
