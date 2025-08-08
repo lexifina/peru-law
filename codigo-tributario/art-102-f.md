@@ -1,0 +1,3 @@
+Artículo 102-F.- INTERCAMBIO DE INFORMACIÓN MEDIANTE FISCALIZACIONES SIMULTÁNEAS Y EN EL EXTRANJERO
+En aplicación de los convenios internacionales, la SUNAT puede acordar, con una o más autoridades competentes, examinar simultáneamente, cada una en su propio territorio y aplicando su normativa interna, la situación fiscal de un(os) sujeto(s), con la finalidad de intercambiar información relevante. Para tal efecto, puede acordar con las referidas autoridades los lineamientos y las acciones de fiscalización a realizar.
+También puede acordar que en la fiscalización se encuentren presentes los representantes de la autoridad competente.
