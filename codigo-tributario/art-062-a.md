@@ -1,0 +1,17 @@
+Artículo 62-A.- PLAZO DE LA FISCALIZACIÓN DEFINITIVA
+1. Plazo e inicio del cómputo: El procedimiento de fiscalización que lleve a cabo la Administración Tributaria debe efectuarse en un plazo de un (1) año, computado a partir de la fecha en que el deudor tributario entregue la totalidad de la información y/o documentación que fuera solicitada por la Administración Tributaria, en el primer requerimiento notificado en ejercicio de su facultad de fiscalización. De presentarse la información y/o documentación solicitada parcialmente no se tendrá por entregada hasta que se complete la misma.
+2. Prórroga: Excepcionalmente dicho plazo podrá prorrogarse por uno adicional cuando:
+a) Exista complejidad de la fiscalización, debido al elevado volumen de operaciones del deudor tributario, dispersión geográfica de sus actividades, complejidad del proceso productivo, entre otras circunstancias.
+b) Exista ocultamiento de ingresos o ventas u otros hechos que determinen indicios de evasión fiscal.
+c) Cuando el deudor tributario sea parte de un grupo empresarial o forme parte de un contrato de colaboración empresarial y otras formas asociativas.
+3. Excepciones al plazo: El plazo señalado en el presente artículo no es aplicable en el caso de procedimientos de fiscalización efectuados por aplicación de las normas de precios de transferencias o en los procedimientos de fiscalización definitiva en los que corresponda remitir el informe a que se refiere el artículo 62-C al Comité Revisor.
+4. Efectos del plazo: Un vez transcurrido el plazo para el procedimiento de fiscalización a que se refiere el presente artículo no se podrá notificar al deudor tributario otro acto de la Administración Tributaria en el que se le requiera información y/o documentación adicional a la solicitada durante el plazo del referido procedimiento por el tributo y período materia del procedimiento, sin perjuicio de los demás actos o información que la Administración Tributaria pueda realizar o recibir de terceros o de la información que ésta pueda elaborar.
+5. Vencimiento del plazo: El vencimiento del plazo establecido en el presente artículo tiene como efecto que la Administración Tributaria no podrá requerir al contribuyente mayor información de la solicitada en el plazo a que se refiere el presente artículo; sin perjuicio de que luego de transcurrido éste pueda notificar los actos a que se refiere el primer párrafo del artículo 75, dentro del plazo de prescripción para la determinación de la deuda.
+6. Suspensión del plazo: El plazo se suspende:
+a) Durante la tramitación de las pericias.
+b) Durante el lapso que transcurra desde que la Administración Tributaria solicite información a autoridades de otros países hasta que dicha información se remita.
+c) Durante el plazo en que por causas de fuerza mayor la Administración Tributaria interrumpa sus actividades.
+d) Durante el lapso en que el deudor tributario incumpla con la entrega de la información solicitada por la Administración Tributaria.
+e) Durante el plazo de las prórrogas solicitadas por el deudor tributario.
+f) Durante el plazo de cualquier proceso judicial cuando lo que en él se resuelva resulta indispensable para la determinación de la obligación tributaria o la prosecución del procedimiento de fiscalización, o cuando ordena la suspensión de la fiscalización.
+g) Durante el plazo en que otras entidades de la Administración Pública o privada no proporcionen la información vinculada al procedimiento de fiscalización que solicite la Administración Tributaria.

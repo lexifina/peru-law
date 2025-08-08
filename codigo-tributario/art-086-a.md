@@ -1,0 +1,4 @@
+Artículo 86-A.- OBLIGACIONES DE LA SUNAT PARA EFECTO DE LAS ACTUACIONES O PROCEDIMIENTOS TRIBUTARIOS QUE SE REALICEN A TRAVÉS DE SISTEMAS ELECTRÓNICOS, TELEMÁTICOS E INFORMÁTICOS
+Para efecto de las actuaciones o procedimientos tributarios que se realicen a través de sistemas electrónicos, telemáticos e informáticos, la SUNAT deberá:
+1. Asignar la CLAVE SOL que permita acceder al buzón electrónico a todos los sujetos que deban inscribirse en sus registros, que le permita realizar, de corresponder, la notificación de sus actos por el medio electrónico a que se refiere el inciso b) del artículo 104.
+2. Almacenar, archivar y conservar los documentos que formen parte del expediente electrónico, de acuerdo a la resolución de superintendencia que se apruebe para dicho efecto, garantizando el acceso a los mismos de los interesados.

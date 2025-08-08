@@ -1,0 +1,9 @@
+Artículo 102-B.- INTERCAMBIO DE INFORMACIÓN - ASPECTOS GENERALES
+a) La información a que se refiere el artículo 85 es materia de intercambio con la autoridad competente.
+b) La información presentada por las empresas del sistema financiero nacional, conforme a lo dispuesto en el numeral 15.3 del artículo 87, es materia de intercambio con la autoridad competente.
+c) La transferencia de la información, que realice la SUNAT a la autoridad competente, que corresponda a información calificada como datos personales por la Ley Nº 29733, Ley de Protección de Datos Personales, está comprendida dentro de la autorización legal a que se refiere el numeral 1 del artículo 14 de la citada ley.
+d) La información que otro Estado proporcione a la SUNAT en virtud del intercambio de información debe ser utilizada para sus fines como administración tributaria, conforme a su competencia.
+e) Para efecto de la notificación de los documentos necesarios para obtener la información a intercambiar se considera que la mención a deudor tributario que se realiza en los artículos 104 y 105 incluye a aquellos sujetos a los que se les requiere información con solo el fin de atender las obligaciones derivadas de la normativa de asistencia administrativa mutua tributaria.
+En caso que el sujeto o tercero del cual se deba obtener la información no hubiera o no se encuentre obligado a fijar domicilio fiscal, se considera como tal, para efecto de la aplicación del artículo 104, a aquel domicilio informado por la autoridad competente, siempre que la dirección exista.
+Lo dispuesto en el presente inciso también es de aplicación para efecto de lo dispuesto en los demás artículos del presente título.
+f) La SUNAT no se encuentra obligada a solicitar información a la autoridad competente, a solicitud de un administrado.
