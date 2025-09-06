@@ -1,5 +1,6 @@
 Consejo de Participación Ciudadana en Seguridad Social (COPAC)
-Décimo Sétima.- Créase el Consejo de Participación Ciudadana en Seguridad Social (COPAC), el cual canaliza la participación de los usuarios del Sistema Privado de Pensiones.
-Dicho Consejo, tendrá como función centralizar propuestas ciudadanas sobre mejoras al Sistema Privado de Pensiones en el Perú en materias relacionadas, fundamentalmente, a labores de educación y profundización de conocimientos en dicha materia.
-Las características de organización, composición, funcionamiento, financiamiento y gestión del COPAC, serán establecidos por disposiciones reglamentarias de la Superintendencia.
-La implementación y funcionamiento del COPAC no demandarán uso y recursos adicionales del Tesoro Público.
+DÉCIMO SÉTIMA. Se crea el Consejo de Participación Ciudadana en Seguridad Social (COPAC), el cual canaliza la participación de los usuarios del Sistema Privado de Pensiones.
+El COPAC comprende a representantes de las entidades sin fines de lucro cuya finalidad esté orientado al tratamiento de los temas de la pobreza en la vejez, mejoras del mercado demográfico o laboral, generación de mejoras en el tratamiento de las inversiones y gestión de sus riesgos, así como de los beneficios que provee el SPP; colegios profesionales cuyas materias tengan relación con la seguridad social, universidades cuyas carreras universitarias a nivel de grado y postgrado tengan relación con la materia, entre otros.
+Dicho Consejo tiene como función, según la materia que se trate, centralizar, canalizar o discutir propuestas ciudadanas que se sometan a su consideración, acerca de oportunidades de mejoras al Sistema Privado de Pensiones en el Perú en materias relacionadas, fundamentalmente, a labores de educación y profundización de conocimientos en dicha materia.
+Las características de organización, composición, funcionamiento, financiamiento y gestión del COPAC son establecidas por disposiciones reglamentarias de la Superintendencia.
+La implementación y el funcionamiento del COPAC no demandan uso y recursos adicionales del Tesoro Público.
