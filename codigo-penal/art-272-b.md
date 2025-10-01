@@ -1,0 +1,2 @@
+Artículo 272-B.- Comercialización ilegal de servicios públicos móviles
+El que ofrezca, promocione, comercialice o realice contrataciones de servicios públicos móviles de forma ambulatoria o en la vía pública, salvo aquellos casos que la norma lo autorice, será reprimido con pena privativa de libertad no menor de uno ni mayor de cuatro años y con una multa de trescientos sesenta y cinco a setecientos treinta días-multa.
