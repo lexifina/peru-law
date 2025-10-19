@@ -1,0 +1,5 @@
+Artículo 60-A.- Obligaciones de los medios de transporte interprovincial
+Las empresas de transporte interprovincial, sus propietarios y/o sus operadores del medio de transporte según correspondan deben:
+a. Transportar pasajeros en situación migratoria regular. Para dicho efecto, las empresas de transporte interprovincial podrán consultar a través del uso de tecnologías que facilite MIGRACIONES de acuerdo a las disposiciones que MIGRACIONES establezca en el reglamento.
+b. Verificar que las personas extranjeras sean pasajeros, conductores y/o, personal que lo acompaña en el servicio, cuenten con los documentos de identidad y/o de viaje, válidos y vigentes.
+c. Permitir a MIGRACIONES el acceso a la información de las personas extranjeras, sean pasajeros, conductores, así como el personal que lo acompaña en el servicio, para que efectúe labores de fiscalización y verificación migratoria. La Policía Nacional del Perú también tiene acceso a dicha información cuando esta intervenga. MIGRACIONES puede brindar esta información a otras entidades cuando le sea requerido.

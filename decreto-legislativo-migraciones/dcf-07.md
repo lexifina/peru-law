@@ -1,0 +1,3 @@
+Sétima.- Seguridad nacional
+MIGRACIONES puede realizar actividades de fiscalización y control para verificar el cumplimiento de las obligaciones establecidas en la presente norma. Para tal efecto, cuenta con el apoyo de la Policía Nacional del Perú.
+La información contenida en el RIM, dentro de los alcances de la normativa vigente, puede ser objeto de procesamiento y análisis para detectar y prevenir la circulación internacional de personas que puedan atentar contra la seguridad nacional o el orden público y para coadyuvar en la implementación de acciones contra el tráfico ilícito de migrantes, la trata de personas, los delitos relacionados con el crimen organizado transnacional, el terrorismo y otras actividades relacionadas.

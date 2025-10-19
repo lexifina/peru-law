@@ -1,0 +1,2 @@
+Décimo Primera.- Participación en Acuerdos o Tratados en materia migratoria
+En los acuerdos o tratados internacionales a cargo del Ministerio de Relaciones Exteriores que aborden temas migratorios, MIGRACIONES participa en las negociaciones en su calidad de autoridad migratoria. Las autoridades migratorias comunican sobre la negociación y suscripción de convenios interinstitucionales en materia migratoria, que consideren celebrar con entidades públicas extranjeras.

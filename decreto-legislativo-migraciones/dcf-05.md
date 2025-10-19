@@ -1,0 +1,2 @@
+Quinta.- Adecuación del Reglamento de Organización y Funciones de MIGRACIONES
+MIGRACIONES presentará la propuesta de modificación del Decreto Supremo Nº 005-2013-IN, que aprobó el Reglamento de Organización y Funciones de la Superintendencia Nacional de Migraciones (MIGRACIONES) y su modificatoria, adecuándolo a las disposiciones contenidas en el presente Decreto Legislativo, en un plazo no mayor de sesenta (60) días calendarios.

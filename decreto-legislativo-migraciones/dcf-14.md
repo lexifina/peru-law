@@ -1,0 +1,2 @@
+Décimo Cuarta.- Datos personales proporcionados por los administrados
+La declaración o consignación del correo electrónico que realice el administrado en el marco de un procedimiento o servicio ante MIGRACIONES autoriza automáticamente a la entidad para que lo notifique a dicho correo de cualquier acto del procedimiento iniciado o de otros procedimientos que se den a futuro. Los datos personales que declaran los administrados son considerados ciertos y vigentes.

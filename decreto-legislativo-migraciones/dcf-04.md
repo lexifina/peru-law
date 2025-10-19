@@ -1,0 +1,2 @@
+Cuarta.- Deber de Colaboración
+La Policía Nacional del Perú - PNP, la Autoridad Portuaria Nacional - APN o la Dirección General de Aeronáutica Civil - DGAC, a solicitud de MIGRACIONES, puede impedir el ingreso o la salida del medio de transporte en el que viajen personas que no cumplan las disposiciones del presente Decreto Legislativo y su Reglamento, y pueden retenerlos dentro del país por el tiempo establecido en la legislación nacional vigente.
