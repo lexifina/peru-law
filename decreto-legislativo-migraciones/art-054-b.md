@@ -1,0 +1,2 @@
+Artículo 54-B.- Sanción aplicable por el Ministerio de Relaciones Exteriores
+El Ministerio de Relaciones Exteriores impone la sanción administrativa de multa en los términos establecidos en el literal a del artículo 54 del presente Decreto Legislativo, y conforme a lo dispuesto en el Reglamento y las excepciones previstas en las normas e instrumentos internacionales de los que el Perú es parte. En los supuestos no contemplados en el presente artículo, la aplicación de las sanciones administrativas corresponde a MIGRACIONES.

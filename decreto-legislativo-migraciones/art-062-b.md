@@ -1,0 +1,5 @@
+Artículo 62-B.- De las conductas infractoras y sanciones para los medios de transporte interprovincial
+Son sancionadas con multa las siguientes conductas de los Medios de Transporte Interprovincial:
+a. Transportar pasajeros extranjeros que se encuentren en situación migratoria irregular, salvo que su traslado corresponda a una disposición de una autoridad competente o se encuentre en riesgo la vida de la persona o por aplicación del principio de interés superior del niño, niña y adolescente.
+b. Transportar a los extranjeros sean estos pasajeros, conductores y/o personal que lo acompaña en el servicio, que no cuenten con los documentos de identidad y/o de viaje, válidos y vigentes, salvo que su traslado corresponda a una disposición de una autoridad competente o se encuentre en riesgo la vida de la persona o por aplicación del principio de interés superior del niño, niña y adolescente.
+c. No permitir a MIGRACIONES y a la PNP, cuando esta última intervenga, el acceso a la información de los extranjeros sean estos pasajeros, conductores, así como el personal que lo acompaña en el servicio, para que efectúe labores de fiscalización y verificación migratoria.

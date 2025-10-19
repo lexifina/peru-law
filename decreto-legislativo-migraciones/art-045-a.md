@@ -1,0 +1,2 @@
+Artículo 45-A. Certificado de movimiento migratorio
+El certificado de movimiento migratorio es el documento en el que está consignada la información de los ingresos y de las salidas del territorio nacional de peruanos y de extranjeros registrados en MIGRACIONES. Este certificado es expedido por la autoridad migratoria, es de carácter público y puede ser solicitado por cualquier persona mayor de edad que posea documento de identidad.

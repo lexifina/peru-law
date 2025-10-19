@@ -1,0 +1,2 @@
+Artículo 56-A.- Infracción de extranjeros sancionada por el Ministerio de Relaciones Exteriores
+Es conducta infractora pasible de multa, cuyo monto debe ser calculado, permanecer en el territorio nacional fuera del plazo otorgado por el Ministerio de Relaciones Exteriores, al momento de solicitar un procedimiento que le permita encontrarse en situación migratoria regular, bajo las calidades migratorias que otorgue esta autoridad migratoria. Para tales efectos se habilita al Ministerio de Relaciones Exteriores a desarrollar los supuestos de infracción en el Reglamento.
