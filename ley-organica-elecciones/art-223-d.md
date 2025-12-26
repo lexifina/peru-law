@@ -1,0 +1,2 @@
+Artículo 223-D.- Instalación de las mesas de sufragio digital y horario de votación
+La instalación de las mesas de sufragio digital y el horario de votación se rigen en lo aplicable por lo dispuesto en los artículos 249, 250 y 274. En las mesas de sufragio digital que conglomeren peruanos en el extranjero, todos los actos referentes a la instalación de la mesa y el horario de votación se realizan conforme a los husos horarios de la jornada electoral fijados por la ONPE.
