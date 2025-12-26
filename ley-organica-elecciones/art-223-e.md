@@ -1,0 +1,2 @@
+Artículo 223-E.- Escrutinio de los votos
+Para la votación digital, el escrutinio es automatizado. Los miembros de mesa validan los resultados y suscriben el acta de escrutinio. Corresponde a los miembros de mesa que estén de turno en el momento del cierre de la votación suscribir el acta de escrutinio, aun cuando el acta de instalación haya sido suscrita por miembros del primer turno y por los personeros debidamente acreditados.

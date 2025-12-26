@@ -1,0 +1,6 @@
+Artículo 223-B.- Requisitos y procedimiento para optar por el voto digital
+Cualquier ciudadano que cuente con un documento nacional de identidad electrónico con certificado digital vigente puede emplear el voto digital en cualquier tipo de elección o consulta popular, previo registro ante la Oficina Nacional de Procesos Electorales (ONPE).
+El Registro Nacional de Identificación y Estado Civil (RENIEC) proporciona a la ONPE la información que requiera, vinculada al documento nacional de identidad electrónico.
+Para las elecciones generales, regionales y municipales, el registro para emplear el voto digital se realiza desde los quince días calendario posteriores al cierre del padrón electoral hasta los ciento veinte días calendario previos a la fecha de la elección. En ninguna circunstancia procede el registro extemporáneo.
+El voto digital puede emplearse voluntariamente en los procesos regulados en la Ley 26300, que regula el ejercicio de los derechos de participación y control ciudadanos, para lo cual la ONPE establece el periodo de registro. En ninguna circunstancia procede el registro extemporáneo.
+Con base en el padrón electoral aprobado y el registro de electores para el voto digital, la ONPE elabora una lista única de electores que incluye a todos los ciudadanos que hayan optado por el voto digital.

@@ -1,0 +1,2 @@
+Artículo 223-F.- Seguridad de la solución tecnológica
+Las herramientas digitales empleadas para el voto digital son auditadas antes y después de cada proceso electoral, para lo cual el JNE y la ONPE designan personal técnico especializado para el seguimiento continuo del funcionamiento y seguridad de dichas herramientas digitales. El código fuente adecuado para cada proceso electoral convocado es compartido con las organizaciones políticas que lo soliciten hasta un día antes de la jornada electoral.
