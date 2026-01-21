@@ -1,0 +1,2 @@
+Artículo 307- G.- Inhabilitación
+El agente de los delitos previstos en los artículos 307-A, 307-B, 307-C, 307-D, 307-E y 307-F, será además sancionado, de conformidad con el artículo 36, inciso 4, con la pena de inhabilitación para obtener, a nombre propio o a través de terceros, concesiones mineras, de labor general, de beneficio o transporte de minerales metálicos o no metálicos, así como para su comercialización, por un periodo igual al de la pena principal.
