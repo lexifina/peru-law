@@ -1,0 +1,1 @@
+Artículo 413-B.- Evasión del régimen semi-abierto El interno sentenciado que, habiendo accedido al régimen semi-abierto, se evade o no retorna injustificadamente al establecimiento penitenciario, es reprimido con pena privativa de libertad no menor de dos ni mayor de cuatro años.
