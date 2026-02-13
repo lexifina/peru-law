@@ -1,0 +1,7 @@
+99-B. Prohibiciones para el acceso al régimen semi-abierto
+99-B.1 Están excluidos los sentenciados por los delitos tipificados en los artículos 107, 108, 108-A, 108-B, 108-C, 108-D, 111 tercer párrafo, 121-B, 122 literales b), c), d) y e) del numeral 3, 122-B, 129-A al 129-P, 151-A, 152, 170 al 174, 175, 176, 176-A, 176-B, 176-C, 177, 179, 180, 181, 181-B, 183, 183-B, 189, 200, 297, 316-A, 317, 317-A, 317-B, 319 al 321, 325 al 332, 346, 347, 349, 350, 382, 383, 384, 386, 387, 389, 393 al 398-A, 399, 400, 401 del Código Penal; por los delitos cometidos como miembro o integrante de una organización criminal o como persona vinculada o que actúa por encargo de ella, conforme a los alcances de la Ley N° 30077; por los delitos tipificados en el Decreto Ley N° 25475 y sus modificatorias; y, los previstos en los artículos 1 al 6 del Decreto Legislativo N° 1106.
+99-B.2 Tampoco acceden al régimen semi-abierto:
+a) Las personas anteriormente condenadas por delito doloso, siempre que sea considerado como reincidente o habitual, conforme a lo dispuesto por los artículos 46-B y 46-C del Código Penal.
+b) Aquellos cuyo internamiento sea consecuencia de la revocatoria previa de la pena de vigilancia electrónica personal.
+c) Aquellos cuyo internamiento sea consecuencia de la revocatoria de alguna pena alternativa a la privativa de libertad.
+d) Aquellos cuyo internamiento sea consecuencia de la revocatoria de un beneficio penitenciario o conversión de penas en ejecución de condena, salvo si esta fuera por el delito previsto en el artículo 149 del Código Penal.

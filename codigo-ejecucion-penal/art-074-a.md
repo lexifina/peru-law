@@ -1,0 +1,2 @@
+66-A. Trabajo asistido externo
+El trabajo asistido externo es una modalidad voluntaria, temporal y revocable del trabajo penitenciario que se realiza fuera del establecimiento penitenciario bajo control y supervisión de la administración penitenciaria, autorizada para el régimen semi-abierto y sujeta al seguimiento y evaluaciones periódicas favorables. Sus alcances se encuentran regulados en el Capítulo VIII del Decreto Legislativo N° 1343.
