@@ -1,0 +1,6 @@
+Artículo 280-A.- Suministro ilegal de servicios de telecomunicaciones en establecimientos penitenciarios y centros juveniles
+280-A.1 El que, con la finalidad de obtener un beneficio para sí o para tercero, organice, financie, instale, opere, mantenga, preste o comercialice servicios de telecomunicaciones que empleen medios alámbricos y/o inalámbricos, y/o, infraestructura necesaria para la prestación de dichos servicios, a sabiendas de que están dirigidos a permitir o facilitar comunicaciones ilegales de personas privadas de libertad en establecimientos penitenciarios o adolescentes internados en centros juveniles, es sancionado con pena privativa de libertad no menor de seis ni mayor de ocho años.
+280-A.2 Es reprimido con pena privativa de libertad no menor de ocho ni mayor de diez años, e inhabilitación conforme a los numerales 1, 2, 4 y 12 del artículo 36 del Código Penal, cuando concurra cualquiera de las siguientes circunstancias agravantes:
+a) El agente actúa en condición de servidor o funcionario público bajo cualquier modalidad laboral o contractual.
+b) El agente abusa de conocimientos técnicos especializados o de una relación laboral, contractual o funcional con empresas operadoras o contratistas vinculadas al sector de telecomunicaciones.
+c) Si el agente actúa en calidad de integrante de una banda criminal o de una organización criminal.
