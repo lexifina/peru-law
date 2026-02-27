@@ -1,0 +1,2 @@
+Artículo 42-A.- Responsabilidad individual de los candidatos sobre su propaganda política
+Los candidatos o sus responsables de campaña son solidariamente responsables de la propaganda política que realicen durante el proceso electoral. No puede presumirse responsabilidad de las organizaciones políticas por infracción a las normas sobre propaganda electoral prohibida, a menos que se pruebe de manera fehaciente su participación directa o indirecta en la misma.

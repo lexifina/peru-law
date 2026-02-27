@@ -1,0 +1,2 @@
+Artículo 18-A.- Renuncia
+La renuncia a la afiliación se presenta ante la organización política o ante el Jurado Nacional de Elecciones y surte efecto desde la fecha de su presentación. La organización política debe remitir copia de la renuncia al Jurado Nacional de Elecciones. Si el afiliado se encuentra en el extranjero, puede presentarla ante el consulado respectivo. El trámite de renuncia es gratuito.

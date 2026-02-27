@@ -1,0 +1,2 @@
+Artículo 18-B.- Afiliación indebida
+El ciudadano que alega haber sido afiliado a una organización política indebidamente, puede solicitar se registre su exclusión de la misma. Para ello debe presentar una solicitud ante el Registro de Organizaciones Políticas adjuntando copia simple de su DNI vigente. Este lo comunica a la organización política y, de no recibir observaciones en un plazo de tres (3) días hábiles, registra la exclusión.

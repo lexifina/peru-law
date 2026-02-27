@@ -1,0 +1,6 @@
+Artículo 23-A.- Entrega de Plan de Gobierno y Publicación
+Los partidos políticos, alianzas, movimientos y organizaciones políticas locales que presentan candidatos, según sea el caso, a elecciones generales, regionales o municipales, al momento de presentación de sus respectivas listas para su inscripción deberán cumplir con entregar al Jurado Nacional de Elecciones su Plan de Gobierno del nivel que corresponda.
+Los partidos políticos, alianzas, movimientos y organizaciones políticas locales publican su Plan de Gobierno en su respectiva página web y lo mantienen durante todo el período para el cual participaron en el proceso electoral.
+El Jurado Nacional de Elecciones incorpora a su página web los Planes de Gobierno de dichas organizaciones políticas durante todo el proceso electoral general, regional o municipal, según sea el caso. Posteriormente mantiene sólo el de las organizaciones políticas con candidatos elegidos, durante todo su período de gobierno.
+No se admitirá la inscripción de candidatos de partidos políticos, alianzas, movimientos y organizaciones políticas locales que incumplan con lo dispuesto en el presente artículo.
+La obligación de presentar el Plan de Gobierno es de aplicación para las elecciones de los representantes ante el Parlamento Andino, en lo que se refiere a las propuestas que llevarán al citado Parlamento.
