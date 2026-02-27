@@ -1,0 +1,3 @@
+Artículo 30-B.- Aporte inicial y actividad económico-financiera de las alianzas electorales
+Los partidos políticos que integran una alianza electoral, informan a la Oficina Nacional de Procesos Electorales (ONPE) sobre el monto inicial aportado a la alianza y la procedencia de los fondos, en el plazo que dicha oficina establezca.
+Las organizaciones políticas que integran alianzas electorales realizan su actividad económico-financiera a través de dichas alianzas y no por intermedio de las organizaciones políticas que la conforman. Para tal efecto, al momento de su inscripción, se debe nombrar a un tesorero de la alianza. Los aportes que reciben las alianzas se encuentran sometidos a los límites establecidos en el artículo 30 de la presente ley.
