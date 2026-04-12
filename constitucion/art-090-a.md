@@ -1,2 +1,0 @@
-# Artículo 90-A
-Los parlamentarios no pueden ser reelegidos para un nuevo período, de manera inmediata, en el mismo cargo.
