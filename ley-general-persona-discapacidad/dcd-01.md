@@ -1,0 +1,6 @@
+Única.
+Derogaciones
+Deróganse los siguientes dispositivos:
+a) El numeral 3 del artículo 43, el numeral 4 del artículo 241, el artículo 693, el artículo 694 y el numeral 2 del artículo 705 del Código Civil.
+b) El artículo 74 del Texto Único Ordenado de la Ley del Impuesto General a las Ventas e Impuesto Selectivo al Consumo, aprobado por el Decreto Supremo 055-99-EF, en lo que respecta a los “Documentos Cancelatorios - Tesoro Público” a favor de los minusválidos.
+c) La Ley 27050, Ley General de la Persona con Discapacidad; la Ley 29392, Ley que Establece Infracciones y Sanciones por Incumplimiento de la Ley General de la Persona con Discapacidad, y su reglamento; la Ley 27471, Ley de uso de medios visuales adicionales en programas de televisión y de servicio público por cable para personas con discapacidad por deficiencia auditiva; la Ley 27751, Ley que elimina la discriminación de las personas con discapacidad por deficiencia intelectual y/o física en programas de salud y alimentación a cargo del Estado; la Ley 27920, Ley que establece sanciones por el incumplimiento de Normas Técnicas de Edificación NTE U.190 y NTE A.060, sobre adecuación urbanística y arquitectónica para personas con discapacidad; y las demás disposiciones legales que se opongan a la presente Ley.

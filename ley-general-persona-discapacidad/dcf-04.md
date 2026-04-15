@@ -1,0 +1,4 @@
+Cuarta.
+Plan Nacional de Accesibilidad
+El Poder Ejecutivo aprueba un Plan Nacional de Accesibilidad dirigido a adecuar progresivamente el entorno urbano, las edificaciones, el transporte y las comunicaciones para la persona con discapacidad, en un plazo no mayor a ciento veinte días, contado a partir de la vigencia de la presente Ley.
+Toda concesión de rutas para el servicio de transporte público regular de personas de ámbitos nacional, regional y provincial, otorgada a partir de enero de 2014, incorpora la obligación de contar con vehículos accesibles para su uso por personas con discapacidad. Asimismo, los programas de reconversión de flota del servicio de transporte público regular de personas incorporan este requisito a partir de la vigencia de la presente Ley. El Ministerio de Transportes y Comunicaciones regula y fiscaliza el cumplimiento de ambas disposiciones.
