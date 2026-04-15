@@ -1,0 +1,3 @@
+Artículo 62-A.- Seguridad y protección en situaciones de emergencia
+62-A.1 La persona con discapacidad tiene derecho a que se garantice su seguridad, protección y el acceso a la prestación de servicios básicos que le permitan subsistir de manera digna y respetando el ejercicio de su capacidad jurídica, en situaciones de emergencia.
+62-A.2 El Estado, mediante la actuación articulada de sus tres niveles de gobierno, garantiza a la persona con discapacidad el respeto de sus derechos y atención de sus necesidades específicas, en la preparación, respuesta y recuperación en situaciones de emergencia.
