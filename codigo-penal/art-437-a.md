@@ -1,0 +1,3 @@
+Artículo 437-A. Delitos que atentan contra la identificación genética de personas
+El que falsifica, sustituye, oculta o altera material genético humano, resultado de la toma de muestras biológicas, de las evidencias o de la escena del crimen, o de los perfiles genéticos incorporados en el Banco Nacional de Datos de Perfiles Genéticos (BNDPG), será reprimido con pena privativa de libertad no menor de cinco ni mayor de siete años.
+Si la conducta típica descrita en el párrafo anterior permite la condena o absolución de un imputado o causa perjuicio en los derechos de cualquier sujeto materia de investigación policial o proceso judicial, será reprimido con pena privativa de libertad no menor de quince ni mayor de veinte años.
