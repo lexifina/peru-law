@@ -1,0 +1,3 @@
+Artículo 8-A. Verificación de firmas
+El Registro Nacional de Identificación y Estado Civil (Reniec) verifica las firmas de los padrones de afiliados de las organizaciones políticas, incluyendo a los integrantes de los comités partidarios, así como la relación de adherentes a la inscripción de una organización política, quienes no pueden adherirse a otra en el mismo periodo electoral, ni estar afiliados a otra organización política.
+Para la verificación de firmas, el Registro Nacional de Identificación y Estado Civil (Reniec) dispone el uso estandarizado de mecanismos digitales u otros medios análogos, y remite en el plazo de treinta días hábiles al Registro de Organizaciones Políticas del Jurado Nacional de Elecciones el resultado de la verificación.
