@@ -29,18 +29,41 @@ ORD_RE = "|".join(sorted(ORD, key=len, reverse=True))
 ART = re.compile(r"^Artículo (\d+)\s*(?:°|º)?\s*(?:-\s*([A-Z]))?\s*(?:°|º)?\s*(?:\.\s*-|\.|-)?\s*")
 DISP = re.compile(r"^(" + ORD_RE + r")\s*\.\s*-?\s*", re.I)
 ITEM = re.compile(r"^(\d{1,2}|[a-z])\s*[.)]\s")
+TAB = chr(9)
 MARK = re.compile(r"⟦([^⟧]*)⟧")
+FOOTER = re.compile(r"^\s*(CONSTITUCIÓN POLÍTICA DEL PERÚ\s*\d+|\d+\s*Edición del Congreso de la República)\s*$")
 
 
 def clean(s: str) -> str:
     """Normalise publisher typesetting once: NBSP, tabs, quotes, dashes, spaces."""
-    s = s.replace(" ", " ").replace("­", "").replace("\t", " ")
+    s = s.replace("\u00a0", " ").replace("\u00ad", "").replace("\t", " ")
     s = s.replace("‟", "“").replace("«", "“").replace("»", "”")
     s = s.replace("‘", "'").replace("’", "'")
     s = s.replace("–", "-").replace("−", "-")
     s = re.sub(r"\s+", " ", s)
     s = re.sub(r" ([,;:.])", r"\1", s)
     return s.strip()
+
+
+def split_head(t: str, end: int) -> str:
+    """Drop the first `end` characters of the unmarked text of t (a heading such as "Artículo 7-A."),
+    keeping any note markers that sit inside or right after it."""
+    out_marks, i, plain = [], 0, 0
+    while i < len(t) and plain < end:
+        m = MARK.match(t, i)
+        if m:
+            out_marks.append(m.group(0))
+            i = m.end()
+            continue
+        i += 1
+        plain += 1
+    while True:
+        m = re.compile(r"\s*(⟦[^⟧]*⟧)").match(t, i)
+        if not m:
+            break
+        out_marks.append(m.group(1))
+        i = m.end()
+    return "".join(out_marks) + t[i:].lstrip()
 
 
 def unit_key(num: str, suf: str | None) -> str:
@@ -123,7 +146,7 @@ def paragraphs(rows: list[Row], lead: float) -> list[str]:
     prev: Row | None = None
     for r in rows:
         t = clean(r.text)
-        if prev is not None and paras and re.search(r"[a-záéíóúñ][­-]\s*$", prev.text) and re.match(r"[a-záéíóúñ]", t):
+        if prev is not None and paras and re.search(r"[a-záéíóúñ][\u00ad-]\s*$", prev.text) and re.match(r"[a-záéíóúñ]", t):
             paras[-1] = paras[-1].rstrip("-") + t  # word broken at the line end
             prev = r
             continue
@@ -134,7 +157,7 @@ def paragraphs(rows: list[Row], lead: float) -> list[str]:
             prev = r
             continue
         starts = bool(ITEM.match(MARK.sub("", t)) or ART.match(t) or t.startswith("“"))
-        if (r.text.startswith("	") or re.match(r"^\s*(\d{1,2}|[a-z])\.	", MARK.sub("", r.text))) and paras:
+        if (r.text.startswith(TAB) or re.match(r"^\s*(\d{1,2}|[a-z])\.\t", MARK.sub("", r.text))) and paras:
             paras.append(t)
             prev = r
             continue
@@ -182,7 +205,16 @@ class Edition:
         star = 0
         note: Note | None = None
         started = False
-        rows = [r for r in rows if not (r.size <= 7.6 and r.y > 425)]  # page footers
+        if self.style == "old":
+            sizes: dict[float, int] = {}
+            for r in rows:
+                sizes[round(r.size)] = sizes.get(round(r.size), 0) + len(r.text)
+            self.body_size = max(sizes, key=sizes.get)
+            rows = [r for r in rows if not re.fullmatch(r"\s*\d+\s*", MARK.sub("", r.text))
+                    and not FOOTER.match(r.text)]
+        else:
+            self.body_size = 10
+            rows = [r for r in rows if not (r.size <= 7.6 and r.y > 425)]  # page footers
         star_note = self._star_rows(rows) if self.style == "star" else set()
         for i, r in enumerate(rows):
             t = r.text.strip()
@@ -194,10 +226,12 @@ class Edition:
                 continue
             if re.match(r"^(OFICIALÍA MAYOR|REFORMAS A LA CONSTITUCIÓN)", t):
                 break
-            is_note = (r.size < 8.8) or (i in star_note)
+            is_note = (r.size < self.body_size - 1.2) or (i in star_note)
+            if is_note and self.style == "old":
+                continue  # checkpoint editions: notes are dropped
             if is_note:
                 if self.style == "footnote":
-                    m = re.match(r"^(\d{1,2})(?:	\s*|\s+(?=[A-ZÁÉÍÓÚ]))(.*)$", r.text.lstrip(" ")) or re.match(r"^(1)\.\s+(La Constitución Política del Perú se promulgó.*)$", t)
+                    m = re.match(r"^(\d{1,2})(?:\t\s*|\s+(?=[A-ZÁÉÍÓÚ]))(.*)$", r.text.lstrip(" ")) or re.match(r"^(1)\.\s+(La Constitución Política del Perú se promulgó.*)$", t)
                     if m and int(m.group(1)) == len(self.notes) + 1:
                         note = Note(m.group(1))
                         self.notes[note.id] = note
@@ -214,9 +248,9 @@ class Edition:
                     raise SystemExit(f"note text before any note: {t!r}")
                 note.rows.append(r)
                 continue
-            if r.size >= 12.5 and not r.first_bold.startswith("Artículo"):
+            if r.size >= self.body_size + 2.5 and not r.first_bold.startswith("Artículo"):
                 continue  # display title "CONSTITUCIÓN POLÍTICA DEL PERÚ"
-            if r.bold and not r.first_bold.startswith("Artículo") and not DISP.match(r.first_bold):
+            if r.bold and not MARK.sub("", r.first_bold).startswith("Artículo") and not DISP.match(r.first_bold):
                 h = MARK.sub("", t)
                 if h.startswith("DISPOSICIONES FINALES"):
                     section = "dft"
@@ -233,7 +267,8 @@ class Edition:
                 cur = None
                 continue
             fb = MARK.sub("", r.first_bold)
-            m = ART.match(MARK.sub("", t)) if fb.startswith("Artículo") else None
+            m = ART.match(MARK.sub("", t)) if (fb.startswith("Artículo") or (
+                self.style == "old" and re.match(r"^Artículo \d+\s*[°º]?\s*(-\s*[A-Z])?\s*[°º]?\s*\.", t))) else None
             d = DISP.match(MARK.sub("", t)) if section in ("dft", "dte") else None
             if m and section is None:
                 cur = unit_key(m.group(1), m.group(2))
@@ -242,9 +277,7 @@ class Edition:
                 labels[cur] = unit_label(m.group(1), m.group(2))
                 body_rows[cur] = []
                 self.order.append(cur)
-                marks = "".join(MARK.findall(r.first_bold) and [f"⟦{x}⟧" for x in MARK.findall(r.first_bold)])
-                rest = MARK.sub("", t)[m.end():]
-                r = Row(r.page, r.x, r.y, marks + rest, r.size, r.bold, r.italic)
+                r = Row(r.page, r.x, r.y, split_head(t, m.end()), r.size, r.bold, r.italic)
                 for h in self.heads:
                     if not h[1]:
                         h[1] = cur
@@ -255,8 +288,7 @@ class Edition:
                                else "Disposición transitoria especial ") + d.group(1).lower()
                 body_rows[cur] = []
                 self.order.append(cur)
-                marks = "".join(f"⟦{x}⟧" for x in MARK.findall(t[:d.end() + 8]))
-                r = Row(r.page, r.x, r.y, marks + MARK.sub("", t)[d.end():], r.size, r.bold, r.italic)
+                r = Row(r.page, r.x, r.y, split_head(t, d.end()), r.size, r.bold, r.italic)
             if cur is None:
                 if MARK.sub("", t).strip():
                     raise SystemExit(f"body text outside a unit in {self.url}: {t!r}")
@@ -271,7 +303,7 @@ class Edition:
         if self.style == "star" and k != len(self.notes):
             raise SystemExit(f"{k} star markers but {len(self.notes)} notes")
         for key in self.order:
-            paras = paragraphs(body_rows[key], 12.0)
+            paras = paragraphs(body_rows[key], 12.0 if self.style != "old" else self.body_size * 1.17)
             marks, out = [], []
             for i, p in enumerate(paras):
                 for nid in MARK.findall(p):
