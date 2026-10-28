@@ -277,6 +277,8 @@ def cc_parse():
     start = next(i for i, p in enumerate(paras) if p["kind"] == "struct" and p["text"].startswith("TÍTULO PRELIMINAR"))
     stop = next(i for i, p in enumerate(paras) if "expresa su agradecimiento" in p["text"])
     paras = paras[start:stop]
+    for p in paras:
+        p["text"] = re.sub(r"^“{2,}", "“", p["text"])  # the edition doubles the opening quote twice (arts 292, 987)
 
     def is_art(q):
         return q["kind"] == "para" and bool(ART_CC.match(q["text"]) or ART_TP.match(q["text"]))
@@ -393,6 +395,8 @@ def cc_parse():
         if not body_lines or not rest:
             log["derogated"].append(key)
             continue
+        if sum(ln.count('"') for ln in lines) % 2:
+            lines = [re.sub(r'^"(?=Artículo)', "", ln) for ln in lines]
         out[key] = "\n".join(lines) + "\n"
     return out, struct, notes_by_unit, log
 
@@ -554,6 +558,7 @@ def dp_parse_anpd():
         v[-1] = re.sub(r"\s*\(\*\)\s*$", "", v[-1])
         out[k] = [fix_quotes(norm(x)) for x in v]
     heading_old = re.sub(r"\s*\(\*\)\s*$", "", heading_old or "")
+    heading_old = re.sub(r"^TÍTULO [IVXL]+\s+", "", heading_old)
     return out, heading_old, paras
 
 
@@ -563,6 +568,18 @@ def dp_minsa_paras():
 
 
 # ---- assemble ----------------------------------------------------------------------------
+def changes(prev, new):
+    """Units that differ from the previous version (None = removed)."""
+    out = OrderedDict()
+    for k in new:
+        if prev.get(k) != new[k]:
+            out[k] = new[k]
+    for k in prev:
+        if k not in new:
+            out[k] = None
+    return out
+
+
 def law(label, title, kind, enacted, published, url, note=None):
     return {"label": label, "title": title, "kind": kind, "enacted": enacted, "published": published, "url": url,
             "temporary_until": None, "restores": None, "note": note}
@@ -618,10 +635,10 @@ def main():
                       "which includes amendments published up to 15 August 2024 (D.Leg. 1626). The code was enacted by "
                       "D.Leg. 295 (in force 14 November 1984) and amended some 400 times since; that earlier history is not "
                       "rebuilt here. Texts of amendments not yet in force (D.Leg. 1400 garantía mobiliaria) are left out.")},
-            {"from": "2024-11-13", "source_url": SRC["dleg1626"], "sha256": sha("dleg1626"), "units": units2,
+            {"from": "2024-11-13", "source_url": SRC["dleg1626"], "sha256": sha("dleg1626"), "changes": changes(units1, units2),
              "credits": {"art-2037": ["dleg-1626"], "art-2038": ["dleg-1626"]},
              "note": "D.Leg. 1626, única disposición complementaria final: the changes to arts. 2037 and 2038 take effect 90 days after publication (15 August 2024)."},
-            {"from": "2025-01-09", "source_url": SRC["ley32228"], "sha256": sha("ley32228"), "units": units3,
+            {"from": "2025-01-09", "source_url": SRC["ley32228"], "sha256": sha("ley32228"), "changes": changes(units2, units3),
              "credits": {"art-0233-a": ["ley-32228"]}, "note": None},
         ],
     })
@@ -643,6 +660,7 @@ def main():
     extra_old = sorted(set(old) - set(modified))
     if extra_old:
         raise SystemExit(f"ANPD has originals the NLA does not note: {extra_old}")
+    noted = modified[:]
     modified = sorted(old)
     REPORT.append(f"DP noted by the NLA as amended but wording unchanged (checked below): {noted_only}")
     # cross-check: units not modified must be identical in the ANPD/MINSA texts (word level)
@@ -650,11 +668,12 @@ def main():
     minsa_all = dp_minsa_paras()
     bad = []
     for k, v in cur.items():
-        if k in modified:
-            continue
         for ln in v.split("\n"):
+            # the ANPD copy prints both the original and the amended texts: every current line must be there
             if ln and cmpkey(ln) not in anpd_all:
                 bad.append((k, "anpd", ln[:80]))
+            if k in modified:
+                continue
             if ln and cmpkey(ln) not in minsa_all:
                 bad.append((k, "minsa", ln[:80]))
     for k in modified:
@@ -692,7 +711,7 @@ def main():
     REPORT.append(f"DP Title IV heading: old={struct_old[struct.index(new_heading)] if new_heading else None!r} new={new_heading!r}")
     v1 = dp_units(orig, struct_old, sumario)
     v3 = dp_units(cur, struct, sumario)
-    dp_credits = {k: ["dleg-1353"] for k in modified}
+    dp_credits = {k: ["dleg-1353"] for k in noted}
     dp_credits["estructura"] = ["dleg-1353"]
     commence = [k for k in v1 if k not in ("sumario", "estructura")]
     laws["ley-29733"] = law("Ley 29733", "Ley de Protección de Datos Personales", "law", "2011-07-02", "2011-07-03",
@@ -714,9 +733,9 @@ def main():
              "note": ("As enacted (published 3 July 2011). Only Título II, art. 32 first paragraph and the 1st-4th, 9th and "
                       "10th final provisions were in force from 4 July 2011; the rest from 8 May 2013 (see that commit). Texts "
                       "replaced in 2017 are taken from the ANPD/MINJUS copy, which prints each original before its amended text.")},
-            {"from": "2013-05-08", "source_url": SRC["ds003"], "sha256": sha("ds003"), "units": v1,
+            {"from": "2013-05-08", "source_url": SRC["ds003"], "sha256": sha("ds003"),
              "credits": {k: ["ds-003-2013-jus"] for k in deferred}, "note": "Commencement of the remaining provisions; no words changed."},
-            {"from": "2017-09-16", "source_url": SRC["dp_nla_2026"], "sha256": sha("dp_nla_2026"), "units": v3,
+            {"from": "2017-09-16", "source_url": SRC["dp_nla_2026"], "sha256": sha("dp_nla_2026"), "changes": changes(v1, v3),
              "credits": dp_credits,
              "note": ("D.Leg. 1353 (published 7 January 2017) took effect the day after the decree approving its reglamento "
                       "(D.S. 019-2017-JUS, El Peruano 15 September 2017).")},
@@ -758,8 +777,6 @@ def main():
         "decisions": decisions,
         "ai_use": ["codes part: none. A model wrote the parser; no model output is used as legal text."],
     }
-    if report:
-        print("\n".join(REPORT))
     tmp = OUT.with_suffix(".json.tmp")
     OUT.parent.mkdir(exist_ok=True)
     tmp.write_text(json.dumps(part, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
