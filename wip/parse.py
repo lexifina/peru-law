@@ -31,7 +31,7 @@ import fetch  # noqa: E402
 
 WB = "https://web.archive.org/web/"
 ED = {
-    "e04": (WB + "20040619190058id_/http://www.congreso.gob.pe/ntley/Imagenes/Constitu/Cons1993.pdf", "old", "2004-06-19"),
+    "e04": (WB + "20040619190058id_/http://www.congreso.gob.pe/ntley/Imagenes/Constitu/Cons1993.pdf", "old", "2000-11-05"),  # captured 2004 but not updated after 1995
     "e12": (WB + "20120511002326id_/http://www.congreso.gob.pe/ntley/Imagenes/Constitu/Cons1993.pdf", "old", "2012-05-11"),
     "e15": (WB + "20160405125615id_/http://www.congreso.gob.pe/Docs/files/constitucionpolitica-27-04-2015.pdf", "old", "2015-04-27"),
     "e19a": (WB + "20190713150404id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-politica-06-02-19.pdf", "old", "2019-02-06"),
@@ -267,7 +267,7 @@ def main() -> int:
         if u_marked != unit:
             raise SystemExit(f"note {nid} sits in {u_marked}, table says {unit}")
         cur = state[unit]
-        q = strip_heading(E.quoted(e21.note_paras(nid)))
+        q = strip_heading(E.quoted(e21.note_paras(nid), past_y=(nid == "21")))
         if scope == "new":
             before = None
         elif scope == "whole":

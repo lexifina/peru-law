@@ -227,7 +227,7 @@ class Edition:
             t = r.text.strip()
             plain = MARK.sub("", t).replace(" ", "")
             if not started:
-                if plain.upper() == "PREÁMBULO":
+                if plain.upper() in ("PREÁMBULO", "PREAMBULO"):
                     started = True
                     cur = "preambulo"; labels[cur] = "Preámbulo"; body_rows[cur] = []; self.order.append(cur)
                 continue
@@ -237,7 +237,7 @@ class Edition:
             if self.style == "old":
                 # older editions: notes are small/italic, or start with "(*)", "*" or "NOTA" and
                 # continue in bold or italic rows. They are kept apart (ids o1, o2, ...).
-                start = re.match(r"^(\(\*\)|\*|NOTA)", t)
+                start = re.match(r"^(\(\s*\*\s*\)|\*|NOTA|Antes de la reforma)", t)
                 if is_note or start or (old_note and (r.bold or r.italic) and r.x < 100 and r.size < self.body_size + 1):
                     if start or note is None:
                         note = Note(f"o{len(self.notes) + 1}")
@@ -267,7 +267,7 @@ class Edition:
                 continue
             if r.size >= self.body_size + 2.5 and not r.first_bold.startswith("Artículo"):
                 continue  # display title "CONSTITUCIÓN POLÍTICA DEL PERÚ"
-            if r.bold and not MARK.sub("", r.first_bold).startswith("Artículo") and not DISP.match(r.first_bold):
+            if (r.bold or (self.style == "old" and r.size >= self.body_size + 0.6)) and not MARK.sub("", r.first_bold).startswith("Artículo") and not DISP.match(r.first_bold):
                 h = clean(MARK.sub("", t))
                 if h.upper().startswith("DISPOSICIONES FINALES"):
                     section = "dft"
@@ -307,7 +307,7 @@ class Edition:
                 self.order.append(cur)
                 r = Row(r.page, r.x, r.y, split_head(t, d.end()), r.size, r.bold, r.italic)
             if cur is None:
-                if MARK.sub("", t).strip():
+                if MARK.sub("", t).strip() and self.style != "old":
                     raise SystemExit(f"body text outside a unit in {self.url}: {t!r} section={section} heads={self.heads[-3:]}")
                 continue
             body_rows[cur].append(r)
@@ -364,7 +364,7 @@ class Edition:
         return hits[0]
 
 
-def quoted(paras: list[str]) -> list[str]:
+def quoted(paras: list[str], past_y: bool = False) -> list[str]:
     """The quoted text of a note ("... tuvo el siguiente texto: “...”"), as paragraphs, without the
     opening and closing quotation marks and without nested "(*)" sub-notes."""
     out: list[str] = []
@@ -382,7 +382,7 @@ def quoted(paras: list[str]) -> list[str]:
         if end:
             p = p[:end.start()]
             out.append(p.strip())
-            if not re.search(r"Y$", p.strip()):  # art. 91 note: 'Tributaria. Y” (*)' continues
+            if not (past_y and re.search(r"Y$", p.strip())):  # art. 91 note: 'Tributaria. Y” (*)' continues
                 break
             continue
         out.append(p.strip())
