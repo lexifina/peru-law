@@ -29,7 +29,7 @@
    "name": "Congreso de la República: consolidaciones anteriores (2004, 2012, 2015, 2019) via the Wayback Machine",
    "url": "https://web.archive.org/web/2012/http://www.congreso.gob.pe/ntley/Imagenes/Constitu/Cons1993.pdf",
    "retrieved": "2026-10-28",
-   "requests": 31,
+   "requests": 32,
    "licence": "Official legal text.",
    "notes": "Capture timestamps are pinned in parse.py (ED)."
   },
@@ -48,6 +48,14 @@
    "requests": 1,
    "licence": "Official judgment.",
    "notes": "STC 918/2021; publication date 26 Nov 2021 per the Comisión de Constitución, Opinión Consultiva 5 (www3.congreso.gob.pe)."
+  },
+  {
+   "name": "El Peruano, Normas Legales (busquedas.elperuano.pe)",
+   "url": "https://busquedas.elperuano.pe/dispositivo/NL/2384222-1",
+   "retrieved": "2026-10-28",
+   "requests": 3,
+   "licence": "Official gazette text.",
+   "notes": "Decreto Supremo 039-2025-PCM (26 March 2025), which convened the general elections of 12 April 2026: the in-force day of Ley 31988."
   }
  ],
  "laws": {
@@ -25867,7 +25875,8 @@
        "text": "# Declaración\nEL CONGRESO CONSTITUYENTE DEMOCRÁTICO\nDECLARA que el Perú, país del hemisferio austral, vinculado a la Antártida por costas que se proyectan hacia ella, así como por factores ecológicos y antecedentes históricos, y conforme con los derechos y obligaciones que tiene como parte consultiva del Tratado Antártico, propicia la conservación de la Antártida como una Zona de Paz dedicada a la investigación científica, y la vigencia de un régimen internacional que, sin desmedro de los derechos que corresponden a la Nación, promueva en beneficio de toda la humanidad la racional y equitativa explotación de los recursos de la Antártida, y asegure la protección y conservación del ecosistema de dicho Continente.\n"
       }
      },
-     "credits": {}
+     "credits": {},
+     "note": "The final sentence of the Segunda Disposición Final y Transitoria first appears in the Congreso's May 2021 edition; no reform law added it."
     },
     {
      "from": "2021-07-17",
@@ -38947,7 +38956,8 @@
       "art-206": [
        "ley-31988"
       ]
-     }
+     },
+     "note": "Ley 31988 enters into force 'a partir de las próximas elecciones generales' (Primera Disposición Complementaria Final). Decreto Supremo 039-2025-PCM (El Peruano, 26 March 2025), art. 1, convened them for Sunday 12 April 2026: https://busquedas.elperuano.pe/dispositivo/NL/2384222-1. Text from the notes of the Congreso's December 2024 edition."
     }
    ]
   }
@@ -38957,7 +38967,7 @@
   "SPIJ (spij.minjus.gob.pe), the Ministry of Justice's consolidated legislation, is excluded: it does not answer from here and full access is paid.",
   "Dates are in-force dates: the day after publication in El Peruano (Constitución art. 109) unless the law says otherwise.",
   "The 1993 text is in force from 31 December 1993, the day after its publication in El Peruano on 30 December 1993 (May 2021 edition, note 1).",
-  "Ley 31988 (bicameral Congress) says its reforms 'entran en vigor a partir de las próximas elecciones generales'; we date them 12 April 2026, the general election day set by Decreto Supremo 039-2025-PCM. Its repeal of Article 90-A takes effect the same day, as the Dec 2024 edition notes.",
+  "Ley 31988 (bicameral Congress) says its reforms 'entran en vigor a partir de las próximas elecciones generales'; we date them 12 April 2026, the general election day set by Decreto Supremo 039-2025-PCM, art. 1 ('Se convoca a Elecciones Generales el día domingo 12 de abril del año 2026'), published in El Peruano on 26 March 2025 and read at https://busquedas.elperuano.pe/dispositivo/NL/2384222-1 (cached). Its repeal of Article 90-A takes effect the same day, as the Dec 2024 edition notes.",
   "Ley 29402 (Article 90, 130 congresistas) is dated from the day after publication; its own transitional provision makes it apply to the 2011 elections (recorded in the law's note).",
   "Leyes 31280, 31304 and 31305 were declared unconstitutional by STC 918/2021 (published 26 November 2021, effective the next day, without retroactive effect); the ruling is a court law that restores the earlier text of Articles 112, 21 and 2.",
   "The texts of Leyes 31280, 31304 and 31305 come from the laws as published (ADLP), because no Congreso edition carries them.",

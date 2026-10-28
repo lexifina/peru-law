@@ -756,6 +756,11 @@ def main():
         "Ley 29733 in force from 4 July 2011 (published 3 July; Const. art. 109) for Título II, art. 32 and the 1st-4th, 9th and 10th final provisions; the rest 30 business days after the reglamento (D.S. 003-2013-JUS, El Peruano 22 March 2013): counted from 25 March 2013, skipping 28-29 March (Holy Week) and 1 May, that is 8 May 2013. Recorded as a no-words commit crediting D.S. 003-2013-JUS on those units.",
         "D.Leg. 1353's changes to Ley 29733 (arts. 2, 3, 12, 14, 15, 18, 20-22, 25, 27 and others listed in the notes, plus the Título IV heading) took effect on 16 September 2017, the day after D.S. 019-2017-JUS (El Peruano, 15 September 2017), as its second final provision requires; the fe de erratas of 12 January 2017 (art. 15 numbering) predates that day and is included.",
         "Ley 29733 has no undécima disposición complementaria final in any source checked; the numbering jumps from décima to duodécima.",
+        "Ley 29733 art. 3: D.Leg. 1353 restated it with the same words (both texts in the ANPD copy), so its commit shows it with wording unchanged.",
+        "Ley 29733 art. 30: the Editora Perú edition notes it as modified by D.Leg. 1353 (cuarta DCM) but the ANPD copy prints no replaced text and the wording is identical in both, so it is credited to D.Leg. 1353 with wording unchanged.",
+        "Ley 29733 art. 32: only its first paragraph was in force from 4 July 2011; units are whole articles, so art. 32 is treated as in force from that day and the 8 May 2013 commencement commit does not list it.",
+        "Ley 29733 text: the 2026 Editora Perú edition adds an editorial 'Sic' after the misprinted 'Ley 28706' in the octava disposición; it is dropped (the 2025 edition and the ANPD copy do not have it).",
+        "Editorial notes are recognised by type (Editora Perú sets them in bold italic 8 pt) and removed; units are split into paragraphs from line geometry (indent, short last line), so a few paragraph breaks may differ from the printed page.",
     ]
     part = {
         "laws": laws,

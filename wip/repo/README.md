@@ -35,7 +35,7 @@ Files: `preambulo.md`, `art-001.md` ... `art-206.md` (with `art-007-a`, `art-014
 - Each commit is dated at **noon, America/Lima, on the day the change took effect**. Publication and enactment dates are trailers (`Published:`, `Enacted:`); the in-force day is in `In-force:`, which the tools read.
 - **Default rule.** Constitución, art. 109: "La ley es obligatoria desde el día siguiente de su publicación en el diario oficial, salvo disposición contraria de la misma ley que posterga su vigencia en todo o en parte." Every reform is dated from the day after its publication in El Peruano unless the law says otherwise.
 - **The Constitution of 1993** was ratified by referendum on 31 October 1993, promulgated on 29 December 1993 and published in El Peruano on 30 December 1993. Its first commit is dated 31 December 1993.
-- **Ley 31988** (bicameral Congress, published 20 March 2024) says its reforms "entran en vigor a partir de las próximas elecciones generales". They are dated 12 April 2026, the day of the general elections (Decreto Supremo 039-2025-PCM), together with its repeal of art. 90-A.
+- **Ley 31988** (bicameral Congress, published 20 March 2024) says its reforms "entran en vigor a partir de las próximas elecciones generales". They are dated 12 April 2026, the day of the general elections as convened by [Decreto Supremo 039-2025-PCM](https://busquedas.elperuano.pe/dispositivo/NL/2384222-1), art. 1 (El Peruano, 26 March 2025), together with its repeal of art. 90-A.
 - **Ley 29402** (art. 90, 130 congresistas) is dated from the day after publication (9 September 2009); its own transitional provision makes it apply to the 2011 elections, as its commit message says.
 - **STC 918/2021** of the Tribunal Constitucional (11 November 2021) declared Leyes 31280, 31304 and 31305 unconstitutional. It was published on 26 November 2021 and rules from the next day without retroactive effect, so the earlier text of arts. 112, 21 and 2 returns on 27 November 2021.
 - `--before="YYYY-MM-DD"` alone uses your clock's time of day, so a law that took effect that day may be missed before noon. Use `T23:59:59Z` as above, or the tool.
@@ -87,6 +87,7 @@ No AI model wrote or changed legal text. Claude Opus 5.5 wrote the scripts and c
 | [Archivo Digital de la Legislación del Perú](https://www.leyes.congreso.gob.pe) | Official laws | n/a | n/a | PDF per law, title search | Used for the reform laws, the 1993 gazette scan and the 2013 text |
 | [Leyes de reforma constitucional](https://www3.congreso.gob.pe/diariodebates/leyesrefconstit/) | Congreso list | n/a | yes | HTML | Used to confirm the list of reforms |
 | [Tribunal Constitucional](https://tc.gob.pe/jurisprudencia/2021/00019-2021-AI.pdf) | Ruling | n/a | n/a | PDF | STC 918/2021 |
+| [El Peruano, Normas Legales](https://busquedas.elperuano.pe/dispositivo/NL/2384222-1) | Official gazette | n/a | n/a | HTML | Decreto Supremo 039-2025-PCM, the in-force day of Ley 31988 |
 | [SPIJ](https://spij.minjus.gob.pe) | Official legislation (Ministry of Justice) | n/a | n/a | no | Not used: no answer from here; full access needs a paid licence |
 | [Duvet05/Constitucion-Politica-del-Peru](https://github.com/Duvet05/Constitucion-Politica-del-Peru) | Volunteer git repo | yes | partly | n/a | Prior art, for reconciliation only; no text copied |
 
@@ -100,7 +101,7 @@ This repository is not legal advice and not an official publication.
 
 ## En español
 
-Historia de la Constitución Política del Perú de 1993 en git: un archivo por disposición y un commit por norma, fechado el día de su entrada en vigencia y firmado por la norma que hizo el cambio (`git blame` nombra la ley de cada párrafo). Va desde su entrada en vigencia el 31 de diciembre de 1993 hasta la reforma bicameral (Ley 31988), vigente desde las elecciones generales del 12 de abril de 2026: 37 leyes de reforma y la STC 918/2021 del Tribunal Constitucional.
+Historia de la Constitución Política del Perú de 1993 en git: un archivo por disposición y un commit por norma, fechado el día de su entrada en vigencia y firmado por la norma que hizo el cambio (`git blame` nombra la ley de cada párrafo). Va desde su entrada en vigencia el 31 de diciembre de 1993 hasta la reforma bicameral (Ley 31988), vigente desde las elecciones generales del 12 de abril de 2026 (Decreto Supremo 039-2025-PCM): 37 leyes de reforma y la STC 918/2021 del Tribunal Constitucional.
 
 - Texto vigente en una fecha: `python tools/vigente_el.py 2021-11-01 constitucion 112`
 - Fechas: el día siguiente de la publicación en El Peruano (art. 109 de la Constitución), salvo que la ley disponga otra cosa.

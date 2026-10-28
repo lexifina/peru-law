@@ -1,0 +1,16 @@
+{
+  "codes": {
+    "note": "Everything codes/parse_codes.py reads. Fetch with: python -X utf8 codes/cfetch.py --plan",
+    "urls": [
+      "https://faolex.fao.org/docs/pdf/per205198.pdf",
+      "https://busquedas.elperuano.pe/dispositivo/NL/2315597-1/",
+      "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32228-TXM.pdf",
+      "https://web.archive.org/web/20260721055737id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=23",
+      "https://web.archive.org/web/20260409192208id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=23",
+      "https://cdn.www.gob.pe/uploads/document/file/2011398/Ley%20N%C2%BA%2029733%20-%20Ley%20de%20protecci%C3%B3n%20de%20datos%20personales.pdf.pdf?v=1683928275",
+      "https://www.minsa.gob.pe/Recursos/OGTI/SINADEF/Ley-29733.pdf",
+      "https://www.sunat.gob.pe/legislacion/procedim/normasadua/normasociada/gja-00.02/ctrlCambios/anexos/DS019-2017-JUS.pdf",
+      "https://cdn.www.gob.pe/uploads/document/file/2011287/Reglamento%20de%20la%20Ley%20No%2029733%2C%20Ley%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf?v=1626124830"
+    ]
+  }
+}

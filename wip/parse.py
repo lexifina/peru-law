@@ -102,7 +102,7 @@ REFORMS = [
 IN_FORCE = {
     # Ley 31988, Primera Disposición Complementaria Final: "Las reformas constitucionales comprendidas en
     # esta ley entran en vigor a partir de las próximas elecciones generales" -> general elections of
-    # Sunday 12 April 2026 (Decreto Supremo 039-2025-PCM).
+    # Sunday 12 April 2026: Decreto Supremo 039-2025-PCM, El Peruano 26 March 2025, art. 1 (DS_URL, cached).
     "ley-31988": "2026-04-12",
 }
 NOTES = {
@@ -112,6 +112,8 @@ NOTES = {
     "ley-31043": "Published on 15 September 2020 as Ley 31042; the number was corrected to 31043 by a fe de erratas published on 20 September 2020.",
 }
 TC_KEY = "tc-00019-2021-pi"
+# Decreto Supremo 039-2025-PCM, "Convocan a Elecciones Generales el 12 de abril de 2026" (El Peruano, 26 March 2025)
+DS_URL = "https://busquedas.elperuano.pe/dispositivo/NL/2384222-1"
 
 
 def plus1(d: str) -> str:
@@ -535,6 +537,14 @@ def main() -> int:
         src = source_for(day)
         versions.append({"from": day, "source_url": src, "sha256": sha_of(src),
                          "units": units, "credits": {u: credits[u] for u in sorted(credits)} if day != dates[0] else {}})
+        if day == LAW_DATE["ley-31988"]:
+            versions[-1]["note"] = (
+                "Ley 31988 enters into force 'a partir de las próximas elecciones generales' (Primera Disposición "
+                "Complementaria Final). Decreto Supremo 039-2025-PCM (El Peruano, 26 March 2025), art. 1, convened them "
+                f"for Sunday 12 April 2026: {DS_URL}. Text from the notes of the Congreso's December 2024 edition.")
+        if day == UNEXPLAINED_DAY:
+            versions[-1]["note"] = ("The final sentence of the Segunda Disposición Final y Transitoria first appears in "
+                                    "the Congreso's May 2021 edition; no reform law added it.")
         prev = {u: v["text"] for u, v in units.items()}
     # Ley 27600 and Ley 32265 change no words; they get a commit of their own (Words-changed: no).
     for key, day in (("ley-27600", LAW_DATE["ley-27600"]), ("ley-32265", LAW_DATE["ley-32265"])):
@@ -658,6 +668,9 @@ def sources() -> list[dict]:
         {"name": "Tribunal Constitucional del Perú", "url": TC_URL, "retrieved": DOCS_DATE,
          "requests": reqs.get("tc.gob.pe", 0), "licence": "Official judgment.",
          "notes": "STC 918/2021; publication date 26 Nov 2021 per the Comisión de Constitución, Opinión Consultiva 5 (www3.congreso.gob.pe)."},
+        {"name": "El Peruano, Normas Legales (busquedas.elperuano.pe)", "url": DS_URL, "retrieved": DOCS_DATE,
+         "requests": reqs.get("busquedas.elperuano.pe", 0), "licence": "Official gazette text.",
+         "notes": "Decreto Supremo 039-2025-PCM (26 March 2025), which convened the general elections of 12 April 2026: the in-force day of Ley 31988."},
     ]
 
 
@@ -665,7 +678,7 @@ DECISIONS = [
     "SPIJ (spij.minjus.gob.pe), the Ministry of Justice's consolidated legislation, is excluded: it does not answer from here and full access is paid.",
     "Dates are in-force dates: the day after publication in El Peruano (Constitución art. 109) unless the law says otherwise.",
     "The 1993 text is in force from 31 December 1993, the day after its publication in El Peruano on 30 December 1993 (May 2021 edition, note 1).",
-    "Ley 31988 (bicameral Congress) says its reforms 'entran en vigor a partir de las próximas elecciones generales'; we date them 12 April 2026, the general election day set by Decreto Supremo 039-2025-PCM. Its repeal of Article 90-A takes effect the same day, as the Dec 2024 edition notes.",
+    "Ley 31988 (bicameral Congress) says its reforms 'entran en vigor a partir de las próximas elecciones generales'; we date them 12 April 2026, the general election day set by Decreto Supremo 039-2025-PCM, art. 1 ('Se convoca a Elecciones Generales el día domingo 12 de abril del año 2026'), published in El Peruano on 26 March 2025 and read at https://busquedas.elperuano.pe/dispositivo/NL/2384222-1 (cached). Its repeal of Article 90-A takes effect the same day, as the Dec 2024 edition notes.",
     "Ley 29402 (Article 90, 130 congresistas) is dated from the day after publication; its own transitional provision makes it apply to the 2011 elections (recorded in the law's note).",
     "Leyes 31280, 31304 and 31305 were declared unconstitutional by STC 918/2021 (published 26 November 2021, effective the next day, without retroactive effect); the ruling is a court law that restores the earlier text of Articles 112, 21 and 2.",
     "The texts of Leyes 31280, 31304 and 31305 come from the laws as published (ADLP), because no Congreso edition carries them.",
