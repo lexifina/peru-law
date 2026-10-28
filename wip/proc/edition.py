@@ -40,71 +40,84 @@ def norm(s: str) -> str:
     return s
 
 
-def _kind(span) -> str:
-    f, size = span['font'], span['size']
-    if f.startswith('Bahnschrift') or f.startswith('DINPro'):
-        return 'furniture'
-    if size < 5.3:
-        return 'mark'
-    if size < 6.65:
-        # a footnote call on a large heading is set bigger (6.4 pt on an 11 pt title); notes are NewsGothic
-        if f.startswith('NotoSans') and re.fullmatch(r'\s*\d{1,3}\s*', span['text']):
-            return 'mark'
-        return 'note'
-    return 'body'
+# Per edition: body text size floor, furniture fonts, top/bottom bands (running heads, page numbers).
+PROFILES = {
+    'ed8': {'body_min': 6.8, 'furniture': ('Bahnschrift', 'DINPro'), 'top': 0, 'bottom': 38},
+    'ed7': {'body_min': 8.9, 'furniture': (), 'top': 48, 'bottom': 30},
+    'ed6': {'body_min': 9.5, 'furniture': (), 'top': 48, 'bottom': 30},
+    'ed5': {'body_min': 8.0, 'furniture': (), 'top': 48, 'bottom': 30},
+}
 
 
-def lines(doc: fitz.Document, first: int, last: int) -> list[Line]:
+def lines(doc: fitz.Document, first: int, last: int, profile: str = 'ed8') -> list[Line]:
+    """Visual lines. Body spans are at least the profile's body size; a smaller span on a body line is a
+    footnote call; smaller spans on lines of their own are footnote text."""
+    P = PROFILES[profile]
     out: list[Line] = []
     for pn in range(first, last + 1):
         page = doc[pn]
         h = page.rect.height
-        raw = []  # (kind, y, x, text, bold, size)
+        big, small = [], []   # (y, x, text, bold, size, x1)
         for b in page.get_text('dict')['blocks']:
             for l in b.get('lines', []):
                 for s in l['spans']:
-                    k = _kind(s)
-                    if k == 'furniture':
+                    if s['font'].startswith(P['furniture']) if P['furniture'] else False:
                         continue
                     y = s['origin'][1]
-                    if y > h - 38:      # page number band
+                    if y > h - P['bottom'] or y < P['top']:
                         continue
-                    raw.append((k, y, s['origin'][0], s['text'], bool(s['flags'] & 16) or 'Bold' in s['font'], s['size'],
-                                s['bbox'][2]))
-        # group into visual lines: body (with its marks) and notes separately
-        groups: list[list] = []
-        for item in sorted(raw, key=lambda r: (r[1], r[2])):
-            k = 'note' if item[0] == 'note' else 'body'
-            yy = item[1] + (2.0 if item[0] == 'mark' else 0.0)   # superscripts sit ~2pt high
+                    it = (y, s['origin'][0], s['text'], bool(s['flags'] & 16) or 'Bold' in s['font'], s['size'],
+                          s['bbox'][2])
+                    (big if s['size'] >= P['body_min'] else small).append(it)
+        groups: list[list] = []   # [y, items]
+        for it in sorted(big):
             for g in reversed(groups[-4:]):
-                if g[0] == k and abs(g[1] - yy) < 2.2:
-                    g[2].append(item)
+                if abs(g[0] - it[0]) < 2.2:
+                    g[1].append(it)
                     break
             else:
-                groups.append([k, yy, [item]])
-        for k, y, items in groups:
-            items.sort(key=lambda r: r[2])
+                groups.append([it[0], [it]])
+        marks: dict[int, list] = {}
+        notes = []
+        for it in small:
+            home = None
+            for gi, g in enumerate(groups):
+                lo = min(x[1] for x in g[1]) - 15
+                hi = max(x[5] for x in g[1]) + 40
+                if g[0] - 7 <= it[0] <= g[0] + 1.5 and lo <= it[1] <= hi:
+                    if re.fullmatch(r'\s*(\d{1,3}\s*)+', it[2]) or not it[2].strip():
+                        home = gi
+                        break
+            if home is None:
+                notes.append(it)
+            else:
+                marks.setdefault(home, []).append(it)
+        ngroups: list[list] = []
+        for it in sorted(notes):
+            for g in reversed(ngroups[-4:]):
+                if abs(g[0] - it[0]) < 2.2:
+                    g[1].append(it)
+                    break
+            else:
+                ngroups.append([it[0], [it]])
+        rows = [('body', g[0], g[1], marks.get(gi, [])) for gi, g in enumerate(groups)] +                [('note', g[0], g[1], []) for g in ngroups]
+        rows.sort(key=lambda r: (r[0] == 'note', r[1]))
+        for k, y, items, mk in rows:
+            items = sorted(items + [(m[0], m[1], m[2], m[3], m[4], m[5], 'mark') for m in mk], key=lambda r: r[1])
             text = ''
             spans = []
             for it in items:
-                t = norm(it[3])
-                if it[0] == 'mark':
-                    if t.strip():
-                        text += ''.join(MARK + tok + MARK for tok in t.split())
+                t = norm(it[2])
+                if len(it) > 6:
+                    text += ''.join(MARK + tok + MARK for tok in t.split())
                     continue
                 text += t
                 if t.strip():
-                    spans.append((t, it[4], it[2]))
-            if not text.strip():
+                    spans.append((t, it[3], it[1]))
+            vis = [it for it in items if len(it) == 6 and it[2].strip()]
+            if not vis:
                 continue
-            vis = [it for it in items if it[0] != 'mark' and it[3].strip()]
-            if not vis:   # a line of only marks: attach to the previous body line
-                for prev in reversed(out):
-                    if prev.kind == 'body' and prev.page == pn:
-                        prev.text = prev.text.rstrip() + text.strip()
-                        break
-                continue
-            out.append(Line(pn, y, vis[0][2], k, text, vis[0][4], vis[0][5], spans, max(it[6] for it in vis)))
+            out.append(Line(pn, y, vis[0][1], k, text, vis[0][3], vis[0][4], spans, max(it[5] for it in vis)))
     return out
 
 
@@ -136,16 +149,17 @@ def split_notes(ls: list[Line]) -> tuple[list[Line], dict[int, list[Line]]]:
     return body, notes
 
 
-def read(path: str, first: int, last: int):
+def read(path: str, first: int, last: int, profile: str = 'ed8'):
     doc = fitz.open(path)
-    ls = lines(doc, first, last)
+    ls = lines(doc, first, last, profile)
     return split_notes(ls)
 
 
 # ---------------------------------------------------------------- paragraphs
 
-LABEL = re.compile(r'^(?:(\d{1,3})\s*\.(?=\s)|(\d{1,3})\s*\)|([a-zñ])\s*\)|([a-zñ])\s*\.(?=\s)|([IVX]+)\s*\.(?=\s))')
+LABEL = re.compile(r'^(?:(\d{1,3})\s*\.(?=\s|$)|(\d{1,3})\s*\)|([a-zñ])\s*\)|([a-zñ])\s*\.(?=\s)|([IVX]+)\s*\.(?=\s))')
 CALL = re.compile(r'\x01[^\x01]*\x01')
+ELLIPSIS = re.compile(r'^\s*\(\s*(?:\.\.\.|…)\s*\)\s*\.?\s*$')
 
 
 def label_of(p: str):
@@ -184,7 +198,8 @@ def paragraphs(ls: list[Line], gap: float) -> list[str]:
         if prev is not None and out:
             same_flow = (l.page == prev.page and 0 < l.y - prev.y < gap) or (l.page == prev.page + 1)
             soft = prev.text.endswith(' ') or prev.x1 > right - 30
-            new = not (same_flow and soft) or label_of(t) is not None
+            new = not (same_flow and soft) or label_of(t) is not None or ELLIPSIS.match(CALL.sub('', t)) is not None \
+                or ELLIPSIS.match(CALL.sub('', prev.text)) is not None
         if new:
             out.append(t.strip())
         else:
@@ -195,7 +210,7 @@ def paragraphs(ls: list[Line], gap: float) -> list[str]:
 
 # ---------------------------------------------------------------- units of the body
 
-HEAD = re.compile(r'^Art[íi]culo\s+([IVXL]+|\d+(?:\s*-\s*[A-Z])?)\s*°?\s*\.?\s*-')
+HEAD = re.compile(r'^Art[íi]culo\s+([IVXL]+|\d+(?:\s*-\s*[A-Z])?)\s*°?\s*(?:\.?\s*-|\.(?=\s+[A-ZÁÉÍÓÚ]))')
 ORD = ['Primera', 'Segunda', 'Tercera', 'Cuarta', 'Quinta', 'Sexta', 'Sétima', 'Octava', 'Novena', 'Décima']
 DISP = re.compile(r'^(%s|Séptima)\s*\.-' % '|'.join(ORD))
 STRUCT = re.compile(r'^(LIBRO|SECCI[ÓO]N|T[ÍI]TULO|CAP[ÍI]TULO|SUBCAP[ÍI]TULO|DISPOSICIONES)\b')
@@ -235,7 +250,7 @@ def disp_key(head: str, group: str) -> tuple[str, str]:
     return '%s-%02d' % (k, ORD.index(w) + 1), '%s %s' % (lab, w.lower())
 
 
-def units(body: list[Line], gap: float = 14.5):
+def units(body: list[Line], gap: float = 14.5, big: float = 8.9):
     """Split the body into units: an ordered list of dicts {key, label, kind, lines, paras}, plus the
     structure headings as (text with calls, index of the next unit)."""
     out = []
@@ -256,7 +271,7 @@ def units(body: list[Line], gap: float = 14.5):
             cur['lines'].append(l)
             continue
         if l.bold and not HEAD.match(tc) and not DISP.match(tc) and (
-                l.size >= 8.9 or (upper_only(t) and (l.x > 60 or STRUCT.match(tc)))):
+                l.size >= big or (upper_only(t) and (l.x > 60 or STRUCT.match(tc)))):
             if tc.startswith('DISPOSICIONES'):
                 if 'FINALES' in tc:
                     disp_group = 'df'
@@ -324,36 +339,50 @@ def _calls(l: Line, nid: str) -> str:
 
 
 def note_tree(ls: list[Line], nid: str, gap: float = 10.5) -> Note:
-    i = 0
-    head: list[str] = []
-    while i < len(ls) and not (ls[i].bold and TEXTO_ANTERIOR.match(ls[i].text)) and not (i and _is_sub_start(ls[i])):
-        head.append(ls[i].text.strip())
-        i += 1
-    n = Note(nid, clean_par(' '.join(head)), lines=ls)
-    qx = None
-    if i < len(ls) and TEXTO_ANTERIOR.match(ls[i].text):
-        n.quote_kind = ls[i].text.strip()
-        qx = ls[i].x
-        i += 1
-        q: list[Line] = []
-        while i < len(ls) and not (_is_sub_start(ls[i]) and ls[i].x <= qx + 4):
-            l = ls[i]
-            q.append(Line(l.page, l.y, l.x, l.kind, _calls(l, nid), l.bold, l.size, l.spans, l.x1))
-            i += 1
-        n.quote = paragraphs(q, gap)
-    base = qx if qx is not None else (ls[0].x if ls else 0)
-    chunk: list[Line] = []
-    stars = None
-    for l in ls[i:] + [None]:
-        if l is None or (_is_sub_start(l) and l.x <= base + 4):
-            if stars:
-                n.subs[stars] = note_tree(chunk, '%s.%d' % (nid, stars), gap)
-            if l is None:
-                break
-            m = STAR.match(l.spans[0][0])
-            stars = len(m.group(1))
-            rest = STAR.sub('', l.text, count=1).strip()
-            chunk = [Line(l.page, l.y, l.x + 15, l.kind, rest, False, l.size, l.spans[1:], l.x1)] if rest else []
+    """One footnote as a tree. A line opening with a bold (*), (**), ... starts a nested note; it belongs to
+    the innermost open note whose quoted text calls that many stars (editors both restart and continue the
+    star count at deeper levels, and indent inconsistently, so the calls decide, not the indentation)."""
+    root = Note(nid, '', lines=ls)
+    head: dict[str, list[str]] = {nid: []}
+    quote: dict[str, list[Line]] = {}
+    expect: dict[str, set] = {nid: set()}
+    stack = [root]
+    for i, l in enumerate(ls):
+        cur = stack[-1]
+        if i and _is_sub_start(l):
+            k = len(STAR.match(l.spans[0][0]).group(1))
+            j = len(stack) - 1
+            while j >= 0 and not (k in expect[stack[j].id] and k not in stack[j].subs):
+                j -= 1
+            if j < 0:   # no quote calls it: the innermost note that has a quote
+                j = len(stack) - 1
+                while j > 0 and stack[j].id not in quote:
+                    j -= 1
+            parent = stack[j]
+            del stack[j + 1:]
+            child = Note('%s.%d' % (parent.id, k), '')
+            parent.subs[k] = child
+            stack.append(child)
+            head[child.id] = [STAR.sub('', l.text, count=1).strip()]
+            expect[child.id] = set()
+            continue
+        if l.bold and TEXTO_ANTERIOR.match(l.text) and cur.id not in quote:
+            quote[cur.id] = []
+            cur.quote_kind = l.text.strip()
+            continue
+        if cur.id in quote:
+            t = _calls(l, cur.id)
+            for m in re.finditer(MARK + r'%s\.(\d+)' % re.escape(cur.id) + MARK, t):
+                expect[cur.id].add(int(m.group(1)))
+            quote[cur.id].append(Line(l.page, l.y, l.x, l.kind, t, l.bold, l.size, l.spans, l.x1))
         else:
-            chunk.append(l)
-    return n
+            head[cur.id].append(l.text.strip())
+
+    def fill(n: Note):
+        n.header = clean_par(' '.join(head.get(n.id, [])))
+        if n.id in quote:
+            n.quote = paragraphs(quote[n.id], gap)
+        for c in n.subs.values():
+            fill(c)
+    fill(root)
+    return root

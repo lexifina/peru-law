@@ -13,7 +13,7 @@ from __future__ import annotations
 import datetime as dt
 import re
 
-from edition import CALL, MARK, HEAD, DISP, Note, label_of
+from edition import CALL, MARK, HEAD, DISP, LABEL as LABEL_RE, Note, label_of
 
 MONTHS = {'enero': 1, 'febrero': 2, 'marzo': 3, 'abril': 4, 'mayo': 5, 'junio': 6, 'julio': 7, 'agosto': 8,
           'septiembre': 9, 'setiembre': 9, 'octubre': 10, 'noviembre': 11, 'diciembre': 12}
@@ -150,7 +150,20 @@ def _segments(quote: list[str]):
     segs: list[list[str]] = []
     cur: list[str] = []
     partial = False
+    split = []
     for p in q:
+        # "… imparcialidad. (...)." : an ellipsis at the end of a quoted paragraph is a separator too
+        m = re.search(r'\s*\(\s*(?:\.\.\.|…)\s*\)\s*\.?\s*((?:\x01[^\x01]*\x01)*)\s*$', p)
+        if m and not SEP.match(strip_calls(p)) and strip_calls(p[:m.start()]).strip():
+            split += [p[:m.start()], '(...)' + m.group(1)]
+        else:
+            split.append(p)
+    if head is not None:
+        m = re.search(r'\s*\(\s*(?:\.\.\.|…)\s*\)\s*\.?\s*((?:\x01[^\x01]*\x01)*)\s*$', head)
+        if m:
+            head = head[:m.start()] + m.group(1)
+            partial = True
+    for p in split:
         if SEP.match(strip_calls(p)):
             partial = True
             calls = ''.join(MARK + c + MARK for c in calls_in(p))
@@ -240,6 +253,45 @@ def undo(ev: Event, paras: list[str], log: list[str], unit: str):
             reps.append((0, 1, [head]))
     for seg in segs:
         lab = label_of(seg[0])
+        labs = [label_of(p) for p in seg]
+        deeper = [x for x in labs[1:] if x and x[0] == 'lit']
+        if lab and lab[0] != 'lit' and deeper and deeper[0][1] != 'a':
+            # a path: "1. Los Jueces se inhibirán …:" then "e) …" -- the numeral's lead-in is context, the
+            # literal is what changed. Replace each quoted paragraph's own run, literals inside the numeral.
+            cands = [i for i, p in enumerate(paras) if i and label_of(p) == lab]
+            if not cands:
+                raise Problem(f'{unit} {ev.note.id}: quoted {lab} not found in the current text')
+            s0 = cands[-1] if a is None else max([i for i in cands if i <= a] or cands[:1])
+            e0 = _block(paras, s0, None)
+            runs = []
+            for p, lb in zip(seg, labs):
+                if lb or not runs:
+                    runs.append([p])
+                else:
+                    runs[-1].append(p)
+            for run in runs:
+                lb = label_of(run[0])
+                if re.fullmatch(r'\s*\(\s*(?:\.\.\.|…)\s*\)\s*\.?\s*', LABEL_RE.sub('', strip_calls(run[0]), count=1)):
+                    continue   # "2. (...)": context only
+                if lb == lab:
+                    s, e = s0, s0 + 1
+                    while e < e0 and not label_of(paras[e]):
+                        e += 1
+                else:
+                    hits = [i for i in range(s0 + 1, e0) if label_of(paras[i]) == lb]
+                    if not hits:
+                        raise Problem(f'{unit} {ev.note.id}: quoted {lb} not found inside {lab}')
+                    s = hits[0]
+                    e = s + 1
+                    while e < e0 and not label_of(paras[e]):
+                        e += 1
+                reps.append((s, e, run))
+            continue
+        if lab and re.fullmatch(r'\s*(?:\(\s*(?:\.\.\.|…)\s*\)\s*\.?)?\s*', LABEL_RE.sub('', strip_calls(seg[0]), count=1)):
+            seg = seg[1:]          # "2. (...)" or a bare "2." then "b) …": the numeral is context
+            if not seg:
+                continue
+            lab = label_of(seg[0])
         if lab:
             cands = [i for i, p in enumerate(paras) if i and label_of(p) == lab]
             if not cands and lab[0] == 'num':
@@ -251,6 +303,12 @@ def undo(ev: Event, paras: list[str], log: list[str], unit: str):
             before = [i for i in cands if a is None or i <= a]
             s = before[-1] if before else cands[0]
             e = _block(paras, s, a)
+            if lab[0] != 'lit' and not any(x and x[0] == 'lit' for x in labs) and                     any(label_of(paras[i]) and label_of(paras[i])[0] == 'lit' for i in range(s + 1, e)):
+                # the quote gives the numeral's lead-in only; its literals are quoted (or not) on their own
+                e = s + 1
+                while e < len(paras) and not label_of(paras[e]) and e < _block(paras, s, None):
+                    e += 1
+                e = min(e, s + len(seg)) if len(seg) == 1 else e
             reps.append((s, e, seg))
         else:
             if a is None:
