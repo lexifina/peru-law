@@ -185,6 +185,10 @@ CHAPTER_XIV = [f"art-{n:03d}" for n in range(188, 200)]  # replaced as a whole b
 for _u in CHAPTER_XIV:
     GAPS.setdefault(_u, [("ley-27680", "e12-chapter")])
 
+DFT02_EXTRA = "No son acumulables servicios prestados a la actividad pública y privada."
+UNEXPLAINED_DAY = "2021-05-01"  # "Edición del Congreso de la República, Mayo 2021"
+UNEXPLAINED = {(UNEXPLAINED_DAY, "dft-02")}
+
 # The Dec 2024 edition is the base for every provision whose words it shares with May 2021, except:
 E24_ERRATA = {
     "art-091": "The December 2024 edition prints numeral 3 of Article 91 twice (as numerals 3 and 4) and renumbers the rest 5 and 6; no reform did this, so the May 2021 text is kept.",
@@ -333,6 +337,14 @@ def main() -> int:
     # Única Disposición Complementaria Final) appears in Article 39 of the Dec 2024 edition only.
     T["art-039"].append((LAW_DATE["ley-30904"], "ley-30904", p24("art-039")))
 
+    # The 2021 and 2024 editions end the Segunda disposición final y transitoria with a sentence
+    # that El Peruano of 30 Dec 1993 (p. 15), the 2004-2019 Congreso editions and the ADLP text do
+    # not have, and that no reform law added: it enters, uncredited, with the May 2021 edition.
+    full = T["dft-02"][-1][2]
+    if full[-1] != DFT02_EXTRA or len(T["dft-02"]) != 1:
+        raise SystemExit(f"dft-02: {full}")
+    T["dft-02"] = [("1993-12-31", None, full[:-1]), (UNEXPLAINED_DAY, None, full)]
+
     def law_text(key: str) -> list[str]:
         url = LEY_PDF[key]
         rows = [r for r in E.rows_of(url)]
@@ -388,7 +400,7 @@ def main() -> int:
             continue
         cur = post.get(unit, T[unit][-1][2])
         paras = e24.note_paras(nid)
-        q = E.quoted(paras)
+        q = E.quoted(paras, every=True)
         if re.match(r"Artículo derogado", head):
             post[unit] = None
             continue
@@ -515,24 +527,23 @@ def main() -> int:
         for u in order:
             for d, law, _ in T.get(u, []):
                 if d == day and law:
-                    credits.setdefault(u, []).append(law)
+                    if law not in credits.get(u, []): credits.setdefault(u, []).append(law)
         changed = {u for u in set(units) | set(prev) if units.get(u, {}).get("text") != prev.get(u)}
         for u in changed - set(credits):
-            if day != dates[0]:
+            if day != dates[0] and (day, u) not in UNEXPLAINED:
                 problems.append(f"{day}: {u} changed without a credit")
-        if day == "2025-03-23":
-            credits.setdefault("preambulo", []).append("ley-32265")
         src = source_for(day)
         versions.append({"from": day, "source_url": src, "sha256": sha_of(src),
                          "units": units, "credits": {u: credits[u] for u in sorted(credits)} if day != dates[0] else {}})
         prev = {u: v["text"] for u, v in units.items()}
     # Ley 27600 and Ley 32265 change no words; they get a commit of their own (Words-changed: no).
     for key, day in (("ley-27600", LAW_DATE["ley-27600"]), ("ley-32265", LAW_DATE["ley-32265"])):
-        if day not in dates:
-            base = max(v for v in versions if v["from"] < day)["from"] if False else None
-            last = [v for v in versions if v["from"] < day][-1]
-            versions.append({"from": day, "source_url": src24, "sha256": sha_of(src24),
-                             "units": last["units"], "credits": {"preambulo": [key]}})
+        if day in dates:
+            raise SystemExit(f"{key}: another change on {day}")
+        last = max((v for v in versions if v["from"] < day), key=lambda v: v["from"])
+        src = source_for(day)
+        versions.append({"from": day, "source_url": src, "sha256": sha_of(src),
+                         "units": last["units"], "credits": {"preambulo": [key]}})
     versions.sort(key=lambda v: v["from"])
 
     laws = {"constitucion-1993": {

@@ -364,9 +364,10 @@ class Edition:
         return hits[0]
 
 
-def quoted(paras: list[str], past_y: bool = False) -> list[str]:
+def quoted(paras: list[str], past_y: bool = False, every: bool = False) -> list[str]:
     """The quoted text of a note ("... tuvo el siguiente texto: “...”"), as paragraphs, without the
-    opening and closing quotation marks and without nested "(*)" sub-notes."""
+    opening and closing quotation marks and without nested "(*)" sub-notes. every=True keeps
+    reading after a closing quotation mark and collects later quotations too."""
     out: list[str] = []
     inside = False
     for p in paras:
@@ -382,8 +383,11 @@ def quoted(paras: list[str], past_y: bool = False) -> list[str]:
         if end:
             p = p[:end.start()]
             out.append(p.strip())
-            if not (past_y and re.search(r"Y$", p.strip())):  # art. 91 note: 'Tributaria. Y” (*)' continues
+            if past_y and re.search(r"Y$", p.strip()):  # art. 91 note: 'Tributaria. Y” (*)' continues
+                continue
+            if not every:
                 break
+            inside = False
             continue
         out.append(p.strip())
     return [clean(re.sub(r"\(\*\)", "", p)) for p in out if p.strip()]
