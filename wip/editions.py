@@ -233,6 +233,8 @@ class Edition:
                 continue
             if re.match(r"^(OFICIALÍA MAYOR|REFORMAS A LA CONSTITUCIÓN|ÍNDICE)", t) or plain == "ÍNDICE":
                 break
+            if self.style == "star" and r.size < 7.6:
+                continue  # 2024 edition: 7 pt page-foot editorial footnotes (e.g. on Ley 30904's renaming)
             is_note = (r.size < self.body_size - 1.2) or (i in star_note)
             if self.style == "old":
                 # older editions: notes are small/italic, or start with "(*)", "*" or "NOTA" and
