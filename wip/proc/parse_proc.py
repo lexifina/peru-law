@@ -416,6 +416,10 @@ AFTER_DECISIONS = [
     'are not in it yet: no official consolidated text after that day was found (no ninth MINJUS edition; El '
     'Peruano\'s Normas Legales Actualizadas PDFs are served corrupted; SPIJ is unreachable), so this part is not '
     'marked verified (no 60-proc.PUBLISH).',
+    'Known later amendments, not yet replayed: in the Congreso law index (leyes.congreso.gob.pe, searched by number '
+    'from Ley 32140; the index ends at Ley 32537 of 26 December 2025) the titles of Leyes 32181 and 32182 '
+    '(11 December 2024), 32255 (10 March 2025) and 32374 (7 June 2025) name the Code. Laws of 2026 and '
+    'decretos legislativos are not in that index.',
 ]
 
 
