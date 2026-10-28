@@ -477,6 +477,13 @@ def main() -> int:
             b = E.words(e.units[unit]["paras"]) if unit in e.units else ""
             if a != b:
                 miss.append(unit)
+                if os.environ.get("PE_DIFF"):
+                    import difflib
+                    x, y = a.split(), b.split()
+                    for o in difflib.SequenceMatcher(None, x, y, autojunk=False).get_opcodes():
+                        if o[0] != "equal":
+                            print(f"  {k} {unit} ours: {' '.join(x[max(0, o[1] - 4):o[2] + 3])!r}"
+                                  f"  edition: {' '.join(y[max(0, o[3] - 4):o[4] + 3])!r}")
         exact = ""
         if k in ("e21", "e24"):
             ex = [u for u in e.units if harmonise(e.units[u]["paras"]) != s.get(u)]
