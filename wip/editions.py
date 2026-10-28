@@ -181,9 +181,9 @@ class Edition:
         star = 0
         note: Note | None = None
         started = False
-        for r in rows:
-            if r.size <= 7.6 and r.y > 425:
-                continue  # page footer
+        rows = [r for r in rows if not (r.size <= 7.6 and r.y > 425)]  # page footers
+        star_note = self._star_rows(rows) if self.style == "star" else set()
+        for i, r in enumerate(rows):
             t = r.text.strip()
             plain = MARK.sub("", t).replace(" ", "")
             if not started:
@@ -193,7 +193,7 @@ class Edition:
                 continue
             if re.match(r"^(OFICIALÍA MAYOR|REFORMAS A LA CONSTITUCIÓN)", t):
                 break
-            is_note = (r.size < 8.8) or (self.style == "star" and r.italic)
+            is_note = (r.size < 8.8) or (i in star_note)
             if is_note:
                 if self.style == "footnote":
                     m = re.match(r"^(\d{1,2})(?:	\s*|\s+(?=[A-ZÁÉÍÓÚ]))(.*)$", r.text.lstrip(" ")) or                         re.match(r"^(1)\.\s+(La Constitución Política del Perú se promulgó.*)$", t)
@@ -277,6 +277,41 @@ class Edition:
                     marks.append((nid, i))
                 out.append(clean(MARK.sub("", p)))
             self.units[key] = {"label": labels[key], "paras": out, "marks": marks}
+
+    @staticmethod
+    def _star_rows(rows: list[Row]) -> set[int]:
+        """Rows that belong to inline (*) notes: the bold 8 pt header, then the quoted future text,
+        which is set in italics, except where the publisher set part of it in roman type; such
+        roman rows count as note text when the open quotation closes in an italic row before the
+        next heading."""
+        out: set[int] = set()
+        in_note = quote_open = False
+        for i, r in enumerate(rows):
+            t = r.text.strip()
+            if t.startswith("(*)") and r.size < 8.8:
+                in_note, quote_open = True, False
+                out.add(i)
+                continue
+            if not in_note:
+                continue
+            note_like = r.size < 8.8 or r.italic
+            if not note_like and quote_open and "⟦*⟧" not in r.text:
+                for j in range(i + 1, min(i + 60, len(rows))):
+                    rj = rows[j]
+                    if rj.bold and not rj.first_bold.startswith("Artículo") and rj.size >= 9.5:
+                        break  # a heading: the quotation never closes
+                    if rj.italic and re.search(r"”\s*\.?\s*$", rj.text.strip()):
+                        note_like = True
+                        break
+            if not note_like:
+                in_note = quote_open = False
+                continue
+            out.add(i)
+            if "“" in t:
+                quote_open = True
+            if quote_open and re.search(r"”\s*\.?\s*$", t):
+                in_note = quote_open = False
+        return out
 
     def note_paras(self, nid: str) -> list[str]:
         n = self.notes[nid]
