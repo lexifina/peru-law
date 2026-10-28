@@ -150,3 +150,26 @@ def parse_note(nl) -> dict:
     if quote is not None:
         q = edition.paragraphs(quote, 8.5)
     return {"header": header, "quote": q, "quote_kind": kind}
+
+# the edition writes numerals as "3.-"; let edition.paragraphs see them as item labels
+edition.LABEL = re.compile(r"^(?:(\d{1,3})\s*\.-?(?=\s|$)|(\d{1,3})\s*\)|([a-zñ])\s*\)|([a-zñ])\s*\.(?=\s)|([IVX]+)\s*\.(?=\s))")
+
+
+def text14(u: dict) -> list[str] | None:
+    """A 14th-edition unit as lines in the corpus layout: the sumilla line (if printed apart), then the
+    paragraphs; footnote calls, degree marks after numbers and "DEROGADO." numerals removed. None if the
+    whole article is printed as repealed."""
+    lines = []
+    if u["sumilla"]:
+        lines.append(u["sumilla"].strip())
+    for p in u["paras"]:
+        p = CALLS.sub("", p).strip()
+        p = re.sub(r"(\d)\s*\.?\s*[º°˚]", r"\1", p)
+        p = p.replace("“", '"').replace("”", '"')
+        if re.fullmatch(r"\d+\s*\.-?\s*DEROGAD[OA]S?\.?|[a-z]\)\s*DEROGAD[OA]\.?", p):
+            continue
+        lines.append(p)
+    body = [x for x in lines if not (u["sumilla"] and x == u["sumilla"].strip())]
+    if not body or re.fullmatch(r"Artículos?\s+[\d\s,y-]+\.?-?\s*(DEROGAD[OA]S?\.?)?", body[0]) and len(body) == 1:
+        return None
+    return lines
