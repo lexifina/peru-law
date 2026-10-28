@@ -281,36 +281,24 @@ class Edition:
     @staticmethod
     def _star_rows(rows: list[Row]) -> set[int]:
         """Rows that belong to inline (*) notes: the bold 8 pt header, then the quoted future text,
-        which is set in italics, except where the publisher set part of it in roman type; such
-        roman rows count as note text when the open quotation closes in an italic row before the
-        next heading."""
+        which the publisher indents (x >= 85 pt; the body sits at 43/64 pt). Mostly italic, but
+        some quoted rows are roman, so position, not style, decides. A centred bold roman row is
+        a heading and ends the note."""
         out: set[int] = set()
-        in_note = quote_open = False
+        in_note = False
         for i, r in enumerate(rows):
             t = r.text.strip()
             if t.startswith("(*)") and r.size < 8.8:
-                in_note, quote_open = True, False
+                in_note = True
                 out.add(i)
                 continue
             if not in_note:
                 continue
-            note_like = r.size < 8.8 or r.italic
-            if not note_like and quote_open and "⟦*⟧" not in r.text:
-                for j in range(i + 1, min(i + 60, len(rows))):
-                    rj = rows[j]
-                    if rj.bold and not rj.first_bold.startswith("Artículo") and rj.size >= 9.5:
-                        break  # a heading: the quotation never closes
-                    if rj.italic and re.search(r"”\s*\.?\s*$", rj.text.strip()):
-                        note_like = True
-                        break
-            if not note_like:
-                in_note = quote_open = False
-                continue
-            out.add(i)
-            if "“" in t:
-                quote_open = True
-            if quote_open and re.search(r"”\s*\.?\s*$", t):
-                in_note = quote_open = False
+            heading = r.bold and not r.italic and r.size >= 9.5
+            if r.size < 8.8 or (r.x >= 85 and not heading):
+                out.add(i)
+            else:
+                in_note = False
         return out
 
     def note_paras(self, nid: str) -> list[str]:
