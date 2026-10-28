@@ -92,6 +92,8 @@ def rows_of(url: str) -> list[Row]:
                 continue
             main = max(s["size"] for s in big)
             txt = ""
+            fb = ""
+            in_fb = True
             prev = None
             for s in spans:
                 t = s["text"]
@@ -103,16 +105,15 @@ def rows_of(url: str) -> list[Row]:
                         and s["bbox"][0] - prev["bbox"][2] > 1.5 and not t.startswith("⟦"):
                     txt += " "
                 txt += t
+                if in_fb and s["text"].strip():
+                    if "Bold" in s["font"] or t.startswith("⟦"):
+                        fb += t
+                    else:
+                        in_fb = False
                 prev = s
             chars = sum(len(s["text"].strip()) for s in big)
             boldc = sum(len(s["text"].strip()) for s in big if "Bold" in s["font"] or "Black" in s["font"])
             italc = sum(len(s["text"].strip()) for s in big if "Italic" in s["font"])
-            fb = ""
-            for s in big:
-                if "Bold" in s["font"] or s["size"] < main - 2.5:
-                    fb += s["text"]
-                else:
-                    break
             out.append(Row(pno, x, y, txt, main, boldc >= chars * 0.9, italc >= chars * 0.6, fb.strip()))
     return out
 
@@ -196,7 +197,7 @@ class Edition:
             is_note = (r.size < 8.8) or (i in star_note)
             if is_note:
                 if self.style == "footnote":
-                    m = re.match(r"^(\d{1,2})(?:	\s*|\s+(?=[A-ZÁÉÍÓÚ]))(.*)$", r.text.lstrip(" ")) or                         re.match(r"^(1)\.\s+(La Constitución Política del Perú se promulgó.*)$", t)
+                    m = re.match(r"^(\d{1,2})(?:	\s*|\s+(?=[A-ZÁÉÍÓÚ]))(.*)$", r.text.lstrip(" ")) or re.match(r"^(1)\.\s+(La Constitución Política del Perú se promulgó.*)$", t)
                     if m and int(m.group(1)) == len(self.notes) + 1:
                         note = Note(m.group(1))
                         self.notes[note.id] = note
