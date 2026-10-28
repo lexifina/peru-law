@@ -465,8 +465,8 @@ SOURCES = [
      'url': forward.ADLP % n, 'retrieved': '2026-10-28', 'requests': 1, 'licence': 'as above',
      'notes': 'text layer; amends the Code after the eighth edition'} for n, *_ in forward.LAWS
 ] + [
-    {'name': 'Congreso law index (LeyNumePP.aspx), searched by number 32140-32799', 'url':
-     'https://www.leyes.congreso.gob.pe/LeyNumePP.aspx?xNorma=0', 'retrieved': '2026-10-28', 'requests': 66,
+    {'name': 'Congreso law index (LeyNumePP.aspx), searched by number 32140-32799 (pages of 20)', 'url':
+     'https://www.leyes.congreso.gob.pe/LeyNumePP.aspx?xNorma=0', 'retrieved': '2026-10-28', 'requests': 67,
      'licence': 'as above', 'notes': 'titles; ends at Ley 32537 (26 Dec 2025); no decretos legislativos'},
 ]
 
