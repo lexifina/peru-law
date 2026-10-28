@@ -55,6 +55,10 @@ SRC = {
     "dp_minsa": "https://www.minsa.gob.pe/Recursos/OGTI/SINADEF/Ley-29733.pdf",
     # El Peruano 15 Sep 2017 page with DS 019-2017-JUS (sets D.Leg. 1353 in force), hosted by SUNAT
     "ds019": "https://www.sunat.gob.pe/legislacion/procedim/normasadua/normasociada/gja-00.02/ctrlCambios/anexos/DS019-2017-JUS.pdf",
+    # MINJUS, Compendio sobre Protección de Datos Personales (1st official ed., current to 22 Nov 2025), gob.pe
+    "dp_compendio": "https://cdn.www.gob.pe/uploads/document/file/9231033/7575393-compendio_proteccion_datos_personales.pdf?v=1767203570",
+    # MINJUS Código Civil, 14th official edition (current to 1 Aug 2014), gob.pe
+    "cc14": "https://cdn.www.gob.pe/uploads/document/file/5700008/5060551-codigo-civil-minjus-bcp_n-3.pdf?v=1705608699",
     # El Peruano 22 Mar 2013 Normas Legales with DS 003-2013-JUS (reglamento), ANPD copy
     "ds003": "https://cdn.www.gob.pe/uploads/document/file/2011287/Reglamento%20de%20la%20Ley%20No%2029733%2C%20Ley%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf?v=1626124830",
 }
@@ -682,6 +686,21 @@ def main():
             if cmpkey(ln) not in minsa_all:
                 bad.append((k, "minsa-old", ln[:80]))
     REPORT.append(f"DP unchanged-unit check: {len(bad)} line(s) not found")
+    # today's text against the newest official edition: MINJUS compendium (current to 22 Nov 2025)
+    import amendlaws as _al
+
+    def _fl(s):
+        s = re.sub(r"ley\s*n\s*[°º]\s*", "ley ", s.casefold())
+        return _al.flat(s)
+    comp = _fl(pdf_text("dp_compendio"))
+    low = []
+    for k, v in cur.items():
+        f = _fl(v)
+        wins = [f[i:i + 40] for i in range(0, len(f) - 39, 40)]
+        got = sum(w in comp for w in wins)
+        if wins and got / len(wins) < 0.9:
+            low.append((k, f"{got}/{len(wins)}"))
+    REPORT.append(f"DP check vs MINJUS compendium (Nov 2025): units below 90% of 40-char windows found: {low}")
     for b in bad[:30]:
         REPORT.append(f"  {b}")
 
@@ -762,6 +781,7 @@ def main():
         "Ley 29733 original text: ANPD/MINJUS copy on gob.pe (2023), which prints each replaced text before the D.Leg. 1353 text; every unit not amended was checked word for word against the current Editora Perú edition and the 2016 MINSA copy.",
         "Ley 29733 in force from 4 July 2011 (published 3 July; Const. art. 109) for Título II, art. 32 and the 1st-4th, 9th and 10th final provisions; the rest 30 business days after the reglamento (D.S. 003-2013-JUS, El Peruano 22 March 2013): counted from 25 March 2013, skipping 28-29 March (Holy Week) and 1 May, that is 8 May 2013. Recorded as a no-words commit crediting D.S. 003-2013-JUS on those units.",
         "D.Leg. 1353's changes to Ley 29733 (arts. 2, 3, 12, 14, 15, 18, 20-22, 25, 27 and others listed in the notes, plus the Título IV heading) took effect on 16 September 2017, the day after D.S. 019-2017-JUS (El Peruano, 15 September 2017), as its second final provision requires; the fe de erratas of 12 January 2017 (art. 15 numbering) predates that day and is included.",
+        "Ley 29733 today: every unit agrees with the MINJUS Compendio sobre Protección de Datos Personales (1st official edition, current to 22 Nov 2025) in at least 90% of 40-character windows (differences are typographic: 'Ley N° 27444' for 'Ley 27444', footnote numbers); no amendment after D.Leg. 1353 is noted there.",
         "Ley 29733 has no undécima disposición complementaria final in any source checked; the numbering jumps from décima to duodécima.",
         "Ley 29733 art. 3: D.Leg. 1353 restated it with the same words (both texts in the ANPD copy), so its commit shows it with wording unchanged.",
         "Ley 29733 art. 30: the Editora Perú edition notes it as modified by D.Leg. 1353 (cuarta DCM) but the ANPD copy prints no replaced text and the wording is identical in both, so it is credited to D.Leg. 1353 with wording unchanged.",
@@ -785,6 +805,13 @@ def main():
              "licence": "Official", "notes": "original and amended texts"},
             {"name": "MINSA on gob.pe: Ley 29733 (2016)", "url": SRC["dp_minsa"], "retrieved": "2026-10-28", "requests": 1,
              "licence": "Official", "notes": "cross-check only"},
+            {"name": "MINJUS, Código Civil, 14th official edition (gob.pe)", "url": SRC["cc14"], "retrieved": "2026-10-28", "requests": 2,
+             "licence": "Official", "notes": "text to 1 Aug 2014; footnotes quote the wording before each modification"},
+            {"name": "MINJUS, Compendio sobre Protección de Datos Personales (gob.pe)", "url": SRC["dp_compendio"], "retrieved": "2026-10-28",
+             "requests": 2, "licence": "Official", "notes": "current to 22 Nov 2025; check of today's Ley 29733 text"},
+            {"name": "El Peruano pages of the amending laws (Congreso bulletins NLYYYYMMDD, gob.pe copies) and Congreso ADLP texts",
+             "url": "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/", "retrieved": "2026-10-28",
+             "requests": 20, "licence": "Official gazette", "notes": "listed in codes/amendlaws.py SOURCES"},
         ],
         "decisions": decisions,
         "ai_use": ["codes part: none. A model wrote the parser; no model output is used as legal text."],
