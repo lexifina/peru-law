@@ -21,6 +21,7 @@ sys.path.insert(0, str(HERE.parent))
 import fetch  # noqa: E402
 import edition  # noqa: E402
 import history  # noqa: E402
+import forward  # noqa: E402
 from history import Problem, calls_in, classify, strip_calls, vigencia  # noqa: E402
 
 ED8 = ('https://cdn.www.gob.pe/uploads/document/file/7451652/'

@@ -28,7 +28,7 @@ URL = "https://cdn.www.gob.pe/uploads/document/file/5700008/5060551-codigo-civil
 edition.PROFILES["cc14"] = {"body_min": 9.0, "furniture": ("Tahoma",), "top": 40, "bottom": 0}
 MARK = edition.MARK
 CALLS = re.compile(MARK + r"([^" + MARK + r"]*)" + MARK)
-HEAD = re.compile(r"^“?Art[íi]culo\s+(\d+|[IVX]+)\s*[°º˚]?\s*(?:-\s*([A-Z])\b)?\s*[°º˚]?\s*(?:\.?\s*-|\.(?=\s))")
+HEAD = re.compile(r"^“?Art[íi]culo\s+(\d+|[IVX]+)\s*\.?\s*[°º˚]?\s*(?:-\s*([A-Z])\b)?\s*[°º˚]?\s*(?:\.?\s*-|\.(?=\s))")
 ROMAN = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5, "VI": 6, "VII": 7, "VIII": 8, "IX": 9, "X": 10}
 STRUCT = re.compile(r"^(LIBRO|SECCI[ÓO]N|T[ÍI]TULO|CAP[ÍI]TULO|SUBCAP[ÍI]TULO|DISPOSICIONES)\b")
 
@@ -55,7 +55,7 @@ def read():
     ls = edition.lines(doc, first, doc.page_count - 1, "cc14")
     # side tabs ("LIBRO I / DERECHO DE LAS PERSONAS") sit at the right edge in note type: drop them
     ls = [l for l in ls if not (l.kind == "note" and l.x > 370)]
-    body, notes_l = edition.split_notes(ls)
+    body, notes_l = split_notes(ls)
     # body ends after art. 2122
     units: "OrderedDict[str, dict]" = OrderedDict()
     struct: list[str] = []
@@ -79,10 +79,8 @@ def read():
             cur = {"key": k, "lines": [l], "sumilla": pend_sumilla}
             groups.append(cur)
             pend_sumilla = []
-            if k == "art-2122":
-                done_after = True
             continue
-        if l.bold and l.x > 90 and (STRUCT.match(tc) or tc.isupper() or not HEAD.match(tc)) and l.x1 < 380 and _centered(l):
+        if l.bold and l.x > 90:
             struct.append(tc)
             cur = None
             pend_sumilla = []
@@ -90,7 +88,7 @@ def read():
         if l.bold:
             # sumilla (one or two bold lines before an article head)
             pend_sumilla.append(l)
-            cur = None if cur is None or cur["lines"][-1].bold is False else cur
+            cur = None
             continue
         if cur is not None:
             cur["lines"].append(l)
@@ -113,8 +111,27 @@ def read():
     return units, struct, notes
 
 
-def _centered(l) -> bool:
-    return l.x > 90
+def split_notes(ls):
+    """Like edition.split_notes, but the numbering of this edition does not start at 1 in the body."""
+    body = [l for l in ls if l.kind == "body"]
+    notes: dict = {}
+    cur = None
+    expect = None
+    for l in ls:
+        if l.kind != "note":
+            continue
+        m = edition.NOTE_START.match(l.text.strip())
+        if m and l.x < 70 and (expect is None or int(m.group(1)) in (expect, expect + 1)):
+            cur = int(m.group(1))
+            expect = cur + 1
+            rest = l.text.strip()[len(m.group(1)):].lstrip()
+            notes[cur] = []
+            if rest:
+                notes[cur].append(edition.Line(l.page, l.y, l.x + 20, "note", rest, False, l.size, l.spans, l.x1))
+            continue
+        if cur is not None:
+            notes[cur].append(l)
+    return body, notes
 
 
 TA = re.compile(r"^\s*(Texto|Denominación)\s+(anterior|original)[^:]*:\s*$", re.I)

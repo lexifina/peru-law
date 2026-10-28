@@ -117,7 +117,7 @@ def apply(units: dict, labels: dict) -> list[tuple]:
                     raise SystemExit(f'Ley {n}: art. {art} quoted with […] but used whole')
                 changed[key] = new
                 continue
-            src = q[art]
+            src = q[art] if art else []
             if kind == 'drop':
                 i = find(cur, op[3])
                 del cur[i]
