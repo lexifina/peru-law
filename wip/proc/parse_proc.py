@@ -460,18 +460,39 @@ SOURCES = [
     {'name': 'El Peruano: Decreto Supremo 007-2019-JUS (Reglamento del Decreto Legislativo 1373), publicado el 1 de febrero de 2019',
      'url': 'https://busquedas.elperuano.pe/dispositivo/NL/1737282-3', 'retrieved': '2026-10-28', 'requests': 1,
      'licence': 'as above', 'notes': 'dates the start of Decreto Legislativo 1373 (the day after its regulation)'},
+] + [
+    {'name': f'Congreso, Archivo Digital de la Legislación del Perú: Ley {n} (texto publicado en El Peruano)',
+     'url': forward.ADLP % n, 'retrieved': '2026-10-28', 'requests': 1, 'licence': 'as above',
+     'notes': 'text layer; amends the Code after the eighth edition'} for n, *_ in forward.LAWS
+] + [
+    {'name': 'Congreso law index (LeyNumePP.aspx), searched by number 32140-32799', 'url':
+     'https://www.leyes.congreso.gob.pe/LeyNumePP.aspx?xNorma=0', 'retrieved': '2026-10-28', 'requests': 66,
+     'licence': 'as above', 'notes': 'titles; ends at Ley 32537 (26 Dec 2025); no decretos legislativos'},
 ]
 
 
 AFTER_DECISIONS = [
-    'The history ends with the eighth edition (current to 17 November 2024). Amendments published after that day '
-    'are not in it yet: no official consolidated text after that day was found (no ninth MINJUS edition; El '
-    'Peruano\'s Normas Legales Actualizadas PDFs are served corrupted; SPIJ is unreachable), so this part is not '
-    'marked verified (no 60-proc.PUBLISH).',
-    'Known later amendments, not yet replayed: in the Congreso law index (leyes.congreso.gob.pe, searched by number '
-    'from Ley 32140; the index ends at Ley 32537 of 26 December 2025) the titles of Leyes 32181 and 32182 '
-    '(11 December 2024), 32255 (10 March 2025) and 32374 (7 June 2025) name the Code. Laws of 2026 and '
-    'decretos legislativos are not in that index.',
+    'The state after the last eighth-edition version equals the edition\'s own text, provision by provision and '
+    'character for character (parse_proc.py stops if it does not).',
+    'After the eighth edition (17 November 2024) no official consolidation exists (no ninth MINJUS edition; El '
+    'Peruano\'s Normas Legales Actualizadas PDFs are served corrupted; SPIJ is unreachable). Later amendments are '
+    'replayed from the laws\' own texts (proc/forward.py): Leyes 32181 and 32182 (published 11 December 2024, in '
+    'force 12 December), 32255 (10 March 2025, in force 11 March) and 32374 (7 June 2025, in force 8 June), each '
+    'the day after publication (Constitución art. 109; none has its own vigencia clause). Their titles in the '
+    'Congreso law index (searched by number from Ley 32140; it ends at Ley 32537 of 26 December 2025) name the Code.',
+    'Their wording is taken from Congreso\'s ADLP transcriptions (Documentos/2021_2026/ADLP/Texto_Consolidado/'
+    'N-TXM.pdf, headed "Publicada el ... en el Diario Oficial El Peruano", text layer); the El Peruano bulletin '
+    'folder on leyes.congreso.gob.pe (Boletin_de_Normas_Legales) holds only 2016-2021 issues. Every paragraph a '
+    'law brings is checked to occur word for word in that law\'s text. "[…]" keeps the existing wording; a '
+    'full stop printed after the closing quote is restored to the provision. New articles keep the law\'s heading '
+    'style ("Artículo 261-A. …").',
+    'Ley 32181 (Única Disposición Complementaria Derogatoria) repealed art. 261.1.a); the literal is removed (no '
+    'placeholder) until Ley 32255 restored it with new wording.',
+    'Not found, so not in this history: laws after Ley 32537 and decretos legislativos after the eighth edition. '
+    'Neither the Congreso index nor any text-layer bulletin reachable without a search engine lists them (El '
+    'Peruano\'s search page needs its client app). A web search names Decreto Legislativo 1735 (February 2026) and '
+    'Ley 32735 (July 2026) as amending the Code; their official texts were not found. Today\'s text may therefore '
+    'lack those and other 2026 amendments.',
 ]
 
 

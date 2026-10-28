@@ -168,6 +168,14 @@ def apply(units: dict, labels: dict) -> list[tuple]:
                     raise SystemExit(f'Ley {n}: {key} {lab} is followed by unlabelled paragraphs; check the splice')
                 cur[j] = src[i]
             changed[key] = cur
+        # every paragraph this law brings must be in its text word for word
+        law_words = ' ' + ' '.join(re.findall(r'\w+', ' '.join(l.lstrip(BOLD) for l in lines))) + ' '
+        for k, paras in changed.items():
+            for p in paras:
+                if p not in (units.get(k) or []):
+                    w = ' ' + ' '.join(re.findall(r'\w+', p)) + ' '
+                    if w not in law_words:
+                        raise SystemExit(f'Ley {n}: {k}: paragraph not found word for word in the law: {p[:80]}')
         sha = hashlib.sha256(path.read_bytes()).hexdigest()
         out.append((n, pub, day, sha, ADLP % n, title_of(lines), changed))
         for k, v in changed.items():
