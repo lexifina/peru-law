@@ -593,9 +593,13 @@ def main():
 
     # ---------------- Código Civil ----------------
     cc, cc_struct, cc_notes, cc_log = cc_parse()
-    units1 = OrderedDict((k, {"label": label_cc(k), "kind": "art", "text": v}) for k, v in cc.items())
-    units1["estructura"] = {"label": "Estructura (libros, secciones, títulos, capítulos)", "kind": "structure",
-                            "text": "\n".join(cc_struct) + "\n"}
+    import cc_history
+    import amendlaws
+    import cc14 as cc14mod
+    hist, hist_laws, hist_report, hist_editorial = cc_history.build(cc, cc_notes)
+    for r in hist_report:
+        REPORT.append(r)
+    units1 = hist[-1]["units"]          # the replay's state on 2024-08-16 (= the Editora Perú text, checked)
     REPORT.append(f"CC: {len(cc)} article units, {len(cc_struct)} heading lines, log={ {k: (v if isinstance(v, int) else len(v)) for k, v in cc_log.items()} }")
     REPORT.append(f"CC derogated (no file): {cc_log['derogated'][:40]}")
     REPORT.append(f"CC duplicate article starts dropped (pending texts): {cc_log['dupes']}")
@@ -621,6 +625,8 @@ def main():
 
     laws["dleg-295"] = law("Decreto Legislativo 295", "Código Civil", "decree", "1984-07-24", "1984-07-25",
                            "https://www.leyes.congreso.gob.pe/Documentos/DecretosLegislativos/00295.pdf")
+    for k, (lab, title, kind, enacted, published, _inforce, url, _how) in sorted(hist_laws.items()):
+        laws[k] = law(lab, title, kind, enacted, published, url)
     laws["dleg-1626"] = law("Decreto Legislativo 1626", "Decreto Legislativo que modifica los artículos 2033, 2037, 2038, 2040 y 2042 del Código Civil",
                             "decree", "2024-08-14", "2024-08-15", SRC["dleg1626"])
     laws["ley-32228"] = law("Ley 32228", "Ley que modifica el Código Civil, Decreto Legislativo 295, para incorporar los principios generales de los procesos en materia de familia",
@@ -629,12 +635,7 @@ def main():
     acts.append({
         "slug": "codigo-civil", "short": "CC", "title": "Código Civil (Decreto Legislativo 295)",
         "url": SRC["cc_nla"], "first_law": None, "earlier_laws": ["dleg-295"],
-        "versions": [
-            {"from": "2024-08-16", "source_url": SRC["cc_nla"], "sha256": sha("cc_nla"), "units": units1, "credits": {},
-             "note": ("Oldest version available: the Editora Perú 'Normas Legales Actualizadas' edition of the Código Civil, "
-                      "which includes amendments published up to 15 August 2024 (D.Leg. 1626). The code was enacted by "
-                      "D.Leg. 295 (in force 14 November 1984) and amended some 400 times since; that earlier history is not "
-                      "rebuilt here. Texts of amendments not yet in force (D.Leg. 1400 garantía mobiliaria) are left out.")},
+        "versions": cc_versions(hist, units1) + [
             {"from": "2024-11-13", "source_url": SRC["dleg1626"], "sha256": sha("dleg1626"), "changes": changes(units1, units2),
              "credits": {"art-2037": ["dleg-1626"], "art-2038": ["dleg-1626"]},
              "note": "D.Leg. 1626, única disposición complementaria final: the changes to arts. 2037 and 2038 take effect 90 days after publication (15 August 2024)."},
@@ -787,6 +788,40 @@ def main():
     tmp.write_text(json.dumps(part, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
     os.replace(tmp, OUT)
     print(f"wrote {OUT} ({OUT.stat().st_size} bytes)")
+
+
+def cc_versions(hist, units_last):
+    """The replayed Código Civil versions in corpus form: the first with all units, then changes only."""
+    import amendlaws
+    import cc14 as cc14mod
+    import cc_history
+    out = []
+    prev = None
+    for v in hist:
+        laws_here = sorted({l for ls in v["credits"].values() for l in ls})
+        if prev is None:
+            src = cc14mod.URL
+        else:
+            with_text = [l for l in laws_here if l in amendlaws.SOURCES]
+            src = amendlaws.SOURCES[with_text[0]][0] if with_text else (cc14mod.URL if v["from"] <= "2014-08-01" else SRC["cc_nla"])
+        p = fetch.cached(src)
+        ver = {"from": v["from"], "source_url": src, "sha256": hashlib.sha256(p.read_bytes()).hexdigest()}
+        if prev is None:
+            ver["units"] = v["units"]
+            ver["credits"] = {}
+            ver["note"] = ("Oldest version available: the Código Civil as in force on 25 December 2012, rebuilt from the MINJUS "
+                           "14th official edition (text to 1 August 2014) and its footnotes quoting the wording before each "
+                           "amendment. Earlier days cannot be rebuilt from official text-layer sources: the edition does not quote "
+                           "the wording of provisions repealed before then (the last such repeal is Ley 29973, published 24 "
+                           "December 2012), and the 1984 publication is an image scan.")
+        else:
+            ver["changes"] = changes(prev, v["units"])
+            ver["credits"] = v["credits"]
+            hows = sorted({cc_history.LAWS[l][7] for l in laws_here if cc_history.LAWS[l][7] != "default"})
+            ver["note"] = ("In force: " + "; ".join(hows)) if hows else None
+        out.append(ver)
+        prev = v["units"]
+    return out
 
 
 def label_cc(k: str) -> str:
