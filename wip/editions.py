@@ -225,13 +225,13 @@ class Edition:
                     started = True
                     cur = "preambulo"; labels[cur] = "Preámbulo"; body_rows[cur] = []; self.order.append(cur)
                 continue
-            if re.match(r"^(OFICIALÍA MAYOR|REFORMAS A LA CONSTITUCIÓN)", t):
+            if re.match(r"^(OFICIALÍA MAYOR|REFORMAS A LA CONSTITUCIÓN|ÍNDICE)", t) or plain == "ÍNDICE":
                 break
             is_note = (r.size < self.body_size - 1.2) or (i in star_note)
             if self.style == "old":
                 # checkpoint editions: notes are dropped. Their notes are small/italic, or start with
                 # "(*)", "*" or "NOTA" and continue in bold or italic rows.
-                if is_note or re.match(r"^(\(\*\)|\*|NOTA)", t) or (old_note and (r.bold or r.italic)):
+                if is_note or re.match(r"^(\(\*\)|\*|NOTA)", t) or (old_note and (r.bold or r.italic) and r.x < 100 and r.size < self.body_size + 1):
                     old_note = not is_note or old_note
                     continue
                 old_note = False
