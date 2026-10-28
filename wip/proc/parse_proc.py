@@ -89,6 +89,59 @@ def law_table(trees: dict, log: list[str]):
     return out
 
 
+CHECKPOINTS = {
+    # earlier MINJUS official editions: url, pages, layout profile, structure-heading size, "actualizada hasta"
+    'ed5-2018': ('https://cdn.www.gob.pe/uploads/document/file/1535454/CODIGO%20PROCESAL%20PENAL%20D.L.%20957.pdf.pdf?v=1610046523',
+                 (20, 356), 'ed5', 10.0, '2018-11-23'),
+    'ed6-2020': ('https://cdn.www.gob.pe/uploads/document/file/1850571/C%C3%B3digo%20Procesal%20Penal%20Final.pdf?v=1619548796',
+                 (19, 408), 'ed6', 11.5, '2020-11-27'),
+    'ed7-2022': ('https://cdn.www.gob.pe/uploads/document/file/3710113/C%C3%B3digo%20Procesal%20Penal.pdf?v=1664488493',
+                 (30, 381), 'ed7', 9.9, '2022-08-01'),
+}
+
+
+def words(paras) -> str:
+    t = ' '.join(strip_calls(p) for p in paras)
+    t = re.sub(r'(Art[íi]culo\s+[IVXL\d]+)\s*[°º˚]', r'\1', t)
+    t = re.sub(r'\(\s*sic\s*\)', ' ', t)                       # an edition's own "(sic)"
+    t = re.sub(r'(?:^|\s)(?:\d{1,2}|[a-z])\s*[.)]\s*DEROGAD[OA]\b\.?', ' ', t)   # placeholders for repealed items
+    return ' '.join(re.findall(r'\w+', t.lower()))
+
+
+def word_diff(a: str, b: str, n: int = 6) -> str:
+    import difflib
+    a, b = a.split(), b.split()
+    out = []
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b, autojunk=False).get_opcodes():
+        if tag != 'equal':
+            out.append(f'[{" ".join(a[i1:i2])[:150]} => {" ".join(b[j1:j2])[:150]}]')
+    return f'{len(out)} edits: ' + ' '.join(out[:n])
+
+
+def checkpoint(url, pages, prof, big, date, lines_of):
+    import statistics
+    body, _ = edition.read(str(fetch.cached(url)), *pages, prof)
+    sp = [b.y - a.y for a, b in zip(body, body[1:]) if a.page == b.page and 0 < b.y - a.y < 30]
+    units, _ = edition.units(body, gap=statistics.median(sp) * 1.45, big=big)
+    theirs = {u['key']: u['paras'] for u in units}
+    res = {'same': [], 'diff': [], 'missing_here': [], 'missing_there': []}
+    for key, tl in lines_of.items():
+        cur = None
+        for day, pub, ls, paras in tl:
+            if (pub or '0000') <= date:
+                cur = paras
+        if cur is None:
+            if key in theirs:
+                res['missing_here'].append(key)
+            continue
+        if key not in theirs:
+            res['missing_there'].append(key)
+            continue
+        a, b = words(cur), words(theirs[key])
+        (res['same'] if a == b else res['diff']).append(key if a == b else (key, a, b))
+    return res
+
+
 # Start days the notes do not give by themselves, with where they come from.
 OVERRIDE: dict[str, tuple[str, str]] = {}
 
@@ -126,7 +179,27 @@ def build(report: bool = False):
         for ev in others:
             if ev.kind == 'commence':
                 commence.append((u['key'], ev))
+    # per unit: [(in-force day, publication day, laws, paragraphs or None)] ascending; day None = as enacted
+    pubday = {k: v['published'] for k, v in laws.items()}
+    lines_of = {}
+    for key, (orig, states) in timelines.items():
+        tl = []
+        if orig is not None:
+            tl.append((None, PUBLISHED, ['dleg-957'], orig))
+        for day, law, paras, ev in states:
+            tl.append((day, pubday.get(law), [law] if law else [], paras))
+        lines_of[key] = tl
+    checks = {}
+    for name, (url, pages, prof, big, date) in CHECKPOINTS.items():
+        if fetch.cached(url) is None:
+            continue
+        checks[name] = checkpoint(url, pages, prof, big, date, lines_of)
     if report:
+        for name, res in checks.items():
+            print(f'CHECKPOINT {name} ({CHECKPOINTS[name][4]}): {len(res["same"])} same, {len(res["diff"])} differ, '
+                  f'missing here {res["missing_here"]}, missing there {res["missing_there"]}')
+            for k, a, b in res['diff']:
+                print(f'   {k}: {word_diff(a, b)}')
         print('PROBLEMS', len(problems))
         for p in problems:
             print('  ', p)

@@ -210,7 +210,7 @@ def paragraphs(ls: list[Line], gap: float) -> list[str]:
 
 # ---------------------------------------------------------------- units of the body
 
-HEAD = re.compile(r'^Art[íi]culo\s+([IVXL]+|\d+(?:\s*-\s*[A-Z])?)\s*°?\s*(?:\.?\s*-|\.(?=\s+[A-ZÁÉÍÓÚ]))')
+HEAD = re.compile(r'^Art[íi]culo\s+([IVXL]+|\d+)\s*[°º˚]?\s*(?:-\s*([A-Z])\b)?\s*[°º˚]?\s*(?:\.?\s*-|\.(?=\s+[A-ZÁÉÍÓÚ]))')
 ORD = ['Primera', 'Segunda', 'Tercera', 'Cuarta', 'Quinta', 'Sexta', 'Sétima', 'Octava', 'Novena', 'Décima']
 DISP = re.compile(r'^(%s|Séptima)\s*\.-' % '|'.join(ORD))
 STRUCT = re.compile(r'^(LIBRO|SECCI[ÓO]N|T[ÍI]TULO|CAP[ÍI]TULO|SUBCAP[ÍI]TULO|DISPOSICIONES)\b')
@@ -232,11 +232,10 @@ def upper_only(t: str) -> bool:
 
 def art_key(head: str) -> tuple[str, str]:
     m = HEAD.match(CALL.sub('', head).strip())
-    num = re.sub(r'\s', '', m.group(1))
-    if re.fullmatch(r'[IVXL]+', num):
-        return 'tp-%02d' % roman(num), 'Título Preliminar, art. %s' % num
-    base, _, suf = num.partition('-')
-    return 'art-%03d%s' % (int(base), ('-' + suf.lower()) if suf else ''), 'Art. %s' % num
+    base, suf = m.group(1), m.group(2)
+    if re.fullmatch(r'[IVXL]+', base):
+        return 'tp-%02d' % roman(base), 'Título Preliminar, art. %s' % base
+    return 'art-%03d%s' % (int(base), ('-' + suf.lower()) if suf else ''), 'Art. %s' % (base + ('-' + suf if suf else ''))
 
 
 DISP_NAMES = {'df': ('disp-final', 'Disposición final'),
