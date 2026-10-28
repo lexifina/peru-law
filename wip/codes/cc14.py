@@ -158,6 +158,7 @@ edition.LABEL = re.compile(r"^(?:(\d{1,3})\s*\.-?(?=\s|$)|(\d{1,3})\s*\)|([a-zñ
 def norm14(p: str) -> str:
     """One paragraph of the edition in corpus form: no footnote calls, no degree marks after numbers."""
     p = CALLS.sub("", p).strip()
+    p = re.split(r"\s*CONCORDANCIAS?\s*:", p)[0].strip()   # editorial cross-references, not law text
     p = re.sub(r"(\d)\s*\.\s*[º°˚]\s*-", r"\1.-", p)
     p = re.sub(r"(\d)\s*[º°˚]", r"\1", p)
     return p.replace("“", '"').replace("”", '"')
@@ -172,6 +173,8 @@ def text14(u: dict) -> list[str] | None:
         lines.append(u["sumilla"].strip())
     for p in u["paras"]:
         p = norm14(p)
+        if not p or p.startswith("CONCORDANCIA"):   # editorial cross-references, not law text
+            continue
         if re.fullmatch(r"\d+\s*\.-?\s*DEROGAD[OA]S?\.?|[a-z]\)\s*DEROGAD[OA]\.?", p):
             continue
         lines.append(p)
