@@ -122,6 +122,10 @@ def paragraphs(rows: list[Row], lead: float) -> list[str]:
     prev: Row | None = None
     for r in rows:
         t = clean(r.text)
+        if prev is not None and paras and re.search(r"[a-záéíóúñ][­-]\s*$", prev.text) and re.match(r"[a-záéíóúñ]", t):
+            paras[-1] = paras[-1].rstrip("-") + t  # word broken at the line end
+            prev = r
+            continue
         if not t:
             continue
         if prev is None or not paras:
@@ -129,6 +133,10 @@ def paragraphs(rows: list[Row], lead: float) -> list[str]:
             prev = r
             continue
         starts = bool(ITEM.match(MARK.sub("", t)) or ART.match(t) or t.startswith("“"))
+        if (r.text.startswith("	") or re.match(r"^\s*(\d{1,2}|[a-z])\.	", MARK.sub("", r.text))) and paras:
+            paras.append(t)
+            prev = r
+            continue
         ends = ends_sentence(paras[-1])
         if r.page == prev.page and r.y > prev.y:
             new = (r.y - prev.y) > lead * 1.45 or (starts and ends)
@@ -188,8 +196,8 @@ class Edition:
             is_note = (r.size < 8.8) or (self.style == "star" and r.italic)
             if is_note:
                 if self.style == "footnote":
-                    m = re.match(r"^(\d{1,2})\.?\s+(.*)$", t)
-                    if m and r.x < 50 and int(m.group(1)) == len(self.notes) + 1:
+                    m = re.match(r"^(\d{1,2})(?:	\s*|\s+(?=[A-ZÁÉÍÓÚ]))(.*)$", r.text.lstrip(" ")) or                         re.match(r"^(1)\.\s+(La Constitución Política del Perú se promulgó.*)$", t)
+                    if m and int(m.group(1)) == len(self.notes) + 1:
                         note = Note(m.group(1))
                         self.notes[note.id] = note
                         r = Row(r.page, r.x, r.y, m.group(2), r.size, r.bold, r.italic)
@@ -207,7 +215,7 @@ class Edition:
                 continue
             if r.size >= 12.5 and not r.first_bold.startswith("Artículo"):
                 continue  # display title "CONSTITUCIÓN POLÍTICA DEL PERÚ"
-            if r.bold and r.size >= 10.5:
+            if r.bold and not r.first_bold.startswith("Artículo") and not DISP.match(r.first_bold):
                 h = MARK.sub("", t)
                 if h.startswith("DISPOSICIONES FINALES"):
                     section = "dft"
