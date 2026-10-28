@@ -216,6 +216,7 @@ class Edition:
             self.body_size = 10
             rows = [r for r in rows if not (r.size <= 7.6 and r.y > 425)]  # page footers
         star_note = self._star_rows(rows) if self.style == "star" else set()
+        old_note = False
         for i, r in enumerate(rows):
             t = r.text.strip()
             plain = MARK.sub("", t).replace(" ", "")
@@ -227,8 +228,13 @@ class Edition:
             if re.match(r"^(OFICIALÍA MAYOR|REFORMAS A LA CONSTITUCIÓN)", t):
                 break
             is_note = (r.size < self.body_size - 1.2) or (i in star_note)
-            if is_note and self.style == "old":
-                continue  # checkpoint editions: notes are dropped
+            if self.style == "old":
+                # checkpoint editions: notes are dropped. Their notes are small/italic, or start with
+                # "(*)", "*" or "NOTA" and continue in bold or italic rows.
+                if is_note or re.match(r"^(\(\*\)|\*|NOTA)", t) or (old_note and (r.bold or r.italic)):
+                    old_note = not is_note or old_note
+                    continue
+                old_note = False
             if is_note:
                 if self.style == "footnote":
                     m = re.match(r"^(\d{1,2})(?:\t\s*|\s+(?=[A-ZÁÉÍÓÚ]))(.*)$", r.text.lstrip(" ")) or re.match(r"^(1)\.\s+(La Constitución Política del Perú se promulgó.*)$", t)
@@ -251,7 +257,7 @@ class Edition:
             if r.size >= self.body_size + 2.5 and not r.first_bold.startswith("Artículo"):
                 continue  # display title "CONSTITUCIÓN POLÍTICA DEL PERÚ"
             if r.bold and not MARK.sub("", r.first_bold).startswith("Artículo") and not DISP.match(r.first_bold):
-                h = MARK.sub("", t)
+                h = clean(MARK.sub("", t))
                 if h.startswith("DISPOSICIONES FINALES"):
                     section = "dft"
                 elif h.startswith("DISPOSICIONES TRANSITORIAS"):
@@ -291,7 +297,7 @@ class Edition:
                 r = Row(r.page, r.x, r.y, split_head(t, d.end()), r.size, r.bold, r.italic)
             if cur is None:
                 if MARK.sub("", t).strip():
-                    raise SystemExit(f"body text outside a unit in {self.url}: {t!r}")
+                    raise SystemExit(f"body text outside a unit in {self.url}: {t!r} section={section} heads={self.heads[-3:]}")
                 continue
             body_rows[cur].append(r)
         k = 0  # star markers are numbered in order of appearance
