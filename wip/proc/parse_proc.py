@@ -351,8 +351,59 @@ def assemble(path, units, laws, lines_of, commence, trees, checks, log):
             v['note'] = ' '.join(notes)
         versions.append(v)
 
+    # The eighth-edition point: the replayed state must equal the edition's own text, word for word.
+    state = {}
+    for v in versions:
+        for k, u in (v.get('units') or v.get('changes') or {}).items():
+            if u is None:
+                state.pop(k, None)
+            else:
+                state[k] = u
+    ed8 = {u['key']: text_of(u['paras']) for u in units}
+    bad = sorted(k for k in set(ed8) | set(state) if ed8.get(k) != (state.get(k) or {}).get('text'))
+    if bad:
+        raise SystemExit(f'the state after the last eighth-edition version differs from the edition: {bad[:20]}')
+    log.append(f'eighth-edition point: {len(ed8)} provisions equal the edition\'s text exactly')
+
+    # After the edition: the laws' own texts (proc/forward.py)
+    paras_now = {k: [l for l in u['text'].split('\n') if l] for k, u in state.items()}
+    labels = {k: u['label'] for k, u in state.items()}
+    extra_laws = {}
+    for n, pub, day, sha_l, url, title, changed in forward.apply(paras_now, labels):
+        key = f'ley-{n}'
+        credits = {}
+        changes = {}
+        for k, paras in sorted(changed.items()):
+            if k in state:
+                lab, kind = state[k]['label'], state[k]['kind']
+            else:
+                m = re.fullmatch(r'art-(\d+)(?:-([a-z]))?', k)
+                lab, kind = 'Art. %d%s' % (int(m.group(1)), '-' + m.group(2).upper() if m.group(2) else ''), 'art'
+            u = {'label': lab, 'kind': kind, 'text': ''.join(p + '\n' for p in paras)}
+            if versions[-1]['from'] == day:
+                prev = versions[-1]
+            else:
+                prev = None
+            changes[k] = u
+            credits[k] = [key]
+            state[k] = u
+        if prev is not None:
+            prev['changes'].update(changes)
+            for k, ls in credits.items():
+                prev['credits'][k] = sorted(set(prev['credits'].get(k, [])) | set(ls))
+            prev['source_url'] = url if prev['source_url'] == url else prev['source_url']
+        else:
+            versions.append({'from': day, 'source_url': url, 'sha256': sha_l, 'changes': changes,
+                             'credits': credits})
+        extra_laws[key] = {'label': f'Ley {n}', 'title': title, 'kind': 'law', 'enacted': None, 'published': pub,
+                           'url': url, 'temporary_until': None, 'restores': None, 'note': None}
+        used_laws.add(key)
+
     law_objs = {}
     for key in sorted(k for k in used_laws if k):
+        if key in extra_laws:
+            law_objs[key] = extra_laws[key]
+            continue
         if key in EXTRA_LAWS:
             law_objs[key] = EXTRA_LAWS[key]
             continue
