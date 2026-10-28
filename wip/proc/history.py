@@ -256,7 +256,7 @@ def undo(ev: Event, paras: list[str], log: list[str], unit: str):
     reps = []  # (start, end, new paragraphs)
     if head is not None and (first_word in ('epígrafe', 'encabezado', 'sumilla', 'artículo') or
                              re.sub(r'\W', '', strip_calls(head)).lower() != re.sub(r'\W', '', strip_calls(paras[0])).lower()):
-        if strip_calls(head) != strip_calls(paras[0]) or first_word in ('epígrafe', 'encabezado', 'sumilla'):
+        if strip_calls(head) != strip_calls(paras[0]) or first_word in ('epígrafe', 'sumilla') or                 (first_word == 'encabezado' and not segs):
             reps.append((0, 1, [head]))
     for seg in segs:
         lab = label_of(seg[0])
@@ -310,7 +310,7 @@ def undo(ev: Event, paras: list[str], log: list[str], unit: str):
             before = [i for i in cands if a is None or i <= a]
             s = before[-1] if before else cands[0]
             e = _block(paras, s, a)
-            other_lits = any(label_of(sg[0]) and label_of(sg[0])[0] == 'lit' for sg in segs if sg is not seg)
+            other_lits = any(label_of(sg[0]) and label_of(sg[0])[0] == 'lit' for sg in segs if sg is not seg)                 or first_word == 'encabezado'
             if other_lits and lab[0] != 'lit' and not any(x and x[0] == 'lit' for x in labs) and                     any(label_of(paras[i]) and label_of(paras[i])[0] == 'lit' for i in range(s + 1, e)):
                 # the quote gives the numeral's lead-in only; its literals are quoted (or not) on their own
                 e = s + 1
