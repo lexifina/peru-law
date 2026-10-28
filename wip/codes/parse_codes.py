@@ -11,6 +11,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 from collections import OrderedDict
 from pathlib import Path
 
@@ -72,15 +73,19 @@ def sha(key: str) -> str:
 
 # ---- text normalisation ------------------------------------------------------------------
 def norm(s: str) -> str:
+    s = unicodedata.normalize("NFC", s)
     s = s.replace(" ", " ").replace("­", "").replace("ﬁ", "fi").replace("ﬂ", "fl")
     s = s.replace("‘", "'").replace("’", "'").replace("–", "-").replace("—", "-")
     s = s.replace("\t", " ")
     s = re.sub(r"[ ]+", " ", s)
+    s = re.sub(r" +([,;])", r"\1", s)
     return s.strip()
 
 
 def cmpkey(s: str) -> str:
     """Typography-insensitive comparison key: words only, case-folded."""
+    s = re.sub(r"\(\*\)\s*NOTA SPIJ", " ", s)
+    s = re.sub(r"(\d)\.(?=[A-Za-zÁÉÍÓÚáéíóú])", r"\1. ", s)
     s = s.replace("“", '"').replace("”", '"').replace("?", " ")
     s = re.sub(r"[\"'«»]", " ", s)
     s = re.sub(r"\s+([.,;:)])", r"\1", s)
@@ -176,7 +181,8 @@ def nla_paragraphs(path: Path, first: int, last: int | None):
         if not new:
             if L["x0"] > L["base"] + 6:
                 new = True
-            elif (prev["pno"], prev["col"]) == (L["pno"], L["col"]) and prev["x1"] < prev["right"] - 18:
+            elif ((prev["pno"], prev["col"]) == (L["pno"], L["col"]) and prev["x1"] < prev["right"] - 18
+                  and not text[:1].islower()):
                 new = True
             elif MARK.match(text) and re.search(r"[.:;”\"]\s*$", prev["text"]):
                 new = True
@@ -257,7 +263,7 @@ def fix_quotes(s: str) -> str:
 
 
 # ---- Codigo Civil ------------------------------------------------------------------------
-ART_CC = re.compile(r"^(“|\")?Artículo\s+(\d+)\s*(?:-\s*([A-Z]))?\s*°?\s*\.?\s*-\s*(.*)$")
+ART_CC = re.compile(r"^(“|\")?Artículo\s+(\d+)\s*(?:-\s*([A-Z]))?\s*°?\s*(?:\.\s*-|\.|-)\s*(.*)$")
 ART_TP = re.compile(r"^(“|\")?Artículo\s+([IVX]+)\s*\.?\s*-\s*(.*)$")
 ROMAN = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5, "VI": 6, "VII": 7, "VIII": 8, "IX": 9, "X": 10}
 
@@ -271,6 +277,45 @@ def cc_parse():
     start = next(i for i, p in enumerate(paras) if p["kind"] == "struct" and p["text"].startswith("TÍTULO PRELIMINAR"))
     stop = next(i for i, p in enumerate(paras) if "expresa su agradecimiento" in p["text"])
     paras = paras[start:stop]
+
+    def is_art(q):
+        return q["kind"] == "para" and bool(ART_CC.match(q["text"]) or ART_TP.match(q["text"]))
+
+    # a sumilla printed on two lines comes out as two short paragraphs of one block: merge them
+    merged: list[dict] = []
+    i = 0
+    while i < len(paras):
+        p = paras[i]
+        j = i
+        while (j + 1 < len(paras) and paras[j + 1]["kind"] == "para" and p["kind"] == "para"
+               and len(paras[j + 1]["blocks"]) == 1 and paras[j + 1]["block"] == p["block"] and len(p["blocks"]) == 1
+               and not is_art(paras[j + 1])):
+            j += 1
+        group = paras[i:j + 1]
+        text = " ".join(q["text"] for q in group)
+        if (j > i and j + 1 < len(paras) and is_art(paras[j + 1]) and len(text) <= 200 and not is_art(p)
+                and not any(q["note"] for q in group) and not re.search(r"[.:;,]\s*[”\"]?\s*$", text)):
+            merged.append(dict(p, text=text, single=True))
+        else:
+            merged.extend(group)
+        i = j + 1
+    paras = merged
+    # "Artículo 920.-" alone on its line (no sumilla in the label, no note): join the next paragraph
+    joined: list[dict] = []
+    skip = False
+    for i, p in enumerate(paras):
+        if skip:
+            skip = False
+            continue
+        m = ART_CC.match(p["text"]) if p["kind"] == "para" else None
+        if (m and not m.group(4).strip() and not p["note"] and i + 1 < len(paras) and paras[i + 1]["kind"] == "para"
+                and not is_art(paras[i + 1])):
+            q = paras[i + 1]
+            joined.append(dict(q, text=p["text"] + " " + q["text"], blocks=p["blocks"] | q["blocks"]))
+            skip = True
+            continue
+        joined.append(p)
+    paras = joined
     units: "OrderedDict[str, dict]" = OrderedDict()
     struct: list[str] = []
     notes_by_unit: dict[str, list[str]] = {}
@@ -313,17 +358,24 @@ def cc_parse():
                              and i + 1 < len(paras) and paras[i + 1]["kind"] == "para"
                              and (ART_CC.match(paras[i + 1]["text"]) or ART_TP.match(paras[i + 1]["text"]))):
             body, note = t, p["note"]
+            if re.fullmatch(r"(“|\")?(\d+\s*(?:\.-?|-)|[a-z]\))", body.strip()):
+                log["stub_lines_dropped"] += 1   # a repealed numeral just before the next article
+                continue
             pending_sumilla = body.strip() or None
-            if cur is None and not pending_sumilla:
-                pass
             cur = None if pending_sumilla else cur
             continue
         body, note = t, p["note"]
+        # pieces of an editorial note set in body type ("El" / "texto será el siguiente:")
+        if re.fullmatch(r"El|(El )?(nuevo )?texto( legal)? será el siguiente:", body):
+            log["pending_dropped"] += 1
+            if body.endswith("siguiente:"):
+                skip_pending = True
+            continue
         if note is not None:
             notes_by_unit[key].append(note)
             if re.search(r"siguiente\s*:\s*$", note):
                 skip_pending = True
-        stub = re.fullmatch(r"(“|\")?(\d+\.-?|[a-z]\))", body.strip())
+        stub = re.fullmatch(r"(“|\")?(\d+\s*(?:\.-?|-)|[a-z]\))", body.strip())
         if stub:
             log["stub_lines_dropped"] += 1
             continue
@@ -336,8 +388,9 @@ def cc_parse():
         lines = unquote_unit(u["lines"], u["closes"])
         lines = [fix_quotes(ln) for ln in lines if ln]
         # an article whose only content is its number was repealed: no file
-        rest = re.sub(r"^(Artículo\s+\S+\s*\.?-)", "", lines[-1]).strip() if len(lines) == 1 else "x"
-        if not lines or not rest:
+        body_lines = lines[1:] if lines and not lines[0].startswith("Artículo") else lines
+        rest = re.sub(r"^(Artículo\s+\S+\s*\.?-)", "", body_lines[-1]).strip() if len(body_lines) == 1 else "x"
+        if not body_lines or not rest:
             log["derogated"].append(key)
             continue
         out[key] = "\n".join(lines) + "\n"
@@ -354,9 +407,11 @@ def html_text(raw: str) -> str:
 def quoted_articles(text: str) -> dict[str, list[str]]:
     """Articles quoted in an amending law: “Artículo N.- Sumilla\\nbody”."""
     out = {}
-    for m in re.finditer(r"“Artículo\s+(\d+)(?:-([A-Z]))?\.-\s*(.*?)”", text, re.S):
+    for m in re.finditer(r"“Artículo\s+(\d+)(?:-([A-Z]))?\.-\s*(.*?)”(\.?)", text, re.S):
         key = "art-%04d" % int(m.group(1)) + ("-" + m.group(2).lower() if m.group(2) else "")
         lines = [norm(x) for x in m.group(3).split("\n") if norm(x)]
+        if m.group(4) and not lines[-1].endswith("."):
+            lines[-1] += "."
         out[key] = lines
     return out
 
@@ -401,18 +456,27 @@ def dp_parse_nla(key: str):
     sumario: list[str] = []
     cur = None
     in_dcf = False
+    prev_struct = False
     for p in paras:
-        t = p["text"]
-        if p["kind"] == "struct" or (t.isupper() and len(t) < 90 and not dp_key(t)):
+        # the 2026 edition adds an editorial "Sic" after the misprinted "Ley 28706" (dcf 8); not law text
+        t = re.sub(r"\b28706 Sic\b", "28706", p["text"])
+        is_struct = p["kind"] == "struct" or (t.isupper() and len(t) < 90 and not dp_key(t))
+        if is_struct:
             body, note = t, p["note"]
-            body = body.strip("“” ")
+            body = fix_quotes(body.strip("“” "))
             if body:
-                struct.append(fix_quotes(body))
+                label = bool(re.fullmatch(r"TÍTULO [IVXL]+|TÍTULO PRELIMINAR", struct[-1])) if struct else True
+                if prev_struct and struct and not body.startswith("TÍTULO") and not label:
+                    struct[-1] += " " + body
+                else:
+                    struct.append(body)
+            prev_struct = True
             if note:
                 notes.setdefault("estructura", []).append(note)
             in_dcf = in_dcf or "COMPLEMENTARIAS" in t
             cur = None
             continue
+        prev_struct = False
         k = dp_key(t) if (not in_dcf or not ART_DP.match(t)) else dp_key(t)
         if k and (k.startswith("art") or in_dcf):
             cur = {"lines": [], "closes": []}
@@ -573,6 +637,14 @@ def main():
     REPORT.append(f"DP: {len(cur)} units now; modified by D.Leg 1353 per NLA notes: {modified}; ANPD originals found: {sorted(old)}")
     if sorted(old) != modified:
         REPORT.append(f"MISMATCH DP modified sets: NLA {modified} vs ANPD {sorted(old)}")
+    # A unit the NLA notes as amended but the ANPD copy prints without an original text: keep it as
+    # unchanged only when its wording is the same in both (checked below with the other unchanged units).
+    noted_only = sorted(set(modified) - set(old))
+    extra_old = sorted(set(old) - set(modified))
+    if extra_old:
+        raise SystemExit(f"ANPD has originals the NLA does not note: {extra_old}")
+    modified = sorted(old)
+    REPORT.append(f"DP noted by the NLA as amended but wording unchanged (checked below): {noted_only}")
     # cross-check: units not modified must be identical in the ANPD/MINSA texts (word level)
     anpd_all = cmpkey("\n".join(anpd_paras))
     minsa_all = dp_minsa_paras()

@@ -677,6 +677,11 @@ DECISIONS = [
     "Leyes 27600 (2001) and 32265 (2025) concern Alberto Fujimori's signature on the Constitution, not its provisions; each is a commit that changes no words, credited to the preamble.",
     "Ley 31878 changed numeral 4 of Article 2 as well as adding Article 14-A (Ley 31878, art. 1; the Congreso's list mentions only Article 14-A).",
     "Section headings (títulos, capítulos) are not yet tracked as a unit.",
+    "The Congreso's 2004 web edition (Wayback 20040619190058) was never updated after the 1995 reforms (it still has the original Chapter XIV and no Ley 27365 provisions), so it is checked as the text of 1995-2000.",
+    "The sentence 'No son acumulables servicios prestados a la actividad pública y privada.' that ends the Segunda Disposición Final y Transitoria in the 2021 and 2024 editions is absent from El Peruano of 30 December 1993 (p. 15, read on the ADLP scan), from the 2004-2019 editions and from the ADLP text of about 2013, and no reform law added it; it is an uncredited (unexplained) change dated 1 May 2021, the month of the first edition that prints it.",
+    "Remaining checkpoint differences are editorial variants between Congreso editions; our text follows the 2021/2024 editions, which the ADLP text agrees with for art. 90 ('la lista', 'de derecho') and art. 96 ('al Congreso').",
+    "Paragraph breaks inside quoted earlier texts (small type in the notes) are inferred from line lengths; words are checked against the editions, breaks are not.",
+    "verify_laws.py: every paragraph changed by Leyes 31118, 31280, 31304, 31305, 31414, 31507, 31878, 31988, 32135, 32145, 32188 and 32189 occurs word for word in the law's ADLP text (169 paragraphs). Older laws in the ADLP are scans or use unmapped fonts.",
     "No Congreso edition after December 2024 exists; the Congreso's list of reform laws (diariodebates/leyesrefconstit, read 28 October 2026) names none after Ley 32265.",
 ]
 

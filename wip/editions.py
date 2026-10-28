@@ -381,10 +381,12 @@ def quoted(paras: list[str], past_y: bool = False, every: bool = False) -> list[
             p = p[i + 1:]
         if p.startswith("(*)"):
             break
-        end = re.search(r"”\s*\.?\s*(?=$|\(\*\))", p)
+        end = re.search(r"”\s*(\.)?\s*(?=$|\(\*\))", p)
         if end:
-            p = p[:end.start()]
-            out.append(p.strip())
+            p = p[:end.start()].strip()
+            if end.group(1) and not re.search(r"[.:;]$", p):
+                p += "."  # Spanish style puts the final full stop after the closing quotation mark
+            out.append(p)
             if past_y and re.search(r"Y$", p.strip()):  # art. 91 note: 'Tributaria. Y” (*)' continues
                 continue
             if not every:
