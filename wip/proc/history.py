@@ -20,7 +20,7 @@ MONTHS = {'enero': 1, 'febrero': 2, 'marzo': 3, 'abril': 4, 'mayo': 5, 'junio': 
 DATE = r'(\d{1,2})\s+de\s+(%s)\s+(?:de|del)\s+(\d{4})' % '|'.join(MONTHS)
 PUB = re.compile(r'publicad[oa]s?\s+el\s+(?:día\s+)?' + DATE, re.I)
 LAWREF = re.compile(r'(Decreto\s+Legislativo|Ley|Decreto\s+de\s+Urgencia|Decreto\s+Supremo|Resolución\s+Legislativa)'
-                    r'\s+N\s*[°ºo]?\s*\.?\s*(\d[\d\-]*(?:-[A-Z]+)?)', re.I)
+                    r'\s*N\s*[°ºo]?\s*\.?\s*(\d[\d\-]*(?:-[A-Z]+)?)', re.I)
 WORDS = re.compile(r'^(?P<scope>.{0,60}?)\s*(?P<act>modificad[oa]s?|incorporad[oa]s?|derogad[oa]s?|sustituid[oa]s?|'
                    r'adicionad[oa]s?|agregad[oa]s?)\s+(?:por|mediante)\b', re.I)
 COMMENCE = re.compile(r'vigencia\s+adelantada|adelanta(?:r)?\s+la\s+vigencia|entrada\s+en\s+vigencia|'
@@ -103,6 +103,13 @@ def classify(note: Note) -> Event:
         act = w.group('act').lower()[:6]
         law = law_key(*lm.groups()) if lm else None
         return Event(note, 'words', scope, act, law, published)
+    if note.quote is not None and re.search(r'modific|sustitu|derog', h, re.I):
+        # "De conformidad con el Artículo 2 del Decreto Legislativo N° 1575 … se dispuso la modificación del numeral 4"
+        lm = LAWREF.search(h)
+        sm = re.search(r'(?:modificación|sustitución|derogación)\s+del?\s+(?:la\s+)?(numeral|literal|inciso|párrafo|artículo)', h, re.I)
+        act = 'deroga' if 'derog' in (note.quote_kind or '').lower() else 'modifi'
+        return Event(note, 'words', sm.group(1).lower() if sm else 'artículo', act,
+                     law_key(*lm.groups()) if lm else None, published)
     if re.search(r'fe de erratas', h, re.I):
         return Event(note, 'erratum', '', '', None, published)
     if COMMENCE.search(h):
@@ -303,7 +310,8 @@ def undo(ev: Event, paras: list[str], log: list[str], unit: str):
             before = [i for i in cands if a is None or i <= a]
             s = before[-1] if before else cands[0]
             e = _block(paras, s, a)
-            if lab[0] != 'lit' and not any(x and x[0] == 'lit' for x in labs) and                     any(label_of(paras[i]) and label_of(paras[i])[0] == 'lit' for i in range(s + 1, e)):
+            other_lits = any(label_of(sg[0]) and label_of(sg[0])[0] == 'lit' for sg in segs if sg is not seg)
+            if other_lits and lab[0] != 'lit' and not any(x and x[0] == 'lit' for x in labs) and                     any(label_of(paras[i]) and label_of(paras[i])[0] == 'lit' for i in range(s + 1, e)):
                 # the quote gives the numeral's lead-in only; its literals are quoted (or not) on their own
                 e = s + 1
                 while e < len(paras) and not label_of(paras[e]) and e < _block(paras, s, None):

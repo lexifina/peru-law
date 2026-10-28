@@ -45,7 +45,7 @@ PROFILES = {
     'ed8': {'body_min': 6.8, 'furniture': ('Bahnschrift', 'DINPro'), 'top': 0, 'bottom': 38},
     'ed7': {'body_min': 8.9, 'furniture': (), 'top': 48, 'bottom': 30},
     'ed6': {'body_min': 9.5, 'furniture': (), 'top': 48, 'bottom': 30},
-    'ed5': {'body_min': 8.0, 'furniture': (), 'top': 48, 'bottom': 30},
+    'ed5': {'body_min': 8.0, 'furniture': (), 'top': 48, 'bottom': 42},
 }
 
 
