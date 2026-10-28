@@ -47,50 +47,75 @@ LAWS = [
 ]
 
 
+BOLD = '\x02'
+
+
 def law_text(n: str):
+    """Lines of the law's PDF; a line whose first word is bold is prefixed with BOLD (headings are bold)."""
     path = fetch.cached(ADLP % n)
     if path is None:
         raise SystemExit(f'not in the cache: {ADLP % n}')
     doc = fitz.open(str(path))
-    lines = [l.rstrip() for p in doc for l in p.get_text().split('\n')]
-    return path, [l for l in lines if l.strip()]
+    lines = []
+    for page in doc:
+        for blk in page.get_text('dict')['blocks']:
+            for l in blk.get('lines', []):
+                t = ''.join(sp['text'] for sp in l['spans']).rstrip()
+                if not t.strip():
+                    continue
+                first = next((sp for sp in l['spans'] if re.search(r'\w', sp['text'])), None)
+                bold = bool(first and ('Bold' in first['font'] or first['flags'] & 16))
+                lines.append((BOLD if bold else '') + t)
+    return path, lines
 
 
 def title_of(lines) -> str:
-    i = next(i for i, l in enumerate(lines) if l.strip().startswith('LEY QUE') or l.strip().startswith('LEY DE'))
+    """The law's title as printed (upper case in the source)."""
+    lines = [l.lstrip(BOLD).strip() for l in lines]
+    i = next(i for i, l in enumerate(lines) if l.startswith('LEY QUE') or l.startswith('LEY DE'))
     out = []
-    while i < len(lines) and not lines[i].strip().startswith('LEY ' + '3'):
-        out.append(lines[i].strip())
+    while i < len(lines) and not re.fullmatch(r'LEY \d+', lines[i]):
+        out.append(lines[i])
         i += 1
-    t = ' '.join(out)
-    return t[0] + t[1:].lower() if t else ''
+    return ' '.join(out)
 
 
 def quoted_articles(lines) -> dict[str, list[str]]:
-    """Article number -> quoted paragraphs ('[…]' kept as a marker) for the Code's articles (the other codes the
-    same law amends are kept too; callers pick by number and code)."""
+    """Article number -> quoted paragraphs ('[…]' kept as a marker). A bold heading may wrap onto a second bold
+    line; the body starts at the first line that is not bold. A full stop printed after the closing quote
+    (Spanish style) belongs to the last quoted sentence and is restored."""
     text = '\n'.join(l.strip() for l in lines)
     out: dict[str, list[list[str]]] = {}
-    for m in re.finditer(r'“(.*?)”', text, re.S):
+    for m in re.finditer(r'“(.*?)”(\.?)', text, re.S):
         block = m.group(1).split('\n')
         cur = None
+        in_head = False
         for l in block:
-            l = l.strip()
+            bold = l.startswith(BOLD)
+            l = l.lstrip(BOLD).strip()
             if not l:
                 continue
             a = ART.match(l)
             if a:
                 cur = a.group(1)
                 out.setdefault(cur, []).append([l])
+                in_head = True
                 continue
             if cur is None:
                 continue
             paras = out[cur][-1]
-            if ELLIPSIS.match(l) or label_of(l) or ELLIPSIS.match(paras[-1]):
+            if in_head and bold:
+                paras[-1] = paras[-1] + ' ' + l
+                continue
+            if in_head or ELLIPSIS.match(l) or label_of(l) or ELLIPSIS.match(paras[-1]):
                 paras.append(l)
             else:
                 paras[-1] = paras[-1] + ' ' + l
-    return {k: [clean_par(re.sub(r'[”"]\.?$', '', p).strip()) for p in v[-1]] for k, v in out.items()}
+            in_head = False
+        if cur is not None and m.group(2) and not ELLIPSIS.match(out[cur][-1][-1]) and \
+                not re.search(r'[.;:]$', out[cur][-1][-1]):
+            out[cur][-1][-1] += '.'
+    return {k: [clean_par(p) for p in v[-1]] for k, v in out.items()}
 
 
 def find(paras, lab, after=0):
