@@ -82,17 +82,30 @@ def law_text(key: str) -> str:
 
 
 ELL = re.compile(r"\(\s*(?:…|\.\.\.)\s*\)|\[\s*(?:…|\.\.\.)\s*\]")
-QART = re.compile(r"“(?:[^“”\n]{0,90}\n)?\s*Art[íi]culo\s+(\d+)(?:\s*-\s*([A-Z]))?\s*[º°]?\s*\.?-")
+QART = re.compile(r"(?m)^[“«\"]?(?:[^\n]{0,90}\n)?[“«\"]?\s*Art[íi]culo\s+(\d+)(?:\s*-\s*([A-Z]))?\s*[º°]?\s*(?:\.\s*-|\.|-)")
+CODE = re.compile(r"Código\s+Procesal\s+Civil|Código\s+Civil|Código\s+[A-Z][a-zé]+|Decreto\s+Legislativo\s+N?[º°]?\s*\d+|Ley\s+N?[º°]?\s*\d+")
 
 
 def quotes(key: str) -> dict[str, list[str]]:
+    """Article starts in the law's text that sit in a Código Civil context: the last code or law named
+    before the article (and after the previous article) is the Código Civil."""
     t = law_text(key)
     out: dict[str, list[str]] = {}
-    for m in QART.finditer(t):
-        end = t.find("”", m.end())
-        seg = t[m.start() + 1:end if end > 0 else len(t)]
+    starts = list(QART.finditer(t))
+    ctx_cc = False
+    prev_end = 0
+    for i, m in enumerate(starts):
+        names = [x.group(0) for x in CODE.finditer(t, prev_end, m.start())
+                 if not re.match(r"Decreto\s+Legislativo\s+N?[º°]?\s*295$|Decreto\s+Legislativo\s+N?[º°]?\s*" + key.split("-")[1] + "$", x.group(0))]
+        if names:
+            ctx_cc = bool(re.fullmatch(r"Código\s+Civil", names[-1]))
+        nxt = starts[i + 1].start() if i + 1 < len(starts) else len(t)
+        seg = t[m.start():nxt]
+        prev_end = m.end()
+        if not ctx_cc:
+            continue
         k = "art-%04d%s" % (int(m.group(1)), ("-" + m.group(2).lower()) if m.group(2) else "")
-        pieces = [p.strip() for p in ELL.split(seg) if p.strip()]
+        pieces = [p.strip(" “”«»\"") for p in ELL.split(seg) if p.strip(" “”«»\"\n")]
         out.setdefault(k, []).extend(pieces)
     return out
 
