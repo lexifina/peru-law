@@ -44,6 +44,8 @@ def plus(day: str, **kw) -> str:
 def law_key(kind: str, num: str) -> tuple[str, str]:
     kind = re.sub(r'\s+', ' ', kind).lower()
     num = num.strip('-')
+    if kind == 'decreto legislativo' and num == '10977':
+        num = '1097'     # misprint in the 8th edition's note 204.1 ("Decreto Legislativo N° 10977"); 204.2 has 1097
     if kind == 'ley':
         return 'ley-%s' % num, 'Ley %s' % num
     if kind == 'decreto legislativo':
@@ -68,9 +70,11 @@ def vigencia(header: str, published: str | None):
         return iso(*m.groups()), 'stated: ' + m.group(0)
     if not published:
         return None, None
-    m = re.search(r'a los ([a-z ]+?) \((\d+)\) (días|meses)( (?:hábiles|calendario))?', h, re.I)
+    m = re.search(r'a los ([a-z ]+?)(?: \((\d+)\))? (días|meses)( (?:hábiles|calendario))?', h, re.I)
+    if m and not m.group(2) and m.group(1).strip().lower() not in NUMWORDS:
+        m = None
     if m and re.search(r'vigencia|vigente', h[max(0, m.start() - 160):m.end() + 40], re.I):
-        n = int(m.group(2))
+        n = int(m.group(2)) if m.group(2) else NUMWORDS[m.group(1).strip().lower()]
         if m.group(4) and 'hábiles' in m.group(4):
             return None, 'business days: ' + m.group(0)
         if m.group(3).lower() == 'meses':
@@ -112,7 +116,7 @@ def classify(note: Note) -> Event:
                      law_key(*lm.groups()) if lm else None, published)
     if re.search(r'fe de erratas', h, re.I):
         return Event(note, 'erratum', '', '', None, published)
-    if COMMENCE.search(h):
+    if COMMENCE.search(h) and not re.search(r'\bse modifica\b', h, re.I):
         lm = LAWREF.search(h)
         law = law_key(*lm.groups()) if lm else None
         return Event(note, 'commence', '', '', law, published)
