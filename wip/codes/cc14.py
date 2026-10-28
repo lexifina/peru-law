@@ -155,6 +155,14 @@ def parse_note(nl) -> dict:
 edition.LABEL = re.compile(r"^(?:(\d{1,3})\s*\.-?(?=\s|$)|(\d{1,3})\s*\)|([a-zñ])\s*\)|([a-zñ])\s*\.(?=\s)|([IVX]+)\s*\.(?=\s))")
 
 
+def norm14(p: str) -> str:
+    """One paragraph of the edition in corpus form: no footnote calls, no degree marks after numbers."""
+    p = CALLS.sub("", p).strip()
+    p = re.sub(r"(\d)\s*\.\s*[º°˚]\s*-", r"\1.-", p)
+    p = re.sub(r"(\d)\s*[º°˚]", r"\1", p)
+    return p.replace("“", '"').replace("”", '"')
+
+
 def text14(u: dict) -> list[str] | None:
     """A 14th-edition unit as lines in the corpus layout: the sumilla line (if printed apart), then the
     paragraphs; footnote calls, degree marks after numbers and "DEROGADO." numerals removed. None if the
@@ -163,9 +171,7 @@ def text14(u: dict) -> list[str] | None:
     if u["sumilla"]:
         lines.append(u["sumilla"].strip())
     for p in u["paras"]:
-        p = CALLS.sub("", p).strip()
-        p = re.sub(r"(\d)\s*\.?\s*[º°˚]", r"\1", p)
-        p = p.replace("“", '"').replace("”", '"')
+        p = norm14(p)
         if re.fullmatch(r"\d+\s*\.-?\s*DEROGAD[OA]S?\.?|[a-z]\)\s*DEROGAD[OA]\.?", p):
             continue
         lines.append(p)
