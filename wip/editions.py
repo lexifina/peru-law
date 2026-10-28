@@ -42,6 +42,8 @@ def clean(s: str) -> str:
     s = s.replace("–", "-").replace("−", "-")
     s = re.sub(r"\s+", " ", s)
     s = re.sub(r" ([,;:.])", r"\1", s)
+    s = re.sub(r"(\d)\s?[°º](?![A-Za-z])", r"\1", s)  # "artículo 117°" -> "artículo 117" (2024 edition style)
+    s = re.sub(r"(\d) %", r"\1%", s)
     return s.strip()
 
 
@@ -89,6 +91,7 @@ class Row:
     bold: bool
     italic: bool
     first_bold: str = ""  # text of a leading bold span
+    x1: float = 0.0  # right edge
 
 
 def rows_of(url: str) -> list[Row]:
@@ -137,11 +140,14 @@ def rows_of(url: str) -> list[Row]:
             chars = sum(len(s["text"].strip()) for s in big)
             boldc = sum(len(s["text"].strip()) for s in big if "Bold" in s["font"] or "Black" in s["font"])
             italc = sum(len(s["text"].strip()) for s in big if "Italic" in s["font"])
-            out.append(Row(pno, x, y, txt, main, boldc >= chars * 0.9, italc >= chars * 0.6, fb.strip()))
+            out.append(Row(pno, x, y, txt, main, boldc >= chars * 0.9, italc >= chars * 0.6, fb.strip(),
+                           max(sp["bbox"][2] for sp in big)))
     return out
 
 
-def paragraphs(rows: list[Row], lead: float) -> list[str]:
+def paragraphs(rows: list[Row], lead: float, short: bool = False) -> list[str]:
+    """short=True (notes): a sentence-final row that stops well short of the right margin ends a paragraph."""
+    right = max((r.x1 for r in rows), default=0)
     paras: list[str] = []
     prev: Row | None = None
     for r in rows:
@@ -163,7 +169,7 @@ def paragraphs(rows: list[Row], lead: float) -> list[str]:
             continue
         ends = ends_sentence(paras[-1])
         if r.page == prev.page and r.y > prev.y:
-            new = (r.y - prev.y) > lead * 1.45 or (starts and ends)
+            new = (r.y - prev.y) > lead * 1.45 or (starts and ends) or (short and ends and prev.x1 < right - 30)
         else:
             new = ends
         if new:
@@ -229,10 +235,15 @@ class Edition:
                 break
             is_note = (r.size < self.body_size - 1.2) or (i in star_note)
             if self.style == "old":
-                # checkpoint editions: notes are dropped. Their notes are small/italic, or start with
-                # "(*)", "*" or "NOTA" and continue in bold or italic rows.
-                if is_note or re.match(r"^(\(\*\)|\*|NOTA)", t) or (old_note and (r.bold or r.italic) and r.x < 100 and r.size < self.body_size + 1):
-                    old_note = not is_note or old_note
+                # older editions: notes are small/italic, or start with "(*)", "*" or "NOTA" and
+                # continue in bold or italic rows. They are kept apart (ids o1, o2, ...).
+                start = re.match(r"^(\(\*\)|\*|NOTA)", t)
+                if is_note or start or (old_note and (r.bold or r.italic) and r.x < 100 and r.size < self.body_size + 1):
+                    if start or note is None:
+                        note = Note(f"o{len(self.notes) + 1}")
+                        self.notes[note.id] = note
+                    note.rows.append(r)
+                    old_note = True
                     continue
                 old_note = False
             if is_note:
@@ -342,13 +353,47 @@ class Edition:
 
     def note_paras(self, nid: str) -> list[str]:
         n = self.notes[nid]
-        lead = 8.0 if n.rows and n.rows[0].size < 8.8 else 12.0
-        return paragraphs(n.rows, lead)
+        lead = (n.rows[0].size if n.rows else 8.0) * 1.17
+        return paragraphs(n.rows, lead, short=True)
+
+    def find_note(self, pattern: str) -> str:
+        """id of the single note whose text matches pattern (regex)."""
+        hits = [k for k, n in self.notes.items() if re.search(pattern, n.text())]
+        if len(hits) != 1:
+            raise SystemExit(f"note pattern {pattern!r}: {len(hits)} hits in {self.url}")
+        return hits[0]
+
+
+def quoted(paras: list[str]) -> list[str]:
+    """The quoted text of a note ("... tuvo el siguiente texto: “...”"), as paragraphs, without the
+    opening and closing quotation marks and without nested "(*)" sub-notes."""
+    out: list[str] = []
+    inside = False
+    for p in paras:
+        if not inside:
+            i = p.find("“")
+            if i < 0:
+                continue
+            inside = True
+            p = p[i + 1:]
+        if p.startswith("(*)"):
+            break
+        end = re.search(r"”\s*\.?\s*(?=$|\(\*\))", p)
+        if end:
+            p = p[:end.start()]
+            out.append(p.strip())
+            if not re.search(r"Y$", p.strip()):  # art. 91 note: 'Tributaria. Y” (*)' continues
+                break
+            continue
+        out.append(p.strip())
+    return [clean(re.sub(r"\(\*\)", "", p)) for p in out if p.strip()]
 
 
 def words(paras) -> str:
     """Typography-insensitive form for checkpoint comparison."""
     s = " ".join(paras) if not isinstance(paras, str) else paras
+    s = re.sub(r"[°º]", "", s)
+    s = re.sub(r"\b[Nn]\s?[°º.]?\s+(?=\d)", "", s)  # "Ley N° 20530" ~ "Ley 20530"
     s = unicodedata.normalize("NFKD", s.lower())
     s = "".join(c for c in s if not unicodedata.combining(c))
     s = re.sub(r"[^a-z0-9ñ]+", " ", s)
