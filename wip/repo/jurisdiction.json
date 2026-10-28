@@ -1,0 +1,10 @@
+{
+  "path": "pe",
+  "code": "PE",
+  "name": "Peru",
+  "level": "country",
+  "repo": "https://github.com/lexifina/peru-law",
+  "build": "built: Constitución Política del Perú 1993-2026 (33 versions; 37 reform laws and 1 Tribunal Constitucional ruling)",
+  "register": "https://claude.ai/artifact/DdS9F6yqpPZtV2i7FGQhYZ",
+  "register_date": "2026-10-28"
+}

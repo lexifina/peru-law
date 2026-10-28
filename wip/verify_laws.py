@@ -24,10 +24,14 @@ def main() -> int:
         if not url.endswith(".pdf") or not fetch.cached(url) or key == "constitucion-1993":
             print(f"{key}: no text in the cache")
             continue
-        text = E.words(" ".join(r.text for r in E.rows_of(url)))
-        if len(text) < 200:
-            print(f"{key}: the cached PDF is a scan (no text layer)")
+        raw = " ".join(r.text for r in E.rows_of(url))
+        legible = sum(1 for c in raw if (c.isascii() and (c.isprintable() or c in "\t\n")) or c in "áéíóúÁÉÍÓÚñÑüÜ°º“”¿¡—")
+        if len(raw) < 200 or legible < len(raw) * 0.97:
+            print(f"{key}: the cached PDF has no usable text layer (scan or unmapped fonts)")
             continue
+        if law["kind"] == "court":
+            continue  # a ruling restores earlier text; it does not quote it
+        text = E.words(raw)
         n = 0
         for i, v in enumerate(vs):
             for unit, laws in v["credits"].items():
