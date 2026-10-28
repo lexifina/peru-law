@@ -269,11 +269,11 @@ class Edition:
                 continue  # display title "CONSTITUCIÓN POLÍTICA DEL PERÚ"
             if r.bold and not MARK.sub("", r.first_bold).startswith("Artículo") and not DISP.match(r.first_bold):
                 h = clean(MARK.sub("", t))
-                if h.startswith("DISPOSICIONES FINALES"):
+                if h.upper().startswith("DISPOSICIONES FINALES"):
                     section = "dft"
-                elif h.startswith("DISPOSICIONES TRANSITORIAS"):
+                elif h.upper().startswith("DISPOSICIONES TRANSITORIAS"):
                     section = "dte"
-                elif h.startswith("DECLARACI"):
+                elif h.upper().startswith("DECLARACI"):
                     section = "decl"
                     cur = "declaracion"; labels[cur] = "Declaración"; body_rows[cur] = []; self.order.append(cur)
                     continue
