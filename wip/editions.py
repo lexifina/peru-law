@@ -118,7 +118,7 @@ class Edition:
             if self.style == "footnote":
                 cut = len(lines)
                 for i, l in enumerate(lines):
-                    m = re.match(r"^(\d{1,2}) [A-ZÁÉÍÓÚ]", l)
+                    m = re.match(r"^(\d{1,2}) [A-ZÁÉÍÓÚ]", l) or re.match(r"^(1)\. (?=La Constitución Política del Perú se promulgó)", l)
                     if (m and int(m.group(1)) == next_fn) or l.startswith("»› continúa"):
                         cut = i
                         break
@@ -126,7 +126,7 @@ class Edition:
                 lines = lines[:cut]
                 cur = last_fn
                 for l in notes:
-                    m = re.match(r"^(\d{1,2}) ([A-ZÁÉÍÓÚ].*)$", l)
+                    m = re.match(r"^(\d{1,2}) ([A-ZÁÉÍÓÚ].*)$", l) or re.match(r"^(1)\. (La Constitución Política del Perú se promulgó.*)$", l)
                     if m and int(m.group(1)) == next_fn:
                         cur = m.group(1)
                         next_fn += 1
