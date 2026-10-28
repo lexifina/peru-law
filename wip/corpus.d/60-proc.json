@@ -692,6 +692,50 @@
    "temporary_until": null,
    "restores": null,
    "note": null
+  },
+  "ley-32181": {
+   "label": "Ley 32181",
+   "title": "LEY QUE MODIFICA EL CÓDIGO PENAL, DECRETO LEGISLATIVO 635, Y EL NUEVO CÓDIGO PROCESAL PENAL, DECRETO LEGISLATIVO 957, A FIN DE GARANTIZAR EL PRINCIPIO DE PRESUNCIÓN DE INOCENCIA Y BRINDAR MAYOR PROTECCIÓN AL PERSONAL DE LA POLICÍA NACIONAL DEL PERÚ",
+   "kind": "law",
+   "enacted": null,
+   "published": "2024-12-11",
+   "url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32181-TXM.pdf",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "ley-32182": {
+   "label": "Ley 32182",
+   "title": "LEY QUE MODIFICA LA LEY 30483, LEY DE LA CARRERA FISCAL; LA LEY 29277, LEY DE LA CARRERA JUDICIAL; EL NUEVO CÓDIGO PROCESAL PENAL, DECRETO LEGISLATIVO 957; Y EL CÓDIGO PENAL, DECRETO LEGISLATIVO 635, PARA OPTIMIZAR LA ADMINISTRACIÓN DE JUSTICIA EN LA LUCHA CONTRA LA CRIMINALIDAD ORGANIZADA",
+   "kind": "law",
+   "enacted": null,
+   "published": "2024-12-11",
+   "url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32182-TXM.pdf",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "ley-32255": {
+   "label": "Ley 32255",
+   "title": "LEY QUE RESTITUYE Y MODIFICA EL LITERAL A) DEL NUMERAL 1 DEL ARTÍCULO 261 DEL NUEVO CÓDIGO PROCESAL PENAL, DECRETO LEGISLATIVO 957, REFERIDO A LA DETENCIÓN PRELIMINAR JUDICIAL EN CASOS DE NO FLAGRANCIA",
+   "kind": "law",
+   "enacted": null,
+   "published": "2025-03-10",
+   "url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32255-TXM.pdf",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
+  },
+  "ley-32374": {
+   "label": "Ley 32374",
+   "title": "LEY QUE MODIFICA EL NUEVO CÓDIGO PROCESAL PENAL, DECRETO LEGISLATIVO 957, PARA INCORPORAR EL USO DE LA TECNOLOGÍA DIGITAL EN LA REMISIÓN DE LA CARPETA FISCAL, EN LA DECLARACIÓN DEL IMPUTADO Y EN LAS DILIGENCIAS DE LA INVESTIGACIÓN PREPARATORIA",
+   "kind": "law",
+   "enacted": null,
+   "published": "2025-06-07",
+   "url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32374-TXM.pdf",
+   "temporary_until": null,
+   "restores": null,
+   "note": null
   }
  },
  "acts": [
@@ -6780,6 +6824,124 @@
        "ley-32130"
       ]
      }
+    },
+    {
+     "from": "2024-12-12",
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32181-TXM.pdf",
+     "sha256": "1748660b14638e0f13de756726461f00a18254c9dd1b04a8f36aee9611f9e9cb",
+     "changes": {
+      "art-255": {
+       "label": "Art. 255",
+       "kind": "art",
+       "text": "Artículo 255.- Legitimación y variabilidad\n1. Las medidas establecidas en este título, sin perjuicio de las reconocidas a la Policía y al fiscal, sólo se impondrán por el juez a solicitud del fiscal, considerando lo establecido en los artículos 261-A, 268-B y 292-A; salvo el embargo y la ministración provisional de posesión que también podrá solicitar el actor civil. La solicitud indicará las razones en que se fundamenta el pedido y, cuando corresponda, acompañará los actos de investigación o elementos de convicción pertinentes.\n2. Los autos que se pronuncien sobre estas medidas son reformables, aun de oficio, cuando varíen los supuestos que motivaron su imposición o rechazo.\n3. Salvo lo dispuesto respecto del embargo y de la ministración provisional de posesión, corresponde al Ministerio Público y al imputado solicitar al Juez la reforma, revocatoria o sustitución de las medidas de carácter personal, quien resolverá en el plazo de tres días, previa audiencia con citación de las partes.\n"
+      },
+      "art-261": {
+       "label": "Art. 261",
+       "kind": "art",
+       "text": "Artículo 261.- Detención Preliminar Judicial\n1. El juez de la investigación preparatoria, a requerimiento del fiscal, emite una resolución debidamente motivada, teniendo a la vista las actuaciones remitidas por aquel, y dicta mandato de detención preliminar cuando:\nb) El sorprendido en flagrante delito logre evitar su detención.\nc) El detenido se fugare de un centro de detención preliminar.\n2. En los supuestos anteriores, para cursar la orden de detención se requiere que el imputado se encuentre debidamente individualizado con los siguientes datos: nombres y apellidos completos, edad, sexo, lugar, y fecha de nacimiento.\n3. La orden de detención deberá ser puesta en conocimiento de la Policía a la brevedad posible, de manera escrita bajo cargo, quien la ejecuta de inmediato. Cuando se presenten circunstancias extraordinarias puede ordenarse el cumplimiento de detención por correo electrónico, facsímil, telefónicamente u otro medio de comunicación válido que garantice la veracidad del mandato judicial. En todos estos casos la comunicación debe contener los datos de identidad personal del requerido conforme a lo indicado en el numeral dos.\n4. Las requisitorias cursadas a la autoridad policial tienen una vigencia de seis meses. Vencido este plazo, caducan automáticamente bajo responsabilidad, salvo que fuesen renovadas. La vigencia de la requisitoria para los casos de terrorismo, espionaje, tráfico ilícito de drogas, robo agravado, extorsión, sicariato, los delitos de competencia del Sistema Nacional Especializado de Justicia para la Protección y Sanción de la Violencia contra las Mujeres e Integrantes del Grupo Familiar (SNEJ), señalados en el artículo 3 del Decreto Legislativo 1368, los delitos contra la dignidad humana y los delitos cometidos por organizaciones criminales no caducan hasta la efectiva detención de los requisitoriados.\n"
+      },
+      "art-261-a": {
+       "label": "Art. 261-A",
+       "kind": "art",
+       "text": "Artículo 261-A. Impedimento de la detención preliminar judicial\nEl fiscal se encuentra impedido de solicitar detención preliminar judicial contra el personal de la Policía Nacional del Perú en situación de actividad en cuadros que, en el ejercicio de su finalidad constitucional, hace uso de sus armas o medios de defensa en forma reglamentaria y, como consecuencia de ello, acontece alguna lesión o muerte.\n"
+      },
+      "art-268-b": {
+       "label": "Art. 268-B",
+       "kind": "art",
+       "text": "Artículo 268-B. Impedimento de la prisión preventiva\nEl fiscal se encuentra impedido de solicitar prisión preventiva contra el personal de la Policía Nacional del Perú en situación de actividad en cuadros que, en el ejercicio de su finalidad constitucional, hace uso de sus armas o medios de defensa en forma reglamentaria y, como consecuencia de ello, acontece alguna lesión o muerte.\n"
+      },
+      "art-292-a": {
+       "label": "Art. 292-A",
+       "kind": "art",
+       "text": "Artículo 292-A. Comparecencia restrictiva para el personal de la Policía Nacional del Perú\nSe impondrán las restricciones previstas en el artículo 288 al personal de la Policía Nacional del Perú en situación de actividad en cuadros que, en el ejercicio de su función constitucional, hace uso de sus armas o medios de defensa en forma reglamentaria y, como consecuencia de ello, acontece alguna lesión o muerte, quedando prohibidos el fiscal y el juez de solicitar y de dictar mandato de detención preliminar judicial y prisión preventiva, respectivamente, bajo responsabilidad funcional.\n"
+      },
+      "art-268": {
+       "label": "Art. 268",
+       "kind": "art",
+       "text": "Artículo 268.- Presupuestos materiales\nEl juez, a solicitud del Ministerio Público, podrá dictar mandato de prisión preventiva, si atendiendo a los primeros recaudos sea posible determinar la concurrencia de los siguientes presupuestos:\na) Que existen fundados y graves elementos de convicción para estimar razonablemente la comisión de un delito que vincule al imputado como autor o partícipe del mismo.\nb) Que la sanción a imponerse sea superior a cinco años de pena privativa de libertad; y,\nc) Que el imputado, en razón a sus antecedentes y otras circunstancias del caso particular, permita colegir razonablemente que tratará de eludir la acción de la justicia (peligro de fuga) u obstaculizar la averiguación de la verdad (peligro de obstaculización). En razón a la peligrosidad criminal, acredite el peligro de fuga y el peligro de obstaculización en los casos que el imputado sea vinculado como autor o partícipe en los delitos tipificados en los artículos 108-C, 108-D, 152, 189 y 200 del Código Penal, Decreto Legislativo 635.\nd) No procede la prisión preventiva en los casos de inminente aplicación de la legítima defensa propia o de tercero conforme a ley; salvo la presencia de antecedentes y/o pruebas fehacientes que justifiquen la existencia del delito o que recaiga sobre la persona sentencia firme condenatoria.\n"
+      }
+     },
+     "credits": {
+      "art-255": [
+       "ley-32181"
+      ],
+      "art-261": [
+       "ley-32181"
+      ],
+      "art-261-a": [
+       "ley-32181"
+      ],
+      "art-268-b": [
+       "ley-32181"
+      ],
+      "art-292-a": [
+       "ley-32181"
+      ],
+      "art-268": [
+       "ley-32182"
+      ]
+     },
+     "note": "Wording of Ley 32181 from https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32181-TXM.pdf. Wording of Ley 32182 from https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32182-TXM.pdf."
+    },
+    {
+     "from": "2025-03-11",
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32255-TXM.pdf",
+     "sha256": "1707975f810743e3c557399c9cc4d0989e108f262465fd10c06d359ca1974af4",
+     "changes": {
+      "art-261": {
+       "label": "Art. 261",
+       "kind": "art",
+       "text": "Artículo 261.- Detención Preliminar Judicial\n1. El juez de la investigación preparatoria, a requerimiento del fiscal, emite una resolución debidamente motivada, teniendo a la vista las actuaciones remitidas por aquel, y dicta mandato de detención preliminar cuando:\na) No se presente un supuesto de flagrancia delictiva, pero existan elementos razonables para considerar que una persona ha cometido un delito sancionado con pena privativa de libertad superior a cuatro años y, por las circunstancias del caso, se presenten indicios razonables de posibilidad de fuga u obstaculización de la averiguación de la verdad.\nb) El sorprendido en flagrante delito logre evitar su detención.\nc) El detenido se fugare de un centro de detención preliminar.\n2. En los supuestos anteriores, para cursar la orden de detención se requiere que el imputado se encuentre debidamente individualizado con los siguientes datos: nombres y apellidos completos, edad, sexo, lugar, y fecha de nacimiento.\n3. La orden de detención deberá ser puesta en conocimiento de la Policía a la brevedad posible, de manera escrita bajo cargo, quien la ejecuta de inmediato. Cuando se presenten circunstancias extraordinarias puede ordenarse el cumplimiento de detención por correo electrónico, facsímil, telefónicamente u otro medio de comunicación válido que garantice la veracidad del mandato judicial. En todos estos casos la comunicación debe contener los datos de identidad personal del requerido conforme a lo indicado en el numeral dos.\n4. Las requisitorias cursadas a la autoridad policial tienen una vigencia de seis meses. Vencido este plazo, caducan automáticamente bajo responsabilidad, salvo que fuesen renovadas. La vigencia de la requisitoria para los casos de terrorismo, espionaje, tráfico ilícito de drogas, robo agravado, extorsión, sicariato, los delitos de competencia del Sistema Nacional Especializado de Justicia para la Protección y Sanción de la Violencia contra las Mujeres e Integrantes del Grupo Familiar (SNEJ), señalados en el artículo 3 del Decreto Legislativo 1368, los delitos contra la dignidad humana y los delitos cometidos por organizaciones criminales no caducan hasta la efectiva detención de los requisitoriados.\n"
+      }
+     },
+     "credits": {
+      "art-261": [
+       "ley-32255"
+      ]
+     },
+     "note": "Wording of Ley 32255 from https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32255-TXM.pdf."
+    },
+    {
+     "from": "2025-06-08",
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32374-TXM.pdf",
+     "sha256": "7d079212738634c662f79a728520f02d532c80486967763ec61743fc7c1c4b3e",
+     "changes": {
+      "art-086": {
+       "label": "Art. 86",
+       "kind": "art",
+       "text": "Artículo 86.- Momento y carácter de la declaración\n1. En el curso de las actuaciones procesales, en todas las etapas del proceso y con arreglo a lo dispuesto por este Código, el imputado tiene derecho a prestar declaración, sea de manera presencial o por videoconferencia en circunstancias particulares debidamente justificadas, y a ampliarla, a fin de ejercer su defensa y responder a los cargos formulados en su contra. Las ampliaciones de declaración procederán si fueren pertinentes y no aparezcan sólo como un procedimiento dilatorio o malicioso.\n2. Durante la Investigación Preparatoria el imputado, sin perjuicio de hacerlo ante la Policía con las previsiones establecidas en este Código, prestará declaración ante el Fiscal mediante las modalidades mencionadas en el numeral 1, con la necesaria asistencia de su abogado defensor, cuando éste lo ordene o cuando el imputado lo solicite.\n3. Durante el Juicio la declaración se recibirá en la oportunidad y forma prevista para dicho acto.\n"
+      },
+      "art-088": {
+       "label": "Art. 88",
+       "kind": "art",
+       "text": "Artículo 88.- Desarrollo de la declaración\n1. La diligencia se inicia requiriendo al imputado declarar respecto a:\na) Nombre, apellidos, sobrenombre o apodo, si lo tuviere, lugar y fecha de nacimiento, edad, estado civil, profesión u ocupación, domicilio real y procesal, principales sitios de residencia anterior, así como nombres y apellidos de sus padres, cónyuge e hijos y de las personas con quienes vive.\nb) Si ha sido encausado anteriormente por el mismo hecho o por otros, proporcionando los datos que permitan identificar el proceso o procesos seguidos en su contra.\nc) Si tiene bienes, dónde están ubicados, quien los posee y a qué título, y si se encuentran libres de gravamen.\nd) Sus relaciones con los otros imputados y con el agraviado.\n2. A continuación se invitará al imputado a que declare cuanto tenga por conveniente sobre el hecho que se le atribuye y para indicar, de ser posible o considerarlo oportuno, los actos de investigación o de prueba cuya práctica demande.\n3. Luego se interrogará al imputado. En la Etapa Preparatoria lo harán directamente el Fiscal y el Abogado Defensor. En el Juicio participarán en el interrogatorio todas las partes mediante un interrogatorio directo. El Juez podrá hacerlo, excepcionalmente, para cubrir algún vacío en el interrogatorio.\n4. En el interrogatorio las preguntas serán claras y precisas, no podrán formularse preguntas ambiguas, capciosas o sugestivas. Durante la diligencia no podrá coactarse en modo alguno al imputado, ni inducirlo o determinarlo a declarar contra su voluntad, ni se le hará cargos o reconvenciones tendientes a obtener su confesión.\n5. Podrá realizarse en dicho acto las diligencias de reconocimiento de documentos, de personas, de voces o sonidos, y de cosas, sin perjuicio de cumplir con las formalidades establecidas para dichos actos.\n6. Si por la duración del acto se noten signos de fatiga o falta de serenidad en el imputado, la declaración será suspendida, hasta que ellos desaparezcan.\n7. Durante la Investigación Preparatoria el acta que contenga la declaración del imputado reproducirá, del modo más fiel posible lo que suceda en la diligencia. El imputado está autorizado a dictar sus respuestas. La diligencia en dicha etapa finalizará con la lectura y firma o, en su caso, la impresión digital, del acta por todos los intervinientes. Si la declaración se realiza mediante videoconferencia, se almacenará en soporte magnético y se anexará al acta fiscal. Si el imputado se niega a declarar, total o parcialmente, se hará constar en el acta. En la declaración presencial del imputado, si se rehusare a suscribirla se consignará el motivo. Los sistemas informáticos utilizados para la declaración del imputado deben cumplir con estándares que garanticen la accesibilidad de las personas con discapacidad.\n"
+      },
+      "art-337": {
+       "label": "Art. 337",
+       "kind": "art",
+       "text": "Artículo 337.- Diligencias de la Investigación Preparatoria\n1. El Fiscal dispone que la Policía realice las diligencias de investigación que considere pertinentes y útiles, dentro de los límites de la Ley.\n2. La investigación preliminar es una subetapa de la Investigación Preparatoria. No podrán repetirse una vez formalizada la investigación. Procede su ampliación si dicha diligencia resultare indispensable, siempre que se advierta un grave defecto en su actuación o que ineludiblemente deba completarse como consecuencia de la incorporación de nuevos elementos de convicción.\n3. El Fiscal puede:\na) Disponer la concurrencia del imputado, del agraviado y de las demás personas que se encuentren en posibilidad de informar sobre circunstancias útiles para los fines de la investigación. Estas personas y los peritos están obligados a comparecer ante la Fiscalía en las modalidades establecidas en el numeral 1 del artículo 86, y a manifestarse sobre los hechos objeto de investigación o emitir dictamen. Su inasistencia injustificada determinará su conducción compulsiva;\nb) Exigir informaciones de cualquier particular o funcionario público, emplazándoles conforme a las circunstancias del caso.\n4. Durante la investigación, tanto el imputado como los demás intervinientes podrán solicitar al Fiscal todas aquellas diligencias que consideraren pertinentes y útiles para el esclarecimiento de los hechos. El Fiscal ordenará que se lleven a efecto aquellas que estimare conducentes.\n5. Si el Fiscal rechazare la solicitud, se instará al Juez de la Investigación Preparatoria a fin de obtener un pronunciamiento judicial acerca de la procedencia de la diligencia. El Juez resolverá inmediatamente con el mérito de los actuados que le proporcione la parte y, en su caso, el Fiscal.\n"
+      },
+      "tp-09": {
+       "label": "Título Preliminar, art. IX",
+       "kind": "art",
+       "text": "Artículo IX.- Derecho de Defensa\n1. Toda persona tiene derecho inviolable e irrestricto a que se le informe de sus derechos, a que se le comunique de inmediato y detalladamente la imputación formulada en su contra, y a ser asistida por un Abogado Defensor de su elección o, en su caso, por un abogado de oficio, desde que es citada o detenida por la autoridad. También tiene derecho a que se le conceda un tiempo razonable para que prepare su defensa; a ejercer su autodefensa material; a intervenir, en plena igualdad, en la actividad probatoria; y, en las condiciones previstas por la Ley, a utilizar los medios de prueba pertinentes. El ejercicio del derecho de defensa se extiende a todo estado y grado del procedimiento, en la forma y oportunidad que la ley señala.\n2. Nadie puede ser obligado o inducido a declarar o a reconocer culpabilidad contra sí mismo, contra su cónyuge, o sus parientes dentro del cuarto grado de consanguinidad o segundo de afinidad.\n3. El proceso penal garantiza, también, el ejercicio de los derechos de información y de participación procesal a la persona agraviada o perjudicada por el delito. La autoridad pública está obligada a velar por su protección y a brindarle un trato acorde con su condición.\n4. Las partes, durante la investigación fiscal, tienen el derecho de solicitar al Ministerio Público la remisión de manera virtual de la totalidad o parte de la carpeta fiscal en copias simples. El fiscal encargado de conducir la investigación está obligado, bajo responsabilidad funcional, a remitir al correo electrónico indicado la totalidad o parte de la carpeta fiscal requerida sin costo alguno para la parte solicitante. Este mismo supuesto se aplica para las copias certificadas digitales.\n"
+      }
+     },
+     "credits": {
+      "art-086": [
+       "ley-32374"
+      ],
+      "art-088": [
+       "ley-32374"
+      ],
+      "art-337": [
+       "ley-32374"
+      ],
+      "tp-09": [
+       "ley-32374"
+      ]
+     },
+     "note": "Wording of Ley 32374 from https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32374-TXM.pdf."
     }
    ]
   }
@@ -6832,6 +6994,46 @@
    "requests": 1,
    "licence": "as above",
    "notes": "dates the start of Decreto Legislativo 1373 (the day after its regulation)"
+  },
+  {
+   "name": "Congreso, Archivo Digital de la Legislación del Perú: Ley 32181 (texto publicado en El Peruano)",
+   "url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32181-TXM.pdf",
+   "retrieved": "2026-10-28",
+   "requests": 1,
+   "licence": "as above",
+   "notes": "text layer; amends the Code after the eighth edition"
+  },
+  {
+   "name": "Congreso, Archivo Digital de la Legislación del Perú: Ley 32182 (texto publicado en El Peruano)",
+   "url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32182-TXM.pdf",
+   "retrieved": "2026-10-28",
+   "requests": 1,
+   "licence": "as above",
+   "notes": "text layer; amends the Code after the eighth edition"
+  },
+  {
+   "name": "Congreso, Archivo Digital de la Legislación del Perú: Ley 32255 (texto publicado en El Peruano)",
+   "url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32255-TXM.pdf",
+   "retrieved": "2026-10-28",
+   "requests": 1,
+   "licence": "as above",
+   "notes": "text layer; amends the Code after the eighth edition"
+  },
+  {
+   "name": "Congreso, Archivo Digital de la Legislación del Perú: Ley 32374 (texto publicado en El Peruano)",
+   "url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32374-TXM.pdf",
+   "retrieved": "2026-10-28",
+   "requests": 1,
+   "licence": "as above",
+   "notes": "text layer; amends the Code after the eighth edition"
+  },
+  {
+   "name": "Congreso law index (LeyNumePP.aspx), searched by number 32140-32799 (pages of 20)",
+   "url": "https://www.leyes.congreso.gob.pe/LeyNumePP.aspx?xNorma=0",
+   "retrieved": "2026-10-28",
+   "requests": 67,
+   "licence": "as above",
+   "notes": "titles; ends at Ley 32537 (26 Dec 2025); no decretos legislativos"
   }
  ],
  "decisions": [
@@ -6845,8 +7047,11 @@
   "Structure headings (libros, secciones, títulos, capítulos) are not tracked: the footnotes do not give their history.",
   "Where a numbered item was repealed the edition keeps a placeholder (\"5. DEROGADO\"); so does this history.",
   "Decreto Legislativo 1097 appears once as \"10977\" in the edition (note 204.1); read as 1097, as in note 204.2.",
-  "The history ends with the eighth edition (current to 17 November 2024). Amendments published after that day are not in it yet: no official consolidated text after that day was found (no ninth MINJUS edition; El Peruano's Normas Legales Actualizadas PDFs are served corrupted; SPIJ is unreachable), so this part is not marked verified (no 60-proc.PUBLISH).",
-  "Known later amendments, not yet replayed: in the Congreso law index (leyes.congreso.gob.pe, searched by number from Ley 32140; the index ends at Ley 32537 of 26 December 2025) the titles of Leyes 32181 and 32182 (11 December 2024), 32255 (10 March 2025) and 32374 (7 June 2025) name the Code. Laws of 2026 and decretos legislativos are not in that index.",
+  "The state after the last eighth-edition version equals the edition's own text, provision by provision and character for character (parse_proc.py stops if it does not).",
+  "After the eighth edition (17 November 2024) no official consolidation exists (no ninth MINJUS edition; El Peruano's Normas Legales Actualizadas PDFs are served corrupted; SPIJ is unreachable). Later amendments are replayed from the laws' own texts (proc/forward.py): Leyes 32181 and 32182 (published 11 December 2024, in force 12 December), 32255 (10 March 2025, in force 11 March) and 32374 (7 June 2025, in force 8 June), each the day after publication (Constitución art. 109; none has its own vigencia clause). Their titles in the Congreso law index (searched by number from Ley 32140; it ends at Ley 32537 of 26 December 2025) name the Code.",
+  "Their wording is taken from Congreso's ADLP transcriptions (Documentos/2021_2026/ADLP/Texto_Consolidado/N-TXM.pdf, headed \"Publicada el ... en el Diario Oficial El Peruano\", text layer); the El Peruano bulletin folder on leyes.congreso.gob.pe (Boletin_de_Normas_Legales) holds only 2016-2021 issues. Every paragraph a law brings is checked to occur word for word in that law's text. \"[…]\" keeps the existing wording; a full stop printed after the closing quote is restored to the provision. New articles keep the law's heading style (\"Artículo 261-A. …\").",
+  "Ley 32181 (Única Disposición Complementaria Derogatoria) repealed art. 261.1.a); the literal is removed (no placeholder) until Ley 32255 restored it with new wording.",
+  "Not found, so not in this history: laws after Ley 32537 and decretos legislativos after the eighth edition. Neither the Congreso index nor any text-layer bulletin reachable without a search engine lists them (El Peruano's search page needs its client app). A web search names Decreto Legislativo 1735 (February 2026) and Ley 32735 (July 2026) as amending the Code; their official texts were not found. Today's text may therefore lack those and other 2026 amendments.",
   "Checkpoint ed5-2018: of the provisions in both, 570 match the rebuilt text at that edition's date word for word (case and the editions' own \"(sic)\" ignored) and 28 differ: promulgacion (3 edits: [república => republica] [mediante => ]); tp-03 (1 edits: [mas => más]); art-002 (2 edits: [este => éste] [este => éste]); art-053 (1 edits: [consaguinidad => consanguinidad]); art-057 (1 edits: [prescrito => previsto]); art-061 (1 edits: [inteponer => interponer]); art-071 (1 edits: [rehusa => rehúsa]); art-086 (3 edits: [1 => ] [2 => ]); art-087 (5 edits: [1 => ] [2 => ]); art-105 (1 edits: [ => artículo 106 impedimento de acudir a la vía extra penal la constitución en actor civil impide que presente demanda indemnizatoria en la vía extra pena]); art-128 (1 edits: [perjuicio => per juicio]); art-141 (1 edits: [o => ]); art-261 (1 edits: [aquel => aquél]); art-333 (1 edits: [lnterinstitucional => interinstitucional]); art-341 (1 edits: [y agente especial => ]); art-376 (1 edits: [rehusa => rehúsa]); art-385 (1 edits: [halla => haya]); art-388 (1 edits: [responsabilidad => reponsabilidad]); art-424 (1 edits: [de => del]); art-425 (8 edits: [2 => ] [3 => ]); art-451 (1 edits: [inimpungnable => inimpugnable]); art-460 (1 edits: [de => del]); art-468 (1 edits: [quienes => quiénes]); art-477 (1 edits: [queson => que son]); art-499 (1 edits: [vil => vii]); art-500 (1 edits: [penai => penal]); art-517 (1 edits: [constituya => constituye]); art-557 (1 edits: [ => artículo 558 resolución suprema y ejecución 1 la decisión sobre la entrega será mediante resolución suprema emitida por el consejo de ministros que se])",
   "Checkpoint ed6-2020: of the provisions in both, 561 match the rebuilt text at that edition's date word for word (case and the editions' own \"(sic)\" ignored) and 36 differ: promulgacion (2 edits: [nuevo código procesal penal decreto legislativo n 957 publicado el 29 de julio de 2004 el presidente de la república por cuanto de conformidad con lo  => ] [título preliminar artículos i a x libro primero disposiciones generales artículo 1 a 113 libro segundo la actividad procesal artículos 114 a 320 libro => ]); tp-03 (1 edits: [mas => más]); art-002 (6 edits: [1 => ] [2 => ]); art-004 (2 edits: [1 => ] [2 => ]); art-005 (1 edits: [1 => ]); art-053 (1 edits: [consaguinidad => consanguinidad]); art-057 (1 edits: [prescrito => previsto]); art-061 (1 edits: [inteponer => interponer]); art-071 (1 edits: [rehusa => rehúsa]); art-105 (1 edits: [ => artículo 106 impedimento de acudir a la vía extra penal la constitución en actor civil impide que presente demanda indemnizatoria en la vía extra pena]); art-141 (1 edits: [o => ]); art-170 (1 edits: [procesal => procesa]); art-201-a (1 edits: [debidamente => debida mente]); art-212 (1 edits: [menores => meno res]); art-228 (1 edits: [correctamente => correcta mente]); art-230 (1 edits: [absolutamente => absoluta mente]); art-235 (4 edits: [en el plazo máximo de treinta días hábiles => inmediatamente] [o => y en su momento]); art-236 (3 edits: [1 => ] [2 => ]); art-253 (1 edits: [ocultamiento => oculta miento]); art-261 (1 edits: [aquel => aquél]); art-333 (1 edits: [lnterinstitucional => interinstitucional]); art-341 (1 edits: [y agente especial => ]); art-376 (1 edits: [rehusa => rehúsa]); art-385 (1 edits: [halla => haya]); art-424 (1 edits: [de => del]); art-425 (8 edits: [2 => ] [3 => ]); art-451 (1 edits: [inimpungnable => inimpugnable]); art-468 (1 edits: [quienes => quiénes]); art-473 (22 edits: [ => a participación del agraviado 1 el agraviado deberá ser citado al final de la] [1 recibida => si asiste se le deberá informar que uno de los aspectos que abarca el procedimiento en curso es el hecho delictivo en su perjuicio y acto seguido se l]); art-477 (1 edits: [queson => que son]); art-499 (1 edits: [vil => vii]); art-500 (1 edits: [penai => penal]); art-517 (1 edits: [constituya => constituye]); art-542 (1 edits: [salvo en los casos en los que el estado aparece como el único agraviado en estos no se exige el pago o la garantía de la reparación civil o días multa => ]); art-557 (1 edits: [ => artículo 558 resolución suprema y ejecución 1 la decisión sobre la entrega será mediante resolución suprema emitida por el consejo de ministros que se]); disp-modif-derog-02 (6 edits: [3 => 2] [4 => 3])",
   "Checkpoint ed7-2022: of the provisions in both, 583 match the rebuilt text at that edition's date word for word (case and the editions' own \"(sic)\" ignored) and 19 differ: promulgacion (1 edits: [nuevo código procesal penal decreto legislativo n 957 publicado el 29 de julio de 2004 el presidente de la república por cuanto de conformidad con lo  => ]); tp-03 (1 edits: [mas => más]); art-061 (1 edits: [inteponer => interponer]); art-071 (1 edits: [rehusa => rehúsa]); art-129 (1 edits: [interpretes => intérpretes]); art-260 (1 edits: [dirirgirse => dirigirse sic]); art-273 (1 edits: [al => ai]); art-340 (1 edits: [n => ]); art-376 (1 edits: [rehusa => rehúsa]); art-385 (1 edits: [ => sic]); art-425 (8 edits: [2 => ] [3 => ]); art-451 (1 edits: [ => sic]); art-477 (1 edits: [queson => que son]); art-499 (1 edits: [vil => vii]); art-500 (1 edits: [penai => penal]); art-531 (1 edits: [acompañaran => acompañarán]); art-533 (1 edits: [ => sic]); disp-final-01 (1 edits: [1 => 01]); disp-modif-derog-02 (1 edits: [independientemente => independiente mente])"

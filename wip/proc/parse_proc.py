@@ -392,10 +392,10 @@ def assemble(path, units, laws, lines_of, commence, trees, checks, log):
             prev['changes'].update(changes)
             for k, ls in credits.items():
                 prev['credits'][k] = sorted(set(prev['credits'].get(k, [])) | set(ls))
-            prev['source_url'] = url if prev['source_url'] == url else prev['source_url']
+            prev['note'] = prev.get('note', '') + f' Wording of Ley {n} from {url}.'
         else:
             versions.append({'from': day, 'source_url': url, 'sha256': sha_l, 'changes': changes,
-                             'credits': credits})
+                             'credits': credits, 'note': f'Wording of Ley {n} from {url}.'})
         extra_laws[key] = {'label': f'Ley {n}', 'title': title, 'kind': 'law', 'enacted': None, 'published': pub,
                            'url': url, 'temporary_until': None, 'restores': None, 'note': None}
         used_laws.add(key)
