@@ -111,9 +111,17 @@ def split_articles(block: list[str]) -> list[tuple[str, list[str]]]:
 def numbers_before_cp(intro: str) -> set[str] | None:
     """Article keys the operative sentence ties to the Código Penal, or None if it names none."""
     keys = set()
-    for m in re.finditer(r'art[íi]culos?\s+((?:\d+(?:\s*-\s*[A-Z])?\s*(?:,|y|e)?\s*)+)(?:[^.]{0,80}?)\s*(?:del|al)\s+'
-                         r'(?:presente\s+)?C[óo]digo\s+Penal', intro, re.I):
-        for n in re.finditer(r'(\d+)(?:\s*-\s*([A-Z]))?', m.group(1)):
+    for m in CP.finditer(intro):
+        before = intro[max(0, m.start() - 400):m.start()]
+        if re.search(r'(?:Procesal|Procedimientos|Ejecuci[óo]n|Responsabilidad)\s*$', before, re.I):
+            continue
+        a = list(re.finditer(r'art[íi]culos?\s', before, re.I))
+        if not a:
+            continue
+        seg = before[a[-1].end():]
+        if re.search(r'\b(?:Ley|Decreto|C[óo]digo)\b', seg):
+            seg = re.split(r'\b(?:Ley|Decreto|C[óo]digo)\b', seg)[0]
+        for n in re.finditer(r'\b(\d{1,3})(?:\s*-\s*([A-Z]))?\b', seg):
             keys.add(art_key(n.group(1), n.group(2)))
     return keys or None
 
@@ -155,9 +163,12 @@ def cp_repeals(paras: list[str]) -> tuple[list, list]:
             if re.search(r'numeral|inciso|literal|p[áa]rrafo', s, re.I):
                 partial.append(s[:200])
                 continue
-            for a in re.finditer(r'art[íi]culos?\s+((?:\d+(?:\s*-\s*[A-Z])?\s*(?:,|y|e)?\s*)+)', s, re.I):
-                for n in re.finditer(r'(\d+)(?:\s*-\s*([A-Z]))?', a.group(1)):
-                    whole.append(art_key(n.group(1), n.group(2)))
+            a = list(re.finditer(r'art[íi]culos?\s', s, re.I))
+            if a:
+                seg = re.split(r'\b(?:Ley|Decreto|C[óo]digo)\b', s[a[-1].end():])[0]
+                for n in re.finditer(r'\b(\d{1,3})(?:\s*-\s*([A-Z]))?\b', seg):
+                    if art_key(n.group(1), n.group(2)) not in whole:
+                        whole.append(art_key(n.group(1), n.group(2)))
     return whole, partial
 
 
