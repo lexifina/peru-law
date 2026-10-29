@@ -129,6 +129,9 @@ def apply_law(law: dict, state: dict, log: list[str]) -> dict:
                 if forward.ELL.match(p):
                     break
                 head.append(p)
+            # a chapter title quoted just before the heading ("Capítulo I / Trata de personas") is not the article's
+            hq = next((i for i, p in enumerate(head) if forward.QHEAD.match(p)), 0)
+            head = head[hq:]
             curp = [l for l in old['text'].split('\n') if l]
             hi = next(i for i, p in enumerate(curp) if BHEAD.match(p))
             first = curp[hi]
