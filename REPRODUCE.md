@@ -1,0 +1,241 @@
+# How this repository was made (Peru)
+
+This file is written by the build on 2026-10-29, the day the source data was retrieved. Everything below is enough to rebuild this repository hash for hash.
+
+## Sources
+
+| Source | Address | Retrieved | Requests | Licence |
+| --- | --- | --- | ---: | --- |
+| Congreso de la República: ediciones de la Constitución Política del Perú (2021, 2024) | <https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf> | 2026-10-28 | 14 | Official legal text; not protected by copyright (Decreto Legislativo 822, art. 9). |
+| Congreso de la República: consolidaciones anteriores (2004, 2012, 2015, 2019) via the Wayback Machine | <https://web.archive.org/web/2012/http://www.congreso.gob.pe/ntley/Imagenes/Constitu/Cons1993.pdf> | 2026-10-28 | 32 | Official legal text. |
+| Archivo Digital de la Legislación del Perú (ADLP), Congreso | <https://www.leyes.congreso.gob.pe/> | 2026-10-28 | 138 | Official legal text. |
+| Tribunal Constitucional del Perú | <https://tc.gob.pe/jurisprudencia/2021/00019-2021-AI.pdf> | 2026-10-28 | 1 | Official judgment. |
+| El Peruano, Normas Legales (busquedas.elperuano.pe) | <https://busquedas.elperuano.pe/dispositivo/NL/2384222-1> | 2026-10-28 | 3 | Official gazette text. |
+| Editora Perú, Normas Legales Actualizadas: Código Civil (FAOLEX copy) | <https://faolex.fao.org/docs/pdf/per205198.pdf> | 2026-10-28 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| El Peruano, busquedas.elperuano.pe | <https://busquedas.elperuano.pe> | 2026-10-28 | 1 | Official gazette |
+| Congreso, Archivo Digital de la Legislación del Perú | <https://www.leyes.congreso.gob.pe> | 2026-10-28 | 40 | Official |
+| Editora Perú NLA: Ley 29733 (Wayback raw captures) | <https://web.archive.org/web/20260721055737id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=23> | 2026-10-28 | 3 | Official text |
+| ANPD (MINJUS) on gob.pe: Ley 29733 | <https://cdn.www.gob.pe/uploads/document/file/2011398/Ley%20N%C2%BA%2029733%20-%20Ley%20de%20protecci%C3%B3n%20de%20datos%20personales.pdf.pdf?v=1683928275> | 2026-10-28 | 2 | Official |
+| MINSA on gob.pe: Ley 29733 (2016) | <https://www.minsa.gob.pe/Recursos/OGTI/SINADEF/Ley-29733.pdf> | 2026-10-28 | 1 | Official |
+| MINJUS, Código Civil, 14th official edition (gob.pe) | <https://cdn.www.gob.pe/uploads/document/file/5700008/5060551-codigo-civil-minjus-bcp_n-3.pdf?v=1705608699> | 2026-10-28 | 2 | Official |
+| MINJUS, Compendio sobre Protección de Datos Personales (gob.pe) | <https://cdn.www.gob.pe/uploads/document/file/9231033/7575393-compendio_proteccion_datos_personales.pdf?v=1767203570> | 2026-10-28 | 2 | Official |
+| El Peruano pages of the amending laws (Congreso bulletins NLYYYYMMDD, gob.pe copies) and Congreso ADLP texts | <https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/> | 2026-10-28 | 20 | Official gazette |
+| Ministerio de Justicia y Derechos Humanos: Código Procesal Penal, Octava Edición Oficial (diciembre 2024, actualizada al 17 de noviembre de 2024) | <https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504> | 2026-10-28 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| MINJUS: Código Procesal Penal, Séptima Edición Oficial (actualizada al 1 de agosto de 2022) | <https://cdn.www.gob.pe/uploads/document/file/3710113/C%C3%B3digo%20Procesal%20Penal.pdf?v=1664488493> | 2026-10-28 | 1 | as above |
+| MINJUS: Código Procesal Penal, Sexta Edición Oficial (actualizada al 27 de noviembre de 2020) | <https://cdn.www.gob.pe/uploads/document/file/1850571/C%C3%B3digo%20Procesal%20Penal%20Final.pdf?v=1619548796> | 2026-10-28 | 1 | as above |
+| MINJUS: Código Procesal Penal, edición oficial actualizada al 23 de noviembre de 2018 | <https://cdn.www.gob.pe/uploads/document/file/1535454/CODIGO%20PROCESAL%20PENAL%20D.L.%20957.pdf.pdf?v=1610046523> | 2026-10-28 | 1 | as above |
+| MINJUS: Mapa de implementación del Código Procesal Penal (2021) | <https://cdn.www.gob.pe/uploads/document/file/2107657/MAPA%202021.pdf.pdf?v=1629490576> | 2026-10-28 | 1 | as above |
+| El Peruano: Decreto Supremo 007-2019-JUS (Reglamento del Decreto Legislativo 1373), publicado el 1 de febrero de 2019 | <https://busquedas.elperuano.pe/dispositivo/NL/1737282-3> | 2026-10-28 | 1 | as above |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 32181 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32181-TXM.pdf> | 2026-10-28 | 1 | as above |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 32182 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32182-TXM.pdf> | 2026-10-28 | 1 | as above |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 32255 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32255-TXM.pdf> | 2026-10-28 | 1 | as above |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 32374 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32374-TXM.pdf> | 2026-10-28 | 1 | as above |
+| Congreso law index (LeyNumePP.aspx), searched by number 32140-32799 (pages of 20) | <https://www.leyes.congreso.gob.pe/LeyNumePP.aspx?xNorma=0> | 2026-10-28 | 67 | as above |
+| Ministerio de Justicia y Derechos Humanos: Código de Protección y Defensa del Consumidor y Normas Complementarias, Tercera Edición Oficial (diciembre 2020, actualizada al 27 de noviembre de 2020) | <https://cdn.www.gob.pe/uploads/document/file/1837776/C%C3%B3digo%20Protecci%C3%B3n%20Consumidor%202020.pdf?v=1619483959> | 2026-10-29 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| MINJUS: Código de Protección y Defensa del Consumidor, Segunda Edición Oficial (junio 2018, actualizada al 31 de mayo de 2018), as served by SPIJ; Internet Archive capture 2019-11-01 06:54:38 UTC | <https://web.archive.org/web/20191101065438id_/http://spij.minjus.gob.pe:80/content/publicaciones_oficiales/img/CODIGO-CONSUMIDOR.pdf> | 2026-10-29 | 1 | as above; archive.org capture |
+| Decreto Legislativo 1308 (El Peruano, 30 December 2016), PCM copy on gob.pe | <https://cdn.www.gob.pe/uploads/document/file/1536616/DL%201308.pdf.pdf?v=1610113212> | 2026-10-29 | 1 | as above |
+| El Peruano, Normas Legales, 5 September 2018 (Decreto Legislativo 1390), Congreso copy | <https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/NL20180905.pdf> | 2026-10-29 | 1 | as above |
+| Congreso ADLP: Leyes 30534 and 30908 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2016_2021/ADLP/Texto_Consolidado/30534-TXM.pdf> | 2026-10-29 | 2 | as above |
+| El Peruano, Normas Legales, 29 August 2020 (Ley 31040), Congreso copy | <https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/NL20200829.pdf> | 2026-10-29 | 1 | as above |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 31207 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2016_2021/ADLP/Texto_Consolidado/31207-TXM.pdf> | 2026-10-29 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 31435 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31435-TXM.pdf> | 2026-10-29 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 31467 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31467-TXM.pdf> | 2026-10-29 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 31537 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31537-TXM.pdf> | 2026-10-29 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 31601 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31601-TXM.pdf> | 2026-10-29 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 31763 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31763-TXM.pdf> | 2026-10-29 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 31937 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31937-TXM.pdf> | 2026-10-29 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 32032 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32032-TXM.pdf> | 2026-10-29 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 32230 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32230-TXM.pdf> | 2026-10-29 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 32323 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32323-TXM.pdf> | 2026-10-29 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 32327 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32327-TXM.pdf> | 2026-10-29 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| Congreso, Archivo Digital de la Legislación del Perú: Ley 32495 (texto publicado en El Peruano) | <https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32495-TXM.pdf> | 2026-10-29 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+| Congreso law index (LeyNumePP.aspx), searched by title ("CONSUMIDOR") and by number 32231-32550 | <https://www.leyes.congreso.gob.pe/LeyNumePP.aspx?xNorma=0> | 2026-10-29 | 18 | as above |
+| Editora Perú, Normas Legales Actualizadas: Código de Protección y Defensa del Consumidor (idNorma=17); Internet Archive capture 2024-08-19 05:16:28 UTC | <https://web.archive.org/web/20240819051628id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=17> | 2026-10-29 | 1 | Editora Perú publication; archive.org capture |
+| Indecopi on gob.pe: Ley 29571 as exported from SPIJ (MINJUS), uploaded April 2025 | <https://cdn.www.gob.pe/uploads/document/file/1351847/1244218-ley-29571_spij.pdf?v=1745616997> | 2026-10-29 | 1 | Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9) |
+
+Every response is cached by the sha256 of its URL, and the table above lists every source with its retrieval date. Lexifina keeps its fetch scripts privately; `tools/parse.py` reads only the cache and writes `corpus.json`, so the same cache always gives the same corpus.
+
+## What is in it
+
+| Act | Title | Versions | Span |
+| --- | --- | ---: | --- |
+| `constitucion` | Constitución Política del Perú de 1993 | 33 | 1993-12-31 to 2026-04-12 |
+| `codigo-civil` | Código Civil (Decreto Legislativo 295) | 26 | 2012-12-25 to 2025-01-09 |
+| `proteccion-datos-personales` | Ley 29733, Ley de Protección de Datos Personales | 3 | 2011-07-04 to 2017-09-16 |
+| `codigo-procesal-penal` | Código Procesal Penal (Decreto Legislativo 957) | 79 | 2004-07-30 to 2025-06-08 |
+| `codigo-consumidor` | Código de Protección y Defensa del Consumidor (Ley 29571) | 20 | 2010-10-02 to 2025-11-12 |
+
+The build made 171 commits:
+
+| Commits | Kind |
+| ---: | --- |
+| 5 | first version of an act |
+| 165 | one law on its in-force day |
+| 1 | changes no amendment note explains, credited to the publisher |
+
+Other counts:
+- 0 commits on the branch `futuro`: laws not yet in force on 2026-10-29.
+- 0 commits dated 1 January 1970: in force before 1970, with the real day in their `In-force` trailer.
+- 153 laws in the record.
+- 313 tags.
+
+## Dates
+
+Each commit is dated at noon (America/Lima) on the day the change took effect. The other dates, enacted and published, are trailers.
+
+When a law gives no date of its own, the default rule applies: Constitución art. 109: la ley es obligatoria desde el día siguiente de su publicación en el diario oficial, salvo disposición contraria de la misma ley que posterga su vigencia en todo o en parte https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf
+
+## Commands, in order
+
+```sh
+# fill the cache from the sources listed above (network; Lexifina's fetch scripts are kept privately)
+python -X utf8 tools/parse.py                  # cache -> corpus.json (no network)
+python -X utf8 tools/build.py <folder> --repo <empty folder> --docs-date 2026-10-29
+python -X utf8 tools/check_repo.py <repo> --corpus <folder>/corpus.json --write
+python -X utf8 tools/build.py <folder> --repo <another empty folder> --docs-date 2026-10-29 --compare <repo>
+```
+
+In the main Lexifina repository these files live as follows:
+- `fetch.py`, `parse.py` and `repo/`: in `scripts/peru-law/`.
+- `build.py`, `check_repo.py` (`check.py` there) and `on.py`: in `scripts/gitlaw_common/`, with the corpus format in `SCHEMA.md`.
+
+## Exact inputs
+
+- `corpus.json` sha256 `d918a11d5b1d0e33543946281c7ea597d5264c71b986a62cc7a77449e9201dda` (7503421 bytes)
+- Script blob hashes (`git hash-object`):
+
+| Script | Blob |
+| --- | --- |
+| build.py | `2bfc4ac9df193a7be844556d7f69cdb9d93ec3f2` |
+| check.py | `cd346c7ff9996d450240e3bab52bcae03b2bc865` |
+| on.py | `644a6c0857fbcc72562032b58d57aa113fee0641` |
+| fetch.py | `6070da370db771b4e2d711b088e17a8508e6e1d8` |
+| parse.py | `4674f684a0d4cec84b9e6f32cd4bd68f10461e55` |
+
+- Tools:
+  - Python 3.14.0
+  - git version 2.52.0.windows.1
+  - curl 8.21.0 (Windows) libcurl/8.21.0 Schannel zlib/1.3.2 WinIDN WinLDAP
+
+## Checks
+
+255 versions of 6 acts read back from git on the day each took effect and on the day before: 0 mismatches. Trailers: 0 commits whose trailers git cannot parse. Health: 0 merge commits on main, 0 commit dates that go backwards, 0 commits dated after the build.
+
+A second build from the same corpus into an empty folder gave identical hashes for all 254 history commits and 476 tags (history tip `c5d8a0528efb876a3ab64cf0607f560b96bd1da1`).
+
+These results are from the check run on the build before this one, from the same corpus.
+
+## Decisions made by hand
+
+- SPIJ (spij.minjus.gob.pe), the Ministry of Justice's consolidated legislation, is excluded: it does not answer from here and full access is paid.
+- Dates are in-force dates: the day after publication in El Peruano (Constitución art. 109) unless the law says otherwise.
+- The 1993 text is in force from 31 December 1993, the day after its publication in El Peruano on 30 December 1993 (May 2021 edition, note 1).
+- Ley 31988 (bicameral Congress) says its reforms 'entran en vigor a partir de las próximas elecciones generales'; we date them 12 April 2026, the general election day set by Decreto Supremo 039-2025-PCM, art. 1 ('Se convoca a Elecciones Generales el día domingo 12 de abril del año 2026'), published in El Peruano on 26 March 2025 and read at https://busquedas.elperuano.pe/dispositivo/NL/2384222-1 (cached). Its repeal of Article 90-A takes effect the same day, as the Dec 2024 edition notes.
+- Ley 29402 (Article 90, 130 congresistas) is dated from the day after publication; its own transitional provision makes it apply to the 2011 elections (recorded in the law's note).
+- Leyes 31280, 31304 and 31305 were declared unconstitutional by STC 918/2021 (published 26 November 2021, effective the next day, without retroactive effect); the ruling is a court law that restores the earlier text of Articles 112, 21 and 2.
+- The texts of Leyes 31280, 31304 and 31305 come from the laws as published (ADLP), because no Congreso edition carries them.
+- Every earlier text up to Ley 31122 comes from the May 2021 edition's footnotes ('Antes de la reforma, este artículo tuvo el siguiente texto'). Where those notes give none, the 2012 consolidation fills the gap: the original Chapter XIV (Arts. 188-199, replaced by Ley 27680), Arts. 191 and 194 between Leyes 27680 and 28607, numeral 3 of Art. 91 before Ley 28484, numeral 6 of Art. 203 before Ley 30305 and Art. 40 before Ley 31122 (the 2021 note names 'Ley 31222', a misprint for 31122, and quotes no earlier text).
+- Texts are normalised once: degree signs after article numbers are dropped ('artículo 117°' -> 'artículo 117', as in the 2024 edition), and spaces, quotes and dashes are unified.
+- Where the 2021 and 2024 editions break a paragraph differently after a full stop or colon, the break is kept in every version.
+- Article 39 reads 'Junta Nacional de Justicia' in the Dec 2024 edition, applying the renaming in Ley 30904's Única Disposición Complementaria Final; the May 2021 edition still printed 'Consejo de la Magistratura'. We credit the change to Ley 30904 on its in-force date. Other articles that still name the 'Consejo Nacional de la Magistratura' in the 2024 edition are left as printed.
+- Ley 31042's number was corrected to Ley 31043 by a fe de erratas (20 September 2020); the law is keyed ley-31043.
+- Leyes 27600 (2001) and 32265 (2025) concern Alberto Fujimori's signature on the Constitution, not its provisions; each is a commit that changes no words, credited to the preamble.
+- Ley 31878 changed numeral 4 of Article 2 as well as adding Article 14-A (Ley 31878, art. 1; the Congreso's list mentions only Article 14-A).
+- Section headings (títulos, capítulos) are not yet tracked as a unit.
+- The Congreso's 2004 web edition (Wayback 20040619190058) was never updated after the 1995 reforms (it still has the original Chapter XIV and no Ley 27365 provisions), so it is checked as the text of 1995-2000.
+- The sentence 'No son acumulables servicios prestados a la actividad pública y privada.' that ends the Segunda Disposición Final y Transitoria in the 2021 and 2024 editions is absent from El Peruano of 30 December 1993 (p. 15, read on the ADLP scan), from the 2004-2019 editions and from the ADLP text of about 2013, and no reform law added it; it is an uncredited (unexplained) change dated 1 May 2021, the month of the first edition that prints it.
+- Remaining checkpoint differences are editorial variants between Congreso editions; our text follows the 2021/2024 editions, which the ADLP text agrees with for art. 90 ('la lista', 'de derecho') and art. 96 ('al Congreso').
+- Paragraph breaks inside quoted earlier texts (small type in the notes) are inferred from line lengths; words are checked against the editions, breaks are not.
+- verify_laws.py: every paragraph changed by Leyes 31118, 31280, 31304, 31305, 31414, 31507, 31878, 31988, 32135, 32145, 32188 and 32189 occurs word for word in the law's ADLP text (169 paragraphs). Older laws in the ADLP are scans or use unmapped fonts.
+- No Congreso edition after December 2024 exists; the Congreso's list of reform laws (diariodebates/leyesrefconstit, read 28 October 2026) names none after Ley 32265.
+- Checkpoint e04 (2000-11-05): 224 provisions, word mismatches: art-077, art-158, art-197, declaracion
+- Checkpoint e12 (2012-05-11): 227 provisions, word mismatches: art-090, art-096, art-187, art-191
+- Checkpoint e15 (2015-04-27): 227 provisions, word mismatches: art-090, art-096, art-187
+- Checkpoint e19a (2019-02-06): 229 provisions, word mismatches: art-039, art-090, art-148
+- Checkpoint e19b (2019-04-08): 229 provisions, word mismatches: art-039, art-090
+- Checkpoint e21 (2021-05-31): 231 provisions, word mismatches: art-039; not identical: art-039, art-056
+- Checkpoint e24 (2024-12-31): 233 provisions, word mismatches: art-091; not identical: art-091
+- The December 2024 edition prints numeral 3 of Article 91 twice (as numerals 3 and 4) and renumbers the rest 5 and 6; no reform did this, so the May 2021 text is kept.
+- Codes part (Código Civil, Ley 29733) is written by codes/parse_codes.py into corpus.d/50-codes.json; SPIJ is not used (unreachable).
+- Código Civil history: rebuilt from 25 December 2012. Base: the MINJUS 14th official edition (gob.pe, text to 1 August 2014, text layer); its footnotes quote the wording before every modification since 1984, but not the wording of repealed provisions, and the last unquoted repeal is Ley 29973 (published 24 December 2012). The code as a whole can therefore be known only from 25 December 2012; earlier versions would need the 1984 El Peruano publication, which exists only as an image scan (no OCR is used).
+- Código Civil 25 Dec 2012 -> 1 Aug 2014: rewound from the 14th edition's footnotes (Leyes 30007, 30084, 30162, 30179, 30230): a quoted 'texto anterior' replaces the article or the numeral it names; an incorporated paragraph or numeral is removed.
+- Código Civil 1 Aug 2014 -> 15 Aug 2024: each article's wording before its first later amendment is the 14th edition's; after its last amendment it is the Editora Perú edition's (current to 15 Aug 2024). Amendments come from that edition's own notes, which name only the latest law per provision, plus the amending laws' own texts (El Peruano pages via Congreso bulletins and gob.pe; Congreso ADLP texts): where two laws changed one article (arts. 42, 46, 241, 243, 248, 274, 481, 667, 696) the wording in between is taken from the earlier law's text (codes/cc_spec.py lists the anchors).
+- Código Civil check: the replay's state on 16 Aug 2024 equals the Editora Perú text in every article; and the text each available amending law gives for an article is found in the replayed wording right after that law (40-character windows, at least 90%), except where the law text runs into other matter of the gazette page or restates an unchanged sentence (listed by parse_codes.py --report).
+- Código Civil articles not amended between Aug 2014 and Aug 2024 take the Editora Perú wording; the MINJUS 14th edition differs from it in typography or wording in a few dozen of them (for example 'adquiriente'/'adquirente', 'exequátur'/'exequatur'); these are differences between two official editions, not amendments, and are listed by parse_codes.py --report.
+- Código Civil laws whose own text could not be found with a text layer (Leyes 30292, 30311, 30313, 30323, 31338; the Congreso copies are scans and El Peruano bulletins on the Congreso site start in late 2016): their changes take the wording of the Editora Perú edition; if one of them also changed an article that a later law changed again, that intermediate wording is not visible and is not in the history.
+- Código Civil entry into force: the day after publication (Const. art. 109) unless the law says otherwise: D.Leg. 1297 the day after its reglamento (D.S. 001-2018-MIMP, El Peruano 10 Feb 2018: 11 Feb 2018); Ley 32006 30 business days after publication (6 Jun 2024, counted from 25 Apr 2024 skipping 1 May); D.Leg. 1626 arts. 2037-2038 90 days after publication (13 Nov 2024).
+- Código Civil NLA edition is read from the copy kept by FAOLEX (faolex.fao.org/docs/pdf/per205198.pdf); El Peruano's own obtenerDocumento endpoint currently serves these PDFs with every byte >= 0x80 replaced by U+FFFD, and no Wayback capture of the Código Civil edition was found.
+- Código Civil text in force: where the NLA edition prints a pending text after 'el nuevo texto será el siguiente:' (D.Leg. 1400, garantía mobiliaria, not yet in force), the pending text is dropped and the in-force text kept; its pending changes are not in the history.
+- Código Civil units: one file per article (art-NNNN, art-NNNN-a for lettered articles; tp-NN for the Título Preliminar), first line the sumilla (article heading) as printed in the edition, then the article; repealed articles have no file. Book/section/title/chapter headings are not tracked.
+- Código Civil: amendment quotes, footnote calls, editorial concordances and the editions' notes are removed from the text; degree marks after numbers in the MINJUS edition (Artículo 20º) are dropped to match the Editora Perú typography; Ley 25362 (1991) authorised sumillas in official editions, so they are kept.
+- D.Leg. 1626: arts. 2033, 2040 and 2042 took effect the day after publication (checked word for word against El Peruano); arts. 2037 and 2038 took effect 90 days after publication, 13 November 2024, applied from the El Peruano text.
+- Ley 32228 (art. 233-A): published 8 January 2025 (ADLP index; the Congreso text header misprints 2024), in force 9 January 2025 under Const. art. 109.
+- Código Civil after 9 January 2025: the Congreso ADLP index (laws up to Ley 32537, 26 December 2025) lists no further law amending it by title; decretos legislativos after 1626 and laws of 2026 could not be enumerated from here, so later amendments may be missing.
+- Ley 29733 original text: ANPD/MINJUS copy on gob.pe (2023), which prints each replaced text before the D.Leg. 1353 text; every unit not amended was checked word for word against the current Editora Perú edition and the 2016 MINSA copy.
+- Ley 29733 in force from 4 July 2011 (published 3 July; Const. art. 109) for Título II, art. 32 and the 1st-4th, 9th and 10th final provisions; the rest 30 business days after the reglamento (D.S. 003-2013-JUS, El Peruano 22 March 2013): counted from 25 March 2013, skipping 28-29 March (Holy Week) and 1 May, that is 8 May 2013. Recorded as a no-words commit crediting D.S. 003-2013-JUS on those units.
+- D.Leg. 1353's changes to Ley 29733 (arts. 2, 3, 12, 14, 15, 18, 20-22, 25, 27 and others listed in the notes, plus the Título IV heading) took effect on 16 September 2017, the day after D.S. 019-2017-JUS (El Peruano, 15 September 2017), as its second final provision requires; the fe de erratas of 12 January 2017 (art. 15 numbering) predates that day and is included.
+- Ley 29733 today: every unit agrees with the MINJUS Compendio sobre Protección de Datos Personales (1st official edition, current to 22 Nov 2025) in at least 90% of 40-character windows (differences are typographic: 'Ley N° 27444' for 'Ley 27444', footnote numbers); no amendment after D.Leg. 1353 is noted there.
+- Ley 29733 has no undécima disposición complementaria final in any source checked; the numbering jumps from décima to duodécima.
+- Ley 29733 art. 3: D.Leg. 1353 restated it with the same words (both texts in the ANPD copy), so its commit shows it with wording unchanged.
+- Ley 29733 art. 30: the Editora Perú edition notes it as modified by D.Leg. 1353 (cuarta DCM) but the ANPD copy prints no replaced text and the wording is identical in both, so it is credited to D.Leg. 1353 with wording unchanged.
+- Ley 29733 art. 32: only its first paragraph was in force from 4 July 2011; units are whole articles, so art. 32 is treated as in force from that day and the 8 May 2013 commencement commit does not list it.
+- Ley 29733 text: the 2026 Editora Perú edition adds an editorial 'Sic' after the misprinted 'Ley 28706' in the octava disposición; it is dropped (the 2025 edition and the ANPD copy do not have it).
+- Editorial notes are recognised by type (Editora Perú sets them in bold italic 8 pt) and removed; units are split into paragraphs from line geometry (indent, short last line), so a few paragraph breaks may differ from the printed page.
+- Código Procesal Penal part (proc/parse_proc.py, corpus.d/60-proc.json) is built from the Ministry of Justice's eighth official edition (text layer, no OCR). The footnotes there quote the wording before each amendment, and quoted texts carry their own footnotes, so one edition gives the chain back to 2004; proc/history.py replays it backwards, newest change first.
+- The El Peruano 2004 publication and the Congreso copy of Decreto Legislativo 957 are image scans and are not used (no OCR). The first version is the text the footnotes reach back to, credited to Decreto Legislativo 957.
+- In-force days: the day after publication (Constitución art. 109) unless the edition's note gives the law's own start ("a los noventa (90) días", "entró en vigencia el 1 de julio de 2014"); "a los N días de su publicación" is counted as publication day + N.
+- Decreto Legislativo 1373 took effect the day after its Reglamento was published; D.S. 007-2019-JUS was published on 1 February 2019 (El Peruano), so 2 February 2019.
+- Footnotes that bring provisions into force ahead of the district calendar ("Vigencia adelantada", "se adelanta la vigencia") are commits that change no words, credited to the law the note names and dated by the note or by that law's start; the note's own words are quoted in the commit. Ley 28366 suspended arts. 205-210 until 1 January 2005, which is the day used for them.
+- District-by-district entry into force follows the Ministry of Justice's implementation map (2021): one no-words commit per start day, on the Primera Disposición Final, credited to the Calendario Oficial (D.S. 013-2005-JUS and its amendments).
+- Footnotes that only interpret, list related rules or report a Fe de Erratas are not commits; the edition's text is used as printed (it says it is a faithful copy of El Peruano).
+- Structure headings (libros, secciones, títulos, capítulos) are not tracked: the footnotes do not give their history.
+- Where a numbered item was repealed the edition keeps a placeholder ("5. DEROGADO"); so does this history.
+- Decreto Legislativo 1097 appears once as "10977" in the edition (note 204.1); read as 1097, as in note 204.2.
+- The state after the last eighth-edition version equals the edition's own text, provision by provision and character for character (parse_proc.py stops if it does not).
+- After the eighth edition (17 November 2024) no official consolidation exists (no ninth MINJUS edition; El Peruano's Normas Legales Actualizadas PDFs are served corrupted; SPIJ is unreachable). Later amendments are replayed from the laws' own texts (proc/forward.py): Leyes 32181 and 32182 (published 11 December 2024, in force 12 December), 32255 (10 March 2025, in force 11 March) and 32374 (7 June 2025, in force 8 June), each the day after publication (Constitución art. 109; none has its own vigencia clause). Their titles in the Congreso law index (searched by number from Ley 32140; it ends at Ley 32537 of 26 December 2025) name the Code.
+- Their wording is taken from Congreso's ADLP transcriptions (Documentos/2021_2026/ADLP/Texto_Consolidado/N-TXM.pdf, headed "Publicada el ... en el Diario Oficial El Peruano", text layer); the El Peruano bulletin folder on leyes.congreso.gob.pe (Boletin_de_Normas_Legales) holds only 2016-2021 issues. Every paragraph a law brings is checked to occur word for word in that law's text. "[…]" keeps the existing wording; a full stop printed after the closing quote is restored to the provision. New articles keep the law's heading style ("Artículo 261-A. …").
+- Ley 32181 (Única Disposición Complementaria Derogatoria) repealed art. 261.1.a); the literal is removed (no placeholder) until Ley 32255 restored it with new wording.
+- Not found, so not in this history: laws after Ley 32537 and decretos legislativos after the eighth edition. Neither the Congreso index nor any text-layer bulletin reachable without a search engine lists them (El Peruano's search page needs its client app). A web search names Decreto Legislativo 1735 (February 2026) and Ley 32735 (July 2026) as amending the Code; their official texts were not found. Today's text may therefore lack those and other 2026 amendments.
+- Checkpoint ed5-2018: of the provisions in both, 570 match the rebuilt text at that edition's date word for word (case and the editions' own "(sic)" ignored) and 28 differ: promulgacion (3 edits: [república => republica] [mediante => ]); tp-03 (1 edits: [mas => más]); art-002 (2 edits: [este => éste] [este => éste]); art-053 (1 edits: [consaguinidad => consanguinidad]); art-057 (1 edits: [prescrito => previsto]); art-061 (1 edits: [inteponer => interponer]); art-071 (1 edits: [rehusa => rehúsa]); art-086 (3 edits: [1 => ] [2 => ]); art-087 (5 edits: [1 => ] [2 => ]); art-105 (1 edits: [ => artículo 106 impedimento de acudir a la vía extra penal la constitución en actor civil impide que presente demanda indemnizatoria en la vía extra pena]); art-128 (1 edits: [perjuicio => per juicio]); art-141 (1 edits: [o => ]); art-261 (1 edits: [aquel => aquél]); art-333 (1 edits: [lnterinstitucional => interinstitucional]); art-341 (1 edits: [y agente especial => ]); art-376 (1 edits: [rehusa => rehúsa]); art-385 (1 edits: [halla => haya]); art-388 (1 edits: [responsabilidad => reponsabilidad]); art-424 (1 edits: [de => del]); art-425 (8 edits: [2 => ] [3 => ]); art-451 (1 edits: [inimpungnable => inimpugnable]); art-460 (1 edits: [de => del]); art-468 (1 edits: [quienes => quiénes]); art-477 (1 edits: [queson => que son]); art-499 (1 edits: [vil => vii]); art-500 (1 edits: [penai => penal]); art-517 (1 edits: [constituya => constituye]); art-557 (1 edits: [ => artículo 558 resolución suprema y ejecución 1 la decisión sobre la entrega será mediante resolución suprema emitida por el consejo de ministros que se])
+- Checkpoint ed6-2020: of the provisions in both, 561 match the rebuilt text at that edition's date word for word (case and the editions' own "(sic)" ignored) and 36 differ: promulgacion (2 edits: [nuevo código procesal penal decreto legislativo n 957 publicado el 29 de julio de 2004 el presidente de la república por cuanto de conformidad con lo  => ] [título preliminar artículos i a x libro primero disposiciones generales artículo 1 a 113 libro segundo la actividad procesal artículos 114 a 320 libro => ]); tp-03 (1 edits: [mas => más]); art-002 (6 edits: [1 => ] [2 => ]); art-004 (2 edits: [1 => ] [2 => ]); art-005 (1 edits: [1 => ]); art-053 (1 edits: [consaguinidad => consanguinidad]); art-057 (1 edits: [prescrito => previsto]); art-061 (1 edits: [inteponer => interponer]); art-071 (1 edits: [rehusa => rehúsa]); art-105 (1 edits: [ => artículo 106 impedimento de acudir a la vía extra penal la constitución en actor civil impide que presente demanda indemnizatoria en la vía extra pena]); art-141 (1 edits: [o => ]); art-170 (1 edits: [procesal => procesa]); art-201-a (1 edits: [debidamente => debida mente]); art-212 (1 edits: [menores => meno res]); art-228 (1 edits: [correctamente => correcta mente]); art-230 (1 edits: [absolutamente => absoluta mente]); art-235 (4 edits: [en el plazo máximo de treinta días hábiles => inmediatamente] [o => y en su momento]); art-236 (3 edits: [1 => ] [2 => ]); art-253 (1 edits: [ocultamiento => oculta miento]); art-261 (1 edits: [aquel => aquél]); art-333 (1 edits: [lnterinstitucional => interinstitucional]); art-341 (1 edits: [y agente especial => ]); art-376 (1 edits: [rehusa => rehúsa]); art-385 (1 edits: [halla => haya]); art-424 (1 edits: [de => del]); art-425 (8 edits: [2 => ] [3 => ]); art-451 (1 edits: [inimpungnable => inimpugnable]); art-468 (1 edits: [quienes => quiénes]); art-473 (22 edits: [ => a participación del agraviado 1 el agraviado deberá ser citado al final de la] [1 recibida => si asiste se le deberá informar que uno de los aspectos que abarca el procedimiento en curso es el hecho delictivo en su perjuicio y acto seguido se l]); art-477 (1 edits: [queson => que son]); art-499 (1 edits: [vil => vii]); art-500 (1 edits: [penai => penal]); art-517 (1 edits: [constituya => constituye]); art-542 (1 edits: [salvo en los casos en los que el estado aparece como el único agraviado en estos no se exige el pago o la garantía de la reparación civil o días multa => ]); art-557 (1 edits: [ => artículo 558 resolución suprema y ejecución 1 la decisión sobre la entrega será mediante resolución suprema emitida por el consejo de ministros que se]); disp-modif-derog-02 (6 edits: [3 => 2] [4 => 3])
+- Checkpoint ed7-2022: of the provisions in both, 583 match the rebuilt text at that edition's date word for word (case and the editions' own "(sic)" ignored) and 19 differ: promulgacion (1 edits: [nuevo código procesal penal decreto legislativo n 957 publicado el 29 de julio de 2004 el presidente de la república por cuanto de conformidad con lo  => ]); tp-03 (1 edits: [mas => más]); art-061 (1 edits: [inteponer => interponer]); art-071 (1 edits: [rehusa => rehúsa]); art-129 (1 edits: [interpretes => intérpretes]); art-260 (1 edits: [dirirgirse => dirigirse sic]); art-273 (1 edits: [al => ai]); art-340 (1 edits: [n => ]); art-376 (1 edits: [rehusa => rehúsa]); art-385 (1 edits: [ => sic]); art-425 (8 edits: [2 => ] [3 => ]); art-451 (1 edits: [ => sic]); art-477 (1 edits: [queson => que son]); art-499 (1 edits: [vil => vii]); art-500 (1 edits: [penai => penal]); art-531 (1 edits: [acompañaran => acompañarán]); art-533 (1 edits: [ => sic]); disp-final-01 (1 edits: [1 => 01]); disp-modif-derog-02 (1 edits: [independientemente => independiente mente])
+- Código de Protección y Defensa del Consumidor part (more/parse_cpdc.py, corpus.d/70-consumidor.json) is built from the Ministry of Justice's third official edition (text layer, no OCR). Its footnotes quote the wording before each amendment; more/history.py (a copy of proc/history.py) replays them backwards, newest first.
+- The first version is the Code as published on 2 September 2010, in force on 2 October 2010 (Cuarta Disposición Complementaria Final: 30 calendar days counted from the day after publication), credited to Ley 29571. The later start of arts. 36-37 (180 days) and of the summary procedure (60 days) is noted in the first version, not committed separately.
+- In-force days: the day after publication (Constitución art. 109) unless the law sets its own start. Decreto Legislativo 1308 (30 December 2016) and 1390 (5 September 2018) and Leyes 30534, 30908 and 31040 set none (read in their texts). The Congreso copies of Leyes 29888 and 30046 are image scans (no OCR), so their texts were not read; the default rule is applied to them.
+- Art. 77 (Ley 30534): the edition's note quotes only the old closing paragraph of numeral 77.1; the law's own text shows it also added literals c) to f), so the earlier wording has literals a) and b) and the quoted closing paragraph.
+- Art. 106 (Decreto Legislativo 1390): the edition's four notes quote fragments of a restructured article; the wording before is taken from the second official edition (current to 31 May 2018; no change to art. 106 between then and 6 September 2018).
+- Two typesetting faults of the third edition are mended from the second edition: art. 121 loses the end of its first paragraph ("... desde que cesó, si fuera una infracción continuada."), and art. 42.1 prints "anotacion es" for "anotaciones".
+- Quotation marks around quoted earlier wording are the editions' typesetting and are dropped; a full stop printed after the closing quote ends the provision.
+- Footnotes 20, 27 and 42 quote only the changed lead-in, literal or numeral without the edition's usual "(...)" marker; they are read as partial quotes (the rest of the article unchanged).
+- Footnotes that only interpret, report concordances or report a related rule ("De conformidad con...", "Confrontar con...") are not commits; the edition's text is used as printed.
+- Structure headings (títulos, capítulos, subcapítulos) are not tracked: the footnotes do not give their history.
+- Decreto Legislativo 1308: published 2016-12-30, in force 2016-12-31 (default: the day after publication (Constitución art. 109)).
+- Decreto Legislativo 1390: published 2018-09-05, in force 2018-09-06 (default: the day after publication (Constitución art. 109)).
+- Ley 29888: published 2012-06-24, in force 2012-06-25 (default: the day after publication (Constitución art. 109)).
+- Ley 30046: published 2013-06-20, in force 2013-06-21 (default: the day after publication (Constitución art. 109)).
+- Ley 30534: published 2017-01-10, in force 2017-01-11 (default: the day after publication (Constitución art. 109)).
+- Ley 30908: published 2019-01-23, in force 2019-01-24 (default: the day after publication (Constitución art. 109)).
+- Ley 31040: published 2020-08-29, in force 2020-08-30 (default: the day after publication (Constitución art. 109)).
+- After the third official edition (27 November 2020) the Code's amendments are replayed from the laws' own texts (Congreso ADLP transcriptions, text layer): Leyes 31207, 31435, 31467, 31537, 31601, 31763, 31937, 32032, 32230, 32323, 32327 and 32495. They were found in the amendment notes of Editora Perú's Normas Legales Actualizadas (August 2024) and of the SPIJ text Indecopi publishes (April 2025), and in the Congreso law index by title up to Ley 32537 (26 December 2025). Every paragraph a law brings is checked to occur word for word in that law's text; "[…]" keeps the existing wording.
+- Ley 31435 is in force 60 calendar days counted from the day after publication (its Primera Disposición Complementaria Final): 21 May 2022, counted like the Code's own 30 days (day 1 = the day after publication).
+- Ley 31763 is in force 60 business days counted from the day after publication (its Primera Disposición Complementaria Final). No official source found gives the day; it is counted Monday to Friday from 5 June 2023, leaving out the national holidays of 29 June and 28 July 2023, which gives 29 August 2023. Days declared non-working for the public sector are not left out; if any applies, the true day is a little later.
+- Ley 32327: only the articles it adds to Ley 28587 wait 90 days; its change to art. 42.3 of the Code takes effect the day after publication (11 May 2025).
+- Ley 32323 quotes the heading "Capítulo II Métodos comerciales agresivos o engañosos" before art. 58; structure headings are not tracked, so it is not used.
+- Checkpoint nla-2024-08 explained: art. 88 differs because Editora Perú had not yet inserted Ley 31763 (its own note says the change "se insertará ... cuando entre en vigencia"); Título Preliminar art. V reads "carácterísticas" in both MINJUS editions (2018, 2020) and "características" in Editora Perú's text; the editions' spelling is kept. The final dispositions are not compared (the NLA text is cut at its headings).
+- Not found, so not in this history: decretos legislativos and laws whose title does not name the Code after April 2025 (the SPIJ text), and anything after Ley 32537 (26 December 2025), where the Congreso index ends. Today's text may lack such changes.
+- Checkpoint ed2-2018: of the provisions in both, 178 match the rebuilt text at that date word for word (case, punctuation and "Nº/núm." ignored) and 0 differ.
+- Checkpoint nla-2024-08: of the provisions in both, 169 match the rebuilt text at that date word for word (case, punctuation and "Nº/núm." ignored) and 2 differ: art-088 (3 edits: [en un plazo no mayor de quince días hábiles excepcionalmente la superintendencia de banca seguros y administradoras privadas de fondos de pensiones po => dentro] [inicial => establecido en la normativa correspondiente]); tp-05 (1 edits: [carácterísticas => características]) Only in the rebuilt text: disp-compl-derog-01, disp-compl-derog-02, disp-compl-final-01, disp-compl-final-02, disp-compl-final-03, disp-compl-final-04, disp-compl-final-05, disp-compl-modif-01, disp-compl-modif-02, disp-compl-modif-03, disp-compl-trans-01.
+
+## What AI did and did not do
+
+The fetch, parse and check scripts were written by Claude Code running Claude Opus 5.5 (`claude-opus-5-5`) under Lexifina's direction.
+
+No model wrote, translated or corrected legal text. No model runs at build time. Every word of law in this repository comes from the official sources above, through code that anyone can rerun.
+
+The commit messages are written by `build.py` from the source data.
+
+Model use at data-build time:
+- none: no model wrote, translated or chose legal text. Parsing rules, the note table and the decisions were written by hand (by a coding agent) and are checked against the Congreso editions listed in the checkpoints.
+- codes part: none. A model wrote the parser; no model output is used as legal text.
+- none: no model wrote or chose any legal text; parsing is rule-based (proc/edition.py, proc/history.py).
+- none: no model wrote or chose any legal text; parsing is rule-based (more/edition.py, more/history.py, more/cpdc_forward.py).
