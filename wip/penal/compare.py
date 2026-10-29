@@ -31,6 +31,12 @@ def split_unit(text: str) -> tuple[str, str]:
     return sumilla, ' '.join([first] + ls[1:])
 
 
+def _plain(w: str) -> str:
+    """A word without accents: "sólo"/"solo", "ésta"/"esta" are spelling variants between publishers."""
+    import unicodedata
+    return ''.join(c for c in unicodedata.normalize('NFD', w) if not unicodedata.combining(c))
+
+
 def _show(a, b, n=12):
     sm = difflib.SequenceMatcher(None, a, b, autojunk=False)
     out = []
@@ -64,13 +70,18 @@ def compare(units: dict, segs: list, skip_tail: int = 60) -> list:
             continue
         sumilla, body = split_unit(units[k]['text'])
         ob = words(body)
+        os_ = words(sumilla)
         tb = words(t)
+        prev = words(segs[i - 1][1]) if i else []
+        # the sumilla is printed before the heading or right after it, depending on the source
+        if os_ and tb[:len(os_) + len(ob)] == os_ + ob:
+            continue
         if tb[:len(ob)] != ob:
-            # the NLA may leave a repealed article with no body
-            res.append((k, 'body', _show(ob, tb[:len(ob) + 10])))
-        if sumilla:
-            os_ = words(sumilla)
-            prev = words(segs[i - 1][1]) if i else []
-            if prev[-len(os_):] != os_:
-                res.append((k, 'sumilla', '%s | nla tail: %s' % (' '.join(os_), ' '.join(prev[-len(os_) - 3:]))))
+            before = bool(os_) and prev[-len(os_):] == os_
+            a, b = (ob, tb[:len(ob) + 10]) if before or not os_ else (os_ + ob, tb[:len(os_) + len(ob) + 10])
+            what = 'spelling' if [_plain(w) for w in a] == [_plain(w) for w in b[:len(a)]] else 'body'
+            res.append((k, what, _show(a, b)))
+        if os_ and prev[-len(os_):] != os_:
+            # an NLA text with no sumilla, or a different one
+            res.append((k, 'sumilla', '%s | nla tail: %s' % (' '.join(os_), ' '.join(prev[-len(os_) - 3:]))))
     return res

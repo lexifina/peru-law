@@ -154,6 +154,8 @@ def main():
     spec = json.loads((HERE / 'laws.json').read_text(encoding='utf-8'))
     bpath = fetch.path_for(base.URL)
     state = base.units(bpath)
+    # word forms of the 2016 edition decide whether a hyphen at a line end in a law is part of the word
+    lawtext.VOCAB.update(w for u in state.values() for w in re.findall(r'\w+(?:-\w+)*', u['text'].lower()))
     v0 = {'from': spec['base']['from'], 'source_url': base.URL,
           'sha256': hashlib.sha256(bpath.read_bytes()).hexdigest(),
           'units': {k: state[k] for k in sorted(state)}, 'credits': {}, 'note': spec['base']['note']}
@@ -163,7 +165,11 @@ def main():
     cps = sorted(spec['checkpoints'], key=lambda c: c['date'])
     results = {}
     prev_day = v0['from']
+    until = os.environ.get('PE_UNTIL')          # debugging: stop the replay after this day
     for law in sorted(spec['laws'], key=lambda l: (l['in_force'], l['published'], l['key'])):
+        if until and law['in_force'] > until:
+            cps = [c for c in cps if c['date'] <= until]
+            break
         for c in cps:
             if c['id'] not in results and prev_day <= c['date'] < law['in_force']:
                 results[c['id']] = checkpoint(state, c['capture'])

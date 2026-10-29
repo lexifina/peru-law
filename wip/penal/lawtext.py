@@ -35,13 +35,18 @@ def lines(doc):
         items = []
         for b in page.get_text('dict')['blocks']:
             for l in b.get('lines', []):
-                t = ''.join(s['text'] for s in l['spans'])
+                # StagSans is El Peruano's furniture: running heads, sector headings and the issue's summary
+                spans = [s for s in l['spans'] if not s['font'].startswith('StagSans')]
+                if not spans:
+                    continue
+                t = ''.join(s['text'] for s in spans)
                 if not t.strip():
                     continue
-                x0, y0, x1, y1 = l['bbox']
+                x0, y0 = min(s['bbox'][0] for s in spans), min(s['bbox'][1] for s in spans)
+                x1, y1 = max(s['bbox'][2] for s in spans), max(s['bbox'][3] for s in spans)
                 if y1 < top or y0 > bottom:
                     continue
-                sz = max(s['size'] for s in l['spans'])
+                sz = max(s['size'] for s in spans)
                 if sz < 6.5:
                     continue
                 # a line straddling the gutter (a full-width title) belongs to column 0
