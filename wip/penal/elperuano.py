@@ -33,8 +33,11 @@ CARD = re.compile(r'href="/dispositivo/NL/([0-9]+-[0-9]+)"[^>]*><p class="text-x
                   r'<div class="p-3 pt-0"><a[^>]*>([^<]*)</a>')
 
 
+PUB = 'NL'      # NL = Normas Legales; EX = Edición Extraordinaria (many decretos legislativos and some laws)
+
+
 def listing_url(fi: str, ff: str, tipo: str | None, start: int) -> str:
-    u = f'{BASE}/?fechaIni={fi}&fechaFin={ff}&tipoPublicacion=NL&ci=ONLY&start={start}'
+    u = f'{BASE}/?fechaIni={fi}&fechaFin={ff}&tipoPublicacion={PUB}&ci=ONLY&start={start}'
     if tipo:
         u += '&tipoDispositivo=' + quote(tipo)
     return u
@@ -98,6 +101,22 @@ def items_split(fi: str, ff: str, tipo: str) -> list[dict]:
     return items_split(fi, f(m), tipo) + items_split(f(m + dt.timedelta(days=1)), ff, tipo)
 
 
+def items_both(fi: str, ff: str, tipo: str) -> list[dict]:
+    """items_split over the ordinary and the extraordinary editions, without repeated cards."""
+    global PUB
+    out, seen = [], set()
+    for pub in ('NL', 'EX'):
+        PUB = pub
+        try:
+            for it in items_split(fi, ff, tipo):
+                if it['op'] not in seen:
+                    seen.add(it['op'])
+                    out.append(dict(it, pub=pub))
+        finally:
+            PUB = 'NL'
+    return out
+
+
 def pdf_text(path) -> str:
     d = fitz.open(str(path))
     return '\n'.join(pg.get_text() for pg in d)
@@ -127,9 +146,7 @@ def scan(tipo: str, fi: str, ff: str):
             r = json.loads(l)
             if not r.get('error'):          # failed fetches are tried again
                 done.add(r['op'])
-    items = items_split(fi, ff, tipo)
-    seen = set()
-    items = [it for it in items if not (it['op'] in seen or seen.add(it['op']))]
+    items = items_both(fi, ff, tipo)
     print(tipo, fi, ff, 'listed', len(items), flush=True)
     for it in items:
         if it['op'] in done or not it['pdf']:
@@ -160,7 +177,7 @@ def erratas(fi: str, ff: str):
     """Discovery: every "FE DE ERRATAS" card in [fi, ff] -> .tmp/erratas.jsonl (no PDFs fetched)."""
     out = HERE / '.tmp' / 'erratas.jsonl'
     out.parent.mkdir(exist_ok=True)
-    items = items_split(fi, ff, 'FE DE ERRATA')
+    items = items_both(fi, ff, 'FE DE ERRATA')
     total = len(items)
     print('FE DE ERRATA', fi, ff, 'total', total, 'listed', len(items), flush=True)
     with out.open('a', encoding='utf-8') as fh:
