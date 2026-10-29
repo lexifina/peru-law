@@ -25,7 +25,7 @@ fitz.TOOLS.mupdf_display_errors(False)
 
 BASE = 'https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=2'
 HEAD = re.compile(r'(?:(?<=\n)|^)[“"]?\s*Art[íi]culo\s+([IVXL]+|\d+)\s*[°º]?\s*(?:-?\s*([A-ZÑ])\b)?\s*[°º]?\s*'
-                  r'(?:\.\s*-|\.(?=\s+[A-ZÁÉÍÓÚÑ(“"]))')
+                  r'(?:\.\s*-|\.(?=\s+[A-ZÁÉÍÓÚÑ(“"])|-(?=\s+[A-ZÁÉÍÓÚÑ]))')
 DISP = re.compile(r'\b(PRIMERA|SEGUNDA|TERCERA|CUARTA|QUINTA)\s*\.\s*-', re.I)
 ORD = ['PRIMERA', 'SEGUNDA', 'TERCERA', 'CUARTA', 'QUINTA']
 

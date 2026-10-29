@@ -30,7 +30,7 @@ def main():
             key, label, kind = 'du-' + n, 'Decreto de Urgencia ' + n, 'decree'
             heading = 'decreto\\s+de\\s+urgencia\\s*n?\\s*[°º.]?\\s*' + n
         else:
-            n = re.sub(r'\D', '', r['numero'])
+            n = re.search(r'\d+', r['numero']).group(0)
             dleg = r['tipo'].startswith('DECRETO')
             key = ('dleg-' if dleg else 'ley-') + n
             label = ('Decreto Legislativo ' if dleg else 'Ley ') + n

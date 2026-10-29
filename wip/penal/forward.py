@@ -68,6 +68,11 @@ def provisions(paras: list[str]) -> list[dict]:
     inq = False
     for p in paras:
         s = p.strip()
+        if inq and (s.startswith('POR TANTO') or re.match(
+                r'^(?:Art[íi]culo\s+\d+|PRIMERA|SEGUNDA|TERCERA|CUARTA|QUINTA|SEXTA|S[ÉE]P?TIMA|OCTAVA|NOVENA|'
+                r'D[ÉE]CIMA|[ÚU]NICA|Primera|Segunda|Tercera|Cuarta|Quinta|Sexta|S[ée]p?tima|Octava|Novena|D[ée]cima|'
+                r'[ÚU]nica)\b[^a-z]{0,6}\s*(?:Modificaci|Incorporaci|Derogaci|Vigencia|Refrendo)', s)):
+            inq = False          # an unclosed quote: the law's next provision ends it
         if not inq and s[:1] in QOPEN:
             inq = True
             cur['quotes'].append([]) if cur is not None else None
@@ -84,8 +89,11 @@ def provisions(paras: list[str]) -> list[dict]:
             # some laws print the new articles without quote marks: an "Artículo N" the operative sentence
             # announces for the Code is quoted text, not the law's own next article
             m = QHEAD.match(s)
-            if cur is not None and m and CP.search(' '.join(cur['intro'])):
-                nums = numbers_before_cp(' '.join(cur['intro']))
+            intro = ' '.join(cur['intro']) if cur is not None else ''
+            if cur is not None and m and CP.search(intro) and (cur.get('unquoted') or (
+                    not cur['quotes'] and intro.rstrip().endswith(':'))) and \
+                    not LAW_PROV.match(s[m.end():].lstrip(' .-–')):
+                nums = numbers_before_cp(intro)
                 if nums and art_key(m.group(1), m.group(2)) in nums and \
                         art_key(m.group(1), m.group(2)) != _own_key(cur['head']):
                     cur['quotes'].append([s])
@@ -100,6 +108,11 @@ def provisions(paras: list[str]) -> list[dict]:
             else:
                 cur['intro'].append(s)
     return out
+
+
+LAW_PROV = re.compile(r'(?:Modificaci[óo]n|Modifica|Incorporaci[óo]n|Incorpora|Derogaci[óo]n|Deroga|Objeto|Finalidad|'
+                      r'Vigencia|Refrendo|Financiamiento|[ÁA]mbito|Sustituci[óo]n|Reglamenta|Definiciones|Creaci[óo]n|'
+                      r'Adecuaci[óo]n|Aplicaci[óo]n|Implementaci[óo]n)\b', re.I)
 
 
 def _own_key(head: str):
@@ -143,16 +156,23 @@ def numbers_before_cp(intro: str) -> set[str] | None:
         seg = before[a[-1].end():]
         if re.search(r'\b(?:Ley|Decreto|C[óo]digo)\b', seg):
             seg = re.split(r'\b(?:Ley|Decreto|C[óo]digo)\b', seg)[0]
-        for n in re.finditer(r'\b(\d{1,3})(?:\s*-\s*([A-Z]))?\b', seg):
+        for n in re.finditer(r'\b(\d{1,3})(?:\s*[-–]\s*([A-ZÑ]))?\b', seg):
             keys.add(art_key(n.group(1), n.group(2)))
     return keys or None
 
 
-def cp_quotes(paras: list[str]) -> tuple[list, list]:
-    """([(key, paragraphs, provision head)], [notes]) for the quotes that belong to the Code."""
+def cp_quotes(paras: list[str], every: bool = False) -> tuple[list, list]:
+    """([(key, paragraphs, provision head)], [notes]) for the quotes that belong to the Code. every=True returns
+    every quoted article (for a law that amends the Code through another amending law, e.g. Ley 31673)."""
     res, notes = [], []
     for pr in provisions(paras):
         intro = ' '.join(pr['intro'])
+        if every:
+            for block in pr['quotes']:
+                for key, ps in split_articles(block):
+                    if key is not None:
+                        res.append((key, ps, intro))
+            continue
         if not CP.search(intro):
             continue
         cp_only = not any(not re.match(r'(?:Procesal|Procedimientos|Ejecuci|Responsabilidad)', m.group(0), re.I)
@@ -164,11 +184,10 @@ def cp_quotes(paras: list[str]) -> tuple[list, list]:
                 if key is None:
                     notes.append(f'{pr["head"][:60]}: quote without an article heading: {ps[0][:80]}')
                     continue
+                if not cp_only and (nums is None or key not in nums):
+                    continue          # the provision amends another norm too: only articles it ties to the Code
                 if nums is not None and key not in nums:
-                    if cp_only:
-                        notes.append(f'{pr["head"][:60]}: quoted {key} not named in the operative sentence')
-                    else:
-                        continue
+                    notes.append(f'{pr["head"][:60]}: quoted {key} not named in the operative sentence')
                 res.append((key, ps, ' '.join(pr['intro'])))
     return res, notes
 
@@ -188,7 +207,7 @@ def cp_repeals(paras: list[str]) -> tuple[list, list]:
             a = list(re.finditer(r'art[íi]culos?\s', s, re.I))
             if a:
                 seg = re.split(r'\b(?:Ley|Decreto|C[óo]digo)\b', s[a[-1].end():])[0]
-                for n in re.finditer(r'\b(\d{1,3})(?:\s*-\s*([A-Z]))?\b', seg):
+                for n in re.finditer(r'\b(\d{1,3})(?:\s*[-–]\s*([A-ZÑ]))?\b', seg):
                     if art_key(n.group(1), n.group(2)) not in whole:
                         whole.append(art_key(n.group(1), n.group(2)))
     return whole, partial
@@ -298,6 +317,12 @@ def merge(cur: list[str], q: list[str], hint: dict | None = None) -> tuple[list[
                     else:
                         j = body[-1] if n == 'last' else (body[n - 1] if isinstance(n, int) and n - 1 < len(body)
                                                            else None)
+                        # a source that ran two paragraphs together shifts the count: when the named paragraph
+                        # reads nothing like the new wording and another one does, take that one
+                        alt = max(body, key=lambda k: _alike(out[k], p)) if body else None
+                        if alt is not None and (j is None or _alike(out[j], p) < 0.5) and _alike(out[alt], p) >= 0.65:
+                            warn.append('paragraph hint %s: took the alike paragraph %d instead of %s' % (n, alt, j))
+                            j = alt
                         if j is None:
                             raise SystemExit('paragraph hint %s does not fit: %s' % (hint, p[:60]))
                         warn.append('paragraph %s replaced: %s -> %s' % (n, out[j][:40], p[:40]))

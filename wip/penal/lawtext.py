@@ -96,6 +96,9 @@ def _join(a: str, b: str) -> str:
         right = re.match(r'\w+', b).group(0) if re.match(r'\w+', b) else ''
         if (left + '-' + right).lower() in VOCAB and (left + right).lower() not in VOCAB:
             return a + b           # a hyphenated compound that fell at the line end ("días-multa")
+        if (left + right).lower() not in VOCAB and len(left) > 3 and len(right) > 3 and \
+                left.lower() in VOCAB and right.lower() in VOCAB:
+            return a + b           # two whole words: a compound ("técnico-productiva"), not a broken word
         return a[:-1] + b          # a word broken at the line end
     if a.endswith('-'):
         return a + b
@@ -132,6 +135,8 @@ def paragraphs(path, op: str, heading: str) -> list[str]:
     # continuation), at a vertical gap, or after a line that stopped short at a full stop.
     # Article headings are set in bold ("“Artículo 121.- Lesiones graves"): the bold run is a paragraph of its own,
     # continued by further all-bold lines, and the body starts a new paragraph.
+    # hyphenated compounds this text prints within a line ("técnico-productiva") also decide line-end hyphens
+    VOCAB.update(w.lower() for l in ls for w in re.findall(r'\w+-\w+', l[5][:-1]))
     out: list[str] = []
     prev = None
     prev_label = False
@@ -218,7 +223,8 @@ STRUCT_LINE = re.compile(r'^[“"]?\s*(?:LIBRO|SECCI[ÓO]N|T[ÍI]TULO|CAP[ÍI]TU
                          r'Subcap[íi]tulo|DISPOSICI|Parte|PARTE)\b')
 BOLD_HEAD = re.compile(r'^\s*[“"]?\s*Art[íi]culo\s+(?:\d+|[IVX]+|[ÚU]nico)\b')
 ELL_LINE = re.compile(r'^[“"]?[\[(]\s*(?:…|\.\s*\.\s*\.)\s*[\])]\s*[.,;]?\s*[”"]?\s*[.,;]?$')
-LABEL_START = re.compile(r'^[“"]?(?:\d{1,3}(?:\.\d{1,3})*\.\s|\d{1,3}\)\s|[a-zñ]\)\s|[a-zñ]\.\s+(?=[A-ZÁÉÍÓÚÑ]))')
+LABEL_START = re.compile(r'^[“"]?(?:\d{1,3}(?:\.\d{1,3})*\.\s|\d{1,3}\)\s|[a-zñ]\)\s|[a-zñ]\.\s+(?=[A-ZÁÉÍÓÚÑ]))'
+                         r'(?!(?:y|o|e|u|al|del|de)\s)')      # "2) y 4) del artículo 36": a reference, not an item
 
 
 if __name__ == '__main__':

@@ -102,8 +102,7 @@
    "in_force": "2016-10-23",
    "op": "1444966-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/3uq6n3ndqv98wUY_vOr2IA/*/1444966-1.pdf",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1243",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1243"
   },
   {
    "key": "dleg-1244",
@@ -114,8 +113,7 @@
    "in_force": "2016-10-30",
    "op": "1447951-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/8rsnti7o4zHBVDyOY882BI/*/1447951-1.pdf",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1244",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1244"
   },
   {
    "key": "dleg-1245",
@@ -126,8 +124,7 @@
    "in_force": "2016-11-07",
    "op": "1450260-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/AOZUhh9PqFXBYSVBuB4i92/*/1450260-1.pdf",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1245",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1245"
   },
   {
    "key": "dleg-1300",
@@ -138,8 +135,7 @@
    "in_force": "2016-12-31",
    "op": "1468962-7",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/Fiaa8GTbK9YAyov4ElTBS1/*/1468962-7.pdf",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1300",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1300"
   },
   {
    "key": "dleg-1323",
@@ -150,8 +146,7 @@
    "in_force": "2017-01-07",
    "op": "1471010-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/FAu1JtzMqDqBnoe9UTXGVW/*/1471010-2.pdf",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1323",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1323"
   },
   {
    "key": "dleg-1351",
@@ -163,7 +158,56 @@
    "op": "1471551-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/A3uJ-pLcqev9be7f9IP1tR/*/1471551-3.pdf",
    "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1351",
-   "check_vigencia": true
+   "extra_ops": [
+    [
+     "compose",
+     "art-105",
+     0,
+     [
+      [
+       "c",
+       "Artículo 105"
+      ],
+      [
+       "c",
+       "Si el hecho punible"
+      ],
+      [
+       "c",
+       "1. Clausura"
+      ],
+      [
+       "c",
+       "2. Disolución"
+      ],
+      [
+       "c",
+       "3. Suspensión"
+      ],
+      [
+       "c",
+       "4. Prohibición"
+      ],
+      [
+       "c",
+       "La prohibición podrá"
+      ],
+      [
+       "c",
+       "5. Multa"
+      ],
+      [
+       "c",
+       "Cuando alguna de estas"
+      ],
+      [
+       "c",
+       "El cambio de la razón"
+      ]
+     ]
+    ]
+   ],
+   "hand": "art. 105: the new numeral 5 goes after numeral 4 and its closing sentence \"La prohibición podrá tener carácter temporal ...\", which belongs to numeral 4 (the order Editora Perú prints)."
   },
   {
    "key": "ley-30556",
@@ -174,8 +218,7 @@
    "in_force": "2017-04-30",
    "op": "1514994-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/9xgDinpfaAB96ZaN572UQT/*/1514994-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*30556",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*30556"
   },
   {
    "key": "ley-30610",
@@ -186,8 +229,7 @@
    "in_force": "2017-07-20",
    "op": "1545774-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/DAvKheIFqzABDWxPp17fNZ/*/1545774-2.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*30610",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*30610"
   },
   {
    "key": "ley-30681",
@@ -198,8 +240,7 @@
    "in_force": "2017-11-18",
    "op": "1587374-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/Cx8MymtDaMv9VlqOtRMYYF/*/1587374-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*30681",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*30681"
   },
   {
    "key": "ley-30710",
@@ -210,8 +251,7 @@
    "in_force": "2017-12-30",
    "op": "1602018-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/FPgZP7fLKNKAzwW-TzEi4O/*/1602018-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*30710",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*30710"
   },
   {
    "key": "ley-30424",
@@ -234,8 +274,7 @@
    "in_force": "2018-07-14",
    "op": "1669642-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/3YwfUx4wapIB1cWFUVCOI5/*/1669642-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*30819",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*30819"
   },
   {
    "key": "dleg-1367",
@@ -246,20 +285,7 @@
    "in_force": "2018-07-30",
    "op": "1674963-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/2KA_3Px7qeM8Z8iCYVbOYL/*/1674963-1.pdf",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1367",
-   "check_vigencia": true
-  },
-  {
-   "key": "dleg-1373",
-   "label": "Decreto Legislativo 1373",
-   "title": "Decreto Legislativo sobre extinción de dominio",
-   "kind": "decree",
-   "published": "2018-08-04",
-   "in_force": "2018-08-05",
-   "op": "1677448-2",
-   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/FfY4KjNmKT3BIOBwohItYk/*/1677448-2.pdf",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1373",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1367"
   },
   {
    "key": "ley-30838",
@@ -270,8 +296,7 @@
    "in_force": "2018-08-05",
    "op": "1677448-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/32NmRbn4K-w9xmV06z_jiK/*/1677448-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*30838",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*30838"
   },
   {
    "key": "dleg-1385",
@@ -282,8 +307,7 @@
    "in_force": "2018-09-05",
    "op": "1687393-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0DSiP-0HKVNBO-UzvOKt3M/*/1687393-3.pdf",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1385",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1385"
   },
   {
    "key": "dleg-1410",
@@ -294,8 +318,7 @@
    "in_force": "2018-09-13",
    "op": "1690482-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0U5iDDtXa7kArNYG1S5l7U/*/1690482-3.pdf",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1410",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1410"
   },
   {
    "key": "dleg-1453",
@@ -306,8 +329,7 @@
    "in_force": "2018-09-17",
    "op": "1692078-28",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/1t7HW4ikKT3AB1aNmnNu8e/*/1692078-28.pdf",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1453",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1453"
   },
   {
    "key": "dleg-1393",
@@ -330,8 +352,7 @@
    "in_force": "2018-10-26",
    "op": "1705921-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/DHDnK5a74y-9UlMjTvD3jM/*/1705921-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*30862",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*30862"
   },
   {
    "key": "ley-30875",
@@ -343,7 +364,6 @@
    "op": "1717857-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/DsjowqkNaYd9I8Br6D_wPG/*/1717857-2.pdf",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*30875",
-   "check_vigencia": true,
    "ops": [
     [
      "compose",
@@ -392,8 +412,7 @@
    "in_force": "2018-12-30",
    "op": "1727308-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/EazrzpUu4Ho9LmGqQo4KgK/*/1727308-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*30901",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*30901"
   },
   {
    "key": "ley-30822",
@@ -408,6 +427,18 @@
    "vigencia": "Décima Tercera Disposición Complementaria Final: in force 1 January 2019, except arts. 7 and 8 and DCF 3, 4 and 7; its change to the Code (art. 13) is not excepted."
   },
   {
+   "key": "dleg-1373",
+   "label": "Decreto Legislativo 1373",
+   "title": "Decreto Legislativo sobre extinción de dominio",
+   "kind": "decree",
+   "published": "2018-08-04",
+   "in_force": "2019-02-02",
+   "op": "1677448-2",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/FfY4KjNmKT3BIOBwohItYk/*/1677448-2.pdf",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1373",
+   "vigencia": "its Novena Disposición Complementaria Final: in force the day after its Reglamento is published; Decreto Supremo 007-2019-JUS, which approves it, was published in El Peruano on 1 February 2019 (https://busquedas.elperuano.pe/api/archivo/file/1GtZ02Peq8qBVBUVN7EECE/*/1737282-3.pdf)."
+  },
+  {
    "key": "ley-30924",
    "label": "Ley 30924",
    "title": "Ley que modifica los artículos 168-B y 195 del Código Penal, incorporando la pena de multa al delito de trabajo forzoso",
@@ -416,8 +447,7 @@
    "in_force": "2019-03-30",
    "op": "1754996-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/E9abakDa4c1AMXweYTfCzb/*/1754996-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*30924",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*30924"
   },
   {
    "key": "ley-30963",
@@ -428,8 +458,7 @@
    "in_force": "2019-06-19",
    "op": "1780053-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/35D3Rnr3a3FBLC9YxbH4RB/*/1780053-2.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*30963",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*30963"
   },
   {
    "key": "ley-30997",
@@ -440,20 +469,7 @@
    "in_force": "2019-08-28",
    "op": "1801519-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/77xBrnaYKPT86BBrW-jpg0/*/1801519-3.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*30997",
-   "check_vigencia": true
-  },
-  {
-   "key": "du-019-2019",
-   "label": "Decreto de Urgencia 019-2019",
-   "title": "Decreto de Urgencia que modifica la Ley N° 29988, Ley que establece medidas extraordinarias para el personal docente y administrativo de instituciones educativas públicas y privadas, implicado en delitos de terrorismo, apología del terrorismo, delitos de violación de la libertad sexual y delitos de tráfico ilícito de drogas; crea el Registro de personas condenadas o procesadas por delitos de terrorismo, apología del terrorismo, delitos de violación de la libertad sexual y tráfico ilícito de drogas y modifica los artículos 36 y 38 del Código Penal",
-   "kind": "decree",
-   "published": "2019-12-02",
-   "in_force": "2019-12-03",
-   "op": "1832411-1",
-   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0zEhCh7XKGYBgQqWjBnLTy/*/1832411-1.pdf",
-   "heading": "decreto\\s+de\\s+urgencia\\s*n?\\s*[°º.]?\\s*019-2019",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*30997"
   },
   {
    "key": "du-044-2019",
@@ -464,8 +480,7 @@
    "in_force": "2019-12-31",
    "op": "1841339-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/7pNZQNs4apXAOMXm6zvysV/*/1841339-1.pdf",
-   "heading": "decreto\\s+de\\s+urgencia\\s*n?\\s*[°º.]?\\s*044-2019",
-   "check_vigencia": true
+   "heading": "decreto\\s+de\\s+urgencia\\s*n?\\s*[°º.]?\\s*044-2019"
   },
   {
    "key": "du-019-2020",
@@ -476,8 +491,19 @@
    "in_force": "2020-01-25",
    "op": "1848882-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/5EXTI1nWaKgAFgZ9I-NEis/*/1848882-3.pdf",
-   "heading": "decreto\\s+de\\s+urgencia\\s*n?\\s*[°º.]?\\s*019-2020",
-   "check_vigencia": true
+   "heading": "decreto\\s+de\\s+urgencia\\s*n?\\s*[°º.]?\\s*019-2020"
+  },
+  {
+   "key": "du-019-2019",
+   "label": "Decreto de Urgencia 019-2019",
+   "title": "Decreto de Urgencia que modifica la Ley N° 29988, Ley que establece medidas extraordinarias para el personal docente y administrativo de instituciones educativas públicas y privadas, implicado en delitos de terrorismo, apología del terrorismo, delitos de violación de la libertad sexual y delitos de tráfico ilícito de drogas; crea el Registro de personas condenadas o procesadas por delitos de terrorismo, apología del terrorismo, delitos de violación de la libertad sexual y tráfico ilícito de drogas y modifica los artículos 36 y 38 del Código Penal",
+   "kind": "decree",
+   "published": "2019-12-02",
+   "in_force": "2020-02-14",
+   "op": "1832411-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0zEhCh7XKGYBgQqWjBnLTy/*/1832411-1.pdf",
+   "heading": "decreto\\s+de\\s+urgencia\\s*n?\\s*[°º.]?\\s*019-2019",
+   "vigencia": "its Segunda Disposición Complementaria Final: in force the day after its reglamento is published; Decreto Supremo 004-2020-MINEDU, which adapts the Reglamento de la Ley 29988 to it, was published in El Peruano on 13 February 2020 (https://busquedas.elperuano.pe/api/archivo/file/2fxEbvPuqWHA11z2j0P2jD/*/1855109-6.pdf)."
   },
   {
    "key": "ley-31012",
@@ -488,8 +514,7 @@
    "in_force": "2020-03-29",
    "op": "1865203-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/DC79MHrW4J58Uk5SfTA0ex/*/1865203-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*31012",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31012"
   },
   {
    "key": "dleg-1513",
@@ -501,7 +526,7 @@
    "op": "1867337-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/4BQHuI_wah-8ci_XyEwI7T/*/1867337-1.pdf",
    "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1513",
-   "check_vigencia": true
+   "source_note": "its Décima Disposición Complementaria Final limits the decree to ninety days after the end of the health emergency; its change to art. 46-B (Primera Disposición Complementaria Modificatoria) is kept as permanent, as Editora Perú keeps it in every later consolidation (2023-2026)."
   },
   {
    "key": "dleg-1514",
@@ -513,7 +538,15 @@
    "op": "1867337-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/AKsdMPwM4dM9UOEgZzSngP/*/1867337-2.pdf",
    "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1514",
-   "check_vigencia": true
+   "partial_ok": true,
+   "extra_ops": [
+    [
+     "drop_nth",
+     "art-052",
+     2
+    ]
+   ],
+   "hand": "its Única Disposición Complementaria Derogatoria repeals the second paragraph of art. 52 (\"Igualmente, el juez podrá ... vigilancia electrónica personal ...\"); that paragraph is removed."
   },
   {
    "key": "ley-31040",
@@ -525,7 +558,59 @@
    "op": "1880788-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/7VZnkBICqQR9NujxXJK1d3/*/1880788-1.pdf",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*31040",
-   "check_vigencia": true
+   "ops": [
+    [
+     "quote",
+     "art-232",
+     0
+    ],
+    [
+     "quote",
+     "art-233",
+     0
+    ],
+    [
+     "compose",
+     "art-234",
+     0,
+     [
+      [
+       "q",
+       0
+      ],
+      [
+       "q",
+       1
+      ],
+      [
+       "q",
+       2
+      ],
+      [
+       "c",
+       "El que, injustificadamente"
+      ],
+      [
+       "c",
+       "El que vende bienes que, por unidades"
+      ],
+      [
+       "c",
+       "El que vende bienes contenidos"
+      ]
+     ]
+    ],
+    [
+     "quote",
+     "art-235",
+     0
+    ],
+    [
+     "repeal",
+     "art-236"
+    ]
+   ],
+   "hand": "art. 234: the law quotes the heading and two paragraphs (the second one new) followed by \"[…]\"; the remaining paragraphs stay as they were, as Editora Perú reads it."
   },
   {
    "key": "ley-31146",
@@ -537,7 +622,6 @@
    "op": "1939453-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/2lzMjkXlalwAJ_OjS90-Ew/*/1939453-1.pdf",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*31146",
-   "check_vigencia": true,
    "ops": [
     [
      "move",
@@ -641,8 +725,7 @@
    "in_force": "2021-04-29",
    "op": "1947912-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/9qErxwRJag48pcz8LKHzee/*/1947912-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*31178",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31178"
   },
   {
    "key": "ley-31182",
@@ -653,8 +736,7 @@
    "in_force": "2021-05-03",
    "op": "1949247-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/8NcyPiuH4txAl9ze7jj0Wo/*/1949247-2.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*31182",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31182"
   },
   {
    "key": "ley-31204",
@@ -665,8 +747,7 @@
    "in_force": "2021-05-30",
    "op": "1958026-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0Nc02N4sqZk9M72rFSSttm/*/1958026-3.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*31204",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31204"
   },
   {
    "key": "ley-31312",
@@ -677,8 +758,7 @@
    "in_force": "2021-07-26",
    "op": "1976352-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/D7INEdHWa5O8p9G3LIfKjb/*/1976352-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*31312",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31312"
   },
   {
    "key": "ley-31333",
@@ -690,7 +770,73 @@
    "op": "1979836-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/EBb_q4uO4l7Bsvgo28eA1w/*/1979836-1.pdf",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*31333",
-   "check_vigencia": true
+   "ops": [
+    [
+     "compose",
+     "art-121",
+     0,
+     [
+      [
+       "q",
+       0
+      ],
+      [
+       "q",
+       1
+      ],
+      [
+       "q",
+       2
+      ],
+      [
+       "q",
+       3
+      ],
+      [
+       "q",
+       4
+      ],
+      [
+       "q",
+       5
+      ],
+      [
+       "c",
+       "En los supuestos 1, 2 y 3"
+      ],
+      [
+       "c",
+       "1. La víctima es miembro"
+      ],
+      [
+       "c",
+       "2. La víctima es menor"
+      ],
+      [
+       "c",
+       "3. Para cometer"
+      ],
+      [
+       "c",
+       "4. El delito se hubiera"
+      ],
+      [
+       "q",
+       7
+      ],
+      [
+       "q",
+       8
+      ]
+     ]
+    ],
+    [
+     "quote",
+     "art-122",
+     0
+    ]
+   ],
+   "hand": "art. 121: the law quotes the first paragraph, the four numerals and, after \"[...]\", a new numeral 5 and the closing paragraph; its El Peruano setting runs \"Se consideran lesiones graves:\" into the first paragraph and \"Cuando la víctima muere ...\" into numeral 4, so the article is composed by hand from the quoted paragraphs and the unquoted agravantes 1-4 as they stood."
   },
   {
    "key": "ley-31347",
@@ -701,8 +847,7 @@
    "in_force": "2021-08-19",
    "op": "1983106-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/7GNH_Nbv4WRAwaMYPLCZ-6/*/1983106-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*31347",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31347"
   },
   {
    "key": "ley-31501",
@@ -713,8 +858,7 @@
    "in_force": "2022-06-30",
    "op": "2081735-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/C8xRfcKJK3BAumhaTqEfOd/*/2081735-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*31501",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31501"
   },
   {
    "key": "ley-31622",
@@ -725,7 +869,50 @@
    "in_force": "2022-11-17",
    "op": "2125549-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/31Y-1zNYKQBBu19mXP9PPR/*/2125549-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*31622",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31622"
+  },
+  {
+   "key": "ley-31673",
+   "label": "Ley 31673",
+   "title": "Ley que modifica la Ley 31622, con la finalidad de despenalizar la pesca artesanal y capturas incidentales",
+   "kind": "law",
+   "published": "2023-01-18",
+   "in_force": "2023-01-19",
+   "op": "2144407-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0pNa1F4ram69K97tOlB4-J/*/2144407-1.pdf",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31673",
+   "every_quote": true,
+   "ops": [
+    [
+     "quote",
+     "art-308-b",
+     0
+    ]
+   ],
+   "hand": "its sole article rewrites art. 308-B \"de la Ley 31622\" (the wording Ley 31622 gave the Code) without naming the Code; the quoted article is applied to the Code, as Editora Perú does."
+  },
+  {
+   "key": "ley-31676",
+   "label": "Ley 31676",
+   "title": "Ley que modifica el Código Penal, con la finalidad de reprimir las conductas que afectan los principios de mérito, idoneidad y legalidad para el acceso a la función pública",
+   "kind": "law",
+   "published": "2023-01-27",
+   "in_force": "2023-01-28",
+   "op": "2146514-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/EmSLBvwhKpyAYRdpE2KF8j/*/2146514-1.pdf",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31676",
+   "check_vigencia": true
+  },
+  {
+   "key": "ley-31751",
+   "label": "Ley 31751",
+   "title": "Ley que modifica el Código Penal y el Nuevo Código Procesal Penal para modificar la suspensión del plazo de prescripción",
+   "kind": "law",
+   "published": "2023-05-25",
+   "in_force": "2023-05-26",
+   "op": "2181041-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/Dda5xIeXqqiAIB6oLEoMwr/*/2181041-1.pdf",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31751",
    "check_vigencia": true
   },
   {
@@ -753,6 +940,18 @@
    "check_vigencia": true
   },
   {
+   "key": "ley-31806",
+   "label": "Ley 31806",
+   "title": "Ley que modifica la Ley 31557, Ley que regula la explotación de los juegos a distancia y apuestas deportivas a distancia, para precisar conceptos y sus alcances",
+   "kind": "law",
+   "published": "2023-06-28",
+   "in_force": "2023-06-29",
+   "op": "2191763-3",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/1b-Lh0XY44Z80sW6epUvdz/*/2191763-3.pdf",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31806",
+   "check_vigencia": true
+  },
+  {
    "key": "ley-31823",
    "label": "Ley 31823",
    "title": "Ley que modifica el artículo 190 del Código Penal, promulgado por el Decreto Legislativo 635, para sancionar en materia de seguridad social",
@@ -777,6 +976,18 @@
    "check_vigencia": true
   },
   {
+   "key": "dleg-1578",
+   "label": "Decreto Legislativo 1578",
+   "title": "Decreto Legislativo que modifica el Código Penal, aprobado por Decreto Legislativo N° 635, para fortalecer la lucha contra el comercio ilegal de equipos terminales móviles y delitos conexos",
+   "kind": "decree",
+   "published": "2023-10-18",
+   "in_force": "2023-10-19",
+   "op": "2226413-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/5b4f8gcw4CZ8LcgeWhiKBN/*/2226413-1.PDF",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1578",
+   "check_vigencia": true
+  },
+  {
    "key": "dleg-1585",
    "label": "Decreto Legislativo 1585",
    "title": "Decreto Legislativo que establece mecanismos para el deshacinamiento de los establecimientos penitenciarios",
@@ -786,6 +997,18 @@
    "op": "2237339-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/4s6xqAcAaI78o2ok0O-sBP/*/2237339-3.PDF",
    "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1585",
+   "check_vigencia": true
+  },
+  {
+   "key": "dleg-1589",
+   "label": "Decreto Legislativo 1589",
+   "title": "Decreto Legislativo que modifica el Código Penal, aprobado por Decreto Legislativo N° 635, para garantizar la seguridad y tranquilidad pública",
+   "kind": "decree",
+   "published": "2023-12-04",
+   "in_force": "2023-12-05",
+   "op": "2241404-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/EjD4fI-L48dAO40-stgElT/*/2241404-1.PDF",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1589",
    "check_vigencia": true
   },
   {
@@ -801,6 +1024,18 @@
    "check_vigencia": true
   },
   {
+   "key": "dleg-1596",
+   "label": "Decreto Legislativo 1596",
+   "title": "Decreto Legislativo que modifica el Decreto Legislativo N° 1338, el Decreto Legislativo N° 1215 y el Código Penal, a fin de dictar medidas para combatir el empleo de equipos terminales móviles en la delincuencia",
+   "kind": "decree",
+   "published": "2023-12-17",
+   "in_force": "2023-12-18",
+   "op": "2245195-3",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/87jiT9FGKVg8uQtvNMELTP/*/2245195-3.PDF",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1596",
+   "check_vigencia": true
+  },
+  {
    "key": "dleg-1611",
    "label": "Decreto Legislativo 1611",
    "title": "Decreto Legislativo que aprueba medidas especiales para la prevención e investigación del delito de extorsión y delitos conexos, así como para la modificación del Código Penal, aprobado mediante Decreto Legislativo N° 635 y del Código Procesal Penal, aprobado por Decreto Legislativo N° 957",
@@ -810,6 +1045,18 @@
    "op": "2246611-10",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/5Bob5Vn1aM49blXlrtBW2t/*/2246611-10.PDF",
    "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1611",
+   "check_vigencia": true
+  },
+  {
+   "key": "dleg-1616",
+   "label": "Decreto Legislativo 1616",
+   "title": "Decreto Legislativo que modifica el Código Penal, aprobado por el Decreto Legislativo N.º 635, a efectos de fortalecer la lucha contra la criminalidad organizada y el tráfico ilícito de armas de fuego",
+   "kind": "decree",
+   "published": "2023-12-21",
+   "in_force": "2023-12-22",
+   "op": "2247002-2",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/7UbvYpe3KTN8eNq-73rNo2/*/2247002-2.PDF",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1616",
    "check_vigencia": true
   },
   {
@@ -849,6 +1096,30 @@
    "check_vigencia": true
   },
   {
+   "key": "ley-32054",
+   "label": "Ley 32054",
+   "title": "Ley que modifica el Código Penal, Decreto Legislativo 635, y la Ley 30424, Ley que regula la responsabilidad administrativa de las personas jurídicas en el proceso penal, a fin de optimizar la democracia representativa y establecer medidas para la lucha contra la corrupción en las organizaciones políticas",
+   "kind": "law",
+   "published": "2024-06-10",
+   "in_force": "2024-06-11",
+   "op": "2296582-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/1ckk1qHNKe5BHboHSNCMtE/*/2296582-1.PDF",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32054",
+   "check_vigencia": true
+  },
+  {
+   "key": "dleg-1625",
+   "label": "Decreto Legislativo 1625",
+   "title": "Decreto Legislativo que modifica los artículos 154-B y 158 del Código Penal e incorpora el artículo 5-A en la Ley N° 30096, Ley de Delitos Informáticos, para fortalecer el marco normativo sobre el uso de tecnologías digitales relacionado a la difusión de imágenes, materiales audiovisuales o audios con contenido sexual",
+   "kind": "decree",
+   "published": "2024-08-08",
+   "in_force": "2024-08-09",
+   "op": "2313391-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/8GsRAMsLaqR942yPQeRLOK/*/2313391-1.PDF",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1625",
+   "check_vigencia": true
+  },
+  {
    "key": "ley-32108",
    "label": "Ley 32108",
    "title": "Ley que modifica el Código Penal, Decreto Legislativo 635; la Ley 30077, Ley Contra el Crimen Organizado; y la Ley 27379, Ley de procedimiento para adoptar medidas excepcionales de limitación de derechos en investigaciones preliminares, a fin de determinar las características concurrentes para la tipicidad de una organización criminal",
@@ -873,6 +1144,18 @@
    "check_vigencia": true
   },
   {
+   "key": "ley-32138",
+   "label": "Ley 32138",
+   "title": "Ley que modifica la Ley 30077, Ley contra el Crimen Organizado, modificada por la Ley 32108",
+   "kind": "law",
+   "published": "2024-10-19",
+   "in_force": "2024-10-20",
+   "op": "2336227-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/FNrUFsfwqNz8veoOxm5yce/*/2336227-1.PDF",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32138",
+   "check_vigencia": true
+  },
+  {
    "key": "ley-32169",
    "label": "Ley 32169",
    "title": "Ley que modifica el Código Penal, Decreto Legislativo 635, a fin de salvaguardar la indemnidad sexual de los menores de edad y agilizar los procesos en casos de violación sexual",
@@ -894,7 +1177,17 @@
    "op": "2352315-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/5epDxSbPazO8ee03t2WcSc/*/2352315-1.PDF",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*32180",
-   "check_vigencia": true
+   "check_vigencia": true,
+   "partial_ok": true,
+   "extra_ops": [
+    [
+     "drop_par",
+     "art-189",
+     "7.",
+     1
+    ]
+   ],
+   "hand": "its Única Disposición Complementaria Derogatoria repeals numeral 7 of the first paragraph of art. 189; that numeral is removed (the numbering is not changed)."
   },
   {
    "key": "ley-32181",

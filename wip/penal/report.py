@@ -22,7 +22,7 @@ def heading_re(rec) -> str:
     if rec['tipo'] == 'DECRETO DE URGENCIA':
         n = re.search(r'\d+-\d{4}', rec['numero']).group(0)
         return r'decreto\s+de\s+urgencia\s*n?\s*[°º.]?\s*' + n
-    n = re.sub(r'\D', '', rec['numero'])
+    n = re.search(r'\d+', rec['numero']).group(0)
     t = 'decreto\\s+legislativo' if rec['tipo'].startswith('DECRETO') else 'ley'
     return t + r'\s*n?\s*[°º.]?\s*' + n
 

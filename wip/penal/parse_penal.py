@@ -61,7 +61,7 @@ def apply_law(law: dict, state: dict, log: list[str]) -> dict:
     changes: dict[str, dict | None] = {}
     if law.get('ops') is not None:
         quotes = []
-        allq, _ = forward.cp_quotes(paras)
+        allq, _ = forward.cp_quotes(paras, every=bool(law.get('every_quote')))
         byk = {}
         for k, ps, h in allq:
             byk.setdefault(k, []).append((ps, h))
@@ -138,9 +138,22 @@ def apply_law(law: dict, state: dict, log: list[str]) -> dict:
             changes[key] = None
             changes[new_key] = unit(new_key, head + body, None)
             carried.update(clean_par(p) for p in body)
+        elif kind == 'drop_nth':           # ['drop_nth', key, n]: "Derógase el segundo párrafo del artículo 52"
+            curp = [l for l in cur['text'].split('\n') if l]
+            hi = next(i for i, p in enumerate(curp) if BHEAD.match(p))
+            body = [i for i in range(hi + 1, len(curp)) if label_of(curp[i]) is None]
+            first = curp[hi][BHEAD.match(curp[hi]).end():].strip()
+            if first and (len(first) > 140 or re.search(r'[.:;]$', first)):
+                body = [hi] + body       # the heading line carries the first paragraph
+            if body[op[2] - 1] == hi:
+                raise SystemExit(f'{law["key"]}: drop_nth would drop the heading line')
+            del curp[body[op[2] - 1]]
+            changes[key] = unit(key, curp, cur)
         elif kind == 'drop_par':           # ['drop_par', key, label or paragraph prefix]
             curp = [l for l in cur['text'].split('\n') if l]
             hit = [i for i, p in enumerate(curp) if p.startswith(op[2])]
+            if len(op) > 3:              # the n-th paragraph with that start ("7." of the first list)
+                hit = hit[op[3] - 1:op[3]]
             if len(hit) != 1:
                 raise SystemExit(f'{law["key"]}: drop_par {op} matches {len(hit)}')
             del curp[hit[0]]
