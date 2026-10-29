@@ -276,7 +276,7 @@ def merge(cur: list[str], q: list[str], hint: dict | None = None) -> tuple[list[
             old = out[hi]
             mo = BHEAD.match(old)
             old_rest = old[mo.end():].strip() if mo else ''
-            old_has_body = bool(old_rest) and (len(old_rest) > 140 or bool(re.search(r'[.:;]$', old_rest)))
+            old_has_body = has_body(old_rest)
             mq = QHEAD.match(hline)
             q_sumilla = mq and len(re.sub(r'^[\s.°º-]+', '', hline[mq.end():]).strip()) > 0 and \
                 not re.search(r'[.:;]$', hline.strip())
@@ -380,6 +380,15 @@ def merge(cur: list[str], q: list[str], hint: dict | None = None) -> tuple[list[
             warn.append('inserted %s at %d' % (lab, k))
             pos = k + 1
     return out, warn
+
+
+def has_body(rest: str) -> bool:
+    """Whether what follows "Artículo N.-" on a heading line is the article's first sentence rather than its sumilla
+    ("Conversión de la pena ... personal." is a sumilla with a full stop)."""
+    rest = (rest or '').strip()
+    if not rest:
+        return False
+    return len(rest) > 140 or bool(re.search(r'[:;]$', rest)) or (rest.endswith('.') and len(rest.split()) > 16)
 
 
 def _alike(a: str, b: str) -> float:

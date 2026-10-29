@@ -134,7 +134,7 @@ def apply_law(law: dict, state: dict, log: list[str]) -> dict:
             first = curp[hi]
             m = BHEAD.match(first)
             rest = first[m.end():].strip()
-            body = ([rest] if rest and len(rest) > 140 or re.search(r'[.:;]$', rest) else []) + curp[hi + 1:]
+            body = ([rest] if forward.has_body(rest) else []) + curp[hi + 1:]
             changes[key] = None
             changes[new_key] = unit(new_key, head + body, None)
             carried.update(clean_par(p) for p in body)
@@ -143,7 +143,7 @@ def apply_law(law: dict, state: dict, log: list[str]) -> dict:
             hi = next(i for i, p in enumerate(curp) if BHEAD.match(p))
             body = [i for i in range(hi + 1, len(curp)) if label_of(curp[i]) is None]
             first = curp[hi][BHEAD.match(curp[hi]).end():].strip()
-            if first and (len(first) > 140 or re.search(r'[.:;]$', first)):
+            if forward.has_body(first):
                 body = [hi] + body       # the heading line carries the first paragraph
             if body[op[2] - 1] == hi:
                 raise SystemExit(f'{law["key"]}: drop_nth would drop the heading line')

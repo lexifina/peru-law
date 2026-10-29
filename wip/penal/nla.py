@@ -52,7 +52,7 @@ def stream(doc):
             for l in b.get('lines', []):
                 for s in l['spans']:
                     f = s['font']
-                    if f.startswith('StagSans') or s['size'] < 7.5:
+                    if f.startswith(('StagSans', 'MyriadPro')) or s['size'] < 7.5:     # running heads
                         continue
                     if s['size'] < 7.6 and 'Bold' in f:        # "Inicio" link
                         continue
