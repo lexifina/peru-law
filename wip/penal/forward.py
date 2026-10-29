@@ -33,7 +33,7 @@ CP = re.compile(r'C[óo]digo\s+Penal', re.I)
 OTHER = re.compile(r'(?:Procesal|Procedimientos|Ejecuci[óo]n|Responsabilidad)\s+Penal|Penal\s+Militar|'
                    r'C[óo]digo\s+(?:Civil|Tributario|de\s+los\s+Niños|Procesal|de\s+Ejecuci)|\bLey\s+(?:N[°º.]?\s*)?\d{4,5}|'
                    r'Decreto\s+(?:Legislativo|Ley|Supremo)\s+(?:N[°º.]?\s*)?\d+', re.I)
-QHEAD = re.compile(r'^Art[íi]culo\s+(\d+|[IVX]+)\s*[°º]?\s*(?:-\s*([A-ZÑ])\b)?(?=\s*[.°º-])')
+QHEAD = re.compile(r'^Art[íi]culo\s+(\d+|[IVX]+)\s*[°º]?\s*(?:-\s*([A-ZÑ])\b)?(?=\s*[.°º-]|\s*$)')
 ROMAN = {'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6, 'VII': 7, 'VIII': 8, 'IX': 9, 'X': 10}
 
 
@@ -318,7 +318,7 @@ def merge(cur: list[str], q: list[str], hint: dict | None = None) -> tuple[list[
                     r = _alike(out[k], p)
                     if r > best:
                         best, j = r, k
-                if j is None or best < 0.5:
+                if j is None or best < 0.65:
                     out.insert(pos, p)
                     warn.append('unlabelled inserted (best %.2f): %s' % (best, p[:50]))
                     pos += 1
@@ -355,7 +355,12 @@ def merge(cur: list[str], q: list[str], hint: dict | None = None) -> tuple[list[
 def _alike(a: str, b: str) -> float:
     import difflib
     wa, wb = re.findall(r'\w+', a.lower()), re.findall(r'\w+', b.lower())
-    return difflib.SequenceMatcher(None, wa, wb, autojunk=False).ratio()
+    if not wa or not wb:
+        return 0.0
+    sm = difflib.SequenceMatcher(None, wa, wb, autojunk=False)
+    same = sum(bl.size for bl in sm.get_matching_blocks())
+    # an amended paragraph keeps most of its old words, even when the law lengthens it
+    return max(sm.ratio(), same / min(len(wa), len(wb)) if min(len(wa), len(wb)) >= 8 else 0.0)
 
 
 def _kind(lab):

@@ -28,7 +28,7 @@ import fetch  # noqa: E402
 
 fitz.TOOLS.mupdf_display_errors(False)
 BASE = 'https://busquedas.elperuano.pe'
-CARD = re.compile(r'href="/dispositivo/NL/([0-9]+-[0-9]+)"[^>]*><p class="text-xs text-muted-foreground">([^<]*)</p>'
+CARD = re.compile(r'href="/dispositivo/(?:NL|EX)/([0-9]+-[0-9]+)"[^>]*><p class="text-xs text-muted-foreground">([^<]*)</p>'
                   r'<p class="text-xs font-medium text-muted-foreground">([^<]*)</p></a></div>'
                   r'<div class="p-3 pt-0"><a[^>]*>([^<]*)</a>')
 
@@ -189,7 +189,7 @@ def cards(tipo: str, fi: str, ff: str):
     """Discovery: every card of TIPO in [fi, ff] -> .tmp/cards.jsonl (no PDFs fetched); used to find reglamentos
     that set a law's in-force day."""
     out = HERE / '.tmp' / 'cards.jsonl'
-    items = items_split(fi, ff, tipo)
+    items = items_both(fi, ff, tipo)
     total = len(items)
     print(tipo, fi, ff, 'total', total, 'listed', len(items), flush=True)
     with out.open('a', encoding='utf-8') as fh:

@@ -142,8 +142,13 @@ def paragraphs(path, op: str, heading: str) -> list[str]:
         s = t.strip()
         if BOLD_HEAD.match(bold):
             if s != bold.strip() and s.startswith(bold.strip()):
-                out.append(bold.strip())
-                out.append(s[len(bold.strip()):].strip())
+                hb, rest = bold.strip(), s[len(bold.strip()):].strip()
+                mp = re.match(r'^[.°º\s-]*[.-]\s*', rest)     # "Artículo 247" + ".- El usuario": the ".-" is the heading's
+                if mp:
+                    hb, rest = hb + mp.group(0).strip(), rest[mp.end():]
+                out.append(hb)
+                if rest:
+                    out.append(rest)
                 in_head = False
             else:
                 out.append(s)
@@ -164,7 +169,12 @@ def paragraphs(path, op: str, heading: str) -> list[str]:
                 out.append(s[len(bold.strip()):].strip())
                 prev, prev_label, hang = l, False, None
                 continue
-            out.append(s)
+            mp = re.match(r'^[.°º-][.°º\s-]*', s)
+            if mp:                                   # ".- El usuario …" under a bold "Artículo 247"
+                out[-1] = out[-1] + mp.group(0).strip()
+                s = s[mp.end():].strip()
+            if s:
+                out.append(s)
             prev, prev_label, hang = l, bool(LABEL_START.match(s)), None
             continue
         is_label = bool(LABEL_START.match(s)) or bool(ELL_LINE.match(s)) or \
