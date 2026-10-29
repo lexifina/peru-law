@@ -85,7 +85,13 @@ def lines(doc, elperuano: bool = True):
                         break
                 out.append((pn, c, r[0][1], r[0][2], max(i[3] for i in r), ' '.join(i[4].strip() for i in r),
                             left, right, ' '.join(b for b in bold if b)))
-    return out
+    # a page column holding only quoted text (set further in) would give a wrong margin: take the margin of each
+    # column over the whole extract (even and odd pages apart)
+    lefts = {}
+    for key in {(l[1], l[0] % 2) for l in out}:
+        xs = sorted(l[3] for l in out if (l[1], l[0] % 2) == key)
+        lefts[key] = xs[len(xs) // 10] if len(xs) > 10 else xs[0]
+    return [l[:6] + (min(l[6], lefts[(l[1], l[0] % 2)]),) + l[7:] for l in out]
 
 
 VOCAB: set = set()        # word forms known from the 2016 edition (set by the caller), to read line-end hyphens
@@ -192,6 +198,10 @@ def paragraphs(path, op: str, heading: str) -> list[str]:
             continue
         is_label = bool(LABEL_START.match(s)) or bool(ELL_LINE.match(s)) or \
             (prev is not None and bool(ELL_LINE.match(prev[5].strip())))     # "[…]" stands alone
+        # an all-bold line after a line that is not (a sumilla such as "Pánico Financiero") starts a paragraph
+        if bold.strip() and bold.strip() == s and len(s) > 3 and prev is not None and \
+                prev[8].strip() != prev[5].strip():
+            is_label = True
         new = True
         if prev is not None and out:
             same = (pn, col) == (prev[0], prev[1])
@@ -211,8 +221,11 @@ def paragraphs(path, op: str, heading: str) -> list[str]:
                 if not new and x0 > left + 6 and prev[4] < prev[7] - 25 and not (hang and abs(x0 - hang) < 3):
                     new = True           # an indented line after a line that stopped short
             else:
-                new = x0 > left + 6 and not (hang is not None and abs(x0 - (hang - prev[6] + left)) < 3)
-            if not new and prev[4] < prev[7] - 25 and re.search(r'[.:;”"]$', prev[5].rstrip()) \
+                # a new column or page: compare indents relative to each column's margin (quoted blocks are set
+                # further in than the law's own text)
+                new = (x0 - left) - (prev[3] - prev[6]) > 9 and \
+                    not (hang is not None and abs(x0 - (hang - prev[6] + left)) < 3)
+            if not new and prev[4] < prev[7] - 8 and re.search(r'[.:;”"]$', prev[5].rstrip()) \
                     and re.match(r'["“]?[A-ZÁÉÍÓÚÑ\[(]', s):
                 new = True       # the previous line stopped short after a full stop: it ended a paragraph
         if new:

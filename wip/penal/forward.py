@@ -373,7 +373,9 @@ def merge(cur: list[str], q: list[str], hint: dict | None = None) -> tuple[list[
                 jp = next((k for k in range(max(pos - 1, 0), len(out)) if _same_label(label_of(out[k]), pl)), None)
                 if jp is not None:
                     k = jp + 1
-                    while k < len(out) and label_of(out[k]) is not None and _kind(label_of(out[k])) != _kind(lab):
+                    # a numeral carries its literals with it; a literal has no sub-items
+                    while _kind(lab) == 'num' and k < len(out) and label_of(out[k]) is not None and \
+                            _kind(label_of(out[k])) == 'lit':
                         k += 1
                     out.insert(k, p)
                     warn.append('inserted %s after %s at %d' % (lab, pl, k))
