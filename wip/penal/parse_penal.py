@@ -168,6 +168,32 @@ def apply_law(law: dict, state: dict, log: list[str]) -> dict:
     return {'changes': changes, 'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
 
 
+def derived_decisions(spec: dict, results: dict) -> list[str]:
+    """One sentence per hand decision recorded in laws.json, in law order, then the checkpoint explanations."""
+    out = ['Código Penal: ' + v for v in spec['base'].get('drop', {}).values()]
+    for law in sorted(spec['laws'], key=lambda l: (l['in_force'], l['published'], l['key'])):
+        if law.get('pending'):
+            out.append(f'Código Penal: {law["label"]} is not applied: {law["pending"]}')
+        if law.get('vigencia'):
+            out.append(f'Código Penal: {law["label"]} is in force on {law["in_force"]}: {law["vigencia"]}')
+        if law.get('hand'):
+            out.append(f'Código Penal: {law["label"]}: {law["hand"]}')
+        if law.get('source_note'):
+            out.append(f'Código Penal: {law["label"]}: {law["source_note"]}')
+    for c in sorted(spec['checkpoints'], key=lambda c: c['date']):
+        r = results.get(c['id'], [])
+        expl = spec.get('explained', {}).get(c['id'], {})
+        out.append(f'Código Penal checkpoint {c["id"]}: the rebuilt text on {c["date"]} compared word for word with '
+                   f'Editora Perú\'s Normas Legales Actualizadas (Internet Archive capture {c["capture"]}): '
+                   f'{len(r)} differences, each explained below.' if r else
+                   f'Código Penal checkpoint {c["id"]}: the rebuilt text on {c["date"]} equals Editora Perú\'s Normas '
+                   f'Legales Actualizadas (capture {c["capture"]}) word for word.')
+        for k, w, d in r:
+            why = expl.get(f'{k} {w}') or expl.get(k)
+            out.append(f'Código Penal checkpoint {c["id"]}, {k} ({w}): {why or "UNEXPLAINED"}')
+    return out
+
+
 def checkpoint(state: dict, ts: str) -> list:
     p = fetch.path_for(nla.url(ts))
     return compare.compare(state, nla.segments(p))
@@ -177,6 +203,8 @@ def main():
     spec = json.loads((HERE / 'laws.json').read_text(encoding='utf-8'))
     bpath = fetch.path_for(base.URL)
     state = base.units(bpath)
+    for k in spec['base'].get('drop', {}):     # printed before its law took effect (coordinator rule, 2026-10-28)
+        del state[k]
     # word forms of the 2016 edition decide whether a hyphen at a line end in a law is part of the word
     lawtext.VOCAB.update(w for u in state.values() for w in re.findall(r'\w+(?:-\w+)*', u['text'].lower()))
     v0 = {'from': spec['base']['from'], 'source_url': base.URL,
@@ -223,7 +251,8 @@ def main():
     expl = spec.get('explained', {})
     for c in cps:
         r = results[c['id']]
-        open_ = [x for x in r if '%s %s' % (x[0], x[1]) not in expl.get(c['id'], {})]
+        ex = expl.get(c['id'], {})
+        open_ = [x for x in r if '%s %s' % (x[0], x[1]) not in ex and x[0] not in ex]
         print('checkpoint %s (%s): %d differences, %d unexplained' % (c['id'], c['date'], len(r), len(open_)))
         if os.environ.get('PE_DIFF'):
             for k, w, d in open_:
@@ -237,7 +266,7 @@ def main():
             'publisher': spec['publisher'], 'versions': versions,
         }],
         'sources': spec['sources'],
-        'decisions': spec['decisions'],
+        'decisions': spec['decisions'] + derived_decisions(spec, results),
         'ai_use': spec['ai_use'],
     }
     if os.environ.get('PE_DRY'):

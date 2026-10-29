@@ -1,7 +1,10 @@
 {
  "base": {
   "from": "2016-05-31",
-  "note": "The Código Penal as printed in the Ministry of Justice's twelfth official edition (Décimo Segunda Edición Oficial, May 2016), which states it is current to 31 May 2016. Earlier history is not rebuilt here; this is the oldest version available in this history. The edition's footnotes (amendment notes and earlier wording) are not part of the text."
+  "note": "The Código Penal as printed in the Ministry of Justice's twelfth official edition (Décimo Segunda Edición Oficial, May 2016), which states it is current to 31 May 2016. Earlier history is not rebuilt here: this is the oldest version available in this history. The edition's footnotes (amendment notes and earlier wording) are not part of the text. Article 401-C, which the edition already prints, is left out: Ley 30424 added it with effect from 1 January 2018.",
+  "drop": {
+   "art-401-c": "The edition prints art. 401-C, added by Ley 30424 (published 21 April 2016), whose own Primera Disposición Complementaria Final put it in force on 1 July 2017, moved to 1 January 2018 by Decreto Legislativo 1352; the article is absent before that day and arrives on 1 January 2018 credited to Ley 30424."
+  }
  },
  "act_url": "https://web.archive.org/web/20170517041248/http://spij.minjus.gob.pe/content/publicaciones_oficiales/img/CODIGOPENAL.pdf",
  "publisher": {
@@ -209,6 +212,18 @@
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/FPgZP7fLKNKAzwW-TzEi4O/*/1602018-1.pdf",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*30710",
    "check_vigencia": true
+  },
+  {
+   "key": "ley-30424",
+   "label": "Ley 30424",
+   "title": "Ley que regula la responsabilidad administrativa de las personas jurídicas por el delito de cohecho activo transnacional",
+   "kind": "law",
+   "published": "2016-04-21",
+   "in_force": "2018-01-01",
+   "op": "1370638-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/1_v-Xy2ZaoR9Xaw5mjNSsD/*/1370638-1.pdf",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*30424",
+   "vigencia": "its Primera Disposición Complementaria Final set 1 July 2017; Decreto Legislativo 1352 (7 January 2017) rewrote it to 1 January 2018."
   },
   {
    "key": "ley-30819",
@@ -429,6 +444,42 @@
    "check_vigencia": true
   },
   {
+   "key": "du-019-2019",
+   "label": "Decreto de Urgencia 019-2019",
+   "title": "Decreto de Urgencia que modifica la Ley N° 29988, Ley que establece medidas extraordinarias para el personal docente y administrativo de instituciones educativas públicas y privadas, implicado en delitos de terrorismo, apología del terrorismo, delitos de violación de la libertad sexual y delitos de tráfico ilícito de drogas; crea el Registro de personas condenadas o procesadas por delitos de terrorismo, apología del terrorismo, delitos de violación de la libertad sexual y tráfico ilícito de drogas y modifica los artículos 36 y 38 del Código Penal",
+   "kind": "decree",
+   "published": "2019-12-02",
+   "in_force": "2019-12-03",
+   "op": "1832411-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0zEhCh7XKGYBgQqWjBnLTy/*/1832411-1.pdf",
+   "heading": "decreto\\s+de\\s+urgencia\\s*n?\\s*[°º.]?\\s*019-2019",
+   "check_vigencia": true
+  },
+  {
+   "key": "du-044-2019",
+   "label": "Decreto de Urgencia 044-2019",
+   "title": "Decreto de Urgencia que establece medidas para fortalecer la protección de salud y vida de los trabajadores",
+   "kind": "decree",
+   "published": "2019-12-30",
+   "in_force": "2019-12-31",
+   "op": "1841339-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/7pNZQNs4apXAOMXm6zvysV/*/1841339-1.pdf",
+   "heading": "decreto\\s+de\\s+urgencia\\s*n?\\s*[°º.]?\\s*044-2019",
+   "check_vigencia": true
+  },
+  {
+   "key": "du-019-2020",
+   "label": "Decreto de Urgencia 019-2020",
+   "title": "Decreto de Urgencia para garantizar la seguridad vial",
+   "kind": "decree",
+   "published": "2020-01-24",
+   "in_force": "2020-01-25",
+   "op": "1848882-3",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/5EXTI1nWaKgAFgZ9I-NEis/*/1848882-3.pdf",
+   "heading": "decreto\\s+de\\s+urgencia\\s*n?\\s*[°º.]?\\s*019-2020",
+   "check_vigencia": true
+  },
+  {
    "key": "ley-31012",
    "label": "Ley 31012",
    "title": "Ley de protección policial",
@@ -438,6 +489,30 @@
    "op": "1865203-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/DC79MHrW4J58Uk5SfTA0ex/*/1865203-1.pdf",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*31012",
+   "check_vigencia": true
+  },
+  {
+   "key": "dleg-1513",
+   "label": "Decreto Legislativo 1513",
+   "title": "Decreto Legislativo que establece disposiciones de carácter excepcional para el deshacinamiento de establecimientos penitenciarios y centros juveniles por riesgo de contagio de virus COVID-19",
+   "kind": "decree",
+   "published": "2020-06-04",
+   "in_force": "2020-06-05",
+   "op": "1867337-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/4BQHuI_wah-8ci_XyEwI7T/*/1867337-1.pdf",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1513",
+   "check_vigencia": true
+  },
+  {
+   "key": "dleg-1514",
+   "label": "Decreto Legislativo 1514",
+   "title": "Decreto Legislativo que optimiza la aplicación de la medida de vigilancia electrónica personal como medida coercitiva personal y sanción penal a fin de reducir el hacinamiento",
+   "kind": "decree",
+   "published": "2020-06-04",
+   "in_force": "2020-06-05",
+   "op": "1867337-2",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/AKsdMPwM4dM9UOEgZzSngP/*/1867337-2.pdf",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1514",
    "check_vigencia": true
   },
   {
@@ -630,6 +705,66 @@
    "check_vigencia": true
   },
   {
+   "key": "ley-31501",
+   "label": "Ley 31501",
+   "title": "Ley que modifica el Código Penal a fin de fortalecer la lucha contra los delitos de Administración Fraudulenta, Contabilidad Paralela y  Cohecho Transnacional",
+   "kind": "law",
+   "published": "2022-06-29",
+   "in_force": "2022-06-30",
+   "op": "2081735-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/C8xRfcKJK3BAumhaTqEfOd/*/2081735-1.pdf",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31501",
+   "check_vigencia": true
+  },
+  {
+   "key": "ley-31622",
+   "label": "Ley 31622",
+   "title": "Ley que modifica los artículos 308-B, 308-D y 309 del Código Penal, con la finalidad de fortalecer la persecución penal de los delitos contra los recursos naturales",
+   "kind": "law",
+   "published": "2022-11-16",
+   "in_force": "2022-11-17",
+   "op": "2125549-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/31Y-1zNYKQBBu19mXP9PPR/*/2125549-1.pdf",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31622",
+   "check_vigencia": true
+  },
+  {
+   "key": "ley-31775",
+   "label": "Ley 31775",
+   "title": "Ley que modifica el Código Penal, Decreto Legislativo 635, a fin de precisar el tipo penal del delito de abuso del poder económico, y el Decreto Legislativo 1034, Decreto Legislativo que aprueba la Ley de Represión de Conductas Anticompetitivas, para combatir los cárteles y fomentar la libre competencia",
+   "kind": "law",
+   "published": "2023-06-07",
+   "in_force": "2023-06-08",
+   "op": "2184892-5",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/1kkESyr74MIB92uAMoTEm9/*/2184892-5.pdf",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31775",
+   "check_vigencia": true
+  },
+  {
+   "key": "ley-31787",
+   "label": "Ley 31787",
+   "title": "Ley que modifica el Código Penal, Decreto Legislativo 635, a fin de establecer un nuevo criterio para la determinación del umbral delictivo entre delito y falta",
+   "kind": "law",
+   "published": "2023-06-14",
+   "in_force": "2023-06-15",
+   "op": "2187001-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/3b0y2nqkaMoB6Qe_lkP88H/*/2187001-1.pdf",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31787",
+   "check_vigencia": true
+  },
+  {
+   "key": "ley-31823",
+   "label": "Ley 31823",
+   "title": "Ley que modifica el artículo 190 del Código Penal, promulgado por el Decreto Legislativo 635, para sancionar en materia de seguridad social",
+   "kind": "law",
+   "published": "2023-07-08",
+   "in_force": "2023-07-09",
+   "op": "2194316-2",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/4dsyuWT8K-VA9r4WnW-A6r/*/2194316-2.pdf",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31823",
+   "check_vigencia": true
+  },
+  {
    "key": "dleg-1573",
    "label": "Decreto Legislativo 1573",
    "title": "Decreto Legislativo que modifica el Código Penal, aprobado por el Decreto Legislativo N° 635, en materia de conversión de pena en expulsión inmediata, tráfico de migrantes y reingreso clandestino",
@@ -663,6 +798,18 @@
    "op": "2244234-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/7ZpwnhcV4l595qVNniredH/*/2244234-2.PDF",
    "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1592",
+   "check_vigencia": true
+  },
+  {
+   "key": "dleg-1611",
+   "label": "Decreto Legislativo 1611",
+   "title": "Decreto Legislativo que aprueba medidas especiales para la prevención e investigación del delito de extorsión y delitos conexos, así como para la modificación del Código Penal, aprobado mediante Decreto Legislativo N° 635 y del Código Procesal Penal, aprobado por Decreto Legislativo N° 957",
+   "kind": "decree",
+   "published": "2023-12-21",
+   "in_force": "2023-12-22",
+   "op": "2246611-10",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/5Bob5Vn1aM49blXlrtBW2t/*/2246611-10.PDF",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1611",
    "check_vigencia": true
   },
   {
