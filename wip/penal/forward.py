@@ -55,6 +55,7 @@ def art_label(key: str) -> str:
 
 def strip_quotes(p: str) -> str:
     p = p.strip()
+    p = re.sub(r'\s+POR TANTO:?$', '', p)       # the promulgation formula run into the last quoted line
     if p[:1] in QOPEN:
         p = p[1:]
     p = re.sub(r'[”"»]\s*([.;,]?)\s*$', r'\1', p)
@@ -364,8 +365,20 @@ def merge(cur: list[str], q: list[str], hint: dict | None = None) -> tuple[list[
                 out[j] = p
                 pos = j + 1
                 continue
-            # a new label: after the block of the label before it
+            # a new label: right after the label before it ("i)" after "h)", "7." after "6."), with that label's
+            # sub-items; failing that, after the last label of its kind
             j = None
+            pl = _pred(lab)
+            if pl is not None:
+                jp = next((k for k in range(max(pos - 1, 0), len(out)) if _same_label(label_of(out[k]), pl)), None)
+                if jp is not None:
+                    k = jp + 1
+                    while k < len(out) and label_of(out[k]) is not None and _kind(label_of(out[k])) != _kind(lab):
+                        k += 1
+                    out.insert(k, p)
+                    warn.append('inserted %s after %s at %d' % (lab, pl, k))
+                    pos = k + 1
+                    continue
             for k in range(len(out) - 1, pos - 2, -1):
                 lk = label_of(out[k]) if k >= 0 else None
                 if lk is not None and lk[0] == lab[0] or (lk is not None and _kind(lk) == _kind(lab)):
@@ -380,6 +393,21 @@ def merge(cur: list[str], q: list[str], hint: dict | None = None) -> tuple[list[
             warn.append('inserted %s at %d' % (lab, k))
             pos = k + 1
     return out, warn
+
+
+def _pred(lab):
+    """The label before this one: ('lit', 'i') -> ('lit', 'h'); ('num', '7') -> ('num', '6'); ('num', '317.3') ->
+    ('num', '317.2'); None for a first label."""
+    kind, v = lab
+    if re.fullmatch(r'\d+', v):
+        return (kind, str(int(v) - 1)) if int(v) > 1 else None
+    m = re.fullmatch(r'(.*\.)(\d+)', v)
+    if m:
+        return (kind, m.group(1) + str(int(m.group(2)) - 1)) if int(m.group(2)) > 1 else None
+    letters = 'abcdefghijklmnñopqrstuvwxyz'
+    if len(v) == 1 and v.lower() in letters and v.lower() != 'a':
+        return (kind, letters[letters.index(v.lower()) - 1])
+    return None
 
 
 def has_body(rest: str) -> bool:

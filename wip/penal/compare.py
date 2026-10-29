@@ -79,9 +79,9 @@ def compare(units: dict, segs: list, skip_tail: int = 60) -> list:
             continue
         if not os_:
             # a sumilla run into the heading line ("Artículo 241-A. Corrupción en el ámbito privado El socio ...")
-            k = next((k for k in range(1, min(25, len(ob))) if prev[-k:] == ob[:k] and tb[:len(ob) - k] == ob[k:]),
-                     None)
-            if k:
+            glued = next((n for n in range(1, min(25, len(ob))) if prev[-n:] == ob[:n] and tb[:len(ob) - n] == ob[n:]),
+                         None)
+            if glued:
                 continue
         if tb[:len(ob)] != ob:
             before = bool(os_) and prev[-len(os_):] == os_
