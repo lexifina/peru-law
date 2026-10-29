@@ -25,7 +25,7 @@ def norm(s: str) -> str:
     return s.replace('ﬁ', 'fi').replace('ﬂ', 'fl')
 
 
-def lines(doc):
+def lines(doc, elperuano: bool = True):
     """[(page, col, y, x0, x1, text, col_left, col_right)] in reading order."""
     out = []
     for pn in range(doc.page_count):
@@ -36,7 +36,12 @@ def lines(doc):
         for b in page.get_text('dict')['blocks']:
             for l in b.get('lines', []):
                 # StagSans is El Peruano's furniture: running heads, sector headings and the issue's summary
-                spans = [s for s in l['spans'] if not s['font'].startswith('StagSans')]
+                # (and Arial Black: the boxed notices El Peruano sets between columns, e.g. "Portal de Gestión de
+                # Atención al Cliente")
+                # Norms are set in Arial (headings in SwitzerlandNarrowBold); every other face is furniture or
+                # advertising (Exo, Roboto, Montserrat, Helvetica signature stamps, TimesNewRoman summary heads)
+                spans = [s for s in l['spans'] if not elperuano or (
+                    s['font'].startswith(('Arial', 'SwitzerlandNarrow')) and 'Black' not in s['font'])]
                 if not spans:
                     continue
                 t = ''.join(s['text'] for s in spans)
@@ -107,7 +112,7 @@ def _join(a: str, b: str) -> str:
 
 def paragraphs(path, op: str, heading: str) -> list[str]:
     doc = fitz.open(str(path))
-    ls = lines(doc)
+    ls = lines(doc, elperuano=op is not None)
     if op is None:                       # a document holding one norm only (Congress's ADLP transcription)
         ls.append((10 ** 6, 0, 0, 0, 0, '000000-0', 0, 0, ''))
         op = '000000-0'
