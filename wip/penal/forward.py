@@ -273,6 +273,7 @@ def merge(cur: list[str], q: list[str], hint: dict | None = None) -> tuple[list[
         else:
             warn.append('first run has no heading: ' + head[0][:60])
             runs[0] = []
+    first_pos = pos
     for ri, run in enumerate(runs):
         for p in run:
             lab = label_of(p)

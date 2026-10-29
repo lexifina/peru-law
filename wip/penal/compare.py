@@ -19,7 +19,7 @@ HEAD = re.compile(r'^(?:Art[íi]culo\s+([IVXL]+|\d+)\s*[°º]?\s*(?:-\s*([A-ZÑ]
 def split_unit(text: str) -> tuple[str, str]:
     """(sumilla, body) of a unit's text, the heading words dropped."""
     # the 2016 edition prints a repealed numeral as "4. DEROGADO."; Editora Perú leaves it out
-    ls = [l for l in text.split('\n') if l.strip() and not re.fullmatch(r'\S{1,6}\s+DEROGADOS?\.?', l.strip())]
+    ls = [re.sub(r'^(\S{1,6})\s+DEROGADOS?\.?$', r'\1', l.strip()) for l in text.split('\n') if l.strip()]
     if not ls:
         return '', ''
     sumilla = ''

@@ -176,7 +176,7 @@ def units(path) -> dict:
         paras = [re.sub(r'(\S) +([.,;:])(?=\s|$)', r'\1\2', clean_par(p)) for p in u['paras']]
         paras = [p for p in paras if p]
         text = ''.join(p + '\n' for p in paras)
-        if re.search(r'(?:^|\n)Art[íi]culo[^\n]*?DEROGADOS?\.?\n$', text):
+        if re.search(r'(?:^|\n)Art[íi]culo[^\n]*?(?:DEROGADOS?|Reubicado y reformado)\.?\n$', text):
             continue        # a repealed article, printed as a placeholder: no text in force
         res[k] = {'label': u['label'], 'kind': u['kind'], 'text': text}
     return res
