@@ -51,7 +51,12 @@ def lines(doc):
                     continue
                 # a line straddling the gutter (a full-width title) belongs to column 0
                 col = 0 if x0 < mid - 8 else 1
-                items.append((col, round(y1, 1), x0, x1, norm(t)))
+                bp = ''
+                for s in spans:
+                    if 'Bold' not in s['font'] and re.search(r'\w', s['text']):
+                        break
+                    bp += s['text']
+                items.append((col, round(y1, 1), x0, x1, norm(t), norm(bp), norm(bp) == norm(t)))
         items.sort()
         rows: list[list] = []
         for it in items:
@@ -68,8 +73,13 @@ def lines(doc):
             right = max(max(i[3] for i in r) for r in cr)
             for r in cr:
                 r.sort(key=lambda i: i[2])
+                bold = []
+                for i in r:
+                    bold.append(i[5].strip())
+                    if not i[6]:
+                        break
                 out.append((pn, c, r[0][1], r[0][2], max(i[3] for i in r), ' '.join(i[4].strip() for i in r),
-                            left, right))
+                            left, right, ' '.join(b for b in bold if b)))
     return out
 
 
@@ -120,13 +130,43 @@ def paragraphs(path, op: str, heading: str) -> list[str]:
     # laws, hanging items ("1. …" at the margin, its continuation lines indented). A new paragraph starts at an item
     # label, at a line indented past the previous one (unless the previous line opened an item: a hanging
     # continuation), at a vertical gap, or after a line that stopped short at a full stop.
+    # Article headings are set in bold ("“Artículo 121.- Lesiones graves"): the bold run is a paragraph of its own,
+    # continued by further all-bold lines, and the body starts a new paragraph.
     out: list[str] = []
     prev = None
     prev_label = False
     hang = None
+    in_head = False
     for l in ls[start:end]:
-        pn, col, y, x0, x1, t, left, right = l
+        pn, col, y, x0, x1, t, left, right, bold = l
         s = t.strip()
+        if BOLD_HEAD.match(bold):
+            if s != bold.strip() and s.startswith(bold.strip()):
+                out.append(bold.strip())
+                out.append(s[len(bold.strip()):].strip())
+                in_head = False
+            else:
+                out.append(s)
+                in_head = True
+            prev, prev_label, hang = l, False, None
+            continue
+        if in_head and (ELL_LINE.match(s) or STRUCT_LINE.match(s)):
+            in_head = False
+        if in_head:
+            in_head = False
+            if bold.strip() and s == bold.strip() and not LABEL_START.match(s):
+                out[-1] = _join(out[-1], t)          # the heading's second line
+                in_head = True
+                prev = l
+                continue
+            if bold.strip() and s.startswith(bold.strip()) and not LABEL_START.match(s):
+                out[-1] = _join(out[-1], bold.strip())
+                out.append(s[len(bold.strip()):].strip())
+                prev, prev_label, hang = l, False, None
+                continue
+            out.append(s)
+            prev, prev_label, hang = l, bool(LABEL_START.match(s)), None
+            continue
         is_label = bool(LABEL_START.match(s)) or bool(ELL_LINE.match(s)) or \
             (prev is not None and bool(ELL_LINE.match(prev[5].strip())))     # "[…]" stands alone
         new = True
@@ -164,6 +204,9 @@ def paragraphs(path, op: str, heading: str) -> list[str]:
     return [' '.join(p.split()) for p in out if p.strip()]
 
 
+STRUCT_LINE = re.compile(r'^[“"]?\s*(?:LIBRO|SECCI[ÓO]N|T[ÍI]TULO|CAP[ÍI]TULO|Libro|Secci[óo]n|T[íi]tulo|Cap[íi]tulo|'
+                         r'Subcap[íi]tulo|DISPOSICI|Parte|PARTE)\b')
+BOLD_HEAD = re.compile(r'^\s*[“"]?\s*Art[íi]culo\s+(?:\d+|[IVX]+|[ÚU]nico)\b')
 ELL_LINE = re.compile(r'^[“"]?[\[(]\s*(?:…|\.\s*\.\s*\.)\s*[\])]\s*[.,;]?\s*[”"]?\s*[.,;]?$')
 LABEL_START = re.compile(r'^[“"]?(?:\d{1,3}(?:\.\d{1,3})*\.\s|\d{1,3}\)\s|[a-zñ]\)\s|[a-zñ]\.\s+(?=[A-ZÁÉÍÓÚÑ]))')
 

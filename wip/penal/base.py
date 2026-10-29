@@ -95,6 +95,7 @@ def units(path) -> dict:
     cur = None            # current unit dict with 'paras'
     sumilla: list[str] = []
     in_dft = False
+    expect_title = False
     prev = None
     for l in ls:
         t = l['text'].strip()
@@ -133,8 +134,14 @@ def units(path) -> dict:
             if STRUCT.match(t) or (l['x'] > 84 and not in_dft):
                 if t.startswith('DISPOSICIONES FINALES'):
                     in_dft = True
+                # "CAPÍTULO I" is followed by the chapter's title, which a long title sets at the margin
+                expect_title = bool(STRUCT.match(t))
                 cur = None
                 sumilla = []
+                prev = l
+                continue
+            if expect_title and not sumilla:
+                expect_title = False
                 prev = l
                 continue
             if prev is not None and prev['face'] == 'h' and sumilla and l['y'] - prev['y'] < 14 \
@@ -168,7 +175,10 @@ def units(path) -> dict:
         # a footnote call dropped between a word and its punctuation leaves a space: "artículo 36° ."
         paras = [re.sub(r'(\S) +([.,;:])(?=\s|$)', r'\1\2', clean_par(p)) for p in u['paras']]
         paras = [p for p in paras if p]
-        res[k] = {'label': u['label'], 'kind': u['kind'], 'text': ''.join(p + '\n' for p in paras)}
+        text = ''.join(p + '\n' for p in paras)
+        if re.search(r'(?:^|\n)Art[íi]culo[^\n]*?DEROGADOS?\.?\n$', text):
+            continue        # a repealed article, printed as a placeholder: no text in force
+        res[k] = {'label': u['label'], 'kind': u['kind'], 'text': text}
     return res
 
 
