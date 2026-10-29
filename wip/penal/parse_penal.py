@@ -186,6 +186,9 @@ def main():
         'decisions': spec['decisions'],
         'ai_use': spec['ai_use'],
     }
+    if os.environ.get('PE_DRY'):
+        print('dry run:', len(versions), 'versions', len(laws), 'laws')
+        return
     tmp = PART.with_suffix('.json.tmp')
     tmp.write_text(json.dumps(part, ensure_ascii=False, indent=1) + '\n', encoding='utf-8', newline='\n')
     os.replace(tmp, PART)

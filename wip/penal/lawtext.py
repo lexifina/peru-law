@@ -111,26 +111,50 @@ def paragraphs(path, op: str, heading: str) -> list[str]:
                 break
         else:
             raise SystemExit(f'{op}: heading {heading!r} not in {head[:200]!r}')
+    # Paragraphs. Two settings occur: a first-line indent (first line 13 pt in, the rest at the margin) and, in some
+    # laws, hanging items ("1. …" at the margin, its continuation lines indented). A new paragraph starts at an item
+    # label, at a line indented past the previous one (unless the previous line opened an item: a hanging
+    # continuation), at a vertical gap, or after a line that stopped short at a full stop.
     out: list[str] = []
     prev = None
+    prev_label = False
+    hang = None
     for l in ls[start:end]:
         pn, col, y, x0, x1, t, left, right = l
+        s = t.strip()
+        is_label = bool(LABEL_START.match(s))
         new = True
         if prev is not None and out:
-            indent = x0 > left + 6
-            if (pn, col) == (prev[0], prev[1]):
-                gap = y - prev[2]
-                new = indent or gap > 14
+            same = (pn, col) == (prev[0], prev[1])
+            if is_label:
+                new = True
+            elif same:
+                if x0 > prev[3] + 6:
+                    new = not prev_label and not (hang is not None and abs(x0 - hang) < 3)
+                    if not new:
+                        hang = x0
+                elif hang is not None and abs(x0 - hang) < 3:
+                    new = False
+                else:
+                    new = y - prev[2] > 14
             else:
-                new = indent
-            if not new and prev[4] < prev[7] - 25 and not prev[5].rstrip().endswith(('-', ',')):
-                new = True       # the previous line stopped short: it ended a paragraph
+                new = x0 > left + 6 and not (hang is not None and abs(x0 - (hang - prev[6] + left)) < 3)
+            if not new and prev[4] < prev[7] - 25 and re.search(r'[.:;”"]$', prev[5].rstrip()) \
+                    and re.match(r'["“]?[A-ZÁÉÍÓÚÑ\[(]', s):
+                new = True       # the previous line stopped short after a full stop: it ended a paragraph
         if new:
-            out.append(t.strip())
+            out.append(s)
+            prev_label = is_label
+            if not is_label:
+                hang = None
         else:
             out[-1] = _join(out[-1], t)
+            prev_label = False
         prev = l
     return [' '.join(p.split()) for p in out if p.strip()]
+
+
+LABEL_START = re.compile(r'^[“"]?(?:\d{1,3}(?:\.\d{1,3})*\.\s|\d{1,3}\)\s|[a-zñ]\)\s|[a-zñ]\.\s(?=[A-ZÁÉÍÓÚÑ]))')
 
 
 if __name__ == '__main__':
