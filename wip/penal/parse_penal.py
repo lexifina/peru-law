@@ -184,6 +184,8 @@ def apply_law(law: dict, state: dict, log: list[str]) -> dict:
 def derived_decisions(spec: dict, results: dict) -> list[str]:
     """One sentence per hand decision recorded in laws.json, in law order, then the checkpoint explanations."""
     out = ['Código Penal: ' + v for v in spec['base'].get('drop', {}).values()]
+    if spec.get('checkpoint_rule'):
+        out.append('Código Penal checkpoints: ' + spec['checkpoint_rule'])
     for law in sorted(spec['laws'], key=lambda l: (l['in_force'], l['published'], l['key'])):
         if law.get('pending'):
             out.append(f'Código Penal: {law["label"]} is not applied: {law["pending"]}')

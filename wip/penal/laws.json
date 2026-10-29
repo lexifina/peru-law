@@ -25,22 +25,22 @@
  "checkpoints": [
   {
    "id": "nla-2023-01",
-   "date": "2023-01-31",
+   "date": "2023-02-01",
    "capture": "20230526034932"
   },
   {
    "id": "nla-2024-09",
-   "date": "2024-09-13",
+   "date": "2024-09-14",
    "capture": "20241003020736"
   },
   {
    "id": "nla-2026-01",
-   "date": "2026-01-20",
+   "date": "2026-01-21",
    "capture": "20260204054040"
   },
   {
    "id": "nla-2026-07",
-   "date": "2026-07-02",
+   "date": "2026-07-03",
    "capture": "20260816050810"
   }
  ],
@@ -1141,7 +1141,49 @@
    "op": "2324653-6",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/EB8JR2Lp4QZAQXdcdnsC73/*/2324653-6.PDF",
    "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1649",
-   "check_vigencia": true
+   "check_vigencia": true,
+   "ops": [
+    [
+     "compose",
+     "art-217",
+     0,
+     [
+      [
+       "q",
+       0
+      ],
+      [
+       "q",
+       1
+      ],
+      [
+       "q",
+       2
+      ],
+      [
+       "q",
+       3
+      ],
+      [
+       "q",
+       4
+      ],
+      [
+       "q",
+       5
+      ],
+      [
+       "q",
+       6
+      ],
+      [
+       "c",
+       "La pena será no menor de cuatro años"
+      ]
+     ]
+    ]
+   ],
+   "hand": "art. 217: the decree closes its quote after the new literal e, before the article's last paragraph (\"La pena será no menor de cuatro años ...\"), which it prints unchanged after the quote; that paragraph is kept."
   },
   {
    "key": "ley-32138",
@@ -1393,5 +1435,6 @@
    "heading": "ley\\s*n?\\s*[°º.]?\\s*32684",
    "check_vigencia": true
   }
- ]
+ ],
+ "checkpoint_rule": "Editora Perú updates its consolidation on the day a norm is published; the rebuilt text is compared on the day after the consolidation date, when norms published that day take effect."
 }
