@@ -96,6 +96,26 @@ def apply_law(law: dict, state: dict, log: list[str]) -> dict:
             else:
                 new = ps
             changes[key] = unit(key, new, cur)
+        elif kind == 'compose':
+            # ['compose', key, quote index (or [key, index] in ops mode), [["q", i] | ["c", prefix], ...]]:
+            # the article rebuilt by hand from quoted paragraph i and current paragraphs that start with prefix
+            if byk is None:
+                ps = allq[op[2]][1]
+            else:
+                ps = byk[key][op[2]][0]
+            ps = [clean_par(p) for p in ps]
+            curp = [l for l in cur['text'].split('\n') if l]
+            new = []
+            for what, arg in op[3]:
+                if what == 'q':
+                    new.append(ps[arg])
+                else:
+                    hit = [p for p in curp if p.startswith(arg)]
+                    if len(hit) != 1:
+                        raise SystemExit(f'{law["key"]} compose {key}: {arg!r} matches {len(hit)}')
+                    new.append(hit[0])
+            changes[key] = unit(key, new, cur)
+            carried.update(p for p in new if p in curp)
         elif kind == 'repeal':
             changes[key] = None
         elif kind == 'move':               # ['move', old key, new key]: renumbered "sin alterar la literalidad";

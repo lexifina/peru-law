@@ -42,7 +42,48 @@
   }
  ],
  "explained": {},
- "sources": [],
+ "sources": [
+  {
+   "name": "Ministerio de Justicia y Derechos Humanos: Código Penal, Décimo Segunda Edición Oficial (May 2016, current to 31 May 2016), as published on SPIJ; Internet Archive capture 2017-05-17 04:12:48 UTC",
+   "url": "https://web.archive.org/web/20170517041248id_/http://spij.minjus.gob.pe:80/content/publicaciones_oficiales/img/CODIGOPENAL.pdf",
+   "retrieved": "2026-10-29",
+   "requests": 1,
+   "licence": "Official text (Peruvian legal norms are not subject to copyright, D.Leg. 822 art. 9); archive.org capture",
+   "notes": "text layer; the Code's text as of 31 May 2016 (first version); footnotes not used"
+  },
+  {
+   "name": "Editora Perú, Diario Oficial El Peruano: official PDF extract of each amending norm (busquedas.elperuano.pe, /api/archivo/file/<token>/*/<op>.pdf)",
+   "url": "https://busquedas.elperuano.pe/",
+   "retrieved": "2026-10-29",
+   "requests": 0,
+   "licence": "Official text (D.Leg. 822 art. 9); Editora Perú publication",
+   "notes": "text layer; one PDF per norm, listed per law in laws (url) and in each version's source_url and sha256"
+  },
+  {
+   "name": "Editora Perú, busquedas.elperuano.pe search listings (Normas Legales and Edición Extraordinaria), every ley and decreto legislativo 1 June 2016 - 28 October 2026 and the decretos de urgencia of 30 September 2019 - 16 March 2020",
+   "url": "https://busquedas.elperuano.pe/?tipoPublicacion=NL&ci=ONLY",
+   "retrieved": "2026-10-29",
+   "requests": 0,
+   "licence": "as above",
+   "notes": "discovery only: every norm whose text names the Código Penal was read (penal/elperuano.py scan)"
+  },
+  {
+   "name": "Congreso de la República, Archivo Digital de la Legislación del Perú: law index by number (LeyNumePP.aspx), Leyes 30400-32719",
+   "url": "https://www.leyes.congreso.gob.pe/LeyNumePP.aspx?xNorma=0",
+   "retrieved": "2026-10-29",
+   "requests": 232,
+   "licence": "Official text (D.Leg. 822 art. 9)",
+   "notes": "discovery only: laws El Peruano's search index lacks"
+  },
+  {
+   "name": "Editora Perú, Normas Legales Actualizadas: Código Penal (idNorma=2); Internet Archive captures 2023-05-26 (file of 31 Jan 2023), 2024-10-03 (13 Sep 2024), 2026-02-04 (actualizada 20/01/2026) and 2026-08-16 (actualizada 2/07/2026)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=2",
+   "retrieved": "2026-10-29",
+   "requests": 6,
+   "licence": "Editora Perú publication; archive.org captures",
+   "notes": "checkpoints only (word for word); captures from September 2026 on are corrupted (every non-ASCII byte replaced) and are not used"
+  }
+ ],
  "decisions": [],
  "ai_use": [
   "none: every word of the Code comes from the cached official texts; a model wrote the parsing programs and chose, by hand, where some quoted paragraphs go (listed per law in penal/laws.json)."
@@ -287,7 +328,45 @@
    "op": "1717857-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/DsjowqkNaYd9I8Br6D_wPG/*/1717857-2.pdf",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*30875",
-   "check_vigencia": true
+   "check_vigencia": true,
+   "ops": [
+    [
+     "compose",
+     "art-046-a",
+     0,
+     [
+      [
+       "q",
+       0
+      ],
+      [
+       "c",
+       "Constituye circunstancia agravante de la responsabilidad"
+      ],
+      [
+       "c",
+       "En estos casos el Juez"
+      ],
+      [
+       "q",
+       2
+      ],
+      [
+       "q",
+       3
+      ],
+      [
+       "q",
+       4
+      ],
+      [
+       "q",
+       5
+      ]
+     ]
+    ]
+   ],
+   "hand": "The 2016 edition prints the paragraph \"Constituye circunstancia agravante, cuando ... secuestro.\" and the sentence \"En tal caso ...\" as one paragraph; the law quotes them as two (the first lengthened), so the article is composed by hand: unquoted first two paragraphs kept, quoted ones taken from the law."
   },
   {
    "key": "ley-30901",

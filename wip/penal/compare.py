@@ -82,7 +82,7 @@ def compare(units: dict, segs: list, skip_tail: int = 60) -> list:
             a, b = (ob, tb[:len(ob) + 10]) if before or not os_ else (os_ + ob, tb[:len(os_) + len(ob) + 10])
             what = 'spelling' if [_plain(w) for w in a] == [_plain(w) for w in b[:len(a)]] else 'body'
             res.append((k, what, _show(a, b)))
-        if os_ and prev[-len(os_):] != os_:
+        if os_ and i and prev[-len(os_):] != os_:
             # an NLA text with no sumilla, or a different one
             res.append((k, 'sumilla', '%s | nla tail: %s' % (' '.join(os_), ' '.join(prev[-len(os_) - 3:]))))
     return res
