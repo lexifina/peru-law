@@ -9,8 +9,12 @@ It follows the shared design of [lexifina/global-law](https://github.com/lexifin
 | Folder | Act | Versions | History |
 | --- | --- | ---: | --- |
 | `constitucion/` | Constitución Política del Perú (1993) | 33 | From its entry into force (31 December 1993) to the bicameral reform in force since 12 April 2026: 37 reform laws, one ruling of the Tribunal Constitucional, and one change no law explains |
+| `codigo-civil/` | Código Civil (Decreto Legislativo 295) | 26 | From 25 December 2012 (the oldest text the Ministry of Justice's 14th official edition reaches) to Ley 32228 (January 2025) |
+| `proteccion-datos-personales/` | Ley 29733, Ley de Protección de Datos Personales | 3 | As enacted (July 2011) to Decreto Legislativo 1353 (2017) |
+| `codigo-procesal-penal/` | Código Procesal Penal (Decreto Legislativo 957) | 79 | As enacted (July 2004), with its district-by-district entry into force, to Ley 32374 (June 2025) |
+| `codigo-consumidor/` | Código de Protección y Defensa del Consumidor (Ley 29571) | 20 | As enacted (in force 2 October 2010) to Ley 32495 (November 2025): 19 amending laws and decretos legislativos |
 
-The per-act `README.md` in the folder lists every provision, how often it changed and when.
+The per-act `README.md` in the folder lists every provision, how often it changed and when. A part is published here only once it has been checked against the official text; `REPRODUCE.md` lists, act by act, the sources and every decision.
 
 ## A lawyer's questions as git commands
 
@@ -46,6 +50,7 @@ Files: `preambulo.md`, `art-001.md` ... `art-206.md` (with `art-007-a`, `art-014
 - **Against the laws themselves.** Every paragraph that Leyes 31118, 31280, 31304, 31305, 31414, 31507, 31878, 31988, 32135, 32145, 32188 and 32189 added or changed was found word for word in the text of the law as published in the Archivo Digital de la Legislación del Perú (169 paragraphs; `tools/verify_laws.py`). Older laws are scans without a usable text layer.
 - **Against earlier editions.** Each rebuilt state is compared word by word with the Congreso editions of 2004 (a copy not updated after 1995), 2012, 2015, February 2019 and April 2019. The remaining differences are editorial variants between editions, each listed in `REPRODUCE.md` ("las listas"/"la lista" in art. 90, "a Congreso"/"al Congreso" in art. 96, and the like).
 - **Against El Peruano of 30 December 1993.** The scanned gazette was read for the points where sources disagree (see "unexplained" below) and for the original Chapter XIV.
+- **Código de Protección y Defensa del Consumidor.** Rebuilt backwards from the Ministry of Justice's third official edition (current to 27 November 2020), whose notes quote the wording before each amendment; the state on that date equals the edition exactly. The rebuilt text on 31 May 2018 equals the second official edition word for word in all 178 provisions. Later laws are replayed from their own texts (Congreso ADLP), every paragraph checked word for word in the law; on 15 August 2024 the result equals Editora Perú's consolidated text in 169 of 171 articles (art. 88: Editora Perú had not yet inserted Ley 31763; art. V: a spelling variant).
 - Every version is read back from git on the day it took effect and on the day before (`tools/check_repo.py`); both must match `corpus.json`. Commit dates never go backwards, there are no merges, nothing is dated in the future, and every trailer parses. The repository is rebuilt a second time and must give identical hashes. Results are in `REPRODUCE.md`.
 
 ## What "author" means
@@ -65,6 +70,7 @@ The author of a commit is the law that made the change, with an e-mail address t
 - **Paragraph breaks in rebuilt texts.** Earlier wordings come from quotations in the Congreso's notes, set in small type; where a quotation's paragraph breaks cannot be read from the layout, they are inferred. Words are checked; breaks may differ from El Peruano.
 - **Spelling of the original.** The texts are the Congreso's editions, not a transcription of El Peruano; small differences of capitalisation from the 1993 gazette may remain (for example "la Ley"/"la ley" in the original art. 192).
 - **Reforms after Ley 32265.** No Congreso edition after December 2024 exists, and the Congreso's list of reform laws names none after Ley 32265 (22 March 2025) as of 28 October 2026.
+- **Código de Protección y Defensa del Consumidor:** changes made by decretos legislativos or by laws whose title does not name the Code after April 2025, and anything after Ley 32537 (26 December 2025), where the Congreso's law index ends. Ley 31763 starts "a los sesenta días hábiles"; no official source gives the day, so it is counted (29 August 2023; see `REPRODUCE.md`). The later start of arts. 36-37 and of the summary procedure in 2010-2011 is described, not committed.
 - **SPIJ**, the Ministry of Justice's consolidated legislation, was not used: it does not answer from outside Peru's networks here, and full access is paid.
 
 ## How it is built
@@ -88,6 +94,8 @@ No AI model wrote or changed legal text. Claude Opus 5.5 wrote the scripts and c
 | [Leyes de reforma constitucional](https://www3.congreso.gob.pe/diariodebates/leyesrefconstit/) | Congreso list | n/a | yes | HTML | Used to confirm the list of reforms |
 | [Tribunal Constitucional](https://tc.gob.pe/jurisprudencia/2021/00019-2021-AI.pdf) | Ruling | n/a | n/a | PDF | STC 918/2021 |
 | [El Peruano, Normas Legales](https://busquedas.elperuano.pe/dispositivo/NL/2384222-1) | Official gazette | n/a | n/a | HTML | Decreto Supremo 039-2025-PCM, the in-force day of Ley 31988 |
+| [Ministerio de Justicia: ediciones oficiales](https://www.gob.pe/institucion/minjus/colecciones/2135-ediciones-oficiales) | Official consolidated editions | through "Texto anterior" notes | yes, a note per change | PDF | Used for the Código Civil, Código Procesal Penal and Código de Protección y Defensa del Consumidor (2nd edition 2018 through an Internet Archive capture of SPIJ, 3rd edition 2020 on gob.pe) |
+| [Editora Perú, Normas Legales Actualizadas](https://diariooficial.elperuano.pe/Normas) | Consolidated text (state publisher) | no | yes | PDF | Checkpoints through Internet Archive captures (the live files are now served corrupted) |
 | [SPIJ](https://spij.minjus.gob.pe) | Official legislation (Ministry of Justice) | n/a | n/a | no | Not used: no answer from here; full access needs a paid licence |
 | [Duvet05/Constitucion-Politica-del-Peru](https://github.com/Duvet05/Constitucion-Politica-del-Peru) | Volunteer git repo | yes | partly | n/a | Prior art, for reconciliation only; no text copied |
 
@@ -95,7 +103,7 @@ Research guides that cover every country: [GlobaLex](https://www.nyulawglobal.or
 
 ## Licence
 
-The legal texts are official texts of the Republic of Peru, as published by the Congreso de la República. Fuente: Congreso de la República del Perú (www.congreso.gob.pe; www.leyes.congreso.gob.pe). Decreto Legislativo 822, art. 9, excludes official legislative texts from copyright protection. The arrangement, tables, commit messages and tools are by Lexifina, under the terms in `LICENSE`.
+The legal texts are official texts of the Republic of Peru, as published by the Congreso de la República and the Ministerio de Justicia y Derechos Humanos. Fuente: Congreso de la República del Perú (www.congreso.gob.pe; www.leyes.congreso.gob.pe); Ministerio de Justicia y Derechos Humanos, ediciones oficiales (www.gob.pe/minjus). Some sources were read through Internet Archive captures (web.archive.org), pinned in `REPRODUCE.md`. Decreto Legislativo 822, art. 9, excludes official legislative texts from copyright protection. The arrangement, tables, commit messages and tools are by Lexifina, under the terms in `LICENSE`.
 
 This repository is not legal advice and not an official publication.
 
@@ -107,3 +115,4 @@ Historia de la Constitución Política del Perú de 1993 en git: un archivo por 
 - Fechas: el día siguiente de la publicación en El Peruano (art. 109 de la Constitución), salvo que la ley disponga otra cosa.
 - Autoría: cada cambio se atribuye a una ley solo cuando las notas de la edición del Congreso ("Antes de la reforma, este artículo tuvo el siguiente texto") o la propia ley lo indican. La única frase que ninguna ley explica (Segunda Disposición Final y Transitoria) figura a nombre del Congreso como "unexplained".
 - Fuente: Congreso de la República del Perú, ediciones de la Constitución de mayo de 2021 y diciembre de 2024, y Archivo Digital de la Legislación del Perú. No se usó el SPIJ. Ningún modelo de IA escribió texto legal.
+- También contiene el Código Civil, la Ley 29733 de Protección de Datos Personales, el Código Procesal Penal y el Código de Protección y Defensa del Consumidor (Ley 29571, desde su entrada en vigencia el 2 de octubre de 2010 hasta la Ley 32495), reconstruidos a partir de las ediciones oficiales del Ministerio de Justicia y del texto de cada ley modificatoria.
