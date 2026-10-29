@@ -228,17 +228,22 @@ def paragraph_hint(intro: str, key: str) -> dict | None:
     """What the operative sentence says about an unnumbered paragraph of the article: {'n': 1.. or 'last',
     'add': bool}. "Modifícase el cuarto párrafo del artículo 296-A" -> {'n': 4, 'add': False}."""
     num = key.split('-', 1)[1].lstrip('0').upper().replace('-NN', '-Ñ')
-    for m in re.finditer(r'(modif\w*|incorp\w*|sustitu\w*|agr[eé]g\w*|adici\w*)\b([^.;]{0,160}?)\b(?:(\w+)\s+)?'
-                         r'p[áa]rrafos?\b([^.;]{0,60}?)art[íi]culo\s+' + re.escape(num) + r'\b', intro, re.I):
-        word = (m.group(3) or '').lower()
-        before = m.group(2).lower()
-        n = 'last' if word in ('último', 'ultimo') else ORDINALS.get(word)
-        if n is None:
-            mm = re.search(r'\b(\w+)\s+p[áa]rrafo', before + ' ' + word + ' párrafo')
-            n = ORDINALS.get(mm.group(1).lower()) if mm else None
-        if re.search(r'n[uú]mer|literal|inciso', m.group(2) + (m.group(4) or ''), re.I):
+    for m in re.finditer(r'(?:(\w+)\s+)?p[áa]rrafos?(?:\s+(\w+))?\b([^.;]{0,60}?)art[íi]culo\s+' + re.escape(num)
+                         + r'\b', intro, re.I):
+        if re.search(r'n[uú]mer|literal|inciso', m.group(3), re.I):
             continue                     # "el párrafo 3 del numeral 2": not an article paragraph
-        return {'n': n, 'add': m.group(1).lower().startswith(('incorp', 'agr', 'adic'))}
+        before = intro[max(0, m.start() - 120):m.start()]
+        verbs = re.findall(r'(modif\w*|incorp\w*|sustitu\w*|agr[eé]g\w*|adici\w*)', before, re.I)
+        if not verbs:
+            continue
+        w1, w2 = (m.group(1) or '').lower(), (m.group(2) or '').lower()
+        n = None
+        for w in (w1, w2):
+            if w in ('último', 'ultimo'):
+                n = 'last'
+            elif w in ORDINALS:
+                n = ORDINALS[w]
+        return {'n': n, 'add': verbs[-1].lower().startswith(('incorp', 'agr', 'adic'))}
     return None
 
 
