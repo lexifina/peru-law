@@ -29,7 +29,7 @@ URL = ('https://web.archive.org/web/20170517041248id_/http://spij.minjus.gob.pe:
        'img/CODIGOPENAL.pdf')
 FIRST, LAST = 46, 253          # Título Preliminar .. Disposiciones finales y transitorias (0-based pages)
 
-HEAD = re.compile(r'^Art[íi]culo\s+([IVXL]+|\d+)\s*[°º˚]?\s*(?:-\s*([A-Z])\b)?\s*[°º˚]?\s*\.?\s*-?')
+HEAD = re.compile(r'^Art[íi]culo\s+([IVXL]+|\d+)\s*[°º˚]?\s*(?:-\s*([A-ZÑ])\b)?\s*[°º˚]?\s*\.?\s*-?')
 ORD = ['PRIMERA', 'SEGUNDA', 'TERCERA', 'CUARTA', 'QUINTA']
 DFT = re.compile(r'^(%s)\s*\.-' % '|'.join(ORD))
 STRUCT = re.compile(r'^(LIBRO|SECCI[ÓO]N|T[ÍI]TULO|CAP[ÍI]TULO|DISPOSICIONES)\b')

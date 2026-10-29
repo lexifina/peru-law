@@ -12,7 +12,7 @@ import re
 
 from nla import words
 
-HEAD = re.compile(r'^(?:Art[íi]culo\s+([IVXL]+|\d+)\s*[°º]?\s*(?:-\s*([A-Z])\b)?\s*[°º]?\s*\.?\s*-?|'
+HEAD = re.compile(r'^(?:Art[íi]culo\s+([IVXL]+|\d+)\s*[°º]?\s*(?:-\s*([A-ZÑ])\b)?\s*[°º]?\s*\.?\s*-?|'
                   r'(?:PRIMERA|SEGUNDA|TERCERA|CUARTA|QUINTA|Primera|Segunda|Tercera|Cuarta|Quinta)\s*\.\s*-)\s*')
 
 

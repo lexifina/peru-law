@@ -24,7 +24,7 @@ from edition import roman  # noqa: E402
 fitz.TOOLS.mupdf_display_errors(False)
 
 BASE = 'https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=2'
-HEAD = re.compile(r'Art[íi]culo\s+([IVXL]+|\d+)\s*[°º]?\s*(?:-\s*([A-Z])\b)?\s*[°º]?\s*\.\s*-')
+HEAD = re.compile(r'Art[íi]culo\s+([IVXL]+|\d+)\s*[°º]?\s*(?:-\s*([A-ZÑ])\b)?\s*[°º]?\s*\.\s*-')
 DISP = re.compile(r'\b(PRIMERA|SEGUNDA|TERCERA|CUARTA|QUINTA)\s*\.\s*-', re.I)
 ORD = ['PRIMERA', 'SEGUNDA', 'TERCERA', 'CUARTA', 'QUINTA']
 
@@ -101,7 +101,7 @@ def segments(path):
             break
         base, suf = m.group(1), m.group(2)
         key = 'tp-%02d' % roman(base) if re.fullmatch(r'[IVXL]+', base) else \
-            'art-%03d%s' % (int(base), ('-' + suf.lower()) if suf else '')
+            'art-%03d%s' % (int(base), ('-' + ('nn' if suf == 'Ñ' else suf.lower())) if suf else '')
         heads.append((m.start(), m.end(), key))
     if dft != -1:
         for m in DISP.finditer(flat, dft):

@@ -33,6 +33,7 @@ import forward  # noqa: E402
 import lawtext  # noqa: E402
 import nla  # noqa: E402
 from edition import clean_par, label_of  # noqa: E402
+from base import HEAD as BHEAD  # noqa: E402
 
 PART = HERE.parent / 'corpus.d' / '80-penal.json'
 SLUG = 'codigo-penal'
@@ -73,6 +74,7 @@ def apply_law(law: dict, state: dict, log: list[str]) -> dict:
         ops = [['quote', k, i] for i, (k, _, _) in enumerate(allq) if k not in law.get('skip', [])] + \
             [['repeal', k] for k in rep if k not in law.get('skip', [])]
         byk = None
+    carried: set[str] = set()
     for op in ops + law.get('extra_ops', []):
         kind, key = op[0], op[1]
         cur = changes[key] if key in changes else state.get(key)
@@ -93,6 +95,26 @@ def apply_law(law: dict, state: dict, log: list[str]) -> dict:
             changes[key] = unit(key, new, cur)
         elif kind == 'repeal':
             changes[key] = None
+        elif kind == 'move':               # ['move', old key, new key]: renumbered "sin alterar la literalidad";
+            new_key = op[2]                # the new heading as quoted, the body as it stood
+            old = changes[key] if key in changes else state.get(key)
+            if old is None:
+                raise SystemExit(f'{law["key"]}: move of missing {key}')
+            q = byk[new_key][0]
+            head = []
+            for p in q:
+                if forward.ELL.match(p):
+                    break
+                head.append(p)
+            curp = [l for l in old['text'].split('\n') if l]
+            hi = next(i for i, p in enumerate(curp) if BHEAD.match(p))
+            first = curp[hi]
+            m = BHEAD.match(first)
+            rest = first[m.end():].strip()
+            body = ([rest] if rest and len(rest) > 140 or re.search(r'[.:;]$', rest) else []) + curp[hi + 1:]
+            changes[key] = None
+            changes[new_key] = unit(new_key, head + body, None)
+            carried.update(clean_par(p) for p in body)
         elif kind == 'drop_par':           # ['drop_par', key, label or paragraph prefix]
             curp = [l for l in cur['text'].split('\n') if l]
             hit = [i for i, p in enumerate(curp) if p.startswith(op[2])]
@@ -110,7 +132,7 @@ def apply_law(law: dict, state: dict, log: list[str]) -> dict:
             continue
         old = (state.get(key) or {}).get('text', '')
         for p in u['text'].split('\n'):
-            if not p or p + '\n' in old:
+            if not p or p + '\n' in old or p in carried:
                 continue
             pw = ' '.join(re.findall(r'\w+', p.lower()))
             if pw not in fw:

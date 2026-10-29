@@ -122,7 +122,8 @@ def paragraphs(path, op: str, heading: str) -> list[str]:
     for l in ls[start:end]:
         pn, col, y, x0, x1, t, left, right = l
         s = t.strip()
-        is_label = bool(LABEL_START.match(s))
+        is_label = bool(LABEL_START.match(s)) or bool(ELL_LINE.match(s)) or \
+            (prev is not None and bool(ELL_LINE.match(prev[5].strip())))     # "[…]" stands alone
         new = True
         if prev is not None and out:
             same = (pn, col) == (prev[0], prev[1])
@@ -135,8 +136,12 @@ def paragraphs(path, op: str, heading: str) -> list[str]:
                         hang = x0
                 elif hang is not None and abs(x0 - hang) < 3:
                     new = False
+                elif hang is not None and x0 < hang - 6:
+                    new = True           # back out of a hanging item
                 else:
                     new = y - prev[2] > 14
+                if not new and x0 > left + 6 and prev[4] < prev[7] - 25 and not (hang and abs(x0 - hang) < 3):
+                    new = True           # an indented line after a line that stopped short
             else:
                 new = x0 > left + 6 and not (hang is not None and abs(x0 - (hang - prev[6] + left)) < 3)
             if not new and prev[4] < prev[7] - 25 and re.search(r'[.:;”"]$', prev[5].rstrip()) \
@@ -154,7 +159,8 @@ def paragraphs(path, op: str, heading: str) -> list[str]:
     return [' '.join(p.split()) for p in out if p.strip()]
 
 
-LABEL_START = re.compile(r'^[“"]?(?:\d{1,3}(?:\.\d{1,3})*\.\s|\d{1,3}\)\s|[a-zñ]\)\s|[a-zñ]\.\s(?=[A-ZÁÉÍÓÚÑ]))')
+ELL_LINE = re.compile(r'^[“"]?[\[(]\s*(?:…|\.\s*\.\s*\.)\s*[\])]\s*[.,;]?\s*[”"]?\s*[.,;]?$')
+LABEL_START = re.compile(r'^[“"]?(?:\d{1,3}(?:\.\d{1,3})*\.\s|\d{1,3}\)\s|[a-zñ]\)\s|[a-zñ]\.\s+(?=[A-ZÁÉÍÓÚÑ]))')
 
 
 if __name__ == '__main__':

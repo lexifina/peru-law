@@ -33,21 +33,24 @@ CP = re.compile(r'C[óo]digo\s+Penal', re.I)
 OTHER = re.compile(r'(?:Procesal|Procedimientos|Ejecuci[óo]n|Responsabilidad)\s+Penal|Penal\s+Militar|'
                    r'C[óo]digo\s+(?:Civil|Tributario|de\s+los\s+Niños|Procesal|de\s+Ejecuci)|\bLey\s+(?:N[°º.]?\s*)?\d{4,5}|'
                    r'Decreto\s+(?:Legislativo|Ley|Supremo)\s+(?:N[°º.]?\s*)?\d+', re.I)
-QHEAD = re.compile(r'^Art[íi]culo\s+(\d+|[IVX]+)\s*[°º]?\s*(?:-\s*([A-Z])\b)?(?=\s*[.°º-])')
+QHEAD = re.compile(r'^Art[íi]culo\s+(\d+|[IVX]+)\s*[°º]?\s*(?:-\s*([A-ZÑ])\b)?(?=\s*[.°º-])')
 ROMAN = {'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6, 'VII': 7, 'VIII': 8, 'IX': 9, 'X': 10}
 
 
 def art_key(num: str, suf: str | None) -> str:
     if num in ROMAN:
         return 'tp-%02d' % ROMAN[num]
-    return 'art-%03d%s' % (int(num), ('-' + suf.lower()) if suf else '')
+    s = suf.lower() if suf else ''
+    s = 'nn' if s == 'ñ' else s          # keys are ASCII; "129-Ñ" sorts between 129-N and 129-O
+    return 'art-%03d%s' % (int(num), ('-' + s) if s else '')
 
 
 def art_label(key: str) -> str:
     if key.startswith('tp-'):
         return 'Título Preliminar, art. %s' % [k for k, v in ROMAN.items() if v == int(key[3:])][0]
-    m = re.fullmatch(r'art-(\d+)(?:-([a-z]))?', key)
-    return 'Art. %d%s' % (int(m.group(1)), '-' + m.group(2).upper() if m.group(2) else '')
+    m = re.fullmatch(r'art-(\d+)(?:-([a-z]+))?', key)
+    s = {'nn': 'Ñ'}.get(m.group(2) or '', (m.group(2) or '').upper())
+    return 'Art. %d%s' % (int(m.group(1)), '-' + s if s else '')
 
 
 def strip_quotes(p: str) -> str:
