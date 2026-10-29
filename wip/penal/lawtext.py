@@ -200,7 +200,8 @@ def paragraphs(path, op: str, heading: str) -> list[str]:
             (prev is not None and bool(ELL_LINE.match(prev[5].strip())))     # "[…]" stands alone
         # an all-bold line after a line that is not (a sumilla such as "Pánico Financiero") starts a paragraph
         if bold.strip() and bold.strip() == s and len(s) > 3 and prev is not None and \
-                prev[8].strip() != prev[5].strip():
+                prev[8].strip() != prev[5].strip() and s[:1].isupper() and \
+                re.search(r'[.:;”"]$', prev[5].rstrip()):
             is_label = True
         new = True
         if prev is not None and out:
@@ -228,6 +229,8 @@ def paragraphs(path, op: str, heading: str) -> list[str]:
             if not new and prev[4] < prev[7] - 8 and re.search(r'[.:;”"]$', prev[5].rstrip()) \
                     and re.match(r'["“]?[A-ZÁÉÍÓÚÑ\[(]', s):
                 new = True       # the previous line stopped short after a full stop: it ended a paragraph
+        if new and not is_label and out and s[:1].islower() and not re.search(r'[.:;”"]$', out[-1]):
+            new = False          # a lower-case line after an unfinished sentence continues it (column breaks)
         if new:
             out.append(s)
             prev_label = is_label

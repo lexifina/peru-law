@@ -165,6 +165,9 @@ def units(path) -> dict:
                 new = True
         if cur.pop('break', False):
             new = True
+        elif new and label_of(t) is None and t[:1].islower() and cur['paras'] and \
+                not re.search(r'[.:;”"]$', cur['paras'][-1].rstrip()):
+            new = False          # a lower-case line after an unfinished sentence continues it (page breaks)
         if new:
             cur['paras'].append(t)
         else:

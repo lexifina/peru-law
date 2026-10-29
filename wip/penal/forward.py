@@ -328,6 +328,10 @@ def merge(cur: list[str], q: list[str], hint: dict | None = None) -> tuple[list[
                     out[pos] = p
                     pos += 1
                     continue
+                same = next((k for k in range(hi + 1, len(out)) if out[k] == p), None) if hint else None
+                if same is not None:
+                    pos = same + 1               # a paragraph quoted unchanged only fixes the place
+                    continue
                 if hint and ri >= 1:
                     # the operative sentence names the paragraph ("el cuarto párrafo", "un último párrafo")
                     # the article's paragraphs, not counting a sentence that continues a numbered item (an
