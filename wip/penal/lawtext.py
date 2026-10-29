@@ -178,6 +178,11 @@ def paragraphs(path, op: str, heading: str) -> list[str]:
             in_head = False
         if in_head:
             in_head = False
+            if s[:1].islower() and not re.search(r'[.:;”"]$', out[-1]):
+                out[-1] = _join(out[-1], t)          # the heading line ran into the first sentence
+                in_head = bool(bold.strip()) and bold.strip() == s     # or the heading went on in bold
+                prev = l
+                continue
             if bold.strip() and s == bold.strip() and not LABEL_START.match(s):
                 out[-1] = _join(out[-1], t)          # the heading's second line
                 in_head = True

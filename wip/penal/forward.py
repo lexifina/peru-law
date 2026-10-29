@@ -130,7 +130,10 @@ def split_articles(block: list[str]) -> list[tuple[str, list[str]]]:
     while i < len(ps):
         if QHEAD.match(ps[i]) or (i + 1 < len(ps) and QHEAD.match(ps[i + 1]) and not label_of(ps[i])
                                    and not ELL.match(ps[i]) and len(ps[i]) < 160
-                                   and not re.search(r'[.;:,]$', ps[i])):       # a sumilla has no full stop
+                                   and not re.search(r'[.;:,]$', ps[i])        # a sumilla has no full stop
+                                   and not ps[i].isupper()                     # nor is it a title in capitals
+                                   and not (i > 0 and re.match(r'(?:CAP[ÍI]TULO|Cap[íi]tulo|T[ÍI]TULO|T[íi]tulo|'
+                                                               r'SECCI[ÓO]N|Secci[óo]n|Subcap[íi]tulo)\b', ps[i - 1]))):
             j = i if QHEAD.match(ps[i]) else i + 1
             m = QHEAD.match(ps[j])
             out.append((art_key(m.group(1), m.group(2)), ps[i:j + 1]))
