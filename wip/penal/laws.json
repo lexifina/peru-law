@@ -229,7 +229,18 @@
    "notes": "checkpoints only (word for word); captures from September 2026 on are corrupted (every non-ASCII byte replaced) and are not used"
   }
  ],
- "decisions": [],
+ "decisions": [
+  "Código Penal part (penal/parse_penal.py, corpus.d/80-penal.json): the first version is the Code as printed in the Ministry of Justice's twelfth official edition (May 2016, current to 31 May 2016), read from its text layer (no OCR); its footnotes are not used. Earlier history is not rebuilt, so that version is credited to the edition as the oldest version available.",
+  "Código Penal: every later change comes from the amending norm's own text in El Peruano (Editora Perú's PDF extract of that norm, found through busquedas.elperuano.pe): the program cuts the norm from its heading to its operation number, reads the operative sentence to tell the Code's quoted articles from other norms', and checks that every new paragraph occurs word for word in the norm. Placements the program could not decide are hand operations recorded per norm in penal/laws.json and listed below.",
+  "Código Penal: the amending norms were found by reading every ley and decreto legislativo El Peruano's search site lists from 1 June 2016 to 28 October 2026 (Normas Legales and Edición Extraordinaria) and keeping those whose text names the Código Penal, plus the decretos de urgencia of the 2019-2020 interregnum; laws missing from that site were looked up in the Congreso's law index (to Ley 32537) and read in the Congreso's ADLP transcription when it exists; El Peruano's fe de erratas notices within 60 days of each norm were checked.",
+  "Código Penal: in-force days are the day after publication (Constitución art. 109) unless the norm sets its own start; every exception is listed below with its source.",
+  "Código Penal: a quote with \"(…)\" or \"[…]\" keeps the wording it leaves out. A labelled paragraph (\"2.\", \"d)\", \"a.\") replaces the paragraph with the same label after the previous one; a new label goes right after the label before it; an unlabelled paragraph replaces the one the operative sentence names (\"el cuarto párrafo\"), or else the paragraph that reads most like it, or is inserted where it stands.",
+  "Código Penal: paragraphs follow the sources' layout (El Peruano sets each norm in two columns; the 2016 edition in one); a few paragraph breaks may differ from the printed page, never the words.",
+  "Código Penal: units are articles (art-NNN, art-NNN-a; art. 129-Ñ is art-129-nn), the Título Preliminar (tp-NN) and the Disposiciones finales y transitorias (dft-NN). Structure headings (libros, títulos, capítulos) are not tracked. Articles the 2016 edition prints only as \"DEROGADO\" or \"Reubicado y reformado\" are left out; a repealed numeral the edition prints as \"4. DEROGADO.\" is kept as printed.",
+  "Código Penal: Ley 31146 (2021) renumbers 17 articles \"sin alterar la literalidad\" (arts. 153 to 153-J, 168-B, 179-A, 181-A, 182-A, 183-A and 318-A become arts. 129-A to 129-P); each is committed as the old article removed and the new one added with its old body under the heading the law quotes.",
+  "Código Penal: not read, because no text with a text layer was found: decretos legislativos 1272, 1510-1512, 1660, 1681-1687 and 1689-1693 (absent from El Peruano's search site; only 1688 was found, on gob.pe), and Leyes 32545-32557, 32559, 32569, 32591, 32627, 32644, 32669, 32672, 32714, 32726-32728, 32732, 32733 and 32740-32742 (absent from El Peruano's search site and from the Congreso's ADLP). None of them is named in Editora Perú's notes to the Code up to 2 July 2026; the eleven laws after that date cannot be checked against a consolidation.",
+  "Código Penal: El Peruano's fe de erratas notices found within 60 days of the norms: Decreto Legislativo 1351 (10 January 2017, corrects art. 320: applied as its own commit), Ley 30424 (3 May 2016, art. 12 of that law), Decreto Legislativo 1513 (16 June 2020, its arts. 2 and 15), Ley 31673 (28 January 2023, its title and operative sentence only), Decreto Legislativo 1592 (22 December 2023, art. 4 of Decreto Legislativo 1241) and Ley 32195 (19 December 2024, a law not yet in force); only the first changes the Code's wording."
+ ],
  "ai_use": [
   "none: every word of the Code comes from the cached official texts; a model wrote the parsing programs and chose, by hand, where some quoted paragraphs go (listed per law in penal/laws.json)."
  ],
@@ -1064,8 +1075,7 @@
    "in_force": "2023-01-28",
    "op": "2146514-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/EmSLBvwhKpyAYRdpE2KF8j/*/2146514-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*31676",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31676"
   },
   {
    "key": "ley-31751",
@@ -1076,8 +1086,7 @@
    "in_force": "2023-05-26",
    "op": "2181041-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/Dda5xIeXqqiAIB6oLEoMwr/*/2181041-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*31751",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31751"
   },
   {
    "key": "ley-31775",
@@ -1088,8 +1097,7 @@
    "in_force": "2023-06-08",
    "op": "2184892-5",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/1kkESyr74MIB92uAMoTEm9/*/2184892-5.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*31775",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31775"
   },
   {
    "key": "ley-31787",
@@ -1100,8 +1108,7 @@
    "in_force": "2023-06-15",
    "op": "2187001-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/3b0y2nqkaMoB6Qe_lkP88H/*/2187001-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*31787",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31787"
   },
   {
    "key": "ley-31806",
@@ -1124,8 +1131,7 @@
    "in_force": "2023-07-09",
    "op": "2194316-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/4dsyuWT8K-VA9r4WnW-A6r/*/2194316-2.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*31823",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31823"
   },
   {
    "key": "dleg-1573",
@@ -1136,8 +1142,7 @@
    "in_force": "2023-10-06",
    "op": "2222143-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/7gpbv3DpKteBjFL7CNux85/*/2222143-2.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1573",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1573"
   },
   {
    "key": "dleg-1578",
@@ -1148,8 +1153,7 @@
    "in_force": "2023-10-19",
    "op": "2226413-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/5b4f8gcw4CZ8LcgeWhiKBN/*/2226413-1.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1578",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1578"
   },
   {
    "key": "dleg-1585",
@@ -1160,8 +1164,7 @@
    "in_force": "2023-11-23",
    "op": "2237339-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/4s6xqAcAaI78o2ok0O-sBP/*/2237339-3.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1585",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1585"
   },
   {
    "key": "dleg-1589",
@@ -1172,8 +1175,7 @@
    "in_force": "2023-12-05",
    "op": "2241404-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/EjD4fI-L48dAO40-stgElT/*/2241404-1.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1589",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1589"
   },
   {
    "key": "dleg-1592",
@@ -1184,8 +1186,7 @@
    "in_force": "2023-12-15",
    "op": "2244234-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/7ZpwnhcV4l595qVNniredH/*/2244234-2.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1592",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1592"
   },
   {
    "key": "dleg-1596",
@@ -1196,8 +1197,7 @@
    "in_force": "2023-12-18",
    "op": "2245195-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/87jiT9FGKVg8uQtvNMELTP/*/2245195-3.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1596",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1596"
   },
   {
    "key": "dleg-1611",
@@ -1208,8 +1208,7 @@
    "in_force": "2023-12-22",
    "op": "2246611-10",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/5Bob5Vn1aM49blXlrtBW2t/*/2246611-10.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1611",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1611"
   },
   {
    "key": "dleg-1616",
@@ -1220,8 +1219,7 @@
    "in_force": "2023-12-22",
    "op": "2247002-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/7UbvYpe3KTN8eNq-73rNo2/*/2247002-2.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1616",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1616"
   },
   {
    "key": "ley-31982",
@@ -1232,8 +1230,7 @@
    "in_force": "2024-01-25",
    "op": "2255394-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/4AVv-2Hfa0U8xGdCfDDEZd/*/2255394-1.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*31982",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*31982"
   },
   {
    "key": "ley-32026",
@@ -1244,8 +1241,7 @@
    "in_force": "2024-05-17",
    "op": "2289141-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0UXfqnkY4SK94U0T6IRaFL/*/2289141-1.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32026",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32026"
   },
   {
    "key": "ley-32029",
@@ -1256,8 +1252,7 @@
    "in_force": "2024-05-18",
    "op": "2289582-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/80UgLhkDqgnA0Q6gG_D3M3/*/2289582-3.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32029",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32029"
   },
   {
    "key": "ley-32054",
@@ -1268,8 +1263,7 @@
    "in_force": "2024-06-11",
    "op": "2296582-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/1ckk1qHNKe5BHboHSNCMtE/*/2296582-1.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32054",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32054"
   },
   {
    "key": "dleg-1625",
@@ -1280,8 +1274,7 @@
    "in_force": "2024-08-09",
    "op": "2313391-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/8GsRAMsLaqR942yPQeRLOK/*/2313391-1.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1625",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1625"
   },
   {
    "key": "ley-32108",
@@ -1292,8 +1285,7 @@
    "in_force": "2024-08-10",
    "op": "2313835-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/9sbBjP_k49H9v51dXMAc3t/*/2313835-2.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32108",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32108"
   },
   {
    "key": "dleg-1649",
@@ -1305,7 +1297,6 @@
    "op": "2324653-6",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/EB8JR2Lp4QZAQXdcdnsC73/*/2324653-6.PDF",
    "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1649",
-   "check_vigencia": true,
    "ops": [
     [
      "compose",
@@ -1370,8 +1361,7 @@
    "in_force": "2024-10-20",
    "op": "2336227-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/FNrUFsfwqNz8veoOxm5yce/*/2336227-1.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32138",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32138"
   },
   {
    "key": "ley-32169",
@@ -1382,8 +1372,7 @@
    "in_force": "2024-11-22",
    "op": "2346262-4",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0Ks5gKoc4P58tAGwnUlzR3/*/2346262-4.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32169",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32169"
   },
   {
    "key": "ley-32180",
@@ -1395,7 +1384,6 @@
    "op": "2352315-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/5epDxSbPazO8ee03t2WcSc/*/2352315-1.PDF",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*32180",
-   "check_vigencia": true,
    "partial_ok": true,
    "extra_ops": [
     [
@@ -1416,8 +1404,7 @@
    "in_force": "2024-12-12",
    "op": "2352315-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/EJmgvPTaa0oBIOUUTI_2C-/*/2352315-2.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32181",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32181"
   },
   {
    "key": "ley-32182",
@@ -1428,8 +1415,7 @@
    "in_force": "2024-12-12",
    "op": "2352315-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/8XxXgQdW4N4BCYx0iZzNKp/*/2352315-3.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32182",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32182"
   },
   {
    "key": "ley-32183",
@@ -1440,8 +1426,7 @@
    "in_force": "2024-12-12",
    "op": "2352315-4",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/29ba8tdWq2CBn2GDnJdlZT/*/2352315-4.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32183",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32183"
   },
   {
    "key": "ley-32195",
@@ -1464,8 +1449,7 @@
    "in_force": "2025-01-20",
    "op": "2363369-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/BMDtd0jVaKi9SxIyCd7DIc/*/2363369-3.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32250",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32250"
   },
   {
    "key": "ley-32251",
@@ -1476,8 +1460,7 @@
    "in_force": "2025-01-20",
    "op": "2363369-4",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/90MLncgPaKC917z4Hfvl1P/*/2363369-4.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32251",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32251"
   },
   {
    "key": "ley-32258",
@@ -1488,8 +1471,7 @@
    "in_force": "2025-03-15",
    "op": "2380524-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0tpNctp34CzBL3dD_dbqvU/*/2380524-2.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32258",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32258"
   },
   {
    "key": "ley-32314",
@@ -1500,8 +1482,7 @@
    "in_force": "2025-04-30",
    "op": "2394851-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/3tszwuEKaEu9ryFVgi0dGQ/*/2394851-2.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32314",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32314"
   },
   {
    "key": "ley-32329",
@@ -1524,8 +1505,7 @@
    "in_force": "2025-05-11",
    "op": "2398238-4",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/A0R2x3XYK2y8Y16umTCTkh/*/2398238-4.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32330",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32330"
   },
   {
    "key": "ley-32331",
@@ -1536,8 +1516,7 @@
    "in_force": "2025-05-13",
    "op": "2398669-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/274q4jXh4g_974CawB5KoH/*/2398669-1.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32331",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32331"
   },
   {
    "key": "ley-32336",
@@ -1548,8 +1527,7 @@
    "in_force": "2025-05-18",
    "op": "2400391-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/AcHn5Ml9KBaA3IKlRIaD1y/*/2400391-1.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32336",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32336"
   },
   {
    "key": "ley-32372",
@@ -1560,8 +1538,7 @@
    "in_force": "2025-06-08",
    "op": "2407453-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/FU9Wzg0AaJjASx_N2YuYI4/*/2407453-2.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32372",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32372"
   },
   {
    "key": "ley-32446",
@@ -1572,8 +1549,7 @@
    "in_force": "2025-09-23",
    "op": "2440760-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/ECNa2QYLqkiB4hceIb3daP/*/2440760-1.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32446",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32446"
   },
   {
    "key": "ley-32451",
@@ -1584,8 +1560,7 @@
    "in_force": "2025-10-01",
    "op": "2443471-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/5ZL0oZwcKwf83PP1i2QeaA/*/2443471-1.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32451",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32451"
   },
   {
    "key": "ley-32468",
@@ -1596,8 +1571,7 @@
    "in_force": "2025-10-18",
    "op": "2449682-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/BkoHDKQQ4aFAu_QXT0oZbn/*/2449682-2.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32468",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32468"
   },
   {
    "key": "ley-32523",
@@ -1620,8 +1594,7 @@
    "in_force": "2026-01-21",
    "op": "2478557-2",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/F7yjeuQ1KAn9JvmWa3nsw0/*/2478557-2.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1695",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1695"
   },
   {
    "key": "dleg-1696",
@@ -1632,8 +1605,7 @@
    "in_force": "2026-01-21",
    "op": "2478557-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0rmdt3fGKoUAKIpYYv-Hxe/*/2478557-3.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1696",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1696"
   },
   {
    "key": "dleg-1697",
@@ -1644,8 +1616,7 @@
    "in_force": "2026-01-21",
    "op": "2478560-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/6p-LMOOFKPgAymq3HeZ1VW/*/2478560-1.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1697",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1697"
   },
   {
    "key": "dleg-1731",
@@ -1656,8 +1627,7 @@
    "in_force": "2026-02-13",
    "op": "2486266-5",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/6C-96HyX4PJAoHAXwIow5r/*/2486266-5.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1731",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1731"
   },
   {
    "key": "dleg-1733",
@@ -1668,8 +1638,7 @@
    "in_force": "2026-02-13",
    "op": "2486266-7",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/74oA1wJKKnwB17-hxd9N8C/*/2486266-7.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1733",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1733"
   },
   {
    "key": "dleg-1736",
@@ -1680,8 +1649,7 @@
    "in_force": "2026-02-13",
    "op": "2486266-10",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/CMWn5jFoaYjBZL024jFklA/*/2486266-10.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1736",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1736"
   },
   {
    "key": "dleg-1739",
@@ -1692,8 +1660,7 @@
    "in_force": "2026-02-14",
    "op": "2487222-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0YwiXgLfKu-8JiOGxosFkE/*/2487222-1.PDF",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1739",
-   "check_vigencia": true
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1739"
   },
   {
    "key": "ley-32595",
@@ -1704,8 +1671,7 @@
    "in_force": "2026-05-17",
    "op": "2516162-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0eusl0zdqNaBEridFuuB_t/*/2516162-1.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32595",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32595"
   },
   {
    "key": "ley-32615",
@@ -1716,8 +1682,7 @@
    "in_force": "2026-05-29",
    "op": "2519873-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/DuEl4jk4KLP9ENO_4v0sUO/*/2519873-1.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32615",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32615"
   },
   {
    "key": "ley-32684",
@@ -1728,8 +1693,7 @@
    "in_force": "2026-07-03",
    "op": "2530996-5",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/2wYrm4pbKjtB3Q2SJIDG-f/*/2530996-5.PDF",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*32684",
-   "check_vigencia": true
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32684"
   }
  ],
  "checkpoint_rule": "Editora Perú updates its consolidation on the day a norm is published; the rebuilt text is compared on the day after the consolidation date, when norms published that day take effect."
