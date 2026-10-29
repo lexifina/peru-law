@@ -101,6 +101,7 @@
    "art-227": "sumilla: Ley 31204 gives the new sumilla \"Inducción a la comisión de atentados contra sitios arqueológicos, así como zonas paleontológicas ...\"; Editora Perú prints it and also keeps the old one (\"Inducción a la comisión de atentados contra yacimientos arqueológicos\").",
    "art-232": "hyphen only: the law reads \"días-multa\"; Editora Perú's text layer reads \"díasmulta\".",
    "art-242": "the 2016 official edition reads \"deliberamente\" (a misprint kept as printed); Editora Perú reads \"deliberadamente\".",
+   "art-243-c": "Ley 31806's rewording of art. 243-C is not applied: its in-force day depends on a reglamento decree that was not found (see the law's entry); Editora Perú prints the new wording.",
    "art-283": "hyphen only: the decree reads \"días-multa\"; Editora Perú's text layer reads \"díasmulta\".",
    "art-296": "spacing only: Editora Perú's text layer splits \"tráfi co\" at a ligature.",
    "art-301": "Decreto Legislativo 1351's quoted text reads \"sesenticinco\"; Editora Perú reads \"sesenta y cinco\". The decree's wording is kept.",
@@ -113,6 +114,8 @@
   "nla-2026-01": {
    "art-401-c": "Editora Perú does not print art. 401-C, added by Ley 30424 (in force 1 January 2018); no norm repealing it was found in El Peruano, so the article is kept.",
    "art-425-a": "Editora Perú's January 2026 text leaves out art. 425-A, added by Ley 31501 (2022), which its 2023, 2024 and July 2026 texts print; no repeal was found, so the article is kept.",
+   "art-271-a": "Ley 32329 (art. 271-A) is not applied: it takes effect the day after its reglamento, which was not found (see the law's entry); Editora Perú prints the article.",
+   "art-272-a": "Ley 32329 (art. 272-A) is not applied: it takes effect the day after its reglamento, which was not found (see the law's entry); Editora Perú prints the article.",
    "art-029-a": "Decreto Legislativo 1514 reads \"se cumple\", \"está sujeta\" and \"todas aquellas que considere necesarias\"; Editora Perú prints \"se cumplé\", \"esta sujeta\" and \"todas aquellas reglas que\". The decree's wording is kept.",
    "art-030-a": "spacing only: Editora Perú's text layer splits \"tipifi cados\" at a ligature; the law reads \"tipificados\".",
    "art-035": "the 2016 official edition reads \"La pena de limitación días libres\"; Editora Perú reads \"limitación de días libres\". The edition's wording is kept (no later law amends art. 35).",
@@ -137,6 +140,7 @@
    "art-227": "sumilla: Ley 31204 gives the new sumilla \"Inducción a la comisión de atentados contra sitios arqueológicos, así como zonas paleontológicas ...\"; Editora Perú prints it and also keeps the old one (\"Inducción a la comisión de atentados contra yacimientos arqueológicos\").",
    "art-232": "hyphen only: the law reads \"días-multa\"; Editora Perú's text layer reads \"díasmulta\".",
    "art-242": "the 2016 official edition reads \"deliberamente\" (a misprint kept as printed); Editora Perú reads \"deliberadamente\".",
+   "art-243-c": "Ley 31806's rewording of art. 243-C is not applied: its in-force day depends on a reglamento decree that was not found (see the law's entry); Editora Perú prints the new wording.",
    "art-283": "hyphen only: the decree reads \"días-multa\"; Editora Perú's text layer reads \"díasmulta\".",
    "art-288-b": "Editora Perú misprints \"menores de 4dad\"; Ley 31182 reads \"menores de edad\".",
    "art-296": "spacing only: Editora Perú's text layer splits \"tráfi co\" at a ligature.",
@@ -150,6 +154,8 @@
   },
   "nla-2026-07": {
    "art-401-c": "Editora Perú does not print art. 401-C, added by Ley 30424 (in force 1 January 2018); no norm repealing it was found in El Peruano, so the article is kept.",
+   "art-271-a": "Ley 32329 (art. 271-A) is not applied: it takes effect the day after its reglamento, which was not found (see the law's entry); Editora Perú prints the article.",
+   "art-272-a": "Ley 32329 (art. 272-A) is not applied: it takes effect the day after its reglamento, which was not found (see the law's entry); Editora Perú prints the article.",
    "art-029-a": "Decreto Legislativo 1514 reads \"se cumple\", \"está sujeta\" and \"todas aquellas que considere necesarias\"; Editora Perú prints \"se cumplé\", \"esta sujeta\" and \"todas aquellas reglas que\". The decree's wording is kept.",
    "art-030-a": "spacing only: Editora Perú's text layer splits \"tipifi cados\" at a ligature; the law reads \"tipificados\".",
    "art-035": "the 2016 official edition reads \"La pena de limitación días libres\"; Editora Perú reads \"limitación de días libres\". The edition's wording is kept (no later law amends art. 35).",
@@ -174,6 +180,7 @@
    "art-227": "sumilla: Ley 31204 gives the new sumilla \"Inducción a la comisión de atentados contra sitios arqueológicos, así como zonas paleontológicas ...\"; Editora Perú prints it and also keeps the old one (\"Inducción a la comisión de atentados contra yacimientos arqueológicos\").",
    "art-232": "hyphen only: the law reads \"días-multa\"; Editora Perú's text layer reads \"díasmulta\".",
    "art-242": "the 2016 official edition reads \"deliberamente\" (a misprint kept as printed); Editora Perú reads \"deliberadamente\".",
+   "art-243-c": "Ley 31806's rewording of art. 243-C is not applied: its in-force day depends on a reglamento decree that was not found (see the law's entry); Editora Perú prints the new wording.",
    "art-283": "hyphen only: the decree reads \"días-multa\"; Editora Perú's text layer reads \"díasmulta\".",
    "art-288-b": "Editora Perú misprints \"menores de 4dad\"; Ley 31182 reads \"menores de edad\".",
    "art-296": "spacing only: Editora Perú's text layer splits \"tráfi co\" at a ligature.",
@@ -238,7 +245,7 @@
   "Código Penal: paragraphs follow the sources' layout (El Peruano sets each norm in two columns; the 2016 edition in one); a few paragraph breaks may differ from the printed page, never the words.",
   "Código Penal: units are articles (art-NNN, art-NNN-a; art. 129-Ñ is art-129-nn), the Título Preliminar (tp-NN) and the Disposiciones finales y transitorias (dft-NN). Structure headings (libros, títulos, capítulos) are not tracked. Articles the 2016 edition prints only as \"DEROGADO\" or \"Reubicado y reformado\" are left out; a repealed numeral the edition prints as \"4. DEROGADO.\" is kept as printed.",
   "Código Penal: Ley 31146 (2021) renumbers 17 articles \"sin alterar la literalidad\" (arts. 153 to 153-J, 168-B, 179-A, 181-A, 182-A, 183-A and 318-A become arts. 129-A to 129-P); each is committed as the old article removed and the new one added with its old body under the heading the law quotes.",
-  "Código Penal: not read, because no text with a text layer was found: decretos legislativos 1272, 1510-1512, 1660, 1681-1687 and 1689-1693 (absent from El Peruano's search site; only 1688 was found, on gob.pe), and Leyes 32545-32557, 32559, 32569, 32591, 32627, 32644, 32669, 32672, 32714, 32726-32728, 32732, 32733 and 32740-32742 (absent from El Peruano's search site and from the Congreso's ADLP). None of them is named in Editora Perú's notes to the Code up to 2 July 2026; the eleven laws after that date cannot be checked against a consolidation.",
+  "Código Penal: not read, because no text was found: decretos legislativos 1272, 1510-1512, 1660, 1681-1687 and 1689-1693 (absent from El Peruano's search site; only 1688 was found, on gob.pe), and Leyes 32545-32557, 32559, 32732 and 32740-32742 (absent from El Peruano's search site and from the Congreso's ADLP; the other numbers missing there are Resoluciones Legislativas). None of them is named in Editora Perú's notes to the Code up to 2 July 2026; those after that date cannot be checked against a consolidation.",
   "Código Penal: El Peruano's fe de erratas notices found within 60 days of the norms: Decreto Legislativo 1351 (10 January 2017, corrects art. 320: applied as its own commit), Ley 30424 (3 May 2016, art. 12 of that law), Decreto Legislativo 1513 (16 June 2020, its arts. 2 and 15), Ley 31673 (28 January 2023, its title and operative sentence only), Decreto Legislativo 1592 (22 December 2023, art. 4 of Decreto Legislativo 1241) and Ley 32195 (19 December 2024, a law not yet in force); only the first changes the Code's wording."
  ],
  "ai_use": [
@@ -1120,7 +1127,7 @@
    "op": "2191763-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/1b-Lh0XY44Z80sW6epUvdz/*/2191763-3.pdf",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*31806",
-   "check_vigencia": true
+   "pending": "its Primera Disposición Complementaria Final puts it in force 120 days after the decreto supremo approving its reglamento is published in El Peruano; that decreto supremo was not found (El Peruano search site, decretos supremos June 2023 - December 2024), so the day cannot be sourced and its change to art. 243-C is left out. Editora Perú prints the change as in force from at least September 2024."
   },
   {
    "key": "ley-31823",
@@ -1438,7 +1445,7 @@
    "op": "2354079-4",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/Arjj7degakYAQOKzLDi6kh/*/2354079-4.PDF",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*32195",
-   "pending": "Quinta Disposición Complementaria Final: the law takes effect the day after its reglamento is published; Editora Perú (2 July 2026) still marks its changes to arts. 296-A and 299 as not yet in force, and no reglamento was found in El Peruano to 28 October 2026."
+   "pending": "its Quinta Disposición Complementaria Final puts it in force the day after its reglamento is published; Editora Perú (2 July 2026) still marks its changes to arts. 296-A and 299 as not yet in force, and no reglamento was found on El Peruano's search site (decretos supremos January 2025 - October 2026)."
   },
   {
    "key": "ley-32250",
@@ -1494,7 +1501,7 @@
    "op": "2398238-3",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/5_XWW38iKL08qbECFL1c8Z/*/2398238-3.PDF",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*32329",
-   "check_vigencia": true
+   "pending": "its Segunda Disposición Complementaria Final puts it in force the day after its reglamento is published; no such reglamento was found (El Peruano search site, decretos supremos January 2025 - October 2026), so arts. 271-A and 272-A are left out. Editora Perú prints them, without a note on their start."
   },
   {
    "key": "ley-32330",

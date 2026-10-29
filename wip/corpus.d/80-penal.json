@@ -737,17 +737,6 @@
    "restores": null,
    "note": null
   },
-  "ley-31806": {
-   "label": "Ley 31806",
-   "title": "Ley que modifica la Ley 31557, Ley que regula la explotación de los juegos a distancia y apuestas deportivas a distancia, para precisar conceptos y sus alcances",
-   "kind": "law",
-   "enacted": null,
-   "published": "2023-06-28",
-   "url": "https://busquedas.elperuano.pe/api/archivo/file/1b-Lh0XY44Z80sW6epUvdz/*/2191763-3.pdf",
-   "temporary_until": null,
-   "restores": null,
-   "note": null
-  },
   "ley-31823": {
    "label": "Ley 31823",
    "title": "Ley que modifica el artículo 190 del Código Penal, promulgado por el Decreto Legislativo 635, para sancionar en materia de seguridad social",
@@ -920,17 +909,6 @@
    "enacted": null,
    "published": "2025-04-29",
    "url": "https://busquedas.elperuano.pe/api/archivo/file/3tszwuEKaEu9ryFVgi0dGQ/*/2394851-2.PDF",
-   "temporary_until": null,
-   "restores": null,
-   "note": null
-  },
-  "ley-32329": {
-   "label": "Ley 32329",
-   "title": "Ley que autoriza la fabricación y la comercialización de uniformes de la Policía Nacional del Perú a proveedores registrados",
-   "kind": "law",
-   "enacted": null,
-   "published": "2025-05-10",
-   "url": "https://busquedas.elperuano.pe/api/archivo/file/5_XWW38iKL08qbECFL1c8Z/*/2398238-3.PDF",
    "temporary_until": null,
    "restores": null,
    "note": null
@@ -5996,24 +5974,6 @@
      "note": "Wording of Ley 31787 from its El Peruano text (https://busquedas.elperuano.pe/api/archivo/file/3b0y2nqkaMoB6Qe_lkP88H/*/2187001-1.pdf)."
     },
     {
-     "from": "2023-06-29",
-     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/1b-Lh0XY44Z80sW6epUvdz/*/2191763-3.pdf",
-     "sha256": "2fdaea66ce0afc5b58703b042b1db6faf79916e62816376160abe669c3fb1ba3",
-     "changes": {
-      "art-243-c": {
-       "label": "Art. 243-C",
-       "kind": "art",
-       "text": "Artículo 243-C.- Funcionamiento ilegal de juegos de casino y máquinas tragamonedas o juegos o apuestas deportivas a distancia\nEl que organiza, conduce o explota juegos de casino y máquinas tragamonedas, o juegos o apuestas deportivas a distancia sin haber cumplido con los requisitos que exigen las leyes y sus reglamentos para su organización, conducción o explotación, será reprimido con pena privativa de la libertad no menor de uno ni mayor de cuatro años, con trescientos sesenta y cinco días multa e inhabilitación para ejercer dicha actividad, de conformidad con el inciso 4) del artículo 36 del Código Penal.\n"
-      }
-     },
-     "credits": {
-      "art-243-c": [
-       "ley-31806"
-      ]
-     },
-     "note": "Wording of Ley 31806 from its El Peruano text (https://busquedas.elperuano.pe/api/archivo/file/1b-Lh0XY44Z80sW6epUvdz/*/2191763-3.pdf)."
-    },
-    {
      "from": "2023-07-09",
      "source_url": "https://busquedas.elperuano.pe/api/archivo/file/4dsyuWT8K-VA9r4WnW-A6r/*/2194316-2.pdf",
      "sha256": "5a0216579d5089e938133a48d5f723edd6e71ca26fd4ad54cd1080772c09f9f0",
@@ -6826,32 +6786,6 @@
     },
     {
      "from": "2025-05-11",
-     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/5_XWW38iKL08qbECFL1c8Z/*/2398238-3.PDF",
-     "sha256": "705a3c43adaecc58265a7a51653259c682f97bc8965d696577e258093f038003",
-     "changes": {
-      "art-271-a": {
-       "label": "Art. 271-A",
-       "kind": "art",
-       "text": "Fabricación clandestina de uniformes de la Policía Nacional del Perú o de las Fuerzas Armadas\nArtículo 271-A.\nSerá reprimido con pena privativa de libertad no menor de cuatro ni mayor de seis años, con el decomiso total, el que confecciona sin autorización uniformes de la Policía Nacional del Perú o de las Fuerzas Armadas.\n"
-      },
-      "art-272-a": {
-       "label": "Art. 272-A",
-       "kind": "art",
-       "text": "Comercio clandestino de uniformes de la Policía Nacional del Perú o de las Fuerzas Armadas\nArtículo 272-A.\nSerá reprimido con pena privativa de libertad no menor de cuatro ni mayor de seis años, con el decomiso total, el que:\na) Distribuye o comercializa, sin autorización, uniformes de la Policía Nacional del Perú o de las Fuerzas Armadas.\nb) Comercializa uniformes de la Policía Nacional del Perú o de las Fuerzas Armadas a personal policial o de la fuerza armada que no se encuentre debidamente identificado con el carné de identidad personal y la placa insignia correspondiente.\nc) Vende el uniforme de la Policía Nacional del Perú o de las Fuerzas Armadas a personas ajenas a dichas instituciones.\n"
-      }
-     },
-     "credits": {
-      "art-271-a": [
-       "ley-32329"
-      ],
-      "art-272-a": [
-       "ley-32329"
-      ]
-     },
-     "note": "Wording of Ley 32329 from its El Peruano text (https://busquedas.elperuano.pe/api/archivo/file/5_XWW38iKL08qbECFL1c8Z/*/2398238-3.PDF)."
-    },
-    {
-     "from": "2025-05-11",
      "source_url": "https://busquedas.elperuano.pe/api/archivo/file/A0R2x3XYK2y8Y16umTCTkh/*/2398238-4.PDF",
      "sha256": "4a4957a4c0b4527055e856260b9ce13380a335d1d3e75ef6fa05faa7732ca8e1",
      "changes": {
@@ -6874,8 +6808,7 @@
        "ley-32330"
       ]
      },
-     "note": "Wording of Ley 32330 from its El Peruano text (https://busquedas.elperuano.pe/api/archivo/file/A0R2x3XYK2y8Y16umTCTkh/*/2398238-4.PDF).",
-     "same_day": true
+     "note": "Wording of Ley 32330 from its El Peruano text (https://busquedas.elperuano.pe/api/archivo/file/A0R2x3XYK2y8Y16umTCTkh/*/2398238-4.PDF)."
     },
     {
      "from": "2025-05-13",
@@ -7353,7 +7286,8 @@
   "Código Penal: paragraphs follow the sources' layout (El Peruano sets each norm in two columns; the 2016 edition in one); a few paragraph breaks may differ from the printed page, never the words.",
   "Código Penal: units are articles (art-NNN, art-NNN-a; art. 129-Ñ is art-129-nn), the Título Preliminar (tp-NN) and the Disposiciones finales y transitorias (dft-NN). Structure headings (libros, títulos, capítulos) are not tracked. Articles the 2016 edition prints only as \"DEROGADO\" or \"Reubicado y reformado\" are left out; a repealed numeral the edition prints as \"4. DEROGADO.\" is kept as printed.",
   "Código Penal: Ley 31146 (2021) renumbers 17 articles \"sin alterar la literalidad\" (arts. 153 to 153-J, 168-B, 179-A, 181-A, 182-A, 183-A and 318-A become arts. 129-A to 129-P); each is committed as the old article removed and the new one added with its old body under the heading the law quotes.",
-  "Código Penal: not read, because no text with a text layer was found: decretos legislativos 1272, 1510-1512, 1660, 1681-1687 and 1689-1693 (absent from El Peruano's search site; only 1688 was found, on gob.pe), and Leyes 32545-32557, 32559, 32569, 32591, 32627, 32644, 32669, 32672, 32714, 32726-32728, 32732, 32733 and 32740-32742 (absent from El Peruano's search site and from the Congreso's ADLP). None of them is named in Editora Perú's notes to the Code up to 2 July 2026; the eleven laws after that date cannot be checked against a consolidation.",
+  "Código Penal: not read, because no text was found: decretos legislativos 1272, 1510-1512, 1660, 1681-1687 and 1689-1693 (absent from El Peruano's search site; only 1688 was found, on gob.pe), and Leyes 32545-32557, 32559, 32732 and 32740-32742 (absent from El Peruano's search site and from the Congreso's ADLP; the other numbers missing there are Resoluciones Legislativas). None of them is named in Editora Perú's notes to the Code up to 2 July 2026; those after that date cannot be checked against a consolidation.",
+  "Código Penal: El Peruano's fe de erratas notices found within 60 days of the norms: Decreto Legislativo 1351 (10 January 2017, corrects art. 320: applied as its own commit), Ley 30424 (3 May 2016, art. 12 of that law), Decreto Legislativo 1513 (16 June 2020, its arts. 2 and 15), Ley 31673 (28 January 2023, its title and operative sentence only), Decreto Legislativo 1592 (22 December 2023, art. 4 of Decreto Legislativo 1241) and Ley 32195 (19 December 2024, a law not yet in force); only the first changes the Code's wording.",
   "Código Penal: The edition prints art. 401-C, added by Ley 30424 (published 21 April 2016), whose own Primera Disposición Complementaria Final put it in force on 1 July 2017, moved to 1 January 2018 by Decreto Legislativo 1352; the article is absent before that day and arrives on 1 January 2018 credited to Ley 30424.",
   "Código Penal checkpoints: Editora Perú updates its consolidation on the day a norm is published; the rebuilt text is compared on the day after the consolidation date, when norms published that day take effect.",
   "Código Penal: Decreto Legislativo 1351: art. 105: the new numeral 5 goes after numeral 4 and its closing sentence \"La prohibición podrá tener carácter temporal ...\", which belongs to numeral 4 (the order Editora Perú prints).",
@@ -7372,10 +7306,12 @@
   "Código Penal: Ley 31333: art. 121: the law quotes the first paragraph, the four numerals and, after \"[...]\", a new numeral 5 and the closing paragraph; its El Peruano setting runs \"Se consideran lesiones graves:\" into the first paragraph and \"Cuando la víctima muere ...\" into numeral 4, so the article is composed by hand from the quoted paragraphs and the unquoted agravantes 1-4 as they stood.",
   "Código Penal: Ley 31673: its sole article rewrites art. 308-B \"de la Ley 31622\" (the wording Ley 31622 gave the Code) without naming the Code; the quoted article is applied to the Code, as Editora Perú does.",
   "Código Penal: Ley 31673: a fe de erratas published in El Peruano on 28 January 2023 (https://busquedas.elperuano.pe/api/archivo/file/FoO5zYnJKpLARF5rwEkxzn/*/2146924-1.pdf) corrects the title and sole article to read \"Modificación del artículo 308-B del Código Penal\"; it changes no wording of the Code.",
+  "Código Penal: Ley 31806 is not applied: its Primera Disposición Complementaria Final puts it in force 120 days after the decreto supremo approving its reglamento is published in El Peruano; that decreto supremo was not found (El Peruano search site, decretos supremos June 2023 - December 2024), so the day cannot be sourced and its change to art. 243-C is left out. Editora Perú prints the change as in force from at least September 2024.",
   "Código Penal: Decreto Legislativo 1649: art. 217: the decree closes its quote after the new literal e, before the article's last paragraph (\"La pena será no menor de cuatro años ...\"), which it prints unchanged after the quote; that paragraph is kept.",
   "Código Penal: Decreto Legislativo 1688: El Peruano's search site holds no issue of 2 October 2024; the text is El Peruano's own Edición Extraordinaria pages of that day (file Normas_Legales_20241002_EXTRAORDINARIA), as uploaded by the Ministerio de Transportes y Comunicaciones to gob.pe.",
   "Código Penal: Ley 32180: its Única Disposición Complementaria Derogatoria repeals numeral 7 of the first paragraph of art. 189; that numeral is removed (the numbering is not changed).",
-  "Código Penal: Ley 32195 is not applied: Quinta Disposición Complementaria Final: the law takes effect the day after its reglamento is published; Editora Perú (2 July 2026) still marks its changes to arts. 296-A and 299 as not yet in force, and no reglamento was found in El Peruano to 28 October 2026.",
+  "Código Penal: Ley 32195 is not applied: its Quinta Disposición Complementaria Final puts it in force the day after its reglamento is published; Editora Perú (2 July 2026) still marks its changes to arts. 296-A and 299 as not yet in force, and no reglamento was found on El Peruano's search site (decretos supremos January 2025 - October 2026).",
+  "Código Penal: Ley 32329 is not applied: its Segunda Disposición Complementaria Final puts it in force the day after its reglamento is published; no such reglamento was found (El Peruano search site, decretos supremos January 2025 - October 2026), so arts. 271-A and 272-A are left out. Editora Perú prints them, without a note on their start.",
   "Código Penal: Ley 32523: El Peruano's search site holds no issue of 11 December 2025, so the text is the Congress's ADLP transcription of the law as published in El Peruano (\"PUBLICADA EL 11 DE DICIEMBRE DE 2025 EN EL DIARIO OFICIAL EL PERUANO\").",
   "Código Penal checkpoint nla-2023-01: the rebuilt text on 2023-02-01 compared word for word with Editora Perú's Normas Legales Actualizadas (Internet Archive capture 20230526034932): 30 differences, each explained below.",
   "Código Penal checkpoint nla-2023-01, art-401-c (extra): Editora Perú does not print art. 401-C, added by Ley 30424 (in force 1 January 2018); no norm repealing it was found in El Peruano, so the article is kept.",
@@ -7408,7 +7344,7 @@
   "Código Penal checkpoint nla-2023-01, art-389 (body): spacing only: Editora Perú prints \"diezunidades\"; the law reads \"diez unidades\".",
   "Código Penal checkpoint nla-2023-01, art-391 (spelling): spelling: the 2016 official edition reads \"rehúsa\", Editora Perú \"rehusa\".",
   "Código Penal checkpoint nla-2023-01, art-417 (spelling): accent: the 2016 official edition reads \"por si mismo\", Editora Perú \"por sí mismo\".",
-  "Código Penal checkpoint nla-2024-09: the rebuilt text on 2024-09-14 compared word for word with Editora Perú's Normas Legales Actualizadas (Internet Archive capture 20241003020736): 33 differences, each explained below.",
+  "Código Penal checkpoint nla-2024-09: the rebuilt text on 2024-09-14 compared word for word with Editora Perú's Normas Legales Actualizadas (Internet Archive capture 20241003020736): 34 differences, each explained below.",
   "Código Penal checkpoint nla-2024-09, art-401-c (extra): Editora Perú does not print art. 401-C, added by Ley 30424 (in force 1 January 2018); no norm repealing it was found in El Peruano, so the article is kept.",
   "Código Penal checkpoint nla-2024-09, art-029-a (body): Decreto Legislativo 1514 reads \"se cumple\", \"está sujeta\" and \"todas aquellas que considere necesarias\"; Editora Perú prints \"se cumplé\", \"esta sujeta\" and \"todas aquellas reglas que\". The decree's wording is kept.",
   "Código Penal checkpoint nla-2024-09, art-035 (body): the 2016 official edition reads \"La pena de limitación días libres\"; Editora Perú reads \"limitación de días libres\". The edition's wording is kept (no later law amends art. 35).",
@@ -7433,6 +7369,7 @@
   "Código Penal checkpoint nla-2024-09, art-227 (sumilla): sumilla: Ley 31204 gives the new sumilla \"Inducción a la comisión de atentados contra sitios arqueológicos, así como zonas paleontológicas ...\"; Editora Perú prints it and also keeps the old one (\"Inducción a la comisión de atentados contra yacimientos arqueológicos\").",
   "Código Penal checkpoint nla-2024-09, art-232 (body): hyphen only: the law reads \"días-multa\"; Editora Perú's text layer reads \"díasmulta\".",
   "Código Penal checkpoint nla-2024-09, art-242 (body): the 2016 official edition reads \"deliberamente\" (a misprint kept as printed); Editora Perú reads \"deliberadamente\".",
+  "Código Penal checkpoint nla-2024-09, art-243-c (body): Ley 31806's rewording of art. 243-C is not applied: its in-force day depends on a reglamento decree that was not found (see the law's entry); Editora Perú prints the new wording.",
   "Código Penal checkpoint nla-2024-09, art-283 (body): hyphen only: the decree reads \"días-multa\"; Editora Perú's text layer reads \"díasmulta\".",
   "Código Penal checkpoint nla-2024-09, art-296 (body): spacing only: Editora Perú's text layer splits \"tráfi co\" at a ligature.",
   "Código Penal checkpoint nla-2024-09, art-301 (body): Decreto Legislativo 1351's quoted text reads \"sesenticinco\"; Editora Perú reads \"sesenta y cinco\". The decree's wording is kept.",
@@ -7442,9 +7379,11 @@
   "Código Penal checkpoint nla-2024-09, art-389 (body): spacing only: Editora Perú prints \"diezunidades\"; the law reads \"diez unidades\".",
   "Código Penal checkpoint nla-2024-09, art-391 (spelling): spelling: the 2016 official edition reads \"rehúsa\", Editora Perú \"rehusa\".",
   "Código Penal checkpoint nla-2024-09, art-417 (spelling): accent: the 2016 official edition reads \"por si mismo\", Editora Perú \"por sí mismo\".",
-  "Código Penal checkpoint nla-2026-01: the rebuilt text on 2026-01-21 compared word for word with Editora Perú's Normas Legales Actualizadas (Internet Archive capture 20260204054040): 37 differences, each explained below.",
+  "Código Penal checkpoint nla-2026-01: the rebuilt text on 2026-01-21 compared word for word with Editora Perú's Normas Legales Actualizadas (Internet Archive capture 20260204054040): 41 differences, each explained below.",
   "Código Penal checkpoint nla-2026-01, art-401-c (extra): Editora Perú does not print art. 401-C, added by Ley 30424 (in force 1 January 2018); no norm repealing it was found in El Peruano, so the article is kept.",
   "Código Penal checkpoint nla-2026-01, art-425-a (extra): Editora Perú's January 2026 text leaves out art. 425-A, added by Ley 31501 (2022), which its 2023, 2024 and July 2026 texts print; no repeal was found, so the article is kept.",
+  "Código Penal checkpoint nla-2026-01, art-271-a (missing): Ley 32329 (art. 271-A) is not applied: it takes effect the day after its reglamento, which was not found (see the law's entry); Editora Perú prints the article.",
+  "Código Penal checkpoint nla-2026-01, art-272-a (missing): Ley 32329 (art. 272-A) is not applied: it takes effect the day after its reglamento, which was not found (see the law's entry); Editora Perú prints the article.",
   "Código Penal checkpoint nla-2026-01, art-029-a (body): Decreto Legislativo 1514 reads \"se cumple\", \"está sujeta\" and \"todas aquellas que considere necesarias\"; Editora Perú prints \"se cumplé\", \"esta sujeta\" and \"todas aquellas reglas que\". The decree's wording is kept.",
   "Código Penal checkpoint nla-2026-01, art-030-a (body): spacing only: Editora Perú's text layer splits \"tipifi cados\" at a ligature; the law reads \"tipificados\".",
   "Código Penal checkpoint nla-2026-01, art-035 (body): the 2016 official edition reads \"La pena de limitación días libres\"; Editora Perú reads \"limitación de días libres\". The edition's wording is kept (no later law amends art. 35).",
@@ -7469,6 +7408,8 @@
   "Código Penal checkpoint nla-2026-01, art-227 (sumilla): sumilla: Ley 31204 gives the new sumilla \"Inducción a la comisión de atentados contra sitios arqueológicos, así como zonas paleontológicas ...\"; Editora Perú prints it and also keeps the old one (\"Inducción a la comisión de atentados contra yacimientos arqueológicos\").",
   "Código Penal checkpoint nla-2026-01, art-232 (body): hyphen only: the law reads \"días-multa\"; Editora Perú's text layer reads \"díasmulta\".",
   "Código Penal checkpoint nla-2026-01, art-242 (body): the 2016 official edition reads \"deliberamente\" (a misprint kept as printed); Editora Perú reads \"deliberadamente\".",
+  "Código Penal checkpoint nla-2026-01, art-243-c (body): Ley 31806's rewording of art. 243-C is not applied: its in-force day depends on a reglamento decree that was not found (see the law's entry); Editora Perú prints the new wording.",
+  "Código Penal checkpoint nla-2026-01, art-243-c (sumilla): Ley 31806's rewording of art. 243-C is not applied: its in-force day depends on a reglamento decree that was not found (see the law's entry); Editora Perú prints the new wording.",
   "Código Penal checkpoint nla-2026-01, art-283 (body): hyphen only: the decree reads \"días-multa\"; Editora Perú's text layer reads \"díasmulta\".",
   "Código Penal checkpoint nla-2026-01, art-288-b (body): Editora Perú misprints \"menores de 4dad\"; Ley 31182 reads \"menores de edad\".",
   "Código Penal checkpoint nla-2026-01, art-296 (body): spacing only: Editora Perú's text layer splits \"tráfi co\" at a ligature.",
@@ -7480,8 +7421,10 @@
   "Código Penal checkpoint nla-2026-01, art-389 (body): spacing only: Editora Perú prints \"diezunidades\"; the law reads \"diez unidades\".",
   "Código Penal checkpoint nla-2026-01, art-391 (spelling): spelling: the 2016 official edition reads \"rehúsa\", Editora Perú \"rehusa\".",
   "Código Penal checkpoint nla-2026-01, art-417 (spelling): accent: the 2016 official edition reads \"por si mismo\", Editora Perú \"por sí mismo\".",
-  "Código Penal checkpoint nla-2026-07: the rebuilt text on 2026-07-03 compared word for word with Editora Perú's Normas Legales Actualizadas (Internet Archive capture 20260816050810): 37 differences, each explained below.",
+  "Código Penal checkpoint nla-2026-07: the rebuilt text on 2026-07-03 compared word for word with Editora Perú's Normas Legales Actualizadas (Internet Archive capture 20260816050810): 41 differences, each explained below.",
   "Código Penal checkpoint nla-2026-07, art-401-c (extra): Editora Perú does not print art. 401-C, added by Ley 30424 (in force 1 January 2018); no norm repealing it was found in El Peruano, so the article is kept.",
+  "Código Penal checkpoint nla-2026-07, art-271-a (missing): Ley 32329 (art. 271-A) is not applied: it takes effect the day after its reglamento, which was not found (see the law's entry); Editora Perú prints the article.",
+  "Código Penal checkpoint nla-2026-07, art-272-a (missing): Ley 32329 (art. 272-A) is not applied: it takes effect the day after its reglamento, which was not found (see the law's entry); Editora Perú prints the article.",
   "Código Penal checkpoint nla-2026-07, art-029-a (body): Decreto Legislativo 1514 reads \"se cumple\", \"está sujeta\" and \"todas aquellas que considere necesarias\"; Editora Perú prints \"se cumplé\", \"esta sujeta\" and \"todas aquellas reglas que\". The decree's wording is kept.",
   "Código Penal checkpoint nla-2026-07, art-030-a (body): spacing only: Editora Perú's text layer splits \"tipifi cados\" at a ligature; the law reads \"tipificados\".",
   "Código Penal checkpoint nla-2026-07, art-035 (body): the 2016 official edition reads \"La pena de limitación días libres\"; Editora Perú reads \"limitación de días libres\". The edition's wording is kept (no later law amends art. 35).",
@@ -7506,6 +7449,8 @@
   "Código Penal checkpoint nla-2026-07, art-227 (sumilla): sumilla: Ley 31204 gives the new sumilla \"Inducción a la comisión de atentados contra sitios arqueológicos, así como zonas paleontológicas ...\"; Editora Perú prints it and also keeps the old one (\"Inducción a la comisión de atentados contra yacimientos arqueológicos\").",
   "Código Penal checkpoint nla-2026-07, art-232 (body): hyphen only: the law reads \"días-multa\"; Editora Perú's text layer reads \"díasmulta\".",
   "Código Penal checkpoint nla-2026-07, art-242 (body): the 2016 official edition reads \"deliberamente\" (a misprint kept as printed); Editora Perú reads \"deliberadamente\".",
+  "Código Penal checkpoint nla-2026-07, art-243-c (body): Ley 31806's rewording of art. 243-C is not applied: its in-force day depends on a reglamento decree that was not found (see the law's entry); Editora Perú prints the new wording.",
+  "Código Penal checkpoint nla-2026-07, art-243-c (sumilla): Ley 31806's rewording of art. 243-C is not applied: its in-force day depends on a reglamento decree that was not found (see the law's entry); Editora Perú prints the new wording.",
   "Código Penal checkpoint nla-2026-07, art-283 (body): hyphen only: the decree reads \"días-multa\"; Editora Perú's text layer reads \"díasmulta\".",
   "Código Penal checkpoint nla-2026-07, art-288-b (body): Editora Perú misprints \"menores de 4dad\"; Ley 31182 reads \"menores de edad\".",
   "Código Penal checkpoint nla-2026-07, art-296 (body): spacing only: Editora Perú's text layer splits \"tráfi co\" at a ligature.",
