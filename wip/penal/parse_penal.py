@@ -170,6 +170,9 @@ def main():
         if until and law['in_force'] > until:
             cps = [c for c in cps if c['date'] <= until]
             break
+        if law.get('pending'):          # not in force on the docs date (e.g. waits for a reglamento)
+            log.append(f'{law["key"]}: NOT APPLIED: {law["pending"]}')
+            continue
         for c in cps:
             if c['id'] not in results and prev_day <= c['date'] < law['in_force']:
                 results[c['id']] = checkpoint(state, c['capture'])

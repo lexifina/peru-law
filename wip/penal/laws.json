@@ -182,18 +182,6 @@
    "check_vigencia": true
   },
   {
-   "key": "ley-30822",
-   "label": "Ley 30822",
-   "title": "Ley que modifica la Ley 26702, Ley General del Sistema Financiero y del Sistema de Seguros y Orgánica de la Superintendencia de Banca y Seguros, y otras normas concordantes, respecto de la regulación y supervisión de las cooperativas de ahorro y crédito",
-   "kind": "law",
-   "published": "2018-07-19",
-   "in_force": "2018-07-20",
-   "op": "1671756-1",
-   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/E8dATbbsa46B34MYgY03kT/*/1671756-1.pdf",
-   "heading": "ley\\s*n?\\s*[°º.]?\\s*30822",
-   "check_vigencia": true
-  },
-  {
    "key": "dleg-1367",
    "label": "Decreto Legislativo 1367",
    "title": "Decreto Legislativo que amplía los alcances de los Decretos Legislativos 1243 y 1295",
@@ -242,18 +230,6 @@
    "check_vigencia": true
   },
   {
-   "key": "dleg-1393",
-   "label": "Decreto Legislativo 1393",
-   "title": "Decreto Legislativo que regula la interdicción en las actividades ilegales en pesca",
-   "kind": "decree",
-   "published": "2018-09-06",
-   "in_force": "2018-09-07",
-   "op": "1688406-2",
-   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/ABkgIEm44jRBVUPMUr9XR7/*/1688406-2.pdf",
-   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1393",
-   "check_vigencia": true
-  },
-  {
    "key": "dleg-1410",
    "label": "Decreto Legislativo 1410",
    "title": "Decreto Legislativo que incorpora el delito de acoso, acoso sexual, chantaje sexual y difusión de imágenes, materiales audiovisuales o audios con contenido sexual al Código Penal, y modifica el procedimiento de sanción del hostigamiento sexual",
@@ -276,6 +252,18 @@
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/1t7HW4ikKT3AB1aNmnNu8e/*/1692078-28.pdf",
    "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1453",
    "check_vigencia": true
+  },
+  {
+   "key": "dleg-1393",
+   "label": "Decreto Legislativo 1393",
+   "title": "Decreto Legislativo que regula la interdicción en las actividades ilegales en pesca",
+   "kind": "decree",
+   "published": "2018-09-06",
+   "in_force": "2018-10-06",
+   "op": "1688406-2",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/ABkgIEm44jRBVUPMUr9XR7/*/1688406-2.pdf",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1393",
+   "vigencia": "Primera Disposición Complementaria Final: in force thirty calendar days from publication (6 September 2018 + 30 days)."
   },
   {
    "key": "ley-30862",
@@ -312,6 +300,18 @@
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/EazrzpUu4Ho9LmGqQo4KgK/*/1727308-1.pdf",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*30901",
    "check_vigencia": true
+  },
+  {
+   "key": "ley-30822",
+   "label": "Ley 30822",
+   "title": "Ley que modifica la Ley 26702, Ley General del Sistema Financiero y del Sistema de Seguros y Orgánica de la Superintendencia de Banca y Seguros, y otras normas concordantes, respecto de la regulación y supervisión de las cooperativas de ahorro y crédito",
+   "kind": "law",
+   "published": "2018-07-19",
+   "in_force": "2019-01-01",
+   "op": "1671756-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/E8dATbbsa46B34MYgY03kT/*/1671756-1.pdf",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*30822",
+   "vigencia": "Décima Tercera Disposición Complementaria Final: in force 1 January 2019, except arts. 7 and 8 and DCF 3, 4 and 7; its change to the Code (art. 13) is not excepted."
   },
   {
    "key": "ley-30924",
@@ -716,7 +716,7 @@
    "op": "2354079-4",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/Arjj7degakYAQOKzLDi6kh/*/2354079-4.PDF",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*32195",
-   "check_vigencia": true
+   "pending": "Quinta Disposición Complementaria Final: the law takes effect the day after its reglamento is published; Editora Perú (2 July 2026) still marks its changes to arts. 296-A and 299 as not yet in force, and no reglamento was found in El Peruano to 28 October 2026."
   },
   {
    "key": "ley-32250",

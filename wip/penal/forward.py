@@ -81,12 +81,30 @@ def provisions(paras: list[str]) -> list[dict]:
                 inq = False
             continue
         if PROV.match(s):
+            # some laws print the new articles without quote marks: an "Artículo N" the operative sentence
+            # announces for the Code is quoted text, not the law's own next article
+            m = QHEAD.match(s)
+            if cur is not None and m and CP.search(' '.join(cur['intro'])):
+                nums = numbers_before_cp(' '.join(cur['intro']))
+                if nums and art_key(m.group(1), m.group(2)) in nums and \
+                        art_key(m.group(1), m.group(2)) != _own_key(cur['head']):
+                    cur['quotes'].append([s])
+                    cur['unquoted'] = True
+                    continue
             cur = {'head': s, 'intro': [s], 'quotes': []}
             out.append(cur)
             continue
         if cur is not None:
-            cur['intro'].append(s)
+            if cur.get('unquoted'):
+                cur['quotes'][-1].append(s)
+            else:
+                cur['intro'].append(s)
     return out
+
+
+def _own_key(head: str):
+    m = QHEAD.match(head)
+    return art_key(m.group(1), m.group(2)) if m else None
 
 
 def split_articles(block: list[str]) -> list[tuple[str, list[str]]]:
@@ -97,7 +115,8 @@ def split_articles(block: list[str]) -> list[tuple[str, list[str]]]:
     i = 0
     while i < len(ps):
         if QHEAD.match(ps[i]) or (i + 1 < len(ps) and QHEAD.match(ps[i + 1]) and not label_of(ps[i])
-                                   and not ELL.match(ps[i]) and len(ps[i]) < 160):
+                                   and not ELL.match(ps[i]) and len(ps[i]) < 160
+                                   and not re.search(r'[.;:,]$', ps[i])):       # a sumilla has no full stop
             j = i if QHEAD.match(ps[i]) else i + 1
             m = QHEAD.match(ps[j])
             out.append((art_key(m.group(1), m.group(2)), ps[i:j + 1]))

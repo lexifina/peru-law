@@ -137,7 +137,20 @@ def erratas(fi: str, ff: str):
             fh.write(json.dumps(dict(it, range=[fi, ff]), ensure_ascii=False) + '\n')
 
 
+def cards(tipo: str, fi: str, ff: str):
+    """Discovery: every card of TIPO in [fi, ff] -> .tmp/cards.jsonl (no PDFs fetched); used to find reglamentos
+    that set a law's in-force day."""
+    out = HERE / '.tmp' / 'cards.jsonl'
+    total, items = all_items(fi, ff, tipo)
+    print(tipo, fi, ff, 'total', total, 'listed', len(items), flush=True)
+    with out.open('a', encoding='utf-8') as fh:
+        for it in items:
+            fh.write(json.dumps(dict(it, range=[fi, ff]), ensure_ascii=False) + '\n')
+
+
 if __name__ == '__main__':
+    if sys.argv[1] == 'cards':
+        cards(sys.argv[2], sys.argv[3], sys.argv[4])
     if sys.argv[1] == 'scan':
         scan(sys.argv[2], sys.argv[3], sys.argv[4])
     elif sys.argv[1] == 'erratas':
