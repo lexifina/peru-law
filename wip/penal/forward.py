@@ -169,7 +169,7 @@ def cp_quotes(paras: list[str]) -> tuple[list, list]:
                         notes.append(f'{pr["head"][:60]}: quoted {key} not named in the operative sentence')
                     else:
                         continue
-                res.append((key, ps, pr['head']))
+                res.append((key, ps, ' '.join(pr['intro'])))
     return res, notes
 
 
@@ -201,7 +201,29 @@ def _same_label(a, b):
         (a[0] == b[0] or {a[0], b[0]} <= {'lit', 'inc', 'num'} and not a[1].isdigit() == b[1].isdigit())
 
 
-def merge(cur: list[str], q: list[str]) -> tuple[list[str], list[str]]:
+ORDINALS = {'primer': 1, 'primero': 1, 'segundo': 2, 'tercer': 3, 'tercero': 3, 'cuarto': 4, 'quinto': 5,
+            'sexto': 6, 'séptimo': 7, 'sétimo': 7, 'octavo': 8, 'noveno': 9, 'décimo': 10}
+
+
+def paragraph_hint(intro: str, key: str) -> dict | None:
+    """What the operative sentence says about an unnumbered paragraph of the article: {'n': 1.. or 'last',
+    'add': bool}. "Modifícase el cuarto párrafo del artículo 296-A" -> {'n': 4, 'add': False}."""
+    num = key.split('-', 1)[1].lstrip('0').upper().replace('-NN', '-Ñ')
+    for m in re.finditer(r'(modif\w*|incorp\w*|sustitu\w*|agr[eé]g\w*|adici\w*)\b([^.;]{0,160}?)\b(?:(\w+)\s+)?'
+                         r'p[áa]rrafos?\b([^.;]{0,60}?)art[íi]culo\s+' + re.escape(num) + r'\b', intro, re.I):
+        word = (m.group(3) or '').lower()
+        before = m.group(2).lower()
+        n = 'last' if word in ('último', 'ultimo') else ORDINALS.get(word)
+        if n is None:
+            mm = re.search(r'\b(\w+)\s+p[áa]rrafo', before + ' ' + word + ' párrafo')
+            n = ORDINALS.get(mm.group(1).lower()) if mm else None
+        if re.search(r'n[uú]mer|literal|inciso', m.group(2) + (m.group(4) or ''), re.I):
+            continue                     # "el párrafo 3 del numeral 2": not an article paragraph
+        return {'n': n, 'add': m.group(1).lower().startswith(('incorp', 'agr', 'adic'))}
+    return None
+
+
+def merge(cur: list[str], q: list[str], hint: dict | None = None) -> tuple[list[str], list[str]]:
     """Apply a quote with ellipses to the current paragraphs. Returns (new paragraphs, warnings)."""
     warn = []
     runs: list[list[str]] = [[]]
@@ -211,6 +233,7 @@ def merge(cur: list[str], q: list[str]) -> tuple[list[str], list[str]]:
         else:
             runs[-1].append(p)
     out = list(cur)
+    adding = False
     # run 0: the heading (and whatever follows it before the first ellipsis)
     head = runs[0]
     hi = next((i for i, p in enumerate(out) if BHEAD.match(p)), 0)
@@ -256,20 +279,55 @@ def merge(cur: list[str], q: list[str]) -> tuple[list[str], list[str]]:
             if lab is None:
                 # an unlabelled paragraph: right after the heading it replaces the paragraph there; later, the
                 # next unlabelled one
-                if ri == 0 and pos < len(out) and label_of(out[pos]) is None:
+                if ri == 0 and pos == first_pos and pos < len(out) and label_of(out[pos]) is None:
                     out[pos] = p
                     pos += 1
                     continue
-                j = next((k for k in range(pos, len(out)) if label_of(out[k]) is None), None)
-                if j is None:
+                if hint and ri >= 1:
+                    # the operative sentence names the paragraph ("el cuarto párrafo", "un último párrafo")
+                    body = [k for k in range(hi + 1, len(out)) if label_of(out[k]) is None]
+                    n = hint['n']
+                    if hint['add']:
+                        if isinstance(n, int) and n - 1 < len(body):
+                            j = body[n - 1]
+                        else:
+                            j = len(out)
+                        out.insert(j, p)
+                        warn.append('paragraph added at %s (%s)' % (j, n))
+                    else:
+                        j = body[-1] if n == 'last' else (body[n - 1] if isinstance(n, int) and n - 1 < len(body)
+                                                           else None)
+                        if j is None:
+                            raise SystemExit('paragraph hint %s does not fit: %s' % (hint, p[:60]))
+                        warn.append('paragraph %s replaced: %s -> %s' % (n, out[j][:40], p[:40]))
+                        out[j] = p
+                    pos = j + 1
+                    adding = hint['add']
+                    hint = None
+                    continue
+                if adding:
+                    out.insert(pos, p)           # further added paragraphs follow the first
+                    pos += 1
+                    continue
+                # otherwise the unlabelled paragraph from here on that reads most like it (the wording a law
+                # amends stays largely the same); none alike: a new paragraph, placed here
+                cands = [k for k in range(pos, len(out)) if label_of(out[k]) is None]
+                best, j = 0.0, None
+                for k in cands:
+                    r = _alike(out[k], p)
+                    if r > best:
+                        best, j = r, k
+                if j is None or best < 0.5:
                     out.insert(pos, p)
-                    warn.append('unlabelled appended: ' + p[:50])
+                    warn.append('unlabelled inserted (best %.2f): %s' % (best, p[:50]))
                     pos += 1
                 else:
-                    warn.append('unlabelled replaced: ' + out[j][:40] + ' -> ' + p[:40])
+                    if out[j] != p:
+                        warn.append('unlabelled replaced (%.2f): %s -> %s' % (best, out[j][:40], p[:40]))
                     out[j] = p
                     pos = j + 1
                 continue
+            adding = False
             j = next((k for k in range(pos, len(out)) if _same_label(label_of(out[k]), lab)), None)
             if j is not None:
                 out[j] = p
@@ -291,6 +349,12 @@ def merge(cur: list[str], q: list[str]) -> tuple[list[str], list[str]]:
             warn.append('inserted %s at %d' % (lab, k))
             pos = k + 1
     return out, warn
+
+
+def _alike(a: str, b: str) -> float:
+    import difflib
+    wa, wb = re.findall(r'\w+', a.lower()), re.findall(r'\w+', b.lower())
+    return difflib.SequenceMatcher(None, wa, wb, autojunk=False).ratio()
 
 
 def _kind(lab):

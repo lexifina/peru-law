@@ -64,7 +64,7 @@ def apply_law(law: dict, state: dict, log: list[str]) -> dict:
         allq, _ = forward.cp_quotes(paras)
         byk = {}
         for k, ps, h in allq:
-            byk.setdefault(k, []).append(ps)
+            byk.setdefault(k, []).append((ps, h))
         ops = law['ops']
     else:
         allq, notes = forward.cp_quotes(paras)
@@ -80,14 +80,17 @@ def apply_law(law: dict, state: dict, log: list[str]) -> dict:
         cur = changes[key] if key in changes else state.get(key)
         if kind == 'quote':
             if byk is None:
-                ps = allq[op[2]][1]
+                ps, intro = allq[op[2]][1], allq[op[2]][2]
             else:
-                ps = byk[key][op[2] if len(op) > 2 else 0]
+                ps, intro = byk[key][op[2] if len(op) > 2 else 0]
             if any(forward.ELL.match(p) for p in ps):
                 if cur is None:
                     raise SystemExit(f'{law["key"]}: partial quote of {key}, which does not exist')
                 curp = [l for l in cur['text'].split('\n') if l]
-                new, warn = forward.merge(curp, [clean_par(p) for p in ps])
+                hint = forward.paragraph_hint(intro, key)
+                if hint:
+                    log.append(f'  {law["key"]} {key}: operative sentence: {hint}')
+                new, warn = forward.merge(curp, [clean_par(p) for p in ps], hint)
                 for w in warn:
                     log.append(f'  {law["key"]} {key}: {w}')
             else:
@@ -100,7 +103,7 @@ def apply_law(law: dict, state: dict, log: list[str]) -> dict:
             old = changes[key] if key in changes else state.get(key)
             if old is None:
                 raise SystemExit(f'{law["key"]}: move of missing {key}')
-            q = byk[new_key][0]
+            q = byk[new_key][0][0]
             head = []
             for p in q:
                 if forward.ELL.match(p):
