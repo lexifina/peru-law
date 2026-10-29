@@ -1352,6 +1352,18 @@
    "check_vigencia": true
   },
   {
+   "key": "ley-32331",
+   "label": "Ley 32331",
+   "title": "Ley que fortalece el derecho a la indemnidad sexual de los niños y los adolescentes",
+   "kind": "law",
+   "published": "2025-05-12",
+   "in_force": "2025-05-13",
+   "op": "2398669-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/274q4jXh4g_974CawB5KoH/*/2398669-1.PDF",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32331",
+   "check_vigencia": true
+  },
+  {
    "key": "ley-32336",
    "label": "Ley 32336",
    "title": "Ley que modifica el Código Penal, Decreto Legislativo 635, para incorporar el delito de captación de menores de edad para la comisión de delitos",
@@ -1397,6 +1409,114 @@
    "op": "2443471-1",
    "pdf": "https://busquedas.elperuano.pe/api/archivo/file/5ZL0oZwcKwf83PP1i2QeaA/*/2443471-1.PDF",
    "heading": "ley\\s*n?\\s*[°º.]?\\s*32451",
+   "check_vigencia": true
+  },
+  {
+   "key": "ley-32468",
+   "label": "Ley 32468",
+   "title": "Ley que modifica el Código Penal, Decreto Legislativo 635, para fortalecer la lucha contra los delitos de sicariato y de conspiración y ofrecimiento para el delito de sicariato",
+   "kind": "law",
+   "published": "2025-10-17",
+   "in_force": "2025-10-18",
+   "op": "2449682-2",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/BkoHDKQQ4aFAu_QXT0oZbn/*/2449682-2.PDF",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32468",
+   "check_vigencia": true
+  },
+  {
+   "key": "ley-32523",
+   "label": "Ley 32523",
+   "title": "Ley que modifica el Código Penal, Decreto Legislativo 635, para tipificar el delito de exposición al peligro por arrojo de residuos sólidos en cauces naturales",
+   "kind": "law",
+   "published": "2025-12-11",
+   "in_force": "2025-12-12",
+   "op": null,
+   "pdf": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32523-TXM.pdf",
+   "heading": "ley\\s*n?\\s*[°º.]?\\s*32523",
+   "source_note": "El Peruano's search site holds no issue of 11 December 2025, so the text is the Congress's ADLP transcription of the law as published in El Peruano (\"PUBLICADA EL 11 DE DICIEMBRE DE 2025 EN EL DIARIO OFICIAL EL PERUANO\")."
+  },
+  {
+   "key": "dleg-1695",
+   "label": "Decreto Legislativo 1695",
+   "title": "Decreto Legislativo que modifica el Código Penal, promulgado mediante Decreto Legislativo N° 635, para fortalecer las medidas destinadas a combatir el delito de minería ilegal",
+   "kind": "decree",
+   "published": "2026-01-20",
+   "in_force": "2026-01-21",
+   "op": "2478557-2",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/F7yjeuQ1KAn9JvmWa3nsw0/*/2478557-2.PDF",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1695",
+   "check_vigencia": true
+  },
+  {
+   "key": "dleg-1696",
+   "label": "Decreto Legislativo 1696",
+   "title": "Decreto Legislativo que modifica el Código Penal, promulgado mediante Decreto Legislativo N° 635, para fortalecer el principio de autoridad",
+   "kind": "decree",
+   "published": "2026-01-20",
+   "in_force": "2026-01-21",
+   "op": "2478557-3",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0rmdt3fGKoUAKIpYYv-Hxe/*/2478557-3.PDF",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1696",
+   "check_vigencia": true
+  },
+  {
+   "key": "dleg-1697",
+   "label": "Decreto Legislativo 1697",
+   "title": "Decreto Legislativo que modifica el artículo 279-G del Código Penal, aprobado mediante Decreto Legislativo N° 635, a fin de tipificar la tenencia ilegal compartida de armas de fuego, municiones, accesorios o materiales destinados para su fabricación o modificación",
+   "kind": "decree",
+   "published": "2026-01-20",
+   "in_force": "2026-01-21",
+   "op": "2478560-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/6p-LMOOFKPgAymq3HeZ1VW/*/2478560-1.PDF",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1697",
+   "check_vigencia": true
+  },
+  {
+   "key": "dleg-1731",
+   "label": "Decreto Legislativo 1731",
+   "title": "Decreto Legislativo que modifica el Código Penal, promulgado mediante Decreto Legislativo N° 635, incorporando el delito de exigencia o requerimiento extorsivo",
+   "kind": "decree",
+   "published": "2026-02-12",
+   "in_force": "2026-02-13",
+   "op": "2486266-5",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/6C-96HyX4PJAoHAXwIow5r/*/2486266-5.PDF",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1731",
+   "check_vigencia": true
+  },
+  {
+   "key": "dleg-1733",
+   "label": "Decreto Legislativo 1733",
+   "title": "Decreto Legislativo que incorpora el Artículo 280-A al Código Penal, aprobado por Decreto Legislativo Nº 635, para tipificar el delito de suministro ilegal de servicios de telecomunicaciones en establecimientos penitenciarios y centros juveniles, así como incorpora la Cuarta Disposición Complementaria Final al Decreto Legislativo Nº 1688, Decreto Legislativo que regula obligaciones y sanciones administrativas para las empresas operadoras de servicios públicos de telecomunicaciones en relación con las comunicaciones ilegales en establecimientos penitenciarios y centros juveniles",
+   "kind": "decree",
+   "published": "2026-02-12",
+   "in_force": "2026-02-13",
+   "op": "2486266-7",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/74oA1wJKKnwB17-hxd9N8C/*/2486266-7.PDF",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1733",
+   "check_vigencia": true
+  },
+  {
+   "key": "dleg-1736",
+   "label": "Decreto Legislativo 1736",
+   "title": "Decreto Legislativo que modifica el Decreto Legislativo N° 1343, Decreto Legislativo para la promoción e implementación de cárceles productivas, a fin de incorporar el Capítulo VIII que regula el trabajo asistido externo",
+   "kind": "decree",
+   "published": "2026-02-12",
+   "in_force": "2026-02-13",
+   "op": "2486266-10",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/CMWn5jFoaYjBZL024jFklA/*/2486266-10.PDF",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1736",
+   "check_vigencia": true
+  },
+  {
+   "key": "dleg-1739",
+   "label": "Decreto Legislativo 1739",
+   "title": "Decreto Legislativo que incorpora el Artículo 409-C al Código Penal, promulgado mediante Decreto Legislativo N° 635",
+   "kind": "decree",
+   "published": "2026-02-13",
+   "in_force": "2026-02-14",
+   "op": "2487222-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/0YwiXgLfKu-8JiOGxosFkE/*/2487222-1.PDF",
+   "heading": "decreto\\s+legislativo\\s*n?\\s*[°º.]?\\s*1739",
    "check_vigencia": true
   },
   {

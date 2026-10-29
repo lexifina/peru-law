@@ -108,6 +108,9 @@ def _join(a: str, b: str) -> str:
 def paragraphs(path, op: str, heading: str) -> list[str]:
     doc = fitz.open(str(path))
     ls = lines(doc)
+    if op is None:                       # a document holding one norm only (Congress's ADLP transcription)
+        ls.append((10 ** 6, 0, 0, 0, 0, '000000-0', 0, 0, ''))
+        op = '000000-0'
     end = next((i for i, l in enumerate(ls) if l[5].strip() == op), None)
     if end is None:
         raise SystemExit(f'{op}: operation number not found in {path}')
