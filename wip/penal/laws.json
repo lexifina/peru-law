@@ -210,6 +210,27 @@
    "hand": "art. 105: the new numeral 5 goes after numeral 4 and its closing sentence \"La prohibición podrá tener carácter temporal ...\", which belongs to numeral 4 (the order Editora Perú prints)."
   },
   {
+   "key": "dleg-1351-fe-erratas",
+   "label": "Fe de erratas del Decreto Legislativo 1351",
+   "title": "Fe de erratas del Decreto Legislativo N° 1351 (artículo 2: artículo 320 del Código Penal)",
+   "kind": "decree",
+   "published": "2017-01-10",
+   "in_force": "2017-01-10",
+   "op": "1472089-1",
+   "pdf": "https://busquedas.elperuano.pe/api/archivo/file/Eb-rvJLvaTUBa53N141XhK/*/1472089-1.pdf",
+   "heading": "fe\\s+de\\s+erratas",
+   "every_quote": true,
+   "ops": [
+    [
+     "quote",
+     "art-320",
+     1
+    ]
+   ],
+   "vigencia": "a fe de erratas corrects the published text; the corrected wording is dated from the day the correction was published in El Peruano.",
+   "hand": "the fe de erratas reprints art. 320 as published (\"DICE\") and as it should read (\"DEBE DECIR\"); the second is applied."
+  },
+  {
    "key": "ley-30556",
    "label": "Ley 30556",
    "title": "Ley que aprueba disposiciones de carácter extraordinario para las intervenciones del Gobierno Nacional frente a desastres y que dispone la creación de la Autoridad para la Reconstrucción con Cambios",
@@ -889,7 +910,8 @@
      0
     ]
    ],
-   "hand": "its sole article rewrites art. 308-B \"de la Ley 31622\" (the wording Ley 31622 gave the Code) without naming the Code; the quoted article is applied to the Code, as Editora Perú does."
+   "hand": "its sole article rewrites art. 308-B \"de la Ley 31622\" (the wording Ley 31622 gave the Code) without naming the Code; the quoted article is applied to the Code, as Editora Perú does.",
+   "source_note": "a fe de erratas published in El Peruano on 28 January 2023 (https://busquedas.elperuano.pe/api/archivo/file/FoO5zYnJKpLARF5rwEkxzn/*/2146924-1.pdf) corrects the title and sole article to read \"Modificación del artículo 308-B del Código Penal\"; it changes no wording of the Code."
   },
   {
    "key": "ley-31676",

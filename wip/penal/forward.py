@@ -76,7 +76,10 @@ def provisions(paras: list[str]) -> list[dict]:
             inq = False          # an unclosed quote: the law's next provision ends it
         if not inq and s[:1] in QOPEN:
             inq = True
-            cur['quotes'].append([]) if cur is not None else None
+            if cur is None:          # a text with no provisions of its own (a fe de erratas)
+                cur = {'head': '', 'intro': [], 'quotes': []}
+                out.append(cur)
+            cur['quotes'].append([])
         if inq:
             if cur is not None:
                 cur['quotes'][-1].append(s)
