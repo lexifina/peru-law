@@ -33,7 +33,7 @@ CP = re.compile(r'C[óo]digo\s+Penal', re.I)
 OTHER = re.compile(r'(?:Procesal|Procedimientos|Ejecuci[óo]n|Responsabilidad)\s+Penal|Penal\s+Militar|'
                    r'C[óo]digo\s+(?:Civil|Tributario|de\s+los\s+Niños|Procesal|de\s+Ejecuci)|\bLey\s+(?:N[°º.]?\s*)?\d{4,5}|'
                    r'Decreto\s+(?:Legislativo|Ley|Supremo)\s+(?:N[°º.]?\s*)?\d+', re.I)
-QHEAD = re.compile(r'^Art[íi]culo\s+(\d+|[IVX]+)\s*[°º]?\s*(?:-\s*([A-ZÑ])\b)?(?=\s*[.°º-]|\s*$)')
+QHEAD = re.compile(r'^Art[íi]culo\s+(\d+|[IVX]+)\s*[°º]?\s*(?:-\s*([A-ZÑ])\b)?(?=\s*[.°º:-]|\s*$)')
 ROMAN = {'I': 1, 'II': 2, 'III': 3, 'IV': 4, 'V': 5, 'VI': 6, 'VII': 7, 'VIII': 8, 'IX': 9, 'X': 10}
 
 
@@ -237,9 +237,28 @@ def paragraph_hint(intro: str, key: str) -> dict | None:
         verbs = re.findall(r'(modif\w*|incorp\w*|sustitu\w*|agr[eé]g\w*|adici\w*)', before, re.I)
         if not verbs:
             continue
+        last_verb = list(re.finditer(r'(modif\w*|incorp\w*|sustitu\w*|agr[eé]g\w*|adici\w*)', before, re.I))[-1]
+        if re.search(r'n[uú]meral|literal|inciso', before[last_verb.start():], re.I):
+            continue                     # "incorpórase los numerales 4, 5 y 6 al segundo párrafo": items, not a paragraph
         w1, w2 = (m.group(1) or '').lower(), (m.group(2) or '').lower()
         n = None
         for w in (w1, w2):
+            if w in ('último', 'ultimo'):
+                n = 'last'
+            elif w in ORDINALS:
+                n = ORDINALS[w]
+        return {'n': n, 'add': verbs[-1].lower().startswith(('incorp', 'agr', 'adic'))}
+    # "Se modifica el artículo 22 —incorporando un párrafo tercero— del Código Penal"
+    for m in re.finditer(r'art[íi]culo\s+' + re.escape(num) + r'\b([^.;]{0,40}?)(?:(\w+)\s+)?p[áa]rrafos?(?:\s+(\w+))?',
+                         intro, re.I):
+        if re.search(r'n[uú]mer|literal|inciso', m.group(1), re.I):
+            continue
+        around = intro[max(0, m.start() - 80):m.end()]
+        verbs = re.findall(r'(modif\w*|incorp\w*|sustitu\w*|agr[eé]g\w*|adici\w*)', around, re.I)
+        if not verbs:
+            continue
+        n = None
+        for w in ((m.group(2) or '').lower(), (m.group(3) or '').lower()):
             if w in ('último', 'ultimo'):
                 n = 'last'
             elif w in ORDINALS:
@@ -311,7 +330,13 @@ def merge(cur: list[str], q: list[str], hint: dict | None = None) -> tuple[list[
                     continue
                 if hint and ri >= 1:
                     # the operative sentence names the paragraph ("el cuarto párrafo", "un último párrafo")
-                    body = [k for k in range(hi + 1, len(out)) if label_of(out[k]) is None]
+                    # the article's paragraphs, not counting a sentence that continues a numbered item (an
+                    # unlabelled paragraph between two labelled ones)
+                    lab_at = [label_of(out[k]) is not None for k in range(len(out))]
+                    body = [k for k in range(hi + 1, len(out)) if not lab_at[k] and not (
+                        k > 0 and lab_at[k - 1] and any(lab_at[k + 1:]) and
+                        next(x for x in lab_at[k + 1:] if True) is not None and
+                        k + 1 < len(out) and lab_at[k + 1])]
                     n = hint['n']
                     if hint['add']:
                         if isinstance(n, int) and n - 1 < len(body):
