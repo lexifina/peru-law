@@ -226,22 +226,40 @@ def merge(cur: list[str], q: list[str]) -> tuple[list[str], list[str]]:
                 else:
                     out[0:0] = pre
                     hi += len(pre)
+            old = out[hi]
+            mo = BHEAD.match(old)
+            old_rest = old[mo.end():].strip() if mo else ''
+            old_has_body = bool(old_rest) and (len(old_rest) > 140 or bool(re.search(r'[.:;]$', old_rest)))
+            mq = QHEAD.match(hline)
+            q_sumilla = mq and len(re.sub(r'^[\s.°º-]+', '', hline[mq.end():]).strip()) > 0 and \
+                not re.search(r'[.:;]$', hline.strip())
+            if q_sumilla and not pre and hi > 0 and label_of(out[hi - 1]) is None and not BHEAD.match(out[hi - 1]):
+                del out[hi - 1]                  # the sumilla now sits in the quoted heading line
+                hi -= 1
             out[hi] = hline
             pos = hi + 1
-            for p in rest:
-                if pos < len(out) and label_of(out[pos]) is None and label_of(p) is None:
-                    out[pos] = p
-                else:
-                    out.insert(pos, p)
-                    warn.append('inserted after heading: ' + p[:50])
+            if old_has_body and rest and label_of(rest[0]) is None:
+                out.insert(pos, rest[0])         # the old heading line carried the first sentence
                 pos += 1
+                rest = rest[1:]
+            elif old_has_body and hline.strip() != old.strip():
+                out.insert(pos, old_rest)        # the first sentence stays as it was, now under the new heading
+                pos += 1
+                warn.append('kept the first sentence of the old heading line')
+            runs[0] = rest
         else:
             warn.append('first run has no heading: ' + head[0][:60])
-    for run in runs[1:]:
+            runs[0] = []
+    for ri, run in enumerate(runs):
         for p in run:
             lab = label_of(p)
             if lab is None:
-                # an unlabelled paragraph: replace the next unlabelled one
+                # an unlabelled paragraph: right after the heading it replaces the paragraph there; later, the
+                # next unlabelled one
+                if ri == 0 and pos < len(out) and label_of(out[pos]) is None:
+                    out[pos] = p
+                    pos += 1
+                    continue
                 j = next((k for k in range(pos, len(out)) if label_of(out[k]) is None), None)
                 if j is None:
                     out.insert(pos, p)

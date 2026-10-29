@@ -40,9 +40,21 @@ def listing_url(fi: str, ff: str, tipo: str | None, start: int) -> str:
     return u
 
 
+def get_retry(url: str, force: bool = False, tries: int = 5):
+    """fetch.get, tried again after 10, 20, 40, 80 s: busquedas.elperuano.pe drops TLS handshakes in bursts."""
+    import time
+    for i in range(tries):
+        p = fetch.get(url, force=force)
+        if p is not None:
+            return p
+        if i + 1 < tries:
+            time.sleep(10 * 2 ** i)
+    return None
+
+
 def listing(fi: str, ff: str, tipo: str | None = None, start: int = 0, force: bool = False):
     """(total, [{op, tipo, numero, sumilla, pdf}]) for one page."""
-    p = fetch.get(listing_url(fi, ff, tipo, start), force=force)
+    p = get_retry(listing_url(fi, ff, tipo, start), force=force)
     if p is None:
         raise SystemExit(f'listing failed: {fi}-{ff} {tipo} {start}')
     s = p.read_text('utf8', 'replace')
@@ -68,6 +80,22 @@ def all_items(fi, ff, tipo):
         items += more
         start += len(more)
     return total, items
+
+
+def items_split(fi: str, ff: str, tipo: str) -> list[dict]:
+    """Every card of TIPO in [fi, ff]. Paging long result lists drops and repeats cards, so a range with more than
+    one page is split in halves down to single days (and only a single day is paged)."""
+    import datetime as dt
+    total, items = listing(fi, ff, tipo, 0)
+    if total <= len(items):
+        return items
+    a, b = dt.date(int(fi[:4]), int(fi[4:6]), int(fi[6:])), dt.date(int(ff[:4]), int(ff[4:6]), int(ff[6:]))
+    if a == b:
+        _, more = all_items(fi, ff, tipo)
+        return more
+    m = a + (b - a) // 2
+    f = lambda d: d.strftime('%Y%m%d')  # noqa: E731
+    return items_split(fi, f(m), tipo) + items_split(f(m + dt.timedelta(days=1)), ff, tipo)
 
 
 def pdf_text(path) -> str:
@@ -99,12 +127,14 @@ def scan(tipo: str, fi: str, ff: str):
             r = json.loads(l)
             if not r.get('error'):          # failed fetches are tried again
                 done.add(r['op'])
-    total, items = all_items(fi, ff, tipo)
-    print(tipo, fi, ff, 'total', total, 'listed', len(items), flush=True)
+    items = items_split(fi, ff, tipo)
+    seen = set()
+    items = [it for it in items if not (it['op'] in seen or seen.add(it['op']))]
+    print(tipo, fi, ff, 'listed', len(items), flush=True)
     for it in items:
         if it['op'] in done or not it['pdf']:
             continue
-        p = fetch.get(it['pdf'])
+        p = get_retry(it['pdf'])
         rec = dict(it, range=[fi, ff])
         if p is None:
             rec['error'] = 'pdf failed'
@@ -130,7 +160,8 @@ def erratas(fi: str, ff: str):
     """Discovery: every "FE DE ERRATAS" card in [fi, ff] -> .tmp/erratas.jsonl (no PDFs fetched)."""
     out = HERE / '.tmp' / 'erratas.jsonl'
     out.parent.mkdir(exist_ok=True)
-    total, items = all_items(fi, ff, 'FE DE ERRATA')
+    items = items_split(fi, ff, 'FE DE ERRATA')
+    total = len(items)
     print('FE DE ERRATA', fi, ff, 'total', total, 'listed', len(items), flush=True)
     with out.open('a', encoding='utf-8') as fh:
         for it in items:
@@ -141,7 +172,8 @@ def cards(tipo: str, fi: str, ff: str):
     """Discovery: every card of TIPO in [fi, ff] -> .tmp/cards.jsonl (no PDFs fetched); used to find reglamentos
     that set a law's in-force day."""
     out = HERE / '.tmp' / 'cards.jsonl'
-    total, items = all_items(fi, ff, tipo)
+    items = items_split(fi, ff, tipo)
+    total = len(items)
     print(tipo, fi, ff, 'total', total, 'listed', len(items), flush=True)
     with out.open('a', encoding='utf-8') as fh:
         for it in items:
