@@ -1,0 +1,2301 @@
+{
+ "country": "PE",
+ "acts": [
+  {
+   "slug": "constitucion",
+   "short": "CPP",
+   "title": "Constitución Política del Perú de 1993",
+   "url": "https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf",
+   "versions": [
+    {
+     "from": "1993-12-31",
+     "units": 224,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "1995-06-13",
+     "units": 224,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "1995-06-14",
+     "units": 224,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2000-11-06",
+     "units": 226,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2001-12-17",
+     "units": 226,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2002-03-08",
+     "units": 226,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2004-11-18",
+     "units": 226,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2005-03-31",
+     "units": 226,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2005-04-06",
+     "units": 226,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2005-10-05",
+     "units": 226,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2009-09-09",
+     "units": 227,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2015-03-11",
+     "units": 227,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2017-05-10",
+     "units": 227,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2017-06-23",
+     "units": 228,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2017-08-21",
+     "units": 228,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2018-03-15",
+     "units": 228,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2019-01-11",
+     "units": 229,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2020-09-16",
+     "units": 231,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2020-12-30",
+     "units": 231,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2021-02-07",
+     "units": 231,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2021-02-11",
+     "units": 231,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2021-05-01",
+     "units": 231,
+     "source_url": "https://web.archive.org/web/20210707230309id_/http://www.congreso.gob.pe/Docs/files/constitucion/constitucion-2021-01-07-2021.pdf",
+     "sha256": "d083dc235eef18615ff3b5f065fcf0fcbe89a68baebe948b5f8c4c311d17731f"
+    },
+    {
+     "from": "2021-07-17",
+     "units": 231,
+     "source_url": "https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf",
+     "sha256": "071f7410aad7014913a3314e66dd369968efcf77b41390ecd7cc95766aef50a1"
+    },
+    {
+     "from": "2021-07-24",
+     "units": 231,
+     "source_url": "https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf",
+     "sha256": "071f7410aad7014913a3314e66dd369968efcf77b41390ecd7cc95766aef50a1"
+    },
+    {
+     "from": "2021-11-27",
+     "units": 231,
+     "source_url": "https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf",
+     "sha256": "071f7410aad7014913a3314e66dd369968efcf77b41390ecd7cc95766aef50a1"
+    },
+    {
+     "from": "2022-02-13",
+     "units": 231,
+     "source_url": "https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf",
+     "sha256": "071f7410aad7014913a3314e66dd369968efcf77b41390ecd7cc95766aef50a1"
+    },
+    {
+     "from": "2022-07-04",
+     "units": 231,
+     "source_url": "https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf",
+     "sha256": "071f7410aad7014913a3314e66dd369968efcf77b41390ecd7cc95766aef50a1"
+    },
+    {
+     "from": "2023-09-24",
+     "units": 232,
+     "source_url": "https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf",
+     "sha256": "071f7410aad7014913a3314e66dd369968efcf77b41390ecd7cc95766aef50a1"
+    },
+    {
+     "from": "2024-10-16",
+     "units": 233,
+     "source_url": "https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf",
+     "sha256": "071f7410aad7014913a3314e66dd369968efcf77b41390ecd7cc95766aef50a1"
+    },
+    {
+     "from": "2024-10-30",
+     "units": 233,
+     "source_url": "https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf",
+     "sha256": "071f7410aad7014913a3314e66dd369968efcf77b41390ecd7cc95766aef50a1"
+    },
+    {
+     "from": "2024-12-12",
+     "units": 233,
+     "source_url": "https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf",
+     "sha256": "071f7410aad7014913a3314e66dd369968efcf77b41390ecd7cc95766aef50a1"
+    },
+    {
+     "from": "2025-03-23",
+     "units": 233,
+     "source_url": "https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf",
+     "sha256": "071f7410aad7014913a3314e66dd369968efcf77b41390ecd7cc95766aef50a1"
+    },
+    {
+     "from": "2026-04-12",
+     "units": 234,
+     "source_url": "https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf",
+     "sha256": "071f7410aad7014913a3314e66dd369968efcf77b41390ecd7cc95766aef50a1"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-civil",
+   "short": "CC",
+   "title": "Código Civil (Decreto Legislativo 295)",
+   "url": "https://faolex.fao.org/docs/pdf/per205198.pdf",
+   "versions": [
+    {
+     "from": "2012-12-25",
+     "units": 2067,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/5700008/5060551-codigo-civil-minjus-bcp_n-3.pdf?v=1705608699",
+     "sha256": "46aa8083835a8562f9551a62bd226b20dcc6e286f81944af86c0a0db57aef46c"
+    },
+    {
+     "from": "2013-04-18",
+     "units": 2067,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/5700008/5060551-codigo-civil-minjus-bcp_n-3.pdf?v=1705608699",
+     "sha256": "46aa8083835a8562f9551a62bd226b20dcc6e286f81944af86c0a0db57aef46c"
+    },
+    {
+     "from": "2013-09-23",
+     "units": 2067,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/5700008/5060551-codigo-civil-minjus-bcp_n-3.pdf?v=1705608699",
+     "sha256": "46aa8083835a8562f9551a62bd226b20dcc6e286f81944af86c0a0db57aef46c"
+    },
+    {
+     "from": "2014-01-30",
+     "units": 2067,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/5700008/5060551-codigo-civil-minjus-bcp_n-3.pdf?v=1705608699",
+     "sha256": "46aa8083835a8562f9551a62bd226b20dcc6e286f81944af86c0a0db57aef46c"
+    },
+    {
+     "from": "2014-04-07",
+     "units": 2067,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/5700008/5060551-codigo-civil-minjus-bcp_n-3.pdf?v=1705608699",
+     "sha256": "46aa8083835a8562f9551a62bd226b20dcc6e286f81944af86c0a0db57aef46c"
+    },
+    {
+     "from": "2014-07-13",
+     "units": 2067,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/5700008/5060551-codigo-civil-minjus-bcp_n-3.pdf?v=1705608699",
+     "sha256": "46aa8083835a8562f9551a62bd226b20dcc6e286f81944af86c0a0db57aef46c"
+    },
+    {
+     "from": "2014-12-29",
+     "units": 2067,
+     "source_url": "https://faolex.fao.org/docs/pdf/per205198.pdf",
+     "sha256": "d5ea06ebb39832a3e39d27bb3b4882d739e6bb34b46ee3e6228fb937addc43fd"
+    },
+    {
+     "from": "2015-03-19",
+     "units": 2067,
+     "source_url": "https://faolex.fao.org/docs/pdf/per205198.pdf",
+     "sha256": "d5ea06ebb39832a3e39d27bb3b4882d739e6bb34b46ee3e6228fb937addc43fd"
+    },
+    {
+     "from": "2015-03-27",
+     "units": 2067,
+     "source_url": "https://faolex.fao.org/docs/pdf/per205198.pdf",
+     "sha256": "d5ea06ebb39832a3e39d27bb3b4882d739e6bb34b46ee3e6228fb937addc43fd"
+    },
+    {
+     "from": "2015-05-08",
+     "units": 2067,
+     "source_url": "https://faolex.fao.org/docs/pdf/per205198.pdf",
+     "sha256": "d5ea06ebb39832a3e39d27bb3b4882d739e6bb34b46ee3e6228fb937addc43fd"
+    },
+    {
+     "from": "2015-11-24",
+     "units": 2067,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/1837927/Primera%20Edicio%CC%81n%20Oficial%20Proteccio%CC%81n%20y%20Violencia%20contra%20las%20Mujeres.pdf?v=1619545873",
+     "sha256": "c7d5b397b89b7a65b41e95b11da6415bfc855cf0e63b0e1875b7e3e5670225f4"
+    },
+    {
+     "from": "2015-12-31",
+     "units": 2067,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/3542835/Ley%20N%C2%B0%2030403.pdf?v=1661380267",
+     "sha256": "e20ab669f36f1959f4a869d31d651b037e306d584702ae401b34b9bda70a7256"
+    },
+    {
+     "from": "2016-06-30",
+     "units": 2067,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/Leyes/30473.pdf",
+     "sha256": "247036775fd4ac855b0d79183495320e96e41ed0777e63203e8af76f78599cc2"
+    },
+    {
+     "from": "2016-07-22",
+     "units": 2067,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/3766931/Ley%20N%C2%B0%2030490.pdf?v=1666119068",
+     "sha256": "2569bbac83a88148577f0f1caaaed2868bfd3f0b2f7dba0ee882518bd1dd08b6"
+    },
+    {
+     "from": "2017-04-06",
+     "units": 2067,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/ADLP/Texto_Consolidado/30550-TXM.pdf",
+     "sha256": "d9a73f7e66c4f4fd64b89679510bd3548ac479de3c96290a6dc86ce913f00fdf"
+    },
+    {
+     "from": "2018-02-11",
+     "units": 2066,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/2007460/Decreto%20Legislativo%20N%C2%BA%201297.pdf.pdf?v=1625854123",
+     "sha256": "362971fd16105a4ddf0e89d2926b2c60215c71ec9ae9b11159f36c32e5f11245"
+    },
+    {
+     "from": "2018-08-25",
+     "units": 2065,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/NL20180824.pdf",
+     "sha256": "2ca9cfed61bb5145e1bc9efba55a400aca4dd650b8a7f4452c825a28b57ed4ba"
+    },
+    {
+     "from": "2018-09-05",
+     "units": 2061,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/NL20180904.pdf",
+     "sha256": "f9ce84dce2e9ed5fb8eb6607fbf8964d36b9e5328aa3fa14f9844e1e7213e297"
+    },
+    {
+     "from": "2021-07-25",
+     "units": 2062,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/NL20210724.pdf",
+     "sha256": "9996bba598cf6253bffe40da26bf99d229ccc01f40452b564d566aa5c066692d"
+    },
+    {
+     "from": "2021-08-12",
+     "units": 2062,
+     "source_url": "https://faolex.fao.org/docs/pdf/per205198.pdf",
+     "sha256": "d5ea06ebb39832a3e39d27bb3b4882d739e6bb34b46ee3e6228fb937addc43fd"
+    },
+    {
+     "from": "2022-12-16",
+     "units": 2062,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31643-TXM.pdf",
+     "sha256": "b4ea59990d1ea38ca8fbb8a68710d73e72815cc09e2a11391cbdbfb12b98f364"
+    },
+    {
+     "from": "2023-11-26",
+     "units": 2059,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31945-TXM.pdf",
+     "sha256": "0ca770055ceff5f9b120e6c0fe6827aea73dbf1758a34e815f8a97cd10466c22"
+    },
+    {
+     "from": "2024-06-06",
+     "units": 2059,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32006-TXM.pdf",
+     "sha256": "0704949d35a2f2e3feaa8eed675483373aabb1fb0d1df6aa41e59562577dc7e5"
+    },
+    {
+     "from": "2024-08-16",
+     "units": 2059,
+     "source_url": "https://busquedas.elperuano.pe/dispositivo/NL/2315597-1/",
+     "sha256": "50d2acb66773cf6bd83c90d8a79c17d4ea9d38b57c1cbc87e9328368e5c59bc0"
+    },
+    {
+     "from": "2024-11-13",
+     "units": 2059,
+     "source_url": "https://busquedas.elperuano.pe/dispositivo/NL/2315597-1/",
+     "sha256": "50d2acb66773cf6bd83c90d8a79c17d4ea9d38b57c1cbc87e9328368e5c59bc0"
+    },
+    {
+     "from": "2025-01-09",
+     "units": 2060,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32228-TXM.pdf",
+     "sha256": "31ff9ca2eba06076742ed29ec226c36ec120dc9263cb1d7a344b2f07f66516d6"
+    }
+   ]
+  },
+  {
+   "slug": "proteccion-datos-personales",
+   "short": "LPDP",
+   "title": "Ley 29733, Ley de Protección de Datos Personales",
+   "url": "https://www.leyes.congreso.gob.pe/Documentos/Leyes/29733.pdf",
+   "versions": [
+    {
+     "from": "2011-07-04",
+     "units": 53,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/2011398/Ley%20N%C2%BA%2029733%20-%20Ley%20de%20protecci%C3%B3n%20de%20datos%20personales.pdf.pdf?v=1683928275",
+     "sha256": "f45d432b337aa7965fdf38497b3f5c12dcd62a1107b3b13ff86687f0be15125d"
+    },
+    {
+     "from": "2013-05-08",
+     "units": 53,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/2011287/Reglamento%20de%20la%20Ley%20No%2029733%2C%20Ley%20de%20Protecci%C3%B3n%20de%20Datos%20Personales.pdf?v=1626124830",
+     "sha256": "a01b2f8295c36b283fe9be83058e07f30655f68c513eca8b3fab793337168f76"
+    },
+    {
+     "from": "2017-09-16",
+     "units": 53,
+     "source_url": "https://web.archive.org/web/20260721055737id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=23",
+     "sha256": "f92c4cccb60436bcf6132dd8f7e6ac2fdc9e24378f6a4522f5064c4d42f48b43"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-procesal-penal",
+   "short": "NCPP",
+   "title": "Código Procesal Penal (Decreto Legislativo 957)",
+   "url": "https://www.gob.pe/institucion/minjus/informes-publicaciones/6346160-codigo-procesal-penal-octava-edicion-oficial-actualizada-a-noviembre-de-2024",
+   "versions": [
+    {
+     "from": "2004-07-30",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2004-11-24",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2005-01-01",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2005-01-12",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2006-02-01",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2006-03-23",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2006-07-01",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2007-01-17",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2007-04-01",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2007-06-06",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2007-07-23",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2008-04-01",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2008-10-01",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2008-12-23",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2009-04-01",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2009-06-10",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2009-10-01",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2009-11-20",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2009-12-01",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2009-12-15",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2010-04-01",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2010-08-26",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2010-09-02",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2010-09-18",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2011-01-02",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2012-03-15",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2012-04-03",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2012-04-20",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2012-06-01",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2012-10-01",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2012-12-12",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2013-01-19",
+     "units": 584,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2013-08-20",
+     "units": 585,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2013-10-23",
+     "units": 585,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2014-03-11",
+     "units": 585,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2014-06-30",
+     "units": 586,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2014-07-01",
+     "units": 587,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2015-04-01",
+     "units": 587,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2015-07-01",
+     "units": 587,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2015-08-23",
+     "units": 588,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2015-09-26",
+     "units": 588,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2015-11-22",
+     "units": 588,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2015-11-24",
+     "units": 588,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2015-11-28",
+     "units": 588,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2016-05-01",
+     "units": 588,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2016-12-30",
+     "units": 594,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2016-12-31",
+     "units": 594,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2017-01-29",
+     "units": 594,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2017-03-30",
+     "units": 598,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2017-07-01",
+     "units": 598,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2018-01-01",
+     "units": 599,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2018-03-13",
+     "units": 599,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2018-07-01",
+     "units": 599,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2018-08-29",
+     "units": 599,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2019-02-02",
+     "units": 600,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2019-06-19",
+     "units": 600,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2019-10-01",
+     "units": 600,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2020-01-10",
+     "units": 600,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2020-01-25",
+     "units": 600,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2020-03-29",
+     "units": 601,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2020-06-05",
+     "units": 602,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2021-03-31",
+     "units": 602,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2021-04-15",
+     "units": 602,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2021-06-11",
+     "units": 602,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2021-07-25",
+     "units": 602,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2022-10-27",
+     "units": 602,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2023-05-26",
+     "units": 602,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2023-10-06",
+     "units": 602,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2023-10-12",
+     "units": 602,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2023-11-23",
+     "units": 603,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2023-12-19",
+     "units": 603,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2023-12-22",
+     "units": 603,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2024-03-22",
+     "units": 603,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2024-05-17",
+     "units": 603,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2024-06-22",
+     "units": 603,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2024-10-11",
+     "units": 603,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7451652/6346160-codigo-procesal-penal-decreto-legislativo-final.pdf?v=1735938504",
+     "sha256": "969ecc22459bb3e125557d4953bf04e2b3de6e7fce4c204f52d0a217bfcdad78"
+    },
+    {
+     "from": "2024-12-12",
+     "units": 605,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32181-TXM.pdf",
+     "sha256": "1748660b14638e0f13de756726461f00a18254c9dd1b04a8f36aee9611f9e9cb"
+    },
+    {
+     "from": "2025-03-11",
+     "units": 605,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32255-TXM.pdf",
+     "sha256": "1707975f810743e3c557399c9cc4d0989e108f262465fd10c06d359ca1974af4"
+    },
+    {
+     "from": "2025-06-08",
+     "units": 605,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32374-TXM.pdf",
+     "sha256": "7d079212738634c662f79a728520f02d532c80486967763ec61743fc7c1c4b3e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-organica-poder-ejecutivo",
+   "short": "LOPE",
+   "title": "Ley Orgánica del Poder Ejecutivo (Ley 29158)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=6",
+   "versions": [
+    {
+     "from": "2023-10-12",
+     "units": 73,
+     "source_url": "https://web.archive.org/web/20240707id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=6",
+     "sha256": "fa8d1b7eee920d026f5515c6c688c39ad1bc8226c951c0bf93011f3edad22457"
+    }
+   ]
+  },
+  {
+   "slug": "ley-organica-sistema-nacional-control",
+   "short": "LOSNC",
+   "title": "Ley Orgánica del Sistema Nacional de Control y de la Contraloría General de la República (Ley 27785)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=24",
+   "versions": [
+    {
+     "from": "2024-06-26",
+     "units": 72,
+     "source_url": "https://web.archive.org/web/20240708id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=24",
+     "sha256": "b86f1de95536bd71447e96a7c4ed0e8304572ad78ca8fb634b004297ce449837"
+    }
+   ]
+  },
+  {
+   "slug": "ley-hostigamiento-sexual",
+   "short": "LPSHS",
+   "title": "Ley de Prevención y Sanción del Hostigamiento Sexual (Ley 27942)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=79",
+   "versions": [
+    {
+     "from": "2021-11-22",
+     "units": 36,
+     "source_url": "https://web.archive.org/web/20240305id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=79",
+     "sha256": "ba4617f9a39a42d32a7e0c90da973c6ac43f2642ad98de08d121f5fa047a83fe"
+    }
+   ]
+  },
+  {
+   "slug": "ley-gratificaciones",
+   "short": "LGrat",
+   "title": "Ley que regula el otorgamiento de las gratificaciones para los trabajadores del régimen de la actividad privada por Fiestas Patrias y Navidad (Ley 27735)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=60003",
+   "versions": [
+    {
+     "from": "2026-04-13",
+     "units": 11,
+     "source_url": "https://web.archive.org/web/20260623id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=60003",
+     "sha256": "8fcf24084754a6f9f7b8ca2b12588c463cedcbe352c176a3050c54f42cefefd8"
+    }
+   ]
+  },
+  {
+   "slug": "ley-procedimiento-administrativo-general",
+   "short": "LPAG",
+   "title": "Texto Único Ordenado de la Ley 27444, Ley del Procedimiento Administrativo General (Decreto Supremo 004-2019-JUS)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=12",
+   "versions": [
+    {
+     "from": "2020-05-11",
+     "units": 299,
+     "source_url": "https://web.archive.org/web/20250411id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=12",
+     "sha256": "6b0eb15ee053717c07804f466b9714f8247ccd34e2b07effadae6b62d07c248e"
+    },
+    {
+     "from": "2022-05-05",
+     "units": 299,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/3cxvS7j4qYX8HsyNk_KGr2/*/2063845-4.pdf",
+     "sha256": "c14c70eb93cdf8384a5d049f670a36c7fc7e44b35e36f3a97728c66db62b3ef4"
+    },
+    {
+     "from": "2022-11-06",
+     "units": 299,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/5tC2FKM-qpa8cgtFlSDECg/*/2122112-3.pdf",
+     "sha256": "1c4e9096cc4cbf38ded79091431cd69f61e8009830d8a6021b91327e4eaec12e"
+    },
+    {
+     "from": "2023-04-12",
+     "units": 299,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/9_3bhO7bKJ98hmgVauLdjH/*/2167825-2.pdf",
+     "sha256": "c159d16b3f8d2b9abed73fe61819c7ffa24355e59862706061e6c87b7a0b8b1b"
+    },
+    {
+     "from": "2023-05-27",
+     "units": 299,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/7NXS0dEs4fgBgpkE6WlfAQ/*/2181493-1.pdf",
+     "sha256": "95a030458740716d2e5186d983ef1a2588f9f71e3189e5fd2decb1112815a930"
+    },
+    {
+     "from": "2024-08-31",
+     "units": 299,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/3vHRSBJoqxzBP2zKKsK-k2/*/2320348-1.PDF",
+     "sha256": "d5bcd865727e1169bc6f1eac6aef0619e8c1f9605bab94783fe4dfbba4d0ec2d"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-consumidor",
+   "short": "CPDC",
+   "title": "Código de Protección y Defensa del Consumidor (Ley 29571)",
+   "url": "https://www.gob.pe/institucion/minjus/informes-publicaciones/1877837-codigo-de-proteccion-y-defensa-del-consumidor-y-normas-complementarias-tercera-edicion-oficial-actualizada-al-27-de-noviembre-de-2020",
+   "versions": [
+    {
+     "from": "2010-10-02",
+     "units": 178,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/1837776/C%C3%B3digo%20Protecci%C3%B3n%20Consumidor%202020.pdf?v=1619483959",
+     "sha256": "1d70149693ff0d1a415a1e63236833dbb878c06a990dbf7ceebf440a9e243c32"
+    },
+    {
+     "from": "2012-06-25",
+     "units": 178,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/1837776/C%C3%B3digo%20Protecci%C3%B3n%20Consumidor%202020.pdf?v=1619483959",
+     "sha256": "1d70149693ff0d1a415a1e63236833dbb878c06a990dbf7ceebf440a9e243c32"
+    },
+    {
+     "from": "2013-06-21",
+     "units": 178,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/1837776/C%C3%B3digo%20Protecci%C3%B3n%20Consumidor%202020.pdf?v=1619483959",
+     "sha256": "1d70149693ff0d1a415a1e63236833dbb878c06a990dbf7ceebf440a9e243c32"
+    },
+    {
+     "from": "2016-12-31",
+     "units": 179,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/1837776/C%C3%B3digo%20Protecci%C3%B3n%20Consumidor%202020.pdf?v=1619483959",
+     "sha256": "1d70149693ff0d1a415a1e63236833dbb878c06a990dbf7ceebf440a9e243c32"
+    },
+    {
+     "from": "2017-01-11",
+     "units": 179,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/1837776/C%C3%B3digo%20Protecci%C3%B3n%20Consumidor%202020.pdf?v=1619483959",
+     "sha256": "1d70149693ff0d1a415a1e63236833dbb878c06a990dbf7ceebf440a9e243c32"
+    },
+    {
+     "from": "2018-09-06",
+     "units": 179,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/1837776/C%C3%B3digo%20Protecci%C3%B3n%20Consumidor%202020.pdf?v=1619483959",
+     "sha256": "1d70149693ff0d1a415a1e63236833dbb878c06a990dbf7ceebf440a9e243c32"
+    },
+    {
+     "from": "2019-01-24",
+     "units": 180,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/1837776/C%C3%B3digo%20Protecci%C3%B3n%20Consumidor%202020.pdf?v=1619483959",
+     "sha256": "1d70149693ff0d1a415a1e63236833dbb878c06a990dbf7ceebf440a9e243c32"
+    },
+    {
+     "from": "2020-08-30",
+     "units": 182,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/1837776/C%C3%B3digo%20Protecci%C3%B3n%20Consumidor%202020.pdf?v=1619483959",
+     "sha256": "1d70149693ff0d1a415a1e63236833dbb878c06a990dbf7ceebf440a9e243c32"
+    },
+    {
+     "from": "2021-06-03",
+     "units": 182,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/ADLP/Texto_Consolidado/31207-TXM.pdf",
+     "sha256": "c7c7572ba46c6cc8b12b358db7a70a3a18dcddd8405a29edda327c64fafac238"
+    },
+    {
+     "from": "2022-05-07",
+     "units": 183,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31467-TXM.pdf",
+     "sha256": "cc9e6351b5bf67c80d8809f2284bf7ce833a3c2264bfae2e32524fad6dca9a43"
+    },
+    {
+     "from": "2022-05-21",
+     "units": 183,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31435-TXM.pdf",
+     "sha256": "54f1cdc95f17a26e0ef78e1a522b362728e8d64a3feec329c40af09468ce0634"
+    },
+    {
+     "from": "2022-07-29",
+     "units": 183,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31537-TXM.pdf",
+     "sha256": "056e1ff63b4894b805c7acba47d71389a10c5310f5c1596fec7f0d467dd3882d"
+    },
+    {
+     "from": "2022-11-06",
+     "units": 183,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31601-TXM.pdf",
+     "sha256": "36d58e66b926d8e4ecfe7eefcb98659b9b4fcb655dee1f3b034d7ef4f7ed6429"
+    },
+    {
+     "from": "2023-08-29",
+     "units": 183,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31763-TXM.pdf",
+     "sha256": "04ffc38b5a8e15d35c188858527d2077fc609f25cb0a815e9688f3c32e05e921"
+    },
+    {
+     "from": "2023-11-19",
+     "units": 183,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31937-TXM.pdf",
+     "sha256": "c6a9c217151da352a346fd44de0248318594bd3c689c7257414dd265ae134f67"
+    },
+    {
+     "from": "2024-05-19",
+     "units": 183,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32032-TXM.pdf",
+     "sha256": "33ee90cd5839d1b31eea02865649e5e153d46ddc4da3eec1fc8a699a8b558911"
+    },
+    {
+     "from": "2025-01-09",
+     "units": 184,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32230-TXM.pdf",
+     "sha256": "fe88f191dfefb0d4fc78e28738669aa585ae68217e55f5f46f2b4e2516157277"
+    },
+    {
+     "from": "2025-05-10",
+     "units": 184,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32323-TXM.pdf",
+     "sha256": "41adbbd9e3b87c82867a9c4ce98b85ffeed79d40457f1ce07542517dfa540cbc"
+    },
+    {
+     "from": "2025-05-11",
+     "units": 184,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32327-TXM.pdf",
+     "sha256": "042f96f6f146766453d209387ba5cc3af8dffa164b5d180455418b35d5c2d9c4"
+    },
+    {
+     "from": "2025-11-12",
+     "units": 184,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32495-TXM.pdf",
+     "sha256": "a085319eb2d83cbb613e2947a0b73f2c73643a58b1edcf25ea76605a859a58f1"
+    }
+   ]
+  },
+  {
+   "slug": "ley-general-sociedades",
+   "short": "LGSoc",
+   "title": "Ley General de Sociedades (Ley 26887)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=15",
+   "versions": [
+    {
+     "from": "2021-05-15",
+     "units": 476,
+     "source_url": "https://web.archive.org/web/20230609id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=15",
+     "sha256": "c2705bf67de595ee4cf9675ade54af266cb74c461e7099635dc20b237c2fbed7"
+    }
+   ]
+  },
+  {
+   "slug": "ley-productividad-competitividad-laboral",
+   "short": "LPCL",
+   "title": "Texto Único Ordenado del Decreto Legislativo 728, Ley de Productividad y Competitividad Laboral (Decreto Supremo 003-97-TR)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=35",
+   "versions": [
+    {
+     "from": "2021-04-27",
+     "units": 107,
+     "source_url": "https://web.archive.org/web/20240710id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=35",
+     "sha256": "67a14522d86950ff3ac9def366601f3402e46e7b4647e899db4ce27f839089e7"
+    }
+   ]
+  },
+  {
+   "slug": "ley-relaciones-colectivas-trabajo",
+   "short": "LRCT",
+   "title": "Texto Único Ordenado de la Ley de Relaciones Colectivas de Trabajo (Decreto Supremo 010-2003-TR)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=46",
+   "versions": [
+    {
+     "from": "2022-07-26",
+     "units": 89,
+     "source_url": "https://web.archive.org/web/20250527id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=46",
+     "sha256": "92cb467027c2216e2f463deb4c448ad99eb41d4c60a96e1eb176e94e83b97dfb"
+    }
+   ]
+  },
+  {
+   "slug": "ley-general-inspeccion-trabajo",
+   "short": "LGIT",
+   "title": "Ley General de Inspección del Trabajo (Ley 28806)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=47",
+   "versions": [
+    {
+     "from": "2023-02-28",
+     "units": 68,
+     "source_url": "https://web.archive.org/web/20240709id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=47",
+     "sha256": "d57b03540e66c5a8605337d581d89c6043082ab7d657daaa14402543789ec83f"
+    }
+   ]
+  },
+  {
+   "slug": "decreto-legislativo-cas",
+   "short": "CAS",
+   "title": "Decreto Legislativo que regula el régimen especial de contratación administrativa de servicios (Decreto Legislativo 1057)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=64",
+   "versions": [
+    {
+     "from": "2025-01-02",
+     "units": 23,
+     "source_url": "https://web.archive.org/web/20250404id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=64",
+     "sha256": "3e0d994dc475dcb4ca5aa08985c35c1191e73f3d81bff5f9249c11b0422c5c3a"
+    },
+    {
+     "from": "2026-03-24",
+     "units": 23,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/AkEIjGzWaUM8oeDG4j119a/*/2499155-1.PDF",
+     "sha256": "f5f30fa6f58f650db2de42dd88e0ce8c311d828b96e0207353b8ee6de3a78cc5"
+    },
+    {
+     "from": "2026-07-20",
+     "units": 23,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/10340261/8403069-ley32732.pdf?v=1784489960",
+     "sha256": "64888319bf94b380087bb787c29e4dccf30c8904274dd991def865498144f625"
+    }
+   ]
+  },
+  {
+   "slug": "ley-bases-carrera-administrativa",
+   "short": "DL276",
+   "title": "Ley de Bases de la Carrera Administrativa y de Remuneraciones del Sector Público (Decreto Legislativo 276)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=70",
+   "versions": [
+    {
+     "from": "2022-03-31",
+     "units": 60,
+     "source_url": "https://web.archive.org/web/20240708id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=70",
+     "sha256": "6ee893aafe6d2bb1fe8f028df89259453e72ae72908bbaa1e5789a8f2727970f"
+    },
+    {
+     "from": "2022-10-20",
+     "units": 60,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/4m0s_PNhaJb9n3AFynvxrv/*/2116903-1.pdf",
+     "sha256": "67dbb847085dce3e75dac9b4815221e8eb863ec33379032dade9b04792d8da88"
+    },
+    {
+     "from": "2024-12-18",
+     "units": 60,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/9CoRyeoe4J68O3-dLOWEHP/*/2354583-2.PDF",
+     "sha256": "6ab7bdd00d17cbe610f12e18872369516ebbe5740f2b3dbb30211b930bff1099"
+    },
+    {
+     "from": "2025-01-01",
+     "units": 61,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/A38kSet3aJ382uX4ajT1Sw/*/2358390-3.PDF",
+     "sha256": "27de5cc1a052ddfd718f0820d35f3d1d33ff4c763c5300cd42504512f51f70ee"
+    },
+    {
+     "from": "2025-09-05",
+     "units": 62,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/8Yn22tmX4M09t7YH3jPMIO/*/2434965-1.PDF",
+     "sha256": "ec8766933ecb5f77649145d83c2e1e1685eee2341e5dc09e754c77cab1074174"
+    }
+   ]
+  },
+  {
+   "slug": "ley-general-persona-discapacidad",
+   "short": "LGPD",
+   "title": "Ley General de la Persona con Discapacidad (Ley 29973)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=90011",
+   "versions": [
+    {
+     "from": "2026-04-15",
+     "units": 114,
+     "source_url": "https://web.archive.org/web/20260418id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=90011",
+     "sha256": "b4306f30d20abb70e20b56fe4e325e377bb10842a73362bfa3f433cabc05bfce"
+    },
+    {
+     "from": "2026-07-03",
+     "units": 114,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/AeTMnqOg4zEAoTjSx7Q4Bm/*/2530996-4.PDF",
+     "sha256": "733b560bdd214612c6bfd40a5c3d1073f5064e7b8d4f0393b6884bd4358f0919"
+    },
+    {
+     "from": "2026-07-05",
+     "units": 114,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/EI_LJYAR4Yg8r84C4zVxgU/*/2531901-1.PDF",
+     "sha256": "ff5ec386d36b5e65ec59f58812843d12a0b9a5bcccd3c5a927114b385795e2c7"
+    },
+    {
+     "from": "2026-07-05",
+     "units": 114,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/4Amt-tATKKSBzUYxqctMM7/*/2531901-8.PDF",
+     "sha256": "09c63f2c91b4aebc443e25c694c20d31ab9be7f87a04e1990a4acf802446feb0"
+    },
+    {
+     "from": "2026-07-11",
+     "units": 114,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/2D25WoaDaoBAOVAlwWdyhI/*/2533576-3.PDF",
+     "sha256": "58159ad07cdb9585aa9a3a1db9b449b029e50096078f77494f3fc204e014bf4f"
+    },
+    {
+     "from": "2027-01-01",
+     "units": 115,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/7YyM6_8vasY9MsOY11xp2b/*/2531901-5.PDF",
+     "sha256": "41625fd97706bb2ded72e43d57274ec4c0c63966d24c2f933d35aa3a9831fc35"
+    }
+   ]
+  },
+  {
+   "slug": "ley-general-salud",
+   "short": "LGS",
+   "title": "Ley General de Salud (Ley 26842)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=30001",
+   "versions": [
+    {
+     "from": "2024-05-20",
+     "units": 137,
+     "source_url": "https://web.archive.org/web/20240913id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=30001",
+     "sha256": "bd408077cb5259134f1bc3d411144d08a456732ddbac5343b577061f3a831eea"
+    }
+   ]
+  },
+  {
+   "slug": "ley-firmas-certificados-digitales",
+   "short": "LFCD",
+   "title": "Ley de Firmas y Certificados Digitales (Ley 27269)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=21",
+   "versions": [
+    {
+     "from": "2024-08-09",
+     "units": 21,
+     "source_url": "https://web.archive.org/web/20241005id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=21",
+     "sha256": "7ae040f3226e6416e315ac7c72b186c41f305124e5c92692ad59498849da26f4"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-penal",
+   "short": "CP",
+   "title": "Código Penal (Decreto Legislativo 635)",
+   "url": "https://web.archive.org/web/20170517041248/http://spij.minjus.gob.pe/content/publicaciones_oficiales/img/CODIGOPENAL.pdf",
+   "versions": [
+    {
+     "from": "2016-05-31",
+     "units": 561,
+     "source_url": "https://web.archive.org/web/20170517041248id_/http://spij.minjus.gob.pe:80/content/publicaciones_oficiales/img/CODIGOPENAL.pdf",
+     "sha256": "5938f7f8c13ae0bf73771fae9ae503646b059dea20a8e0b1bd839bfe950d669e"
+    },
+    {
+     "from": "2016-10-23",
+     "units": 561,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/3uq6n3ndqv98wUY_vOr2IA/*/1444966-1.pdf",
+     "sha256": "1e0f5395d38d86fe1b58b7ebd671acb0f19bc2a180ef2ef7c59cec13a7c60b4a"
+    },
+    {
+     "from": "2016-10-30",
+     "units": 563,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/8rsnti7o4zHBVDyOY882BI/*/1447951-1.pdf",
+     "sha256": "6fa62e156aeb18f888df1719aef10a83e8c5936bc5a526813d27f0a8810c7587"
+    },
+    {
+     "from": "2016-11-07",
+     "units": 563,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/AOZUhh9PqFXBYSVBuB4i92/*/1450260-1.pdf",
+     "sha256": "7215641218ef295394c7dd1af6fd2826ef46acd862d7e3e3f9fdf7367707b2f3"
+    },
+    {
+     "from": "2016-12-31",
+     "units": 564,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/Fiaa8GTbK9YAyov4ElTBS1/*/1468962-7.pdf",
+     "sha256": "73c1c407f83f69e8490e70c1243b3c075a19ca86058daeb0c2de459a84bf2f17"
+    },
+    {
+     "from": "2017-01-07",
+     "units": 567,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/FAu1JtzMqDqBnoe9UTXGVW/*/1471010-2.pdf",
+     "sha256": "883ca8542867f3df0a636e27d65aaa52f9c652c4386a3a5bdb108d513f06fbf4"
+    },
+    {
+     "from": "2017-01-08",
+     "units": 572,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/A3uJ-pLcqev9be7f9IP1tR/*/1471551-3.pdf",
+     "sha256": "aa46a8575a7f4fb45772e7add9f696600dd53e474c466044c70b58c0ef28ecf4"
+    },
+    {
+     "from": "2017-01-10",
+     "units": 572,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/Eb-rvJLvaTUBa53N141XhK/*/1472089-1.pdf",
+     "sha256": "8da7452a26e5653ac52987f7934bbe717b6e7ce5d0d1056d0feb6be7a2aff874"
+    },
+    {
+     "from": "2017-04-30",
+     "units": 572,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/9xgDinpfaAB96ZaN572UQT/*/1514994-1.pdf",
+     "sha256": "7ae51e02c87b518c1a1e280f40f789a3d800dc7e5f46096062d8e8c6971308ba"
+    },
+    {
+     "from": "2017-07-20",
+     "units": 573,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/DAvKheIFqzABDWxPp17fNZ/*/1545774-2.pdf",
+     "sha256": "9882a2072118149e7d727acef6b8e236749307f02573eb55495d7b1f6052d124"
+    },
+    {
+     "from": "2017-11-18",
+     "units": 573,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/Cx8MymtDaMv9VlqOtRMYYF/*/1587374-1.pdf",
+     "sha256": "f78a9147973321ba4cdd312c9d6c22982d64553993679950bfa3d0610e677392"
+    },
+    {
+     "from": "2017-12-30",
+     "units": 573,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/FPgZP7fLKNKAzwW-TzEi4O/*/1602018-1.pdf",
+     "sha256": "bcfe8a035ff09005bea60fbc7dc55fdd18f52f527fab4997682ab23f4e020f8f"
+    },
+    {
+     "from": "2018-01-01",
+     "units": 574,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/1_v-Xy2ZaoR9Xaw5mjNSsD/*/1370638-1.pdf",
+     "sha256": "f74f96560988bd4f3118f590e2165c9a458d3394860d34b9ec8f427a28edb7e9"
+    },
+    {
+     "from": "2018-07-14",
+     "units": 573,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/3YwfUx4wapIB1cWFUVCOI5/*/1669642-1.pdf",
+     "sha256": "2653c7407d71a32ef19ac002f702b9945f41601905dfa06353b5c33912960edb"
+    },
+    {
+     "from": "2018-07-30",
+     "units": 573,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/2KA_3Px7qeM8Z8iCYVbOYL/*/1674963-1.pdf",
+     "sha256": "0de720db0578d54a4883d4a829421c7bdb9c6aa978f1ac7fbf7c9ef037ac376a"
+    },
+    {
+     "from": "2018-08-05",
+     "units": 574,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/32NmRbn4K-w9xmV06z_jiK/*/1677448-1.pdf",
+     "sha256": "1fb40585eb35b14342a8424e65c9810fd532d11f6a3f4e8eb6f7b64377f9034f"
+    },
+    {
+     "from": "2018-09-05",
+     "units": 576,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/0DSiP-0HKVNBO-UzvOKt3M/*/1687393-3.pdf",
+     "sha256": "c3da99f1adfd53d60d5dac9175e117a23b6f0188013553934b29ce59072116e2"
+    },
+    {
+     "from": "2018-09-13",
+     "units": 580,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/0U5iDDtXa7kArNYG1S5l7U/*/1690482-3.pdf",
+     "sha256": "561f436ecc4f0a6d1072b8965c399ed0354d6574d27005c6cf04d26c9aac629d"
+    },
+    {
+     "from": "2018-09-17",
+     "units": 580,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/1t7HW4ikKT3AB1aNmnNu8e/*/1692078-28.pdf",
+     "sha256": "5aed3d5d6523e1908ebb419726953e572c80c7abb0cde1dff41a9d6e3529298c"
+    },
+    {
+     "from": "2018-10-06",
+     "units": 580,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/ABkgIEm44jRBVUPMUr9XR7/*/1688406-2.pdf",
+     "sha256": "6bc409d4c2103b13cf338247f1eb4fb8ae2f9cc2cc18f343160928228cd53af3"
+    },
+    {
+     "from": "2018-10-26",
+     "units": 580,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/DHDnK5a74y-9UlMjTvD3jM/*/1705921-1.pdf",
+     "sha256": "524edf42ecba4e5d47f6d16b3d14e0009cbc9e5c4d2e67a992211663e5324812"
+    },
+    {
+     "from": "2018-11-30",
+     "units": 580,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/DsjowqkNaYd9I8Br6D_wPG/*/1717857-2.pdf",
+     "sha256": "4953deb23ae380b1562dfe7b460129b2d4ab7a875a38c6d0e72d17f143d73c00"
+    },
+    {
+     "from": "2018-12-30",
+     "units": 580,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/EazrzpUu4Ho9LmGqQo4KgK/*/1727308-1.pdf",
+     "sha256": "0e0d97687aaf7c6b85e9b521712bf64429cf90a37f8d396d48697c47a4754aa1"
+    },
+    {
+     "from": "2019-01-01",
+     "units": 580,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/E8dATbbsa46B34MYgY03kT/*/1671756-1.pdf",
+     "sha256": "47c2f3db65b31198591fdc739861b19c9896f1e725897e5567e57430887d4146"
+    },
+    {
+     "from": "2019-02-02",
+     "units": 580,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/FfY4KjNmKT3BIOBwohItYk/*/1677448-2.pdf",
+     "sha256": "82fee856a1c3094dbddeb55bf6fafa4c48e04efcd260e46173a0af7b52310fcc"
+    },
+    {
+     "from": "2019-03-30",
+     "units": 580,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/E9abakDa4c1AMXweYTfCzb/*/1754996-1.pdf",
+     "sha256": "1eb5288c51b02fc36560535fef2050a2ef0ba43a77cb8625e5896ecfbac3c2d0"
+    },
+    {
+     "from": "2019-06-19",
+     "units": 587,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/35D3Rnr3a3FBLC9YxbH4RB/*/1780053-2.pdf",
+     "sha256": "445f8a6a4ba5ac8023c522b38d5ca435d6a4bd1a922e5e7df4e77b1e129cd80b"
+    },
+    {
+     "from": "2019-08-28",
+     "units": 590,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/77xBrnaYKPT86BBrW-jpg0/*/1801519-3.pdf",
+     "sha256": "7f0d4f10769404185e58b1a81f93345c7cd624ff76f4ded1274109e6846aecfa"
+    },
+    {
+     "from": "2019-12-31",
+     "units": 590,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/7pNZQNs4apXAOMXm6zvysV/*/1841339-1.pdf",
+     "sha256": "6cf187ffa4471d135fa06b9887ced1154f4767408422794b394c10fef3839c86"
+    },
+    {
+     "from": "2020-01-25",
+     "units": 591,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/5EXTI1nWaKgAFgZ9I-NEis/*/1848882-3.pdf",
+     "sha256": "763e7cc659cf405714b8fc28600bdd1fa7a9a0c72c4e3b6709521093ca0dca87"
+    },
+    {
+     "from": "2020-02-14",
+     "units": 591,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/0zEhCh7XKGYBgQqWjBnLTy/*/1832411-1.pdf",
+     "sha256": "35d69bf4e5f6ca848f951aa622884a6c54cc63ca45f9276b8045eaf0fa30d0c6"
+    },
+    {
+     "from": "2020-03-29",
+     "units": 591,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/DC79MHrW4J58Uk5SfTA0ex/*/1865203-1.pdf",
+     "sha256": "1aaf4204313a65d5a1f54a55fdd63c74ee5454c617fffaef48d10c3368457704"
+    },
+    {
+     "from": "2020-06-05",
+     "units": 591,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/4BQHuI_wah-8ci_XyEwI7T/*/1867337-1.pdf",
+     "sha256": "53f9052c16ad282a0abf040dc794800585d95d8ce6675d64445fba81bbb09c53"
+    },
+    {
+     "from": "2020-06-05",
+     "units": 592,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/AKsdMPwM4dM9UOEgZzSngP/*/1867337-2.pdf",
+     "sha256": "63e12596a47c1da2f3b5d354fae602fe67d66a93280ea5cbc3ad0f35fb7129ef"
+    },
+    {
+     "from": "2020-08-30",
+     "units": 593,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/7VZnkBICqQR9NujxXJK1d3/*/1880788-1.pdf",
+     "sha256": "be0b08e40b7f797914132aa199e69c3540f1f4ee543aae2519ffe07102038c92"
+    },
+    {
+     "from": "2021-03-31",
+     "units": 593,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/2lzMjkXlalwAJ_OjS90-Ew/*/1939453-1.pdf",
+     "sha256": "0ef0c334c61df4c6fe44c2f657785b72caef474fb8763c61d5c95edd76b28e1f"
+    },
+    {
+     "from": "2021-04-29",
+     "units": 594,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/9qErxwRJag48pcz8LKHzee/*/1947912-1.pdf",
+     "sha256": "0f80f3c99192aa4cc4afbce34609e0d024bde5eb71b42bb46504bae22dea2331"
+    },
+    {
+     "from": "2021-05-03",
+     "units": 594,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/8NcyPiuH4txAl9ze7jj0Wo/*/1949247-2.pdf",
+     "sha256": "2c5ec7a69a45e1e7420dafd218e16515c1760c1e5b934dbeafc02eb5b50a48ff"
+    },
+    {
+     "from": "2021-05-30",
+     "units": 594,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/0Nc02N4sqZk9M72rFSSttm/*/1958026-3.pdf",
+     "sha256": "fabb9e8f4d68cb55419eb54ba267907c55ccdb83a4a1bf8a01e7c2773fb035d7"
+    },
+    {
+     "from": "2021-07-26",
+     "units": 594,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/D7INEdHWa5O8p9G3LIfKjb/*/1976352-1.pdf",
+     "sha256": "a963810c1b8493ce52f1dfb959ea0b7aefa89ab8afe51680980c4074cf75e15b"
+    },
+    {
+     "from": "2021-08-08",
+     "units": 594,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/EBb_q4uO4l7Bsvgo28eA1w/*/1979836-1.pdf",
+     "sha256": "b4636ab814cd3e290526059dbcac0ecf11caf64cb2848ddb1a4b2f00e2736d68"
+    },
+    {
+     "from": "2021-08-19",
+     "units": 594,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/7GNH_Nbv4WRAwaMYPLCZ-6/*/1983106-1.pdf",
+     "sha256": "c2ebceaea50350ae445bad8d88f293a371739556a82c81e80ad18506c342878a"
+    },
+    {
+     "from": "2022-06-30",
+     "units": 595,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/C8xRfcKJK3BAumhaTqEfOd/*/2081735-1.pdf",
+     "sha256": "e8ae96732f3747bea229d789570eab20dfeb27e2fa26ee395ce80eed327e9ee3"
+    },
+    {
+     "from": "2022-11-17",
+     "units": 595,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/31Y-1zNYKQBBu19mXP9PPR/*/2125549-1.pdf",
+     "sha256": "486f9e943723c97763f13e3a8e73aad7becb7ff221cb77f5a43e7117968303f5"
+    },
+    {
+     "from": "2023-01-19",
+     "units": 595,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/0pNa1F4ram69K97tOlB4-J/*/2144407-1.pdf",
+     "sha256": "3a64ede432240238e6347772830e173eb00f470727395f657b80a9454a9a4c8e"
+    },
+    {
+     "from": "2023-01-28",
+     "units": 595,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/EmSLBvwhKpyAYRdpE2KF8j/*/2146514-1.pdf",
+     "sha256": "9f1c52cd3c7277235cc26f2f6fecd58f2103fd12f97a4cde520d23206a3d1f3f"
+    },
+    {
+     "from": "2023-05-26",
+     "units": 595,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/Dda5xIeXqqiAIB6oLEoMwr/*/2181041-1.pdf",
+     "sha256": "0bf5208c7b4d91d0161df0c757237d5dbec2ef860dd467c5c7ec91acbd4b2d26"
+    },
+    {
+     "from": "2023-06-08",
+     "units": 595,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/1kkESyr74MIB92uAMoTEm9/*/2184892-5.pdf",
+     "sha256": "7e918ef2bc3af04be72e5a897ad3de422637980833a22c14a45f21bb0f6c7929"
+    },
+    {
+     "from": "2023-06-15",
+     "units": 595,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/3b0y2nqkaMoB6Qe_lkP88H/*/2187001-1.pdf",
+     "sha256": "befe20c9a0827501cd4e140b8b64529f574e4f281e564d774e22e3c067767440"
+    },
+    {
+     "from": "2023-06-29",
+     "units": 595,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/1b-Lh0XY44Z80sW6epUvdz/*/2191763-3.pdf",
+     "sha256": "2fdaea66ce0afc5b58703b042b1db6faf79916e62816376160abe669c3fb1ba3"
+    },
+    {
+     "from": "2023-07-09",
+     "units": 595,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/4dsyuWT8K-VA9r4WnW-A6r/*/2194316-2.pdf",
+     "sha256": "5a0216579d5089e938133a48d5f723edd6e71ca26fd4ad54cd1080772c09f9f0"
+    },
+    {
+     "from": "2023-10-06",
+     "units": 597,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/7gpbv3DpKteBjFL7CNux85/*/2222143-2.PDF",
+     "sha256": "b01b45098f3acc4160a55f9a3c3c232179b79d1075fef14314821385af245000"
+    },
+    {
+     "from": "2023-10-19",
+     "units": 599,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/5b4f8gcw4CZ8LcgeWhiKBN/*/2226413-1.PDF",
+     "sha256": "85992ce40e26dae789a0f7b46d487e7ed0584ad03d88b6ec3323d86c3dff9ffd"
+    },
+    {
+     "from": "2023-11-23",
+     "units": 601,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/4s6xqAcAaI78o2ok0O-sBP/*/2237339-3.PDF",
+     "sha256": "987190c8750615ca4bcec55c76c501ae451e5456ae1dd370561605b5acb1a611"
+    },
+    {
+     "from": "2023-12-05",
+     "units": 603,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/EjD4fI-L48dAO40-stgElT/*/2241404-1.PDF",
+     "sha256": "8a8e238a0756eff746e24a7ad77dc30398f96be165351eea5d13ac772659d3e9"
+    },
+    {
+     "from": "2023-12-15",
+     "units": 603,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/7ZpwnhcV4l595qVNniredH/*/2244234-2.PDF",
+     "sha256": "3020acbd6122313f7882b48318efb32214d143e72594dace9cd4c02e218f595f"
+    },
+    {
+     "from": "2023-12-18",
+     "units": 604,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/87jiT9FGKVg8uQtvNMELTP/*/2245195-3.PDF",
+     "sha256": "9ba36e4d99e7f6396f5b131e0e4d22c0183a7763ac005c9fa1d16575002566ff"
+    },
+    {
+     "from": "2023-12-22",
+     "units": 604,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/5Bob5Vn1aM49blXlrtBW2t/*/2246611-10.PDF",
+     "sha256": "4f767b4d934484bbafc9ce8d784219a0240383554631dda5be462f7f70d3d016"
+    },
+    {
+     "from": "2023-12-22",
+     "units": 604,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/7UbvYpe3KTN8eNq-73rNo2/*/2247002-2.PDF",
+     "sha256": "21c885ca2c8d4544b2fc0b594e86f0fe5b3aeccc1e9717269dda926d6f3383cd"
+    },
+    {
+     "from": "2024-01-25",
+     "units": 605,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/4AVv-2Hfa0U8xGdCfDDEZd/*/2255394-1.PDF",
+     "sha256": "69fb679145c6fbf663c1a89238f8c7877c36903d2948c242f3f243ad868209d8"
+    },
+    {
+     "from": "2024-05-17",
+     "units": 605,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/0UXfqnkY4SK94U0T6IRaFL/*/2289141-1.PDF",
+     "sha256": "d4d183bfabf122e6c402e21f7370049d6645b83887bf8f5ca9dc4049743d9de5"
+    },
+    {
+     "from": "2024-05-18",
+     "units": 605,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/80UgLhkDqgnA0Q6gG_D3M3/*/2289582-3.PDF",
+     "sha256": "c9562e3c17fdb3279fc8b49624768b280f4171712bfdf3051f605591332be476"
+    },
+    {
+     "from": "2024-06-11",
+     "units": 605,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/1ckk1qHNKe5BHboHSNCMtE/*/2296582-1.PDF",
+     "sha256": "f77de10008f55a50f3d4228c5b10530b8ab65823913cf95a7aeca1d525be6fd5"
+    },
+    {
+     "from": "2024-08-09",
+     "units": 605,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/8GsRAMsLaqR942yPQeRLOK/*/2313391-1.PDF",
+     "sha256": "4be38dbdf9db5014aeafcb079a04528a0e43dc9a4bf18744563689447aa76abc"
+    },
+    {
+     "from": "2024-08-10",
+     "units": 605,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/9sbBjP_k49H9v51dXMAc3t/*/2313835-2.PDF",
+     "sha256": "c026b26343ea2970c25055beb0fccf94b5f94034e0cba3358f663d619f0ea6e9"
+    },
+    {
+     "from": "2024-09-14",
+     "units": 605,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/EB8JR2Lp4QZAQXdcdnsC73/*/2324653-6.PDF",
+     "sha256": "186a277710e35dacdac43a64184bcbc53f2d5ae3ebb50e8b41d4a4dcc035a92e"
+    },
+    {
+     "from": "2024-10-03",
+     "units": 606,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7034940/6055926-d-leg-1688.pdf?v=1727962888",
+     "sha256": "6863a385eb93117d07f913bbd7c3408a62388c55ff365ad2ca5c52c94033c2f7"
+    },
+    {
+     "from": "2024-10-20",
+     "units": 606,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/FNrUFsfwqNz8veoOxm5yce/*/2336227-1.PDF",
+     "sha256": "6fc5ce898d5f2cb30461b252309f3fdd581e6fed2308ba5285db6d62b30e0760"
+    },
+    {
+     "from": "2024-11-22",
+     "units": 607,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/0Ks5gKoc4P58tAGwnUlzR3/*/2346262-4.PDF",
+     "sha256": "c161bf391dd6b37c7026230a0032015f1d93ec6e39d82140b81886710764b97d"
+    },
+    {
+     "from": "2024-12-12",
+     "units": 607,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/5epDxSbPazO8ee03t2WcSc/*/2352315-1.PDF",
+     "sha256": "e65e6455320dd63c10ccd15eca2555d50bb00e1b1dee57c59998511b55b851bf"
+    },
+    {
+     "from": "2024-12-12",
+     "units": 607,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/EJmgvPTaa0oBIOUUTI_2C-/*/2352315-2.PDF",
+     "sha256": "80e40ac337e64d3896fc8a68121b9f9376fcddb73deda3a40e0aa9e4837ba7cf"
+    },
+    {
+     "from": "2024-12-12",
+     "units": 607,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/8XxXgQdW4N4BCYx0iZzNKp/*/2352315-3.PDF",
+     "sha256": "3803969a11e244bad5a10304c3f75154531fb024998150f6d449c96c27c89060"
+    },
+    {
+     "from": "2024-12-12",
+     "units": 607,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/29ba8tdWq2CBn2GDnJdlZT/*/2352315-4.PDF",
+     "sha256": "827f8b9e47c7c1b7a12fc4c49674966ec01588ac40d8ca687cc1322049a38cc0"
+    },
+    {
+     "from": "2025-01-20",
+     "units": 607,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/BMDtd0jVaKi9SxIyCd7DIc/*/2363369-3.PDF",
+     "sha256": "def06b6abae6ec1ccf1d76dcf8ad6b46ee2b473fe94960a1ecfcff64e553c174"
+    },
+    {
+     "from": "2025-01-20",
+     "units": 607,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/90MLncgPaKC917z4Hfvl1P/*/2363369-4.PDF",
+     "sha256": "8f19a6511549b802ebe87297db8ecc4ae47981462e2f25c0bf1adc3fd9d5ea00"
+    },
+    {
+     "from": "2025-03-15",
+     "units": 607,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/0tpNctp34CzBL3dD_dbqvU/*/2380524-2.PDF",
+     "sha256": "1d7e10aab678f0c396c3ef5202e711a601b4be4c36a9b52fa4677690f9a936dc"
+    },
+    {
+     "from": "2025-04-30",
+     "units": 607,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/3tszwuEKaEu9ryFVgi0dGQ/*/2394851-2.PDF",
+     "sha256": "c19f578f2fd6d14eba0acb60d168c1e00fb37601b3911184e719456333387eef"
+    },
+    {
+     "from": "2025-05-11",
+     "units": 607,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/A0R2x3XYK2y8Y16umTCTkh/*/2398238-4.PDF",
+     "sha256": "4a4957a4c0b4527055e856260b9ce13380a335d1d3e75ef6fa05faa7732ca8e1"
+    },
+    {
+     "from": "2025-05-13",
+     "units": 607,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/274q4jXh4g_974CawB5KoH/*/2398669-1.PDF",
+     "sha256": "27ccf04e5498838c8a70b6c62e4198e54fdd2fb38f99382f6a16cac7a5b42314"
+    },
+    {
+     "from": "2025-05-18",
+     "units": 608,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/AcHn5Ml9KBaA3IKlRIaD1y/*/2400391-1.PDF",
+     "sha256": "16c59866baaea155c62c69d3e899a0be00ccf211ccddc5933665a6ebc5dff7e0"
+    },
+    {
+     "from": "2025-06-08",
+     "units": 608,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/FU9Wzg0AaJjASx_N2YuYI4/*/2407453-2.PDF",
+     "sha256": "2ab0f1f991c337e53f58092c807116547bee09b461e1646db103dd7493104b81"
+    },
+    {
+     "from": "2025-09-23",
+     "units": 609,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/ECNa2QYLqkiB4hceIb3daP/*/2440760-1.PDF",
+     "sha256": "35e81b302115a9a936722219fc874c8af38af265d79009b26705cbd6198b4c07"
+    },
+    {
+     "from": "2025-10-01",
+     "units": 610,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/5ZL0oZwcKwf83PP1i2QeaA/*/2443471-1.PDF",
+     "sha256": "7c614256c04b3100a0abe9af08c0a7cda10abf142a8c6b601218982f915a6a5c"
+    },
+    {
+     "from": "2025-10-18",
+     "units": 610,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/BkoHDKQQ4aFAu_QXT0oZbn/*/2449682-2.PDF",
+     "sha256": "716fe647938367c06801dd121263fc557e78d60fe06fe08c15de05aa14f3dd21"
+    },
+    {
+     "from": "2025-12-12",
+     "units": 611,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32523-TXM.pdf",
+     "sha256": "b6b90650b67aae98b0e6920ffb16c7c7afc3f2b0a2e9b27a8cf42c6e4abdcdac"
+    },
+    {
+     "from": "2026-01-21",
+     "units": 612,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/F7yjeuQ1KAn9JvmWa3nsw0/*/2478557-2.PDF",
+     "sha256": "abdc6b81e0f3c8cf4e186d1867fd7992add687bc85861e4f887cbf778a218f27"
+    },
+    {
+     "from": "2026-01-21",
+     "units": 612,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/0rmdt3fGKoUAKIpYYv-Hxe/*/2478557-3.PDF",
+     "sha256": "152e0ce5ca0376482144e51a721a8573e1e193a4004bdf89e04c8e7757b7f9a6"
+    },
+    {
+     "from": "2026-01-21",
+     "units": 612,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/6p-LMOOFKPgAymq3HeZ1VW/*/2478560-1.PDF",
+     "sha256": "6a9ba0a183cf6272c82598d00d87302585f9ea2df59b14748dcf265dba4042ae"
+    },
+    {
+     "from": "2026-02-13",
+     "units": 613,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/6C-96HyX4PJAoHAXwIow5r/*/2486266-5.PDF",
+     "sha256": "3d32aaf05767f6ccc07c5d12d08f5dbc7f479da945ff596d30b73c80a708bd4d"
+    },
+    {
+     "from": "2026-02-13",
+     "units": 614,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/74oA1wJKKnwB17-hxd9N8C/*/2486266-7.PDF",
+     "sha256": "1c82ebf90056d1dc218f10701f53cb499f79ea1ea8607033ceea8548b96c18aa"
+    },
+    {
+     "from": "2026-02-13",
+     "units": 615,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/CMWn5jFoaYjBZL024jFklA/*/2486266-10.PDF",
+     "sha256": "cf92d6b495b1a10cbf6d016716b9bc0eadd98959fe14abaf5a3d2f3ee6b88fa1"
+    },
+    {
+     "from": "2026-02-14",
+     "units": 616,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/0YwiXgLfKu-8JiOGxosFkE/*/2487222-1.PDF",
+     "sha256": "be84f04469e238ec70c6efd36a82b7e184ea2904b8b4fe8d873ff6d7f0cc788e"
+    },
+    {
+     "from": "2026-05-17",
+     "units": 619,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/0eusl0zdqNaBEridFuuB_t/*/2516162-1.PDF",
+     "sha256": "2ddf73bddc6c01e7d499d261906ab33f1359b67707fd6805e6921cfc83340422"
+    },
+    {
+     "from": "2026-05-29",
+     "units": 619,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/DuEl4jk4KLP9ENO_4v0sUO/*/2519873-1.PDF",
+     "sha256": "cbe29e42e196241fb2ccaaf951007695add275e3c97cd0f3e8e9048de01b2e7b"
+    },
+    {
+     "from": "2026-07-03",
+     "units": 619,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/2wYrm4pbKjtB3Q2SJIDG-f/*/2530996-5.PDF",
+     "sha256": "63db89ac95dcacf43115b9eca77b0d4aa901e861d7d4ceaff33de19c215cf794"
+    }
+   ]
+  },
+  {
+   "slug": "ley-seguridad-salud-trabajo",
+   "short": "LSST",
+   "title": "Ley de Seguridad y Salud en el Trabajo (Ley 29783)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=38",
+   "versions": [
+    {
+     "from": "2022-07-28",
+     "units": 120,
+     "source_url": "https://web.archive.org/web/20250530id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=38",
+     "sha256": "88a7dd091c8a80bed2b10937004f72b777bd1e82491c017f19008f8d753e69a7"
+    }
+   ]
+  },
+  {
+   "slug": "decreto-legislativo-migraciones",
+   "short": "DLM",
+   "title": "Decreto Legislativo de Migraciones (Decreto Legislativo 1350)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=73",
+   "versions": [
+    {
+     "from": "2025-10-19",
+     "units": 123,
+     "source_url": "https://web.archive.org/web/20260324id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=73",
+     "sha256": "7c2d67d9f52d6834ab7a1ed65419210838023b6aa2155719a77dab92a177e129"
+    },
+    {
+     "from": "2026-02-08",
+     "units": 123,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/8HaXSTmZKjeAlKNFSNVMZ5/*/2484948-3.PDF",
+     "sha256": "1e12c19036e45aebd6833f0a8b599218c7067cd258b57e6920e9da26d13da1da"
+    }
+   ]
+  },
+  {
+   "slug": "ley-general-pesca",
+   "short": "LGP",
+   "title": "Ley General de Pesca (Decreto Ley 25977)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=51",
+   "versions": [
+    {
+     "from": "2023-05-22",
+     "units": 87,
+     "source_url": "https://web.archive.org/web/20240724id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=51",
+     "sha256": "12f2f3cc5e3dc8ad5bf4429e0a34c2d0b7d30d78911e6de4b83a6b53c99d3e1d"
+    }
+   ]
+  },
+  {
+   "slug": "ley-proteccion-bienestar-animal",
+   "short": "LPBA",
+   "title": "Ley de Protección y Bienestar Animal (Ley 30407)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=58",
+   "versions": [
+    {
+     "from": "2023-06-30",
+     "units": 41,
+     "source_url": "https://web.archive.org/web/20240723id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=58",
+     "sha256": "b74281f77b4ba0ce06ca867a4b4931a4238397cc2a29226e029ab6162cd2802f"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-procesal-constitucional",
+   "short": "CPConst",
+   "title": "Nuevo Código Procesal Constitucional (Ley 31307)",
+   "url": "https://busquedas.elperuano.pe/api/archivo/file/FReh7huu4-gAf1oPQRADt8/*/1975873-2.pdf",
+   "versions": [
+    {
+     "from": "2021-07-24",
+     "units": 140,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/FReh7huu4-gAf1oPQRADt8/*/1975873-2.pdf",
+     "sha256": "758a428f721f92fb65b191f05fd73d0a0cc7f5ceb4574fd503e926fd205bf103"
+    },
+    {
+     "from": "2022-10-06",
+     "units": 140,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/BJq85aU2K9e9LSeD9Lt331/*/2112560-1.pdf",
+     "sha256": "1f36a8bd7a12a03ec91a78c4285a5ef664686af797ca23e697ec6d198bddcc50"
+    },
+    {
+     "from": "2024-11-06",
+     "units": 141,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/FUqgZmq0qwW9gtOKa32Qhs/*/2340782-1.PDF",
+     "sha256": "0d312b505a8e2b315401442d7eec251e1f95275b03901d9256cb73ec4ab3e828"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-procesal-civil",
+   "short": "CPC",
+   "title": "Texto Único Ordenado del Código Procesal Civil (Decreto Legislativo 768; Resolución Ministerial 010-93-JUS)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=120007",
+   "versions": [
+    {
+     "from": "2025-03-28",
+     "units": 872,
+     "source_url": "https://web.archive.org/web/20250410id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=120007",
+     "sha256": "3ca34333f381c23774b4841adb90b823ace85403e2f81a0ca7285609a14104c3"
+    },
+    {
+     "from": "2025-04-12",
+     "units": 872,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/C8a1S5YBaSN8RvnukGDlLg/*/2389754-2.PDF",
+     "sha256": "14f164cccfa9ddacc2ad4a8111fb97a11407555923ee6184b1d734c2026a55fd"
+    },
+    {
+     "from": "2025-06-08",
+     "units": 871,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/2Uhf6IGIqJB9TfMSLbSzXB/*/2407453-7.PDF",
+     "sha256": "5ab809ec5d73955736551549fa31f7bb74c7134323c2849a644b84eea6af144e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-organica-poder-judicial",
+   "short": "LOPJ",
+   "title": "Texto Único Ordenado de la Ley Orgánica del Poder Judicial (Decreto Supremo 017-93-JUS)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=71",
+   "versions": [
+    {
+     "from": "2024-02-19",
+     "units": 295,
+     "source_url": "https://web.archive.org/web/20260114id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=71",
+     "sha256": "c5b340dd10447969ac96a85ca33c16024be9d8878d6bd0efc24939f693f7989c"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-tributario",
+   "short": "CT",
+   "title": "Texto Único Ordenado del Código Tributario (Decreto Supremo 133-2013-EF)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=90009",
+   "versions": [
+    {
+     "from": "2025-08-08",
+     "units": 319,
+     "source_url": "https://web.archive.org/web/20260125id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=90009",
+     "sha256": "17005a87efc43088eb71bfb4faa83d07ab35d8c9e2f0940b86f0808f793fe7f4"
+    },
+    {
+     "from": "2026-06-26",
+     "units": 319,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/26cDxnvn4ORAQ8JQLDYmMj/*/2529634-1.PDF",
+     "sha256": "9d446384a2af3ba899c3bcf4580eb956f4a8f08bc5fe17e0522750c74926ce61"
+    }
+   ]
+  },
+  {
+   "slug": "codigo-ninos-adolescentes",
+   "short": "CNA",
+   "title": "Código de los Niños y Adolescentes (Ley 27337)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=8",
+   "versions": [
+    {
+     "from": "2023-11-26",
+     "units": 185,
+     "source_url": "https://web.archive.org/web/20240714id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=8",
+     "sha256": "70c189206857a35c01b2716e588f37c2d9c1964e59f605d760ff4f8c7534a0d5"
+    },
+    {
+     "from": "2024-12-14",
+     "units": 185,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/3CVwbYEqaPMBfYfdr4GsnQ/*/2353462-2.PDF",
+     "sha256": "89764a07f6160722f97f69d1707596da037d4fe90fa1a8a0094a88c3194d49ce"
+    },
+    {
+     "from": "2026-05-30",
+     "units": 185,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/7kObKZ16KmI8LUKlY-c_nO/*/2520331-2.PDF",
+     "sha256": "0233154bc077a02fbed9cc95651f7a1c083a6297f9911970a831ef1a6296733e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-reforma-magisterial",
+   "short": "LRM",
+   "title": "Ley de Reforma Magisterial (Ley 29944)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=50001",
+   "versions": [
+    {
+     "from": "2024-03-21",
+     "units": 104,
+     "source_url": "https://web.archive.org/web/20240420id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=50001",
+     "sha256": "f9eaa46f9a07ed0889b04f9f44b1c8653733fbb9493a9ca6ce06ff125d8edab1"
+    },
+    {
+     "from": "2025-01-11",
+     "units": 104,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/9WGwhwLHK2nBfnoUrXwvDC/*/2360745-2.PDF",
+     "sha256": "4afaec3b144f201452e00aebfc415e27d9dab598f396156d13ad3afa7a24c6d5"
+    },
+    {
+     "from": "2025-01-12",
+     "units": 104,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/DSeTnWwr4yW8kYPLcGcptX/*/2361173-1.PDF",
+     "sha256": "35d44e94e338052c0028094f3c93c45a68202fbe07892e229cfb065184a659b1"
+    },
+    {
+     "from": "2025-04-18",
+     "units": 103,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/2fufn-RYa9xBtaiE3-oDoZ/*/2391918-1.PDF",
+     "sha256": "1534115422e5f4d5f2fef7c50fcad06f3e92217863d8bfc22fbaf8c95e37c434"
+    },
+    {
+     "from": "2026-05-31",
+     "units": 103,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/9G2QJ_T4K8I8Y-WeBbKBSn/*/2520797-1.PDF",
+     "sha256": "420cc8e0e0e1d717258e4ac513690ccc36ff4b5b88c102da894cd6a541f05c7a"
+    }
+   ]
+  },
+  {
+   "slug": "ley-organica-elecciones",
+   "short": "LOE",
+   "title": "Ley Orgánica de Elecciones (Ley 26859)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=5",
+   "versions": [
+    {
+     "from": "2025-12-26",
+     "units": 443,
+     "source_url": "https://web.archive.org/web/20260309id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=5",
+     "sha256": "05da1f24186bdbf76dfd93c25d7e044d6f6b205953c7c0008983c7bffe91fbf2"
+    },
+    {
+     "from": "2026-05-16",
+     "units": 443,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/7PlwzZrPKhK97B6m7nrzje/*/2516154-1.PDF",
+     "sha256": "772b95ed7633c3e9695314e12156927305c7906c8970071e61c37adf60191a9c"
+    }
+   ]
+  },
+  {
+   "slug": "ley-contrato-seguro",
+   "short": "LCS",
+   "title": "Ley del Contrato de Seguro (Ley 29946)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=90010",
+   "versions": [
+    {
+     "from": "2023-05-09",
+     "units": 154,
+     "source_url": "https://web.archive.org/web/20240303id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=90010",
+     "sha256": "3515f361aafe649cb8d36e1db199227b649a64eed8d4cb794cfd45947d6228d1"
+    }
+   ]
+  },
+  {
+   "slug": "ley-general-transporte-transito",
+   "short": "LGTTT",
+   "title": "Ley General de Transporte y Tránsito Terrestre (Ley 27181)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=52",
+   "versions": [
+    {
+     "from": "2024-12-13",
+     "units": 42,
+     "source_url": "https://web.archive.org/web/20250713id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=52",
+     "sha256": "aecab4683bb80243f6a0b9b6c2b0a9d0e4d3db739c340fc7e47495a8e779095d"
+    },
+    {
+     "from": "2026-01-31",
+     "units": 42,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/CTW-1lzVq3396vmSAeoBep/*/2482198-2.PDF",
+     "sha256": "b2f7ee2537790a8428c351600b1f8f5e3ef608b1c6d45dcfe075f1ac31bcd7a2"
+    },
+    {
+     "from": "2026-05-17",
+     "units": 43,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/80vqsiDDqsK8qS87ji5nsg/*/2516162-4.PDF",
+     "sha256": "177a6a65e926fc7a1451f1cfdacb479c5c6b73033fddd4a847226df09243a231"
+    },
+    {
+     "from": "2026-05-30",
+     "units": 43,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/FjvGEljNq1AAuFON35nXXA/*/2520331-1.PDF",
+     "sha256": "a9c3c77eb838655ed55381348a4184cf7d366f4095044a032d5fc03c99f8374e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-universitaria",
+   "short": "LU",
+   "title": "Ley Universitaria (Ley 30220)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=50",
+   "versions": [
+    {
+     "from": "2025-07-02",
+     "units": 168,
+     "source_url": "https://web.archive.org/web/20250710id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=50",
+     "sha256": "cb937774094a7d3ffc6a319a3b6da1184583a61ccb86cf518f23b04b9a32913c"
+    },
+    {
+     "from": "2025-08-02",
+     "units": 168,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/EvWhZCM5KZU8ZlsPqhDx1w/*/2424010-1.PDF",
+     "sha256": "5ff44f3106287f44b7be755fffac110468c3d186609475327bbd5fe2b5da5190"
+    },
+    {
+     "from": "2025-08-07",
+     "units": 169,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/D-ug7NwYaxmBRmy1pPb49O/*/2425441-1.PDF",
+     "sha256": "f337d67c8aef811afb6a1c7d17771c8c1b4d99cb35f6a521c7ad4c41a98dca85"
+    },
+    {
+     "from": "2026-01-10",
+     "units": 170,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/6bbLxR9vqL58bAFBRT0XzR/*/2475358-2.PDF",
+     "sha256": "95678a4108f074abcad5f2be825987ac18d3457fb3b7a5386b0cfad5523eb55e"
+    },
+    {
+     "from": "2026-07-03",
+     "units": 170,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/2O7FR1fmKoWBV62VJ6DmMO/*/2530996-1.PDF",
+     "sha256": "62de1d3016c036c8d0bba4590ac5960463e2257a7132dde414359b87122c3520"
+    }
+   ]
+  },
+  {
+   "slug": "ley-organica-municipalidades",
+   "short": "LOM",
+   "title": "Ley Orgánica de Municipalidades (Ley 27972)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=28",
+   "versions": [
+    {
+     "from": "2024-05-26",
+     "units": 201,
+     "source_url": "https://web.archive.org/web/20240602id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=28",
+     "sha256": "99a2d3437b79615749497d350cb3fa7533633edc0738deba6c896a9aa5ad39a5"
+    },
+    {
+     "from": "2024-07-21",
+     "units": 201,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/FEW55G3uq1DBXH4todcAIt/*/2308799-1.PDF",
+     "sha256": "4507ae0a558e25843c468637e5cfa99258856708d05e3abcbc38896b81e6eb27"
+    },
+    {
+     "from": "2025-03-23",
+     "units": 201,
+     "source_url": "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32269-TXM.pdf",
+     "sha256": "072a993ce643413bb55534646b68a24382225fb25b0a14a7193680f8e92c6f97"
+    },
+    {
+     "from": "2025-06-17",
+     "units": 201,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/3FC87oOpafVA0r1UE1Vs_f/*/2410141-1.PDF",
+     "sha256": "4b6ce6b4cb6837a9171d5378ad30609d3473a3a02abeb42c76170fc58cf16c9e"
+    }
+   ]
+  },
+  {
+   "slug": "ley-organica-gobiernos-regionales",
+   "short": "LOGR",
+   "title": "Ley Orgánica de Gobiernos Regionales (Ley 27867)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=33",
+   "versions": [
+    {
+     "from": "2023-10-29",
+     "units": 112,
+     "source_url": "https://web.archive.org/web/20231226id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=33",
+     "sha256": "2427ebfdb7eae2e981bca0d32dcd0c7f8286dc401082e612d39d7c1d906791bb"
+    },
+    {
+     "from": "2024-07-21",
+     "units": 112,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/FEW55G3uq1DBXH4todcAIt/*/2308799-1.PDF",
+     "sha256": "4507ae0a558e25843c468637e5cfa99258856708d05e3abcbc38896b81e6eb27"
+    },
+    {
+     "from": "2024-12-28",
+     "units": 112,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/5Kd_dZC2KVpBqONujImqO5/*/2357348-1.PDF",
+     "sha256": "e34e90cc83472b38a476c3f2cce6f27900c144ea5ade77d8906f7145d4b3bdfb"
+    }
+   ]
+  },
+  {
+   "slug": "ley-transparencia-acceso-informacion",
+   "short": "LTAIP",
+   "title": "Texto Único Ordenado de la Ley 27806, Ley de Transparencia y Acceso a la Información Pública (Decreto Supremo 021-2019-JUS)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=20",
+   "versions": [
+    {
+     "from": "2024-05-31",
+     "units": 45,
+     "source_url": "https://web.archive.org/web/20240817id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=20",
+     "sha256": "6ff36d6fbbed85b81478b6875acbe17f59e99b3bce7598df3a18f29be2a88964"
+    },
+    {
+     "from": "2024-10-03",
+     "units": 45,
+     "source_url": "https://cdn.www.gob.pe/uploads/document/file/7034940/6055926-d-leg-1688.pdf?v=1727962888",
+     "sha256": "6863a385eb93117d07f913bbd7c3408a62388c55ff365ad2ca5c52c94033c2f7"
+    }
+   ]
+  },
+  {
+   "slug": "ley-organizaciones-politicas",
+   "short": "LOP",
+   "title": "Ley de Organizaciones Políticas (Ley 28094)",
+   "url": "https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=4",
+   "versions": [
+    {
+     "from": "2026-02-27",
+     "units": 68,
+     "source_url": "https://web.archive.org/web/20260412id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=4",
+     "sha256": "c5808b31380d1fd381682b5ad396f736d62a2505b7076cc5e8335acbbf1899f5"
+    },
+    {
+     "from": "2026-06-16",
+     "units": 68,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/661Zc8LK4InB8bv--WtPMH/*/2526082-1.PDF",
+     "sha256": "bfeff0361eb5da0d7df6cead838500aff298fff0c462bb6d2d6625d2248f6dc3"
+    },
+    {
+     "from": "2026-08-02",
+     "units": 69,
+     "source_url": "https://busquedas.elperuano.pe/api/archivo/file/BizgIaTiqrg9dWD1GN3YLc/*/2403115-4.PDF",
+     "sha256": "02a1b7180da1022b991e131189f610de1aebc7e0c880aa1a689a30e6cd6a6ed6"
+    }
+   ]
+  }
+ ]
+}

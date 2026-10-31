@@ -1,0 +1,19 @@
+The legal texts come from the Congreso de la República del Perú:
+
+  Fuente: Congreso de la República del Perú, ediciones oficiales de la Constitución Política del Perú
+  (mayo de 2021 y diciembre de 2024, https://www.congreso.gob.pe) y Archivo Digital de la Legislación del Perú
+  (https://www.leyes.congreso.gob.pe), retrieved 28 October 2026; earlier Congreso editions read through the
+  Internet Archive (captures pinned in tools/parse.py).
+
+They are official texts of the Republic of Peru. Decreto Legislativo 822 (Ley sobre el Derecho de Autor), article 9,
+excludes official texts of a legislative, administrative or judicial nature from copyright protection.
+
+Changes made by Lexifina: each version was converted to one Markdown file per provision, one paragraph per line;
+spacing, quotes and dashes were normalised and degree signs after article numbers dropped; the Congreso's notes were
+removed from the text and used only to rebuild earlier versions and to credit the amending law; and the versions were
+arranged as git commits credited to the laws and the ruling that made each change. The wording of the law was not
+changed. The Congreso de la República does not endorse this repository.
+
+Lexifina's own contributions (the arrangement of the history, the commit messages, the tables and the tools) are
+dedicated to the public domain under CC0 1.0 Universal:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
