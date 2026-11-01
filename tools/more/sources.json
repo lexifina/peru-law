@@ -1,0 +1,30 @@
+{
+  "consumidor": {
+    "note": "Everything more/parse_cpdc.py reads. Fetch with: python -X utf8 more/mfetch.py --plan",
+    "urls": [
+      "https://cdn.www.gob.pe/uploads/document/file/1837776/C%C3%B3digo%20Protecci%C3%B3n%20Consumidor%202020.pdf?v=1619483959",
+      "https://web.archive.org/web/20191101065438id_/http://spij.minjus.gob.pe:80/content/publicaciones_oficiales/img/CODIGO-CONSUMIDOR.pdf",
+      "https://web.archive.org/web/20240819051628id_/https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=17",
+      "https://cdn.www.gob.pe/uploads/document/file/1351847/1244218-ley-29571_spij.pdf?v=1745616997",
+      "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/ADLP/Texto_Consolidado/31207-TXM.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31435-TXM.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31467-TXM.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31537-TXM.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31601-TXM.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31763-TXM.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/31937-TXM.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32032-TXM.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32230-TXM.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32323-TXM.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32327-TXM.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/2021_2026/ADLP/Texto_Consolidado/32495-TXM.pdf",
+      "https://cdn.www.gob.pe/uploads/document/file/1536616/DL%201308.pdf.pdf?v=1610113212",
+      "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/ADLP/Texto_Consolidado/30534-TXM.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/ADLP/Texto_Consolidado/30908-TXM.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/NL20180905.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/2016_2021/Boletin_de_Normas_Legales/NL20200829.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/Leyes/29888.pdf",
+      "https://www.leyes.congreso.gob.pe/Documentos/Leyes/30046.pdf"
+    ]
+  }
+}
