@@ -1,0 +1,307 @@
+{
+ "parts": {
+  "50-codes.json": {
+   "acts": [
+    "codigo-civil",
+    "proteccion-datos-personales"
+   ],
+   "sha256": "1225f2649ee37c7fa60a3f41a5d12dcf8b5830d7db3a560b3f4dc8c54aa2a106"
+  },
+  "60-proc.json": {
+   "acts": [
+    "codigo-procesal-penal"
+   ],
+   "sha256": "965f57940aea01a89e010ffa0ef4d1058eea7382e723923b9073e3ad14740a2e"
+  },
+  "61-lope.json": {
+   "acts": [
+    "ley-organica-poder-ejecutivo"
+   ],
+   "sha256": "46ad81afd79218f0374f8718b3242c034fd9b5fef1756050bd4a8b315b8551a7"
+  },
+  "62-control.json": {
+   "acts": [
+    "ley-organica-sistema-nacional-control"
+   ],
+   "sha256": "8d055acde3315955d111c2aa37f5e37ab659f4f0b980a058f7a555d3bae837c3"
+  },
+  "63-hostigamiento.json": {
+   "acts": [
+    "ley-hostigamiento-sexual"
+   ],
+   "sha256": "f0c5e677fe5cbae884cd99e358d58a81b2c030a1e7ef89b3ed71a6dd448860e5"
+  },
+  "64-gratificaciones.json": {
+   "acts": [
+    "ley-gratificaciones"
+   ],
+   "sha256": "aaa7e5c52bbb8a052936b3f83af54d35cbf9cabbd1ef12a6cbb5278c3b8646be"
+  },
+  "65-lpag.json": {
+   "acts": [
+    "ley-procedimiento-administrativo-general"
+   ],
+   "sha256": "ef33533ef2c2b8e3fdfea15c1f8f8769a6ffeb59c32c118f59668a99219db5d6"
+  },
+  "70-consumidor.json": {
+   "acts": [
+    "codigo-consumidor"
+   ],
+   "sha256": "de4a3b3d216980f4abac9b43a23b7aac72cf3b19e1318c6f508482cc673c49a1"
+  },
+  "71-sociedades.json": {
+   "acts": [
+    "ley-general-sociedades"
+   ],
+   "sha256": "a8068e96f7c7a381c0454c9925d32acbdc3f3b54d8f2a743f92544473df6e0f2"
+  },
+  "72-lpcl.json": {
+   "acts": [
+    "ley-productividad-competitividad-laboral"
+   ],
+   "sha256": "ca8fff639e50cf5075aef1c330bf9e8eca04e840ba96767dd423e9394ddc93a6"
+  },
+  "73-relaciones-colectivas.json": {
+   "acts": [
+    "ley-relaciones-colectivas-trabajo"
+   ],
+   "sha256": "faf28c20cba89ac113c3d9b3daa911eb9565136140336625f4bc1fb999cb7af6"
+  },
+  "74-inspeccion-trabajo.json": {
+   "acts": [
+    "ley-general-inspeccion-trabajo"
+   ],
+   "sha256": "e239d9335edf557aa74eba0249c086006a4f02515621962a8de3fbcb85946640"
+  },
+  "75-cas.json": {
+   "acts": [
+    "decreto-legislativo-cas"
+   ],
+   "sha256": "cd2b45d7fda2a6ada5ec816a28bf67109ae301c498ea2bfd2b58a457e2676b4b"
+  },
+  "76-carrera-administrativa.json": {
+   "acts": [
+    "ley-bases-carrera-administrativa"
+   ],
+   "sha256": "353625744d6e87a3a07b0aa89adc17eb27446f72aa8eb4d0841102141a7f8ee1"
+  },
+  "77-discapacidad.json": {
+   "acts": [
+    "ley-general-persona-discapacidad"
+   ],
+   "sha256": "b39f97a1efcef73ae0737eb3a6226c8f416275e7811aaeed8966c35ada8aea94"
+  },
+  "78-salud.json": {
+   "acts": [
+    "ley-general-salud"
+   ],
+   "sha256": "0e043268b2bd6b7347d7f04fb34308c135897afa743e2a052faa6ff55c6e2694"
+  },
+  "79-firmas-digitales.json": {
+   "acts": [
+    "ley-firmas-certificados-digitales"
+   ],
+   "sha256": "0964bb99a315a6d5270169961bcaff4140b665e8608429fc9a68509f5274574b"
+  },
+  "80-penal.json": {
+   "acts": [
+    "codigo-penal"
+   ],
+   "sha256": "802fd4ae3efeec38d10526a0b63fe97e850de16911c89adae011385cae1905d3"
+  },
+  "81-seguridad-salud-trabajo.json": {
+   "acts": [
+    "ley-seguridad-salud-trabajo"
+   ],
+   "sha256": "12447c9e2a21a9739a2985f6c2b484866e72f7875638143fc5e19626ae1818ff"
+  },
+  "82-migraciones.json": {
+   "acts": [
+    "decreto-legislativo-migraciones"
+   ],
+   "sha256": "4d90295175bb6874561d0ad5e8545c3989dfa16aa59ab9fb5fa46c94389d4532"
+  },
+  "83-pesca.json": {
+   "acts": [
+    "ley-general-pesca"
+   ],
+   "sha256": "6b787e8181f2f5f5e505f2d37715d817cf161896aa243df6eaf7e878cdfd4ade"
+  },
+  "84-bienestar-animal.json": {
+   "acts": [
+    "ley-proteccion-bienestar-animal"
+   ],
+   "sha256": "5208f3581f0f65322912877b7a8340e47dae4e6457c7cb7064144c9ee72dd1c1"
+  },
+  "85-procconst.json": {
+   "acts": [
+    "codigo-procesal-constitucional"
+   ],
+   "sha256": "6f8a00f994401f194cb96dbf4432e786581e869e8f7f974deeaa001add5d4f62"
+  },
+  "86-codigo-procesal-civil.json": {
+   "acts": [
+    "codigo-procesal-civil"
+   ],
+   "sha256": "d2d49cf79096aa0e73ef53c780691b1bcde013daad3f58d0dbd7db348791ef54"
+  },
+  "87-poder-judicial.json": {
+   "acts": [
+    "ley-organica-poder-judicial"
+   ],
+   "sha256": "5b8a69195e559805ed588bb9ce992c5592876e8ad9c2767dd0d8e28d5fb435ba"
+  },
+  "88-codigo-tributario.json": {
+   "acts": [
+    "codigo-tributario"
+   ],
+   "sha256": "b6f170650274b901d88404d302dd4561eec1e93d5d5e27ff1e0db05a5dc54099"
+  },
+  "90-cna.json": {
+   "acts": [
+    "codigo-ninos-adolescentes"
+   ],
+   "sha256": "2ced55c4d3cbde4627cbf59c58071afa177ff9b61cac221d013a9e73924532d5"
+  },
+  "91-reforma-magisterial.json": {
+   "acts": [
+    "ley-reforma-magisterial"
+   ],
+   "sha256": "e9634595be6465243cad20f12f2e66cf3880c6263b17d4f1d23ddc2586891fe7"
+  },
+  "92-loe.json": {
+   "acts": [
+    "ley-organica-elecciones"
+   ],
+   "sha256": "82ecd0ddfaad66ac18a68217668ae996839a42699be92caceb0c2c174d686b31"
+  },
+  "93-contrato-seguro.json": {
+   "acts": [
+    "ley-contrato-seguro"
+   ],
+   "sha256": "d4da288573d6c7f0635ab04082fdf92b01768f53079eef6fe33d6ccc8bde2387"
+  },
+  "94-transporte.json": {
+   "acts": [
+    "ley-general-transporte-transito"
+   ],
+   "sha256": "523af0e67287291f2078e8532091c3d8c91e167a63579e25da8a6e392c286c61"
+  },
+  "95-universitaria.json": {
+   "acts": [
+    "ley-universitaria"
+   ],
+   "sha256": "d9a2f15aef6bc2fc557f4127802eaa38de0f4986479caf5e34345499896be2c1"
+  },
+  "96-municipalidades.json": {
+   "acts": [
+    "ley-organica-municipalidades"
+   ],
+   "sha256": "df7d4d94c8870dc4578922ec1ccb33d2a312a3e999371196d39654246a4fd523"
+  },
+  "97-gobiernos-regionales.json": {
+   "acts": [
+    "ley-organica-gobiernos-regionales"
+   ],
+   "sha256": "d4941a3be82d3ef27dc06cb36d8a17792a2da9f81f1d1abe32acad75add85b40"
+  },
+  "98-transparencia.json": {
+   "acts": [
+    "ley-transparencia-acceso-informacion"
+   ],
+   "sha256": "67844c1f7723b686684fc34952bd60a5c6d169b17ca6dcb287e4f382b30092da"
+  },
+  "99-organizaciones-politicas.json": {
+   "acts": [
+    "ley-organizaciones-politicas"
+   ],
+   "sha256": "6e5c773f9098aa4283445c7d47e2d9aa085ef28b04379bcae90538a523ebf2ef"
+  },
+  "9a-beneficios-laborales.json": {
+   "acts": [
+    "ley-consolidacion-beneficios-sociales",
+    "ley-descansos-remunerados",
+    "ley-participacion-utilidades"
+   ],
+   "sha256": "a0dceadf69cb3d47406ec104f2f1dea9b03ea730f8f55d89fd0d0fc4f865743f"
+  },
+  "9b-formacion-y-descansos.json": {
+   "acts": [
+    "decreto-legislativo-descanso-vacacional",
+    "ley-descanso-prenatal-postnatal",
+    "ley-modalidades-formativas-laborales"
+   ],
+   "sha256": "8bc335ec79d99f01e3e9d2aededc91f14b297d23fa1b9fe4a7b1ae27a1ed06bc"
+  },
+  "9c-rondas-castigo-playas.json": {
+   "acts": [
+    "ley-playas-litoral",
+    "ley-prohibicion-castigo-fisico",
+    "ley-rondas-campesinas"
+   ],
+   "sha256": "caee72ba2f0ebf165bd42b2e3018c08ca031e06089eb028b29a662c83d218722"
+  },
+  "9d-tercerizacion-gas.json": {
+   "acts": [
+    "ley-promocion-gas-natural",
+    "ley-tercerizacion"
+   ],
+   "sha256": "4297ac3ecc550e54a2d301d10fe61623c0c4bd24bb47b2e11c40a51ee3eab03c"
+  },
+  "9e-fuerza-asignacion.json": {
+   "acts": [
+    "decreto-legislativo-uso-fuerza-policia",
+    "ley-asignacion-familiar"
+   ],
+   "sha256": "42329204e1691af2bed37e72dfb74d107a29583d6be7b81651c4a22b1c79544c"
+  },
+  "9f-tributacion-municipal.json": {
+   "acts": [
+    "ley-tributacion-municipal"
+   ],
+   "sha256": "d74c81a7503fe6a36311ccec20ca82ee9a037106ecaa1ab7df322cf99dee1556"
+  },
+  "9g-ejecucion-penal.json": {
+   "acts": [
+    "codigo-ejecucion-penal"
+   ],
+   "sha256": "94936a7185be7638f7d45a56c8d09b5f8b6528c0b7c58e71408222b368ff82c3"
+  },
+  "9h-pensiones.json": {
+   "acts": [
+    "decreto-ley-sistema-nacional-pensiones",
+    "ley-sistema-privado-pensiones"
+   ],
+   "sha256": "108caa70f5886a1f6c4147a0bb8783f09bd5500467e4a83a4b9e9a4dc00db9e2"
+  },
+  "9i-turismo.json": {
+   "acts": [
+    "ley-general-turismo-29408",
+    "nueva-ley-general-turismo"
+   ],
+   "sha256": "97ab6f4f4989f488e6028dbeafd9866332fbec4ca9a5f6452597a9a006cd9fab"
+  },
+  "9j-teletrabajo-hogar.json": {
+   "acts": [
+    "ley-teletrabajo",
+    "ley-trabajadoras-trabajadores-hogar"
+   ],
+   "sha256": "ca85829bfed846a97a4b063e9e641d0f289de9f3277adf850f88cdc08dc18fc9"
+  },
+  "9k-ia-ordenamiento.json": {
+   "acts": [
+    "ley-inteligencia-artificial",
+    "ley-ordenamiento-territorial"
+   ],
+   "sha256": "cb055873c430bd8b3d3c28a8e6767328bea6ddd82b4b90582aa56a61a1e1676a"
+  },
+  "9l-tabaco-vivienda.json": {
+   "acts": [
+    "ley-control-consumo-tabaco",
+    "ley-vivienda-interes-social"
+   ],
+   "sha256": "7b994196ec8a634e04124a65de96b2eee5493630121e5ae2f2b3a5bccf82588b"
+  }
+ },
+ "schema": 1
+}
