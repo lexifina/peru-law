@@ -212,7 +212,7 @@ Every word of law in this repository comes from these sources. Lexifina reads th
 | `ley-organica-poder-ejecutivo` | Ley Orgánica del Poder Ejecutivo (Ley 29158) | 1 | 2023-10-12 to 2023-10-12 |
 | `ley-organica-sistema-nacional-control` | Ley Orgánica del Sistema Nacional de Control y de la Contraloría General de la República (Ley 27785) | 1 | 2024-06-26 to 2024-06-26 |
 | `ley-hostigamiento-sexual` | Ley de Prevención y Sanción del Hostigamiento Sexual (Ley 27942) | 1 | 2021-11-22 to 2021-11-22 |
-| `ley-gratificaciones` | Ley que regula el otorgamiento de las gratificaciones para los trabajadores del régimen de la actividad privada por Fiestas Patrias y Navidad (Ley 27735) | 1 | 2026-04-13 to 2026-04-13 |
+| `ley-gratificaciones` | Ley que regula el otorgamiento de las gratificaciones para los trabajadores del régimen de la actividad privada por Fiestas Patrias y Navidad (Ley 27735) | 1 | 2015-06-25 to 2015-06-25 |
 | `ley-procedimiento-administrativo-general` | Texto Único Ordenado de la Ley 27444, Ley del Procedimiento Administrativo General (Decreto Supremo 004-2019-JUS) | 6 | 2020-05-11 to 2024-08-31 |
 | `codigo-consumidor` | Código de Protección y Defensa del Consumidor (Ley 29571) | 20 | 2010-10-02 to 2025-11-12 |
 | `ley-general-sociedades` | Ley General de Sociedades (Ley 26887) | 1 | 2021-05-15 to 2021-05-15 |
@@ -227,7 +227,7 @@ Every word of law in this repository comes from these sources. Lexifina reads th
 | `codigo-penal` | Código Penal (Decreto Legislativo 635) | 95 | 2016-05-31 to 2026-07-03 |
 | `ley-seguridad-salud-trabajo` | Ley de Seguridad y Salud en el Trabajo (Ley 29783) | 1 | 2022-07-28 to 2022-07-28 |
 | `decreto-legislativo-migraciones` | Decreto Legislativo de Migraciones (Decreto Legislativo 1350) | 2 | 2025-10-19 to 2026-02-08 |
-| `ley-general-pesca` | Ley General de Pesca (Decreto Ley 25977) | 1 | 2023-05-22 to 2023-05-22 |
+| `ley-general-pesca` | Ley General de Pesca (Decreto Ley 25977) | 1 | 2023-05-21 to 2023-05-21 |
 | `ley-proteccion-bienestar-animal` | Ley de Protección y Bienestar Animal (Ley 30407) | 1 | 2023-06-30 to 2023-06-30 |
 | `codigo-procesal-constitucional` | Nuevo Código Procesal Constitucional (Ley 31307) | 3 | 2021-07-24 to 2024-11-06 |
 | `codigo-procesal-civil` | Texto Único Ordenado del Código Procesal Civil (Decreto Legislativo 768; Resolución Ministerial 010-93-JUS) | 3 | 2025-03-28 to 2025-06-08 |
@@ -236,7 +236,7 @@ Every word of law in this repository comes from these sources. Lexifina reads th
 | `codigo-ninos-adolescentes` | Código de los Niños y Adolescentes (Ley 27337) | 3 | 2023-11-26 to 2026-05-30 |
 | `ley-reforma-magisterial` | Ley de Reforma Magisterial (Ley 29944) | 5 | 2024-03-21 to 2026-05-31 |
 | `ley-organica-elecciones` | Ley Orgánica de Elecciones (Ley 26859) | 2 | 2025-12-26 to 2026-05-16 |
-| `ley-contrato-seguro` | Ley del Contrato de Seguro (Ley 29946) | 1 | 2023-05-09 to 2023-05-09 |
+| `ley-contrato-seguro` | Ley del Contrato de Seguro (Ley 29946) | 1 | 2013-05-26 to 2013-05-26 |
 | `ley-general-transporte-transito` | Ley General de Transporte y Tránsito Terrestre (Ley 27181) | 4 | 2024-12-13 to 2026-05-30 |
 | `ley-universitaria` | Ley Universitaria (Ley 30220) | 5 | 2025-07-02 to 2026-07-03 |
 | `ley-organica-municipalidades` | Ley Orgánica de Municipalidades (Ley 27972) | 4 | 2024-05-26 to 2025-06-17 |
@@ -249,7 +249,7 @@ Every word of law in this repository comes from these sources. Lexifina reads th
 | `ley-modalidades-formativas-laborales` | Ley sobre Modalidades Formativas Laborales (Ley 28518) | 1 | 2020-11-09 to 2020-11-09 |
 | `ley-descanso-prenatal-postnatal` | Ley que precisa el goce del derecho de descanso pre-natal y post-natal de la trabajadora gestante (Ley 26644) | 1 | 2022-03-02 to 2022-03-02 |
 | `decreto-legislativo-descanso-vacacional` | Decreto Legislativo que establece regulaciones para que el disfrute del descanso vacacional remunerado favorezca la conciliación de la vida laboral y familiar (Decreto Legislativo 1405) | 1 | 2020-10-21 to 2020-10-21 |
-| `ley-rondas-campesinas` | Ley de Rondas Campesinas (Ley 27908) | 1 | 2022-06-27 to 2022-06-27 |
+| `ley-rondas-campesinas` | Ley de Rondas Campesinas (Ley 27908) | 1 | 2003-01-08 to 2003-01-08 |
 | `ley-prohibicion-castigo-fisico` | Ley que prohíbe el uso del castigo físico y humillante contra los niños, niñas y adolescentes (Ley 30403) | 1 | 2022-02-02 to 2022-02-02 |
 | `ley-playas-litoral` | Ley que declara que las playas del litoral son bienes de uso público, inalienables e imprescriptibles y establecen zona de dominio restringido (Ley 26856) | 1 | 2020-10-06 to 2020-10-06 |
 | `ley-tercerizacion` | Ley que regula los servicios de tercerización (Ley 29245) | 1 | 2021-02-15 to 2021-02-15 |
@@ -269,7 +269,7 @@ Every word of law in this repository comes from these sources. Lexifina reads th
 | `ley-control-consumo-tabaco` | Ley del control del consumo de productos de tabaco, nicotina o sucedáneos de ambos para la protección de la vida y la salud (Ley 32159) | 1 | 2024-11-13 to 2024-11-13 |
 | `ley-vivienda-interes-social` | Ley de la Vivienda de Interés Social (VIS) (Ley 32379) | 1 | 2025-06-12 to 2025-06-12 |
 
-The build made 371 commits:
+The build made 379 commits:
 
 | Commits | Kind |
 | ---: | --- |
@@ -293,15 +293,15 @@ When a law gives no date of its own, the default rule applies: Constitución art
 
 `tools/build.py` turns the corpus into this history in one pass: one commit per law, on the day it took effect. The same corpus always gives the same commit hashes. `tools/check_repo.py` reads every version back from git and compares it with the corpus. `tools/on.py` shows the law as it stood on any date. The corpus format is described in `tools/SCHEMA.md`.
 
-- Corpus: sha256 `e87b37d7ecc0d50608ee58fbc4483493c256d54b8f24e6a817a1b616261518a8` (14216444 bytes).
+- Corpus: sha256 `6cd7f49c3514a58d5b24da249028046096330aa6afc17e59a8851b9cd97106d0` (14377233 bytes).
 - Builder blob hashes (`git hash-object`): `build.py` `35388bee5aa05369f7da68f5a8fa015ea8d442b8`, `check.py` `5d719354ea4c62d240c93d2cae446307d81d9e81`, `on.py` `aff48cf1b68d50c7ba8f399ca32261871c301824`.
 - Python 3.14.4; git version 2.53.0.
 
 ## Checks
 
-379 versions of 63 acts read back from git on the day each took effect and on the day before: 0 mismatches. Trailers: 0 commits whose trailers git cannot parse. Health: 0 merge commits on main, 0 commit dates that go backwards, 0 commits dated after the build.
+Not yet run for this build.
 
-A second build from the same corpus into an empty folder gave identical hashes for all 370 history commits and 660 tags (history tip `15f828a50ab7f2366657426b20b9d8464ef739a5`).
+No second build of this corpus has been compared yet.
 
 ## Decisions made by hand
 
@@ -887,6 +887,10 @@ A second build from the same corpus into an empty folder gave identical hashes f
 - Ley de la Vivienda de Interés Social (VIS) (Ley 32379): no Editora Perú consolidation of the law with a text layer was found; the act is the law's own text as published in El Peruano's edición extraordinaria of 11 June 2025 (read from the PDF of the norm), in force on 12 June 2025 under art. 109 of the Constitution (it has no vigencia clause; the reglamentary adaptation of its first disposición complementaria final changes no words). The promulgation formula and the signatures are left out.
 - Ley de la Vivienda de Interés Social (VIS) (Ley 32379): paragraph breaks are read from the layout. The wording of Ley 31313 that its disposición complementaria modificatoria restates (a title and chapter heading and art. 81) stays inside that disposition, as printed, with the title heading the layout breaks over two lines as one line; Ley 31313 itself is not in this repository.
 - Ley de la Vivienda de Interés Social (VIS) (Ley 32379): every ley, decreto legislativo and decreto de urgencia listed by El Peruano from 11 May 2020 to 31 October 2026 was read for amending wording (with the issue texts of 6 December 2025 - 17 January 2026, which El Peruano's index leaves out); none changes its words. No consolidation with a text layer was found, so the text is checked only against the law's own publication.
+- ley-gratificaciones: corrected the one existing version date from 2026-04-13 to 2015-06-25 based on Ley 30334, art. 7; El Peruano 24 June 2015; current text from 25 June 2015. The source legal text, its unit keys and its SHA are unchanged.
+- ley-general-pesca: corrected the one existing version date from 2023-05-22 to 2023-05-21 based on Ley 31749, El Peruano 20 May 2023; Constitution art. 109; current text from 21 May 2023. The source legal text, its unit keys and its SHA are unchanged.
+- ley-contrato-seguro: corrected the one existing version date from 2023-05-09 to 2013-05-26 based on Ley 29946, ninth final provision; publication 27 November 2012 plus 180 days = 26 May 2013. The source legal text, its unit keys and its SHA are unchanged.
+- ley-rondas-campesinas: corrected the one existing version date from 2022-06-27 to 2003-01-08 based on Ley 27908, El Peruano 7 January 2003; Constitution art. 109; in force 8 January 2003. The source legal text, its unit keys and its SHA are unchanged.
 
 ## What AI did and did not do
 
@@ -959,3 +963,7 @@ Model use at data-build time:
 - Ley de Ordenamiento Territorial (Ley 32279): none. The text is read from El Peruano's PDF by script; the paragraph split and joins were written by hand.
 - Ley del control del consumo de productos de tabaco (Ley 32159): none. The text is read from El Peruano's PDF by script; the paragraph splits were written by hand.
 - Ley de la Vivienda de Interés Social (VIS) (Ley 32379): none. The text is read from El Peruano's PDF by script; the paragraph join was written by hand.
+- A model evaluated the source date clauses and calendar arithmetic. The script copied the complete existing act and changed only date metadata; it did not write or edit law text.
+- A model evaluated the source date clauses and calendar arithmetic. The script copied the complete existing act and changed only date metadata; it did not write or edit law text.
+- A model evaluated the source date clauses and calendar arithmetic. The script copied the complete existing act and changed only date metadata; it did not write or edit law text.
+- A model evaluated the source date clauses and calendar arithmetic. The script copied the complete existing act and changed only date metadata; it did not write or edit law text.

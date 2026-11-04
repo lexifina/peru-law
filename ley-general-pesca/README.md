@@ -1,6 +1,6 @@
 # Ley General de Pesca (Decreto Ley 25977)
 
-LGP · 1 versions, from 2023-05-22 (latest in force: 2023-05-22) · <https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=51>
+LGP · 1 versions, from 2023-05-21 (latest in force: 2023-05-21) · <https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=51>
 
 | Provision | File | Changes | Last changed |
 | --- | --- | ---: | --- |

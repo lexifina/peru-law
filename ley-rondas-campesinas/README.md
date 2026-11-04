@@ -1,6 +1,6 @@
 # Ley de Rondas Campesinas (Ley 27908)
 
-LRC · 1 versions, from 2022-06-27 (latest in force: 2022-06-27) · <https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=60001>
+LRC · 1 versions, from 2003-01-08 (latest in force: 2003-01-08) · <https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=60001>
 
 | Provision | File | Changes | Last changed |
 | --- | --- | ---: | --- |

@@ -301,6 +301,30 @@
     "ley-vivienda-interes-social"
    ],
    "sha256": "7b994196ec8a634e04124a65de96b2eee5493630121e5ae2f2b3a5bccf82588b"
+  },
+  "9n-verify423-date-1.json": {
+   "acts": [
+    "ley-gratificaciones"
+   ],
+   "sha256": "3c6979a792b7b7ca7c2cfc3cf22a7b2f579137bfdc3264085fc6ff21be101151"
+  },
+  "9n-verify423-date-2.json": {
+   "acts": [
+    "ley-general-pesca"
+   ],
+   "sha256": "6839dfd4b13c8c7fc97fc63c312f825e81ba86d413c5665aa921395c4c128efd"
+  },
+  "9n-verify423-date-3.json": {
+   "acts": [
+    "ley-contrato-seguro"
+   ],
+   "sha256": "5a24730c50ced440df9fc305754cd402cae7cb725896e4e7fa8b73dd69ad7196"
+  },
+  "9n-verify423-date-4.json": {
+   "acts": [
+    "ley-rondas-campesinas"
+   ],
+   "sha256": "ef01b35201b3d40155693948244fa5c2ca1659d0f32a714f79bd3350251caea9"
   }
  },
  "schema": 1

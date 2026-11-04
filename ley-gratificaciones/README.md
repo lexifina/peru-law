@@ -1,6 +1,6 @@
 # Ley que regula el otorgamiento de las gratificaciones para los trabajadores del régimen de la actividad privada por Fiestas Patrias y Navidad (Ley 27735)
 
-LGrat · 1 versions, from 2026-04-13 (latest in force: 2026-04-13) · <https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=60003>
+LGrat · 1 versions, from 2015-06-25 (latest in force: 2015-06-25) · <https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=60003>
 
 | Provision | File | Changes | Last changed |
 | --- | --- | ---: | --- |

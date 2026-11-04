@@ -1,6 +1,6 @@
 # Ley del Contrato de Seguro (Ley 29946)
 
-LCS · 1 versions, from 2023-05-09 (latest in force: 2023-05-09) · <https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=90010>
+LCS · 1 versions, from 2013-05-26 (latest in force: 2013-05-26) · <https://diariooficial.elperuano.pe/Normas/obtenerDocumento?idNorma=90010>
 
 | Provision | File | Changes | Last changed |
 | --- | --- | ---: | --- |
