@@ -11,7 +11,7 @@ It follows the shared design of [lexifina/global-law](https://github.com/lexifin
 | `constitucion/` | Constitución Política del Perú (1993) | 33 | From its entry into force (31 December 1993) to the bicameral reform in force since 12 April 2026: 37 reform laws, one ruling of the Tribunal Constitucional, and one change no law explains |
 | `codigo-civil/` | Código Civil (Decreto Legislativo 295) | 26 | From 25 December 2012 (the oldest text the Ministry of Justice's 14th official edition reaches) to Ley 32228 (January 2025) |
 | `proteccion-datos-personales/` | Ley 29733, Ley de Protección de Datos Personales | 3 | As enacted (July 2011) to Decreto Legislativo 1353 (2017) |
-| `codigo-procesal-penal/` | Código Procesal Penal (Decreto Legislativo 957) | 79 | As enacted (July 2004), with its district-by-district entry into force, to Ley 32374 (June 2025) |
+| `codigo-procesal-penal/` | Código Procesal Penal (Decreto Legislativo 957) | 80 | As enacted (July 2004), with district-by-district entry into force, to Ley 32735 (in force 22 July 2026) |
 | `codigo-consumidor/` | Código de Protección y Defensa del Consumidor (Ley 29571) | 20 | As enacted (in force 2 October 2010) to Ley 32495 (November 2025): 19 amending laws and decretos legislativos |
 | `codigo-penal/` | Código Penal (Decreto Legislativo 635) | 95 | From 31 May 2016 (the oldest text the Ministry of Justice's 12th official edition reaches) to Ley 32684 (in force 3 July 2026): 94 amending laws, decretos legislativos and decretos de urgencia |
 | `codigo-procesal-constitucional/` | Nuevo Código Procesal Constitucional (Ley 31307) | 3 | As published (in force 24 July 2021), Ley 31583 (October 2022) and Ley 32153 (November 2024), the only laws that have changed it to 29 October 2026 |
@@ -24,7 +24,7 @@ It follows the shared design of [lexifina/global-law](https://github.com/lexifin
 | `ley-transparencia-acceso-informacion/` | Texto Único Ordenado de la Ley de Transparencia y Acceso a la Información Pública (Ley 27806; Decreto Supremo 021-2019-JUS) | 2 | From Editora Perú's consolidated text of 31 May 2024 (with Ley 31783) to Decreto Legislativo 1688 (in force 3 October 2024), the only norm that has changed it since |
 | `ley-organizaciones-politicas/` | Ley de Organizaciones Políticas (Ley 28094) | 3 | From Editora Perú's consolidated text of 27 February 2026 to Ley 32657 (in force 16 June 2026) and Ley 32354 (in force 2 August 2026, after the 2026 general elections) |
 | `ley-reforma-magisterial/` | Ley de Reforma Magisterial (Ley 29944) | 5 | From Editora Perú's consolidated text of 20 March 2024 to Ley 32618 (in force 31 May 2026): Leyes 32238, 32242, 32304 and 32618 |
-| `ley-contrato-seguro/` | Ley del Contrato de Seguro (Ley 29946) | 1 | Editora Perú's consolidated text of 9 May 2023; no norm has changed the law since |
+| `ley-contrato-seguro/` | Ley del Contrato de Seguro (Ley 29946) | 1 | Official consolidated text including the law published 27 November 2012, in force 26 May 2013 under its ninth final provision |
 | `codigo-tributario/` | Texto Único Ordenado del Código Tributario (Decreto Supremo 133-2013-EF) | 2 | From Editora Perú's consolidated text of 8 August 2025 to Ley 32678 (in force 26 June 2026) |
 | `ley-organica-poder-judicial/` | Texto Único Ordenado de la Ley Orgánica del Poder Judicial (Decreto Supremo 017-93-JUS) | 1 | Editora Perú's consolidated text of 19 February 2024 (last amended by Ley 31591, 2022); no norm has changed it since |
 | `codigo-procesal-civil/` | Texto Único Ordenado del Código Procesal Civil (Decreto Legislativo 768) | 3 | From Editora Perú's consolidated text of 28 March 2025 to Ley 32377 (in force 8 June 2025) |
@@ -33,12 +33,12 @@ It follows the shared design of [lexifina/global-law](https://github.com/lexifin
 | `ley-firmas-certificados-digitales/` | Ley de Firmas y Certificados Digitales (Ley 27269) | 1 | Editora Perú's consolidated text of 9 August 2024; no norm has changed its text since |
 | `ley-seguridad-salud-trabajo/` | Ley de Seguridad y Salud en el Trabajo (Ley 29783) | 1 | Editora Perú's consolidated text of 28 July 2022; no norm has changed the law since |
 | `decreto-legislativo-migraciones/` | Decreto Legislativo de Migraciones (Decreto Legislativo 1350) | 2 | From Editora Perú's consolidated text of 19 October 2025 to Decreto Legislativo 1720 (in force 8 February 2026) |
-| `ley-general-pesca/` | Ley General de Pesca (Decreto Ley 25977) | 1 | Editora Perú's consolidated text of 22 May 2023; no norm has changed it since |
+| `ley-general-pesca/` | Ley General de Pesca (Decreto Ley 25977) | 1 | Official consolidated text including Ley 31749, in force 21 May 2023 |
 | `ley-proteccion-bienestar-animal/` | Ley de Protección y Bienestar Animal (Ley 30407) | 1 | Editora Perú's consolidated text of 30 June 2023; no norm has changed it since |
 | `ley-organica-poder-ejecutivo/` | Ley Orgánica del Poder Ejecutivo (Ley 29158) | 1 | Editora Perú's consolidated text of 11 October 2023, dated 12 October 2023 (with Ley 31894); no norm has changed it since |
 | `ley-organica-sistema-nacional-control/` | Ley Orgánica del Sistema Nacional de Control y de la Contraloría General de la República (Ley 27785) | 1 | Editora Perú's consolidated text of 25 June 2024, dated 26 June 2024 (with Ley 32073); no norm has changed it since |
 | `ley-hostigamiento-sexual/` | Ley de Prevención y Sanción del Hostigamiento Sexual (Ley 27942) | 1 | Editora Perú's consolidated text of 22 November 2021; no norm has changed it since |
-| `ley-gratificaciones/` | Ley que regula el otorgamiento de las gratificaciones por Fiestas Patrias y Navidad (Ley 27735) | 1 | Editora Perú's consolidated text of 13 April 2026 (last amended by Ley 30334, 2015) |
+| `ley-gratificaciones/` | Ley que regula el otorgamiento de las gratificaciones por Fiestas Patrias y Navidad (Ley 27735) | 1 | Official consolidated text including Ley 30334, in force 25 June 2015 |
 | `ley-general-sociedades/` | Ley General de Sociedades (Ley 26887) | 1 | Editora Perú's consolidated text of 14 May 2021, dated 15 May 2021 (with Ley 31194); no norm has changed it since |
 | `ley-productividad-competitividad-laboral/` | Texto Único Ordenado del Decreto Legislativo 728, Ley de Productividad y Competitividad Laboral (Decreto Supremo 003-97-TR) | 1 | Editora Perú's consolidated text of 27 April 2021 (with Ley 31152); Ley 32431's literal on art. 65 of the decreto legislativo is not applied (see below) |
 | `ley-relaciones-colectivas-trabajo/` | Texto Único Ordenado de la Ley de Relaciones Colectivas de Trabajo (Decreto Supremo 010-2003-TR) | 1 | Editora Perú's consolidated text of 26 July 2022; no norm has changed it since |
@@ -52,7 +52,7 @@ It follows the shared design of [lexifina/global-law](https://github.com/lexifin
 | `ley-modalidades-formativas-laborales/` | Ley sobre Modalidades Formativas Laborales (Ley 28518) | 1 | Editora Perú's consolidated text of 9 November 2020; no norm has changed it since |
 | `ley-descanso-prenatal-postnatal/` | Ley 26644, descanso prenatal y postnatal de la trabajadora gestante | 1 | Editora Perú's consolidated text of 2 March 2022; no norm has changed it since |
 | `decreto-legislativo-descanso-vacacional/` | Decreto Legislativo 1405, descanso vacacional remunerado en el sector público | 1 | Editora Perú's consolidated text of 21 October 2020; no norm has changed it since |
-| `ley-rondas-campesinas/` | Ley de Rondas Campesinas (Ley 27908) | 1 | Editora Perú's consolidated text of 27 June 2022; no norm has changed it since |
+| `ley-rondas-campesinas/` | Ley de Rondas Campesinas (Ley 27908) | 1 | Official consolidated text of the law published 7 January 2003, in force 8 January 2003 |
 | `ley-prohibicion-castigo-fisico/` | Ley 30403, que prohíbe el uso del castigo físico y humillante contra los niños, niñas y adolescentes | 1 | Editora Perú's consolidated text of 2 February 2022; no norm has changed it since |
 | `ley-playas-litoral/` | Ley 26856, playas del litoral y zona de dominio restringido | 1 | Editora Perú's consolidated text of 6 October 2020; no norm has changed it since |
 | `ley-tercerizacion/` | Ley que regula los servicios de tercerización (Ley 29245) | 1 | Editora Perú's consolidated text of 15 February 2021; no norm has changed it since |
@@ -69,6 +69,12 @@ It follows the shared design of [lexifina/global-law](https://github.com/lexifin
 | `ley-trabajadoras-trabajadores-hogar/` | Ley de las trabajadoras y trabajadores del hogar (Ley 31047) | 1 | the law as published in El Peruano on 1 October 2020 (in force 2 October 2020) |
 | `ley-inteligencia-artificial/` | Ley que promueve el uso de la inteligencia artificial (Ley 31814) | 1 | the law as published in El Peruano on 5 July 2023 (in force 6 July 2023) |
 | `ley-ordenamiento-territorial/` | Ley de Ordenamiento Territorial y de creación del Sinadot (Ley 32279) | 1 | the law as published in El Peruano on 2 April 2025 (in force 3 April 2025) |
+| `ley-32685/` | Ley que promociona el fortalecimiento de la apicultura y de la polinización como actividades productivas estratégicas del agro (Ley 32685) | 1 | El Peruano law text; 2026-07-03 (1 current-text version) |
+| `ley-32706/` | Ley que promueve el desarrollo del cabotaje y el fortalecimiento de la industria naval nacional (Ley 32706) | 1 | El Peruano law text; 2026-07-05 (1 current-text version) |
+| `ley-32707/` | Ley marco para el desarrollo sostenible del turismo y del deporte náutico nacional (Ley 32707) | 2 | El Peruano law text; 2026-2027 (2 versions; art. 29 applies 1 January 2027) |
+| `ley-32716/` | Ley que crea el Registro Nacional de Precedentes (Ley 32716) | 1 | El Peruano law text; 2026-07-07 (1 current-text version) |
+| `ley-32721/` | Ley que garantiza el derecho al descanso sentado y alternancia de la postura en los centros de trabajo (Ley 32721) | 1 | El Peruano law text; 2026-07-09 (1 current-text version) |
+| `ley-32734/` | Ley que declara día no laborable el 10 de julio de cada año en la provincia de Tambopata, departamento de Madre de Dios, por conmemorarse el aniversario de fundación histórica de la ciudad de Puerto Maldonado (Ley 32734) | 1 | El Peruano law text; 2026-07-22 (1 current-text version) |
 | `ley-control-consumo-tabaco/` | Ley del control del consumo de productos de tabaco, nicotina o sucedáneos (Ley 32159) | 1 | the law as published in El Peruano on 12 November 2024 (in force 13 November 2024) |
 | `ley-vivienda-interes-social/` | Ley de la Vivienda de Interés Social (Ley 32379) | 1 | the law as published in El Peruano on 11 June 2025 (in force 12 June 2025) |
 
