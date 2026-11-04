@@ -24,7 +24,7 @@ It follows the shared design of [lexifina/global-law](https://github.com/lexifin
 | `ley-transparencia-acceso-informacion/` | Texto Único Ordenado de la Ley de Transparencia y Acceso a la Información Pública (Ley 27806; Decreto Supremo 021-2019-JUS) | 2 | From Editora Perú's consolidated text of 31 May 2024 (with Ley 31783) to Decreto Legislativo 1688 (in force 3 October 2024), the only norm that has changed it since |
 | `ley-organizaciones-politicas/` | Ley de Organizaciones Políticas (Ley 28094) | 3 | From Editora Perú's consolidated text of 27 February 2026 to Ley 32657 (in force 16 June 2026) and Ley 32354 (in force 2 August 2026, after the 2026 general elections) |
 | `ley-reforma-magisterial/` | Ley de Reforma Magisterial (Ley 29944) | 5 | From Editora Perú's consolidated text of 20 March 2024 to Ley 32618 (in force 31 May 2026): Leyes 32238, 32242, 32304 and 32618 |
-| `ley-contrato-seguro/` | Ley del Contrato de Seguro (Ley 29946) | 1 | Editora Perú's consolidated text of 9 May 2023; no norm has changed the law since |
+| `ley-contrato-seguro/` | Ley del Contrato de Seguro (Ley 29946) | 1 | Official consolidated text including the law published 27 November 2012, in force 26 May 2013 under its ninth final provision |
 | `codigo-tributario/` | Texto Único Ordenado del Código Tributario (Decreto Supremo 133-2013-EF) | 2 | From Editora Perú's consolidated text of 8 August 2025 to Ley 32678 (in force 26 June 2026) |
 | `ley-organica-poder-judicial/` | Texto Único Ordenado de la Ley Orgánica del Poder Judicial (Decreto Supremo 017-93-JUS) | 1 | Editora Perú's consolidated text of 19 February 2024 (last amended by Ley 31591, 2022); no norm has changed it since |
 | `codigo-procesal-civil/` | Texto Único Ordenado del Código Procesal Civil (Decreto Legislativo 768) | 3 | From Editora Perú's consolidated text of 28 March 2025 to Ley 32377 (in force 8 June 2025) |
@@ -33,12 +33,12 @@ It follows the shared design of [lexifina/global-law](https://github.com/lexifin
 | `ley-firmas-certificados-digitales/` | Ley de Firmas y Certificados Digitales (Ley 27269) | 1 | Editora Perú's consolidated text of 9 August 2024; no norm has changed its text since |
 | `ley-seguridad-salud-trabajo/` | Ley de Seguridad y Salud en el Trabajo (Ley 29783) | 1 | Editora Perú's consolidated text of 28 July 2022; no norm has changed the law since |
 | `decreto-legislativo-migraciones/` | Decreto Legislativo de Migraciones (Decreto Legislativo 1350) | 2 | From Editora Perú's consolidated text of 19 October 2025 to Decreto Legislativo 1720 (in force 8 February 2026) |
-| `ley-general-pesca/` | Ley General de Pesca (Decreto Ley 25977) | 1 | Editora Perú's consolidated text of 22 May 2023; no norm has changed it since |
+| `ley-general-pesca/` | Ley General de Pesca (Decreto Ley 25977) | 1 | Official consolidated text including Ley 31749, in force 21 May 2023 |
 | `ley-proteccion-bienestar-animal/` | Ley de Protección y Bienestar Animal (Ley 30407) | 1 | Editora Perú's consolidated text of 30 June 2023; no norm has changed it since |
 | `ley-organica-poder-ejecutivo/` | Ley Orgánica del Poder Ejecutivo (Ley 29158) | 1 | Editora Perú's consolidated text of 11 October 2023, dated 12 October 2023 (with Ley 31894); no norm has changed it since |
 | `ley-organica-sistema-nacional-control/` | Ley Orgánica del Sistema Nacional de Control y de la Contraloría General de la República (Ley 27785) | 1 | Editora Perú's consolidated text of 25 June 2024, dated 26 June 2024 (with Ley 32073); no norm has changed it since |
 | `ley-hostigamiento-sexual/` | Ley de Prevención y Sanción del Hostigamiento Sexual (Ley 27942) | 1 | Editora Perú's consolidated text of 22 November 2021; no norm has changed it since |
-| `ley-gratificaciones/` | Ley que regula el otorgamiento de las gratificaciones por Fiestas Patrias y Navidad (Ley 27735) | 1 | Editora Perú's consolidated text of 13 April 2026 (last amended by Ley 30334, 2015) |
+| `ley-gratificaciones/` | Ley que regula el otorgamiento de las gratificaciones por Fiestas Patrias y Navidad (Ley 27735) | 1 | Official consolidated text including Ley 30334, in force 25 June 2015 |
 | `ley-general-sociedades/` | Ley General de Sociedades (Ley 26887) | 1 | Editora Perú's consolidated text of 14 May 2021, dated 15 May 2021 (with Ley 31194); no norm has changed it since |
 | `ley-productividad-competitividad-laboral/` | Texto Único Ordenado del Decreto Legislativo 728, Ley de Productividad y Competitividad Laboral (Decreto Supremo 003-97-TR) | 1 | Editora Perú's consolidated text of 27 April 2021 (with Ley 31152); Ley 32431's literal on art. 65 of the decreto legislativo is not applied (see below) |
 | `ley-relaciones-colectivas-trabajo/` | Texto Único Ordenado de la Ley de Relaciones Colectivas de Trabajo (Decreto Supremo 010-2003-TR) | 1 | Editora Perú's consolidated text of 26 July 2022; no norm has changed it since |
@@ -52,7 +52,7 @@ It follows the shared design of [lexifina/global-law](https://github.com/lexifin
 | `ley-modalidades-formativas-laborales/` | Ley sobre Modalidades Formativas Laborales (Ley 28518) | 1 | Editora Perú's consolidated text of 9 November 2020; no norm has changed it since |
 | `ley-descanso-prenatal-postnatal/` | Ley 26644, descanso prenatal y postnatal de la trabajadora gestante | 1 | Editora Perú's consolidated text of 2 March 2022; no norm has changed it since |
 | `decreto-legislativo-descanso-vacacional/` | Decreto Legislativo 1405, descanso vacacional remunerado en el sector público | 1 | Editora Perú's consolidated text of 21 October 2020; no norm has changed it since |
-| `ley-rondas-campesinas/` | Ley de Rondas Campesinas (Ley 27908) | 1 | Editora Perú's consolidated text of 27 June 2022; no norm has changed it since |
+| `ley-rondas-campesinas/` | Ley de Rondas Campesinas (Ley 27908) | 1 | Official consolidated text of the law published 7 January 2003, in force 8 January 2003 |
 | `ley-prohibicion-castigo-fisico/` | Ley 30403, que prohíbe el uso del castigo físico y humillante contra los niños, niñas y adolescentes | 1 | Editora Perú's consolidated text of 2 February 2022; no norm has changed it since |
 | `ley-playas-litoral/` | Ley 26856, playas del litoral y zona de dominio restringido | 1 | Editora Perú's consolidated text of 6 October 2020; no norm has changed it since |
 | `ley-tercerizacion/` | Ley que regula los servicios de tercerización (Ley 29245) | 1 | Editora Perú's consolidated text of 15 February 2021; no norm has changed it since |
