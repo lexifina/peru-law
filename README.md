@@ -73,6 +73,7 @@ It follows the shared design of [lexifina/global-law](https://github.com/lexifin
 | `ley-ordenamiento-territorial/` | Ley de Ordenamiento Territorial y de creación del Sinadot (Ley 32279) | 1 | the law as published in El Peruano on 2 April 2025 (in force 3 April 2025) |
 | `ley-control-consumo-tabaco/` | Ley del control del consumo de productos de tabaco, nicotina o sucedáneos (Ley 32159) | 1 | the law as published in El Peruano on 12 November 2024 (in force 13 November 2024) |
 | `ley-vivienda-interes-social/` | Ley de la Vivienda de Interés Social (Ley 32379) | 1 | the law as published in El Peruano on 11 June 2025 (in force 12 June 2025) |
+| `ley-32712/` | Ley 32712, colaboración regional y local para la seguridad ciudadana | 1 | Current text as published in El Peruano on 5 July 2026 (in force 6 July 2026); no later amendment appears in the checked July–November 2026 law listings |
 
 The per-act `README.md` in the folder lists every provision, how often it changed and when. A part is published here only once it has been checked against the official text; `REPRODUCE.md` lists, act by act, the sources and every decision.
 
