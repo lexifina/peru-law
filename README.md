@@ -1,35 +1,41 @@
-# Peru: law history in git
+# Perú: historia del derecho en git
 
+**Español** · [English](README.en.md)
 
-The law of Peru as a git history: one file per provision, one commit per version on the day it took effect, and the law that made each change as the commit's author. `git blame` names the law behind every paragraph; `git log` lists every change to an article; picking a date gives the text in force that day.
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="data/es/effort-dark.svg">
+<img alt="El derecho peruano en este repositorio: qué contiene, los cambios por año de entrada en vigor, la completitud frente a las fuentes oficiales y la exactitud de lo que contiene" src="data/es/effort-light.svg" width="880">
+</picture>
 
-Part of [lexifina/global-law](https://github.com/lexifina/global-law), one git history for every country's law: this is Peru's national law, which global-law reads at `peru/national/acts/`.
+El derecho del Perú como historial de git: un archivo por disposición, un commit por versión, fechado el día de su entrada en vigencia, y la norma que hizo cada cambio como autora del commit. `git blame` nombra la norma de cada párrafo; `git log` enumera cada cambio de un artículo; al elegir una fecha se obtiene el texto vigente ese día.
 
-**What is in it now:** the Constitution of 1993, 9 codes and 53 other laws and decrees, 63 acts in all, with 377 versions that took effect between 31 December 1993 and 2 August 2026; 2 more, made by Ley 32701 and due on 1 January 2027, are on the `futuro` branch. [`data/versions.json`](data/versions.json) lists every act with the day each version took effect; [`data/laws.csv`](data/laws.csv) lists the 361 laws and decrees and the one ruling in the record, with their dates.
+Forma parte de [lexifina/global-law](https://github.com/lexifina/global-law), un único historial de git para el derecho de todos los países: este es el derecho nacional del Perú, que global-law lee en `peru/national/acts/`.
 
-Each act is a folder named after it (`constitucion/`, `codigo-penal/`; `ley-productividad-competitividad-laboral/` is the Texto Único Ordenado of Decreto Legislativo 728, the main labour law), with one file per article or provision (`constitucion/art-112.md` is Article 112 of the Constitution, on the presidential term) and a `README.md` listing its provisions and how often each changed.
+**Qué contiene ahora:** la Constitución de 1993, 9 códigos y otras 53 leyes y decretos, 63 normas en total, con 377 versiones que entraron en vigencia entre el 31 de diciembre de 1993 y el 2 de agosto de 2026; otras 2, hechas por la Ley 32701 y previstas para el 1 de enero de 2027, están en la rama `futuro`. [`data/versions.json`](data/versions.json) enumera cada norma con el día en que entró en vigencia cada versión; [`data/laws.csv`](data/laws.csv) enumera las 361 leyes y decretos y la única sentencia del registro, con sus fechas.
 
-The text is in Spanish, as the Congreso, the Ministerio de Justicia, Editora Perú and El Peruano print it. An English translation is not part of this record.
+Cada norma es una carpeta con su nombre (`constitucion/`, `codigo-penal/`; `ley-productividad-competitividad-laboral/` es el Texto Único Ordenado del Decreto Legislativo 728, la principal ley laboral), con un archivo por artículo o disposición (`constitucion/art-112.md` es el artículo 112 de la Constitución, sobre el mandato presidencial) y un `README.md` que enumera sus disposiciones y cuántas veces cambió cada una.
 
-## Questions as git commands
+El texto está en español, tal como lo imprimen el Congreso, el Ministerio de Justicia, Editora Perú y El Peruano. Una traducción al inglés no forma parte de este registro.
 
-| Question | Command |
+## Preguntas como comandos de git
+
+| Pregunta | Comando |
 | --- | --- |
-| Every change to Article 112 of the Constitution | `git log -p --word-diff -- constitucion/art-112.md` |
-| Which law wrote each line of Article 112? | `git blame constitucion/art-112.md` |
-| Every version of the Constitution, with the day each took effect | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- constitucion ":^constitucion/README.md"` |
-| Article 112 as in force on 1 November 2021 | `python tools/vigente_el.py 2021-11-01 constitucion 112` |
+| Cada cambio del artículo 112 de la Constitución | `git log -p --word-diff -- constitucion/art-112.md` |
+| ¿Qué norma escribió cada línea del artículo 112? | `git blame constitucion/art-112.md` |
+| Cada versión de la Constitución, con el día en que entró en vigencia cada una | `git log --format="%h %(trailers:key=In-force,valueonly,separator=) %an" -- constitucion ":^constitucion/README.md"` |
+| El artículo 112 vigente el 1 de noviembre de 2021 | `python tools/vigente_el.py 2021-11-01 constitucion 112` |
 
-**Outside git**, we also host this record publicly, for free:
+**Fuera de git**, también alojamos este registro de forma pública y gratuita:
 
-- **[Ask Claude about Peruvian law](https://global-law.lexifina.com/v1/try_claude?country=peru)**: opens Claude with a first question ready.
-- **[Ask ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=peru)**: the same question in ChatGPT.
-- **[Search Peruvian law on our site](https://lexifina.com/law?country=peru&q=descanso+vacacional)**: a search for "descanso vacacional" (annual leave), with each provision's text and its versions, no account needed.
-- **[Developer REST API](https://global-law.lexifina.com/v1/search_law?query=descanso+vacacional&jurisdiction=peru)**: the same search as JSON, with no key. See the [documentation here](https://lexifina.com/api/global-law).
+- **[Pregunte a Claude sobre el derecho peruano](https://global-law.lexifina.com/v1/try_claude?country=peru)**: abre Claude con una primera pregunta ya preparada.
+- **[Pregunte a ChatGPT](https://global-law.lexifina.com/v1/try_chatgpt?country=peru)**: la misma pregunta en ChatGPT.
+- **[Busque en el derecho peruano en nuestro sitio](https://lexifina.com/law?country=peru&q=descanso+vacacional)**: una búsqueda de "descanso vacacional", con el texto de cada disposición y sus versiones, sin necesidad de cuenta.
+- **[API REST para desarrolladores](https://global-law.lexifina.com/v1/search_law?query=descanso+vacacional&jurisdiction=peru)**: la misma búsqueda en JSON, sin clave. Consulte la [documentación aquí](https://lexifina.com/api/global-law).
 
-Both assistants read the record through the free Global law connector (MCP, `https://global-law.lexifina.com/mcp`); the first time, the chat gives you the link that adds it. Ask in Spanish or in English.
+Ambos asistentes leen el registro mediante el conector gratuito Global law (MCP, `https://global-law.lexifina.com/mcp`); la primera vez, el chat le da el enlace para añadirlo. Pregunte en español o en inglés.
 
-**Host it yourself easily.** All it takes is git and Python, and the tools run on your machine:
+**Alójelo usted mismo fácilmente.** Solo hacen falta git y Python, y las herramientas se ejecutan en su propio equipo:
 
 ```sh
 git clone --depth 1 https://github.com/lexifina/global-law && cd global-law
@@ -37,61 +43,59 @@ python3 tools/countries.py add peru/national/acts
 python3 tools/law.py show 2026-01-01 peru/national/acts/constitucion/art-112.md
 ```
 
-Opened in Claude Code, Cursor, VS Code or Codex, the clone also starts a local MCP server with the same tools ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
+Abierto en Claude Code, Cursor, VS Code o Codex, el clon también inicia un servidor MCP local con las mismas herramientas ([MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md)).
 
-## Dates
+## Fechas
 
-Each commit is dated at noon, America/Lima, on the day the change took effect, and carries it in its `In-force:` trailer, beside `Enacted:` and `Published:`:
+Cada commit está fechado al mediodía, hora de America/Lima, del día en que el cambio entró en vigencia, y lo lleva en su trailer `In-force:`, junto a `Enacted:` y `Published:`:
 
-- a law is in force from the day after its publication in El Peruano, unless it postpones that day in whole or in part (Constitución, art. 109); a law that waits for its reglamento is dated from the day it says (Ley 32123 from 6 September 2025, the day after Decreto Supremo 189-2025-EF was published);
-- the reforms of Ley 31988 (a two-chamber Congress), in force "a partir de las próximas elecciones generales", are dated 12 April 2026, the election day set by Decreto Supremo 039-2025-PCM;
-- STC 918/2021 of the Tribunal Constitucional, published on 26 November 2021, applies from the next day, so the earlier text of arts. 2, 21 and 112 returns on 27 November 2021.
+- una ley es obligatoria desde el día siguiente de su publicación en El Peruano, salvo disposición contraria de la misma ley que posterga su vigencia en todo o en parte (Constitución, art. 109); una ley que espera su reglamento se fecha desde el día que ella indica (la Ley 32123 desde el 6 de septiembre de 2025, el día siguiente a la publicación del Decreto Supremo 189-2025-EF);
+- las reformas de la Ley 31988 (un Congreso bicameral), vigentes "a partir de las próximas elecciones generales", se fechan el 12 de abril de 2026, el día de las elecciones fijado por el Decreto Supremo 039-2025-PCM;
+- la STC 918/2021 del Tribunal Constitucional, publicada el 26 de noviembre de 2021, se aplica desde el día siguiente, por lo que el texto anterior de los arts. 2, 21 y 112 vuelve el 27 de noviembre de 2021.
 
-Each change is credited to the law, decree or ruling that made it, with an address that cannot exist (`Ley 31988 <ley-31988@congreso.gob.pe.invalid>`), and only where the source's notes or the law itself say so; the committer is Lexifina. An act that starts from a consolidated text starts with the "oldest version available", credited to its publisher (Editora Perú for 49 of the 51); one sentence of the Constitution that no law explains is credited to the Congreso.
+Cada cambio se atribuye a la ley, el decreto o la sentencia que lo hizo, con una dirección que no puede existir (`Ley 31988 <ley-31988@congreso.gob.pe.invalid>`), y solo cuando las notas de la fuente o la propia ley lo dicen; el committer es Lexifina. Una norma que parte de un texto consolidado empieza con la "oldest version available" (la versión más antigua disponible), atribuida a su editor (Editora Perú en 49 de las 51); una oración de la Constitución que ninguna ley explica se atribuye al Congreso.
 
-## How it is checked
+## Cómo se comprueba
 
-- `tools/check_repo.py` reads every version back from git on the day it took effect and on the day before, and compares it with the corpus whose sha256 is in `data/corpus.sha256`: 379 versions of 63 acts, 0 mismatches; every commit's trailers parse, `main` has no merge commits and nothing is dated in the future (see [`REPRODUCE.md`](REPRODUCE.md)).
-- The Constitution's earlier texts come mostly from the notes of the Congreso's 2021 edition; each state is compared with the Congreso's editions of 2004 to 2024, and every paragraph changed by twelve reform laws since 2021, Ley 31988 among them, was found word for word in the law as published.
-- For the other acts, the first version is checked provision by provision against its official edition or Editora Perú's consolidated text, and each later change is the amending norm's own wording in El Peruano, compared with a later consolidation where one with a usable text layer exists. Every ley, decreto legislativo and decreto de urgencia published in a period `REPRODUCE.md` gives for each act, up to 31 October 2026, was read for changes.
-- The same corpus gives the same commit hashes (`tools/build.py`); no second build has been compared yet. History is append-only (`tools/append.py`): no published commit is rewritten.
+- `tools/check_repo.py` vuelve a leer desde git cada versión el día en que entró en vigencia y el día anterior, y la compara con el corpus cuyo sha256 está en `data/corpus.sha256`: 379 versiones de 63 normas, 0 discrepancias; los trailers de todos los commits se pueden analizar, `main` no tiene commits de fusión (merge) y nada lleva una fecha futura (véase [`REPRODUCE.md`](REPRODUCE.md)).
+- Los textos anteriores de la Constitución proceden sobre todo de las notas de la edición de 2021 del Congreso; cada estado se compara con las ediciones del Congreso de 2004 a 2024, y cada párrafo cambiado por doce leyes de reforma desde 2021, entre ellas la Ley 31988, se encontró palabra por palabra en la ley tal como se publicó.
+- En las demás normas, la primera versión se comprueba disposición por disposición con su edición oficial o con el texto consolidado de Editora Perú, y cada cambio posterior es la redacción propia de la norma modificatoria en El Peruano, comparada con una consolidación posterior cuando existe una con una capa de texto utilizable. Se leyeron, en busca de cambios, todas las leyes, decretos legislativos y decretos de urgencia publicados en un período que `REPRODUCE.md` indica para cada norma, hasta el 31 de octubre de 2026.
+- El mismo corpus da los mismos hashes de commit (`tools/build.py`); todavía no se ha comparado una segunda construcción. El historial solo crece por adición (`tools/append.py`): no se reescribe ningún commit publicado.
 
-## What it does not show
+## Lo que no muestra
 
-- **Most of Peru's law.** 63 acts are here; reglamentos and other decretos supremos, most decretos legislativos, regional and municipal ordinances and case law are not (STC 918/2021 is here only as the commit that restored three articles).
-- **History before an act's first version.** 51 of the 63 acts start from a consolidated text (the Código Civil from 2012, the Código Penal from 2016, most others from 2020 to 2026), not from their publication; earlier changes are inside that first version.
-- **Section headings** (títulos, capítulos) are not tracked.
-- **Laws waiting for their reglamento.** Leyes 32195 and 32329 (Código Penal) and 32353 (Ley General de Inspección del Trabajo) take effect the day after a reglamento not published by the end of October 2026, so their changes are left out.
-- **Paragraph breaks** in the Constitution's earlier texts are inferred from the notes that quote them; their words are checked, the breaks are not.
+- **La mayor parte del derecho peruano.** Aquí hay 63 normas; no están los reglamentos y demás decretos supremos, la mayoría de los decretos legislativos, las ordenanzas regionales y municipales ni la jurisprudencia (la STC 918/2021 está aquí solo como el commit que restituyó tres artículos).
+- **La historia anterior a la primera versión de una norma.** 51 de las 63 normas parten de un texto consolidado (el Código Civil de 2012, el Código Penal de 2016, la mayoría de las demás de 2020 a 2026), no de su publicación; los cambios anteriores quedan dentro de esa primera versión.
+- **Los encabezados de sección** (títulos, capítulos) no se registran.
+- **Las leyes que esperan su reglamento.** Las Leyes 32195 y 32329 (Código Penal) y 32353 (Ley General de Inspección del Trabajo) entran en vigencia el día siguiente de un reglamento no publicado a fines de octubre de 2026, por lo que sus cambios quedan fuera.
+- **Los saltos de párrafo** de los textos anteriores de la Constitución se deducen de las notas que los citan; sus palabras se comprueban, los saltos no.
 
-## Sources
+## Fuentes
 
-| Source | Kind | Past versions | Notes |
+| Fuente | Tipo | Versiones anteriores | Notas |
 | --- | --- | --- | --- |
-| [Congreso de la República, ediciones de la Constitución](https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf) | Official consolidated text | yes, through notes quoting the earlier text | The editions of May 2021 and December 2024; older ones (2004 to 2019) through Internet Archive captures |
-| [Archivo Digital de la Legislación del Perú](https://www.leyes.congreso.gob.pe) | Official laws (Congreso) | n/a | The text of the reform laws and the 1993 gazette scan |
-| [Ministerio de Justicia, ediciones oficiales](https://www.gob.pe/institucion/minjus/colecciones/2135-ediciones-oficiales) | Official consolidated editions | yes, through "Texto anterior" notes | The Código Civil, Código Penal, Código Procesal Penal and Código de Protección y Defensa del Consumidor |
-| [Editora Perú, Normas Legales Actualizadas](https://diariooficial.elperuano.pe/Normas) | Consolidated text (state publisher) | no | The first version of most other acts, and checkpoints; read through Internet Archive captures |
-| [El Peruano, Normas Legales](https://busquedas.elperuano.pe) | Official gazette | n/a | The text of the amending laws and decrees |
-| [Tribunal Constitucional](https://tc.gob.pe/jurisprudencia/2021/00019-2021-AI.pdf) | Ruling | n/a | STC 918/2021 |
+| [Congreso de la República, ediciones de la Constitución](https://www3.congreso.gob.pe/Docs/files/constitucion/constitucion-12-2024.pdf) | Texto consolidado oficial | sí, mediante notas que citan el texto anterior | Las ediciones de mayo de 2021 y diciembre de 2024; las más antiguas (2004 a 2019), mediante capturas del Internet Archive |
+| [Archivo Digital de la Legislación del Perú](https://www.leyes.congreso.gob.pe) | Leyes oficiales (Congreso) | no aplica | El texto de las leyes de reforma y el escaneo del diario oficial de 1993 |
+| [Ministerio de Justicia, ediciones oficiales](https://www.gob.pe/institucion/minjus/colecciones/2135-ediciones-oficiales) | Ediciones consolidadas oficiales | sí, mediante notas "Texto anterior" | El Código Civil, el Código Penal, el Código Procesal Penal y el Código de Protección y Defensa del Consumidor |
+| [Editora Perú, Normas Legales Actualizadas](https://diariooficial.elperuano.pe/Normas) | Texto consolidado (editora estatal) | no | La primera versión de la mayoría de las demás normas, y puntos de control; leídos mediante capturas del Internet Archive |
+| [El Peruano, Normas Legales](https://busquedas.elperuano.pe) | Diario oficial | no aplica | El texto de las leyes y decretos modificatorios |
+| [Tribunal Constitucional](https://tc.gob.pe/jurisprudencia/2021/00019-2021-AI.pdf) | Sentencia | no aplica | STC 918/2021 |
 
-## Licence
+## Licencia
 
-See [`LICENSE`](LICENSE). Decreto Legislativo 822 (Ley sobre el Derecho de Autor), art. 9, excludes official texts of a legislative, administrative or judicial nature from copyright protection. Lexifina's own contributions (the arrangement of the history, the commit messages, the tables and the tools) are dedicated to the public domain under CC0 1.0.
+Véase [`LICENSE`](LICENSE). El Decreto Legislativo 822 (Ley sobre el Derecho de Autor), art. 9, excluye de la protección del derecho de autor los textos oficiales de carácter legislativo, administrativo o judicial. Las aportaciones propias de Lexifina (la ordenación del historial, los mensajes de commit, las tablas y las herramientas) se dedican al dominio público bajo CC0 1.0.
 
-No AI model wrote, translated or corrected legal text, and none runs at build time; the scripts were written by Claude Code running Claude Opus 5.5 (see [`REPRODUCE.md`](REPRODUCE.md)).
+Ningún modelo de IA escribió, tradujo ni corrigió texto jurídico, y ninguno se ejecuta al construir el historial; los scripts los escribió Claude Code con Claude Opus 5.5 (véase [`REPRODUCE.md`](REPRODUCE.md)).
 
-## En español
+Esta es una traducción de la versión inglesa ([README.en.md](README.en.md)); si difieren, prevalece la versión inglesa.
 
-Historia del derecho peruano en git: un archivo por disposición y un commit por versión, fechado el día de su entrada en vigencia y firmado por la norma que hizo el cambio. Contiene la Constitución de 1993, con toda su historia desde el 31 de diciembre de 1993, nueve códigos y otras 53 leyes y decretos, con 377 versiones; 51 de las 63 normas parten de un texto consolidado, no de su publicación original. Texto vigente en una fecha: `python tools/vigente_el.py 2021-11-01 constitucion 112`.
+## Más información
 
-## More
+Del repositorio [lexifina/global-law](https://github.com/lexifina/global-law) (páginas en inglés):
 
-From [lexifina/global-law](https://github.com/lexifina/global-law):
-
-- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): every feature, and what every corpus must support (`git blame`, `law.py`, the MCP tools)
-- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): questions and answers · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): proposing changes · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): the MCP server · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): how it was built · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
-- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): how current each corpus is · [Monitoring](https://github.com/lexifina/global-law/tree/main/monitoring): whether updates are running · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): how each official source is watched for changes
-- [performance/](https://github.com/lexifina/global-law/tree/main/performance): how fast the tools are, measured
-- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): charts and bridges across the world's law
-- [Vulnerabilities](https://github.com/lexifina/global-law/tree/main/vulnerabilities): mistakes in legislation as published
+- [FEATURES.md](https://github.com/lexifina/global-law/blob/main/FEATURES.md): todas las funciones y lo que cada corpus debe admitir (`git blame`, `law.py`, herramientas MCP)
+- [FAQ.md](https://github.com/lexifina/global-law/blob/main/FAQ.md): preguntas y respuestas · [CONTRIBUTING.md](https://github.com/lexifina/global-law/blob/main/CONTRIBUTING.md): proponer cambios · [MCP.md](https://github.com/lexifina/global-law/blob/main/MCP.md): servidor MCP · [REPRODUCE.md](https://github.com/lexifina/global-law/blob/main/REPRODUCE.md): cómo se ha construido · [CHANGELOG.md](https://github.com/lexifina/global-law/blob/main/CHANGELOG.md)
+- [FRESHNESS.md](https://github.com/lexifina/global-law/blob/main/FRESHNESS.md): lo actualizado que está cada corpus · [Supervisión](https://github.com/lexifina/global-law/tree/main/monitoring): si las actualizaciones funcionan · [WATCHING.md](https://github.com/lexifina/global-law/blob/main/WATCHING.md): cómo se vigila cada fuente oficial para detectar cambios
+- [performance/](https://github.com/lexifina/global-law/tree/main/performance): la rapidez de las herramientas, medida
+- [visualisations/](https://github.com/lexifina/global-law/tree/main/visualisations): gráficos y conexiones a través del derecho de todo el mundo
+- [Vulnerabilidades](https://github.com/lexifina/global-law/tree/main/vulnerabilities): errores en las normas tal como se publicaron
