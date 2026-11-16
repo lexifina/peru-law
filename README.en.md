@@ -61,6 +61,7 @@ Each change is credited to the law, decree or ruling that made it, with an addre
 - The Constitution's earlier texts come mostly from the notes of the Congreso's 2021 edition; each state is compared with the Congreso's editions of 2004 to 2024, and every paragraph changed by twelve reform laws since 2021, Ley 31988 among them, was found word for word in the law as published.
 - For the other acts, the first version is checked provision by provision against its official edition or Editora Perú's consolidated text, and each later change is the amending norm's own wording in El Peruano, compared with a later consolidation where one with a usable text layer exists. Every ley, decreto legislativo and decreto de urgencia published in a period `REPRODUCE.md` gives for each act, up to 31 October 2026, was read for changes.
 - The same corpus gives the same commit hashes (`tools/build.py`); no second build has been compared yet. History is append-only (`tools/append.py`): no published commit is rewritten.
+- [vulnerabilities/](vulnerabilities/README.en.md): possible drafting mistakes in Peruvian law, found by global-law's detectors and checked by hand.
 
 ## What it does not show
 

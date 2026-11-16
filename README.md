@@ -61,6 +61,7 @@ Cada cambio se atribuye a la ley, el decreto o la sentencia que lo hizo, con una
 - Los textos anteriores de la Constitución proceden sobre todo de las notas de la edición de 2021 del Congreso; cada estado se compara con las ediciones del Congreso de 2004 a 2024, y cada párrafo cambiado por doce leyes de reforma desde 2021, entre ellas la Ley 31988, se encontró palabra por palabra en la ley tal como se publicó.
 - En las demás normas, la primera versión se comprueba disposición por disposición con su edición oficial o con el texto consolidado de Editora Perú, y cada cambio posterior es la redacción propia de la norma modificatoria en El Peruano, comparada con una consolidación posterior cuando existe una con una capa de texto utilizable. Se leyeron, en busca de cambios, todas las leyes, decretos legislativos y decretos de urgencia publicados en un período que `REPRODUCE.md` indica para cada norma, hasta el 31 de octubre de 2026.
 - El mismo corpus da los mismos hashes de commit (`tools/build.py`); todavía no se ha comparado una segunda construcción. El historial solo crece por adición (`tools/append.py`): no se reescribe ningún commit publicado.
+- [vulnerabilities/](vulnerabilities/): posibles errores de técnica normativa en el derecho peruano, hallados por los detectores de global-law y comprobados a mano.
 
 ## Lo que no muestra
 
