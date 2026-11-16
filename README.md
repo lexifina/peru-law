@@ -90,6 +90,10 @@ Ningún modelo de IA escribió, tradujo ni corrigió texto jurídico, y ninguno 
 
 Esta es una traducción de la versión inglesa ([README.en.md](README.en.md)); si difieren, prevalece la versión inglesa.
 
+## Visualizaciones
+
+- [visualisations/](visualisations/): gráficos hechos a partir de este repositorio. Aún no se han hecho.
+
 ## Más información
 
 Del repositorio [lexifina/global-law](https://github.com/lexifina/global-law) (páginas en inglés):
